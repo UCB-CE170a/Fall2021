@@ -1,0 +1,8 @@
+In day 1 we have introduced the concept of variable. In this tutorial we are going to discuss variable types. 
+
+How variables are stored inside a computer. Computer is silly, it can only recognize 0/1. All our information is stored as 0/1 or on/offs. These on/offs are called bits. a chunk of 8 bits is called bytes. Thats the smallest number of bits a computer can reach. 
+If you want to store more information, you will need more bits or bytes to represent it. In engineering, if you want more precision for your number, you will use more bytes, meaning high memory usage. 
+
+Then lets go to the concept of type. All variables have a type, string, number. Thats the way you tell computer what kind of thing it is. For static programming language, it is up to the user to explicitly define the variable type. Python, on the other hand side, is high level language with a interpretor. it interpret or guess the type of variable from your input. 
+
+We are engineers, so this tutorial focuses on numeric types. 

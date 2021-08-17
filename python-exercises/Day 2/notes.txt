@@ -1,0 +1,10 @@
+Explain the physics problem. 
+Explain module. External library to help you do operations the native python environment can not do. Python is light and efficient with only required modules or libraries. 
+
+I can do it on my hand/calculator. Lets see the power of programming in the next example. 
+Simple way: Try different angles. Computer never get tired on doing boring repetitive works. 
+We need a container to hold all the angles we want to try. 
+
+Having a list is not intuitive. Engineers prefer graph because it shows more information such as trend. 
+
+Plot multiple lines on a graph. 

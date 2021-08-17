@@ -1,0 +1,4 @@
+Today, we are going to review some important concepts of engineering mathematics. This is also a good opportunity to practice all the python coding skills we have learned so far. 
+
+First, we are going to review taylor series. Then we proceed to review one important method in engineering simulation: the Newton Ralphson method. 
+We are going to use the same sliding block example introduced in day 2 and day 3. In day three we use the bisection method to find the angle of the pulling force when other parameters are given. Today, we are going to improve this method by using the Newton Ralphson method. 

@@ -1,0 +1,11 @@
+We have used numpy library in previous tutorials to perform some math operations. 
+Today, we are going to give a short introduction of the numpy library. Numpy is very large lib, we just introduced a tiny parts here. For more information you can either search on internet or go to numpys official website. 
+
+Motivation on using numpy: engineers need to deal with math, 
+numpy is dedicated on math operations, especially for multi-dimensional (vector) math operations. Two benefits: 1. lots of functions we can use. 2. all these functions are fully tested and optimized. They are fast. 
+
+How to use numpy to represent data. 
+
+Now we learned how to represent data in numpy. Lets see the power of numpy. We can do array arithmatic and call functions form numpy. 
+
+Lets show the performance benefits of numpy. 

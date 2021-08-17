@@ -1,0 +1,15 @@
+Hello, my name is Renjie Wu. This is the day1 of our python tutorial. In this video, I will walk you through our python exercise using Google Colab. 
+
+
+Colab, similar to google slides. 
+File hosted on github, need to copy to google drive. 
+.ipynb -> Ipython Notebook. Composed of cells. Text cell and code cell. 
+
+Python is a programming language. It runs on a computer, so it must be capable of computing things. 
+
+First thing we are going try is to use it as a pocket calculator.
+Middle school, gravitational potential.  
+
+Math operation has orders. Multiplication before addition. To prioritize one operation, use parentheses around it. 
+
+My calculator can remember previous answers. We achieve by using variables and assignment. 
