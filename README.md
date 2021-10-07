@@ -12,12 +12,12 @@ This Github repository holds the Python-related exercises, quizzes, and assignme
   * Day6: Introduction of the Numpy library; linear algebra with Numpy 
 
 - [Quizes](Quizes)
- * Quiz 2: model bridge data analysis
- * Quiz 4: all-or-nothing traffic assignment
+  * Quiz 2: model bridge data analysis
+  * Quiz 4: all-or-nothing traffic assignment
 
 - [Homeworks](Homeworks)
- * Homework 2: model bridge data analysis
- * Homework 4: North Berkeley wildfire evacuation
+  * Homework 2: model bridge data analysis
+  * Homework 4: North Berkeley wildfire evacuation
 
 
 ### Contributors
