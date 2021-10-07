@@ -30,13 +30,13 @@ Link capacity (1900 vehicles/(lane * hour)) will be automatically re-calculated 
 
 ## Instruction
 #### 1. Run the base scenario
-Follow the colab link at the bottom of the page. Run the code blocks until Section 1.b Visualize the results. The code should give you three types of output files:
+Follow the colab link at the bottom of the page. Run the code blocks until `Section 1.b Visualize the results`. The code should give you three types of output files:
 - `t_stats_base_[yourname].csv`: records how many evacuees have successfully arrived at the destination node at different time steps;
 - `traffic_outputs/link_stats/link_stats_[yourname]_t[...].csv`: contains information on the numbers of running vehicles (column `run_vehicle_counts`) and queueing vehicles (colume `queue_vehicle_counts`) for each link at different time steps. There is a `geometry` column containing the well-known text of each link, so you can directly visualize these files in QGIS;
 - `traffic_outputs/node_stats/node_stats_[yourname]_t[...].csv`: contains information on the number of vehicles that are still in their origin node. These vehicles haven't started their journey because even the first link in their path is congested.
 
-Examine the output files `traffic_outputs/link_stats/link_stats_[yourname]_t[...].csv` or `traffic_outputs/node_stats/node_stats_[yourname]_t[...].csv` in QGIS and decide where you want to implement contraflow. For example, the image below shows the numbers of queued vehicles on each road link at 1000 seconds for the base scenario. Now, do you think this is a useful way of visualization to identify the bottleneck locations? Would queue density rather than queue counts give more insights? Or shall we also include the numbers of running vehicles?
-![queue_map_example](queue_map_example.png? "Queuing vehicle map")
+Examine the output files `traffic_outputs/link_stats/link_stats_[yourname]_t[...].csv` or `traffic_outputs/node_stats/node_stats_[yourname]_t[...].csv` in QGIS and decide where you want to implement contraflow. For example, the image below shows the numbers of queued vehicles on each road link at 700 seconds for the base scenario. Now, do you think this is a useful way of visualization to identify the bottleneck locations? Would queue density rather than queue counts give more insights? Or shall we also include the numbers of running vehicles?
+![queue_map_example](queue_map_example.png "Queuing vehicle map")
 
 #### 2. Contraflow scenario
 Prepare a csv file titled `contraflow_links_[yourname].csv` which holds the information of the contraflow links. Specifically, the file contains two columns, one is the link id where contraflow is implemented and the other is the new number of lanes. For example, if you want to do contraflow on the southward direction on Oxford Street between Cedar Street and Hearst Avenue, your `contraflow_links_[yourname].csv` should look like:
