@@ -42,10 +42,10 @@ Examine the output files `traffic_outputs/link_stats/link_stats_[yourname]_t[...
 Prepare a csv file titled `contraflow_links_[yourname].csv` which holds the information of the contraflow links. Specifically, the file contains two columns, one is the link id where contraflow is implemented and the other is the new number of lanes. For example, if you want to do contraflow on the southward direction on Oxford Street between Cedar Street and Hearst Avenue, your `contraflow_links_[yourname].csv` should look like:
 | link_id  | new_lanes |
 |----------|-----------|
-|  40      | 3         |
-| 123      | 1         |
-| 112      | 3         |
-| 186      | 1         |
+| 118      | 3         |
+| 130      | 1         |
+| 125      | 3         |
+| 207      | 1         |
 
 Note that the validity `contraflow_links_[yourname].csv` is an important component that we are going to review when marking your homework. Please make sure that:
 - The numbers of intersections involved are less than or equal to 15. For example, if we want to implement contraflow on the southward direction on Oxford Street between Cedar Street and Hearst Avenue, there are three intersections involved (node_id: 133, 110, 43). This is because in reality, there needs to be personnel at the intersection to instruct contraflow and personnel may be very limited in an emergency evacuation.
