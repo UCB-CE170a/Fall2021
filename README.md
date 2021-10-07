@@ -10,8 +10,14 @@ This Github repository holds the Python-related exercises, quizzes, and assignme
   * Day4: Taylor series, Newton-Ralphson method with Python
   * Day5: Data Handling using Pandas
   * Day6: Introduction of the Numpy library; linear algebra with Numpy 
- 
-- [homeworks](homeworks)
+
+- [Quizes](Quizes)
+  * Quiz 2: model bridge data analysis
+  * Quiz 4: all-or-nothing traffic assignment
+
+- [Homeworks](Homeworks)
+  * Homework 2: model bridge data analysis
+  * Homework 4: North Berkeley wildfire evacuation
 
 
 ### Contributors
