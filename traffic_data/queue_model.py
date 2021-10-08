@@ -254,7 +254,7 @@ class Simulation:
 
     def create_network(self, nodes_df, links_df):
         ### create graph
-        links_df['capacity'] = links_df['lanes'] * 1900
+        links_df['capacity'] = links_df['lanes'] * 1000
         links_df['fft'] = np.where(links_df['lanes']<=0, 1e8, links_df['length']/links_df['maxmph']*2.2369)
         self.g = interface.from_dataframe(links_df, 'start_node_id', 'end_node_id', 'fft')
 
