@@ -26,4 +26,4 @@ Submit `quiz4_yourname.csv` to bCourse by October 14, 2021 at 11:59pm.
 
 Click the icon below to start:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/UCB-CE170a/Fall2021/blob/master/Quizes/quiz4/quiz4_student.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/UCB-CE170a/Fall2021/blob/master/Quizes/quiz4/quiz4_student.ipynb?)
