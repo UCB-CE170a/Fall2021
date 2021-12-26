@@ -4,6 +4,7 @@ import numpy as np
 from ctypes import c_double
 from shapely.wkt import loads
 
+
 class Node:
     def __init__(self, node_id, lon, lat, ntype, osmid=None, simulation=None):
         self.nid = node_id
@@ -72,10 +73,11 @@ class Node:
         if (np.min([veh[-1] for veh in go_vehs_list])<-45) or (go_link.ltype=='vl_in'): return go_vehs ### no opposite veh allows to move if there is left turn veh in the primary direction; or if the primary incoming link is a virtual link
         if self.in_links[go_link.lid] == None: return go_vehs ### no straight ahead opposite links
         op_go_link = link_id_dict[self.in_links[go_link.lid]]
-        try:
-            op_go_link = link_id_dict[node2link_dict[(op_go_link.end_nid, op_go_link.start_nid)]]
-        except KeyError: ### straight ahead link is one-way
-            return go_vehs
+        link_id = node2link_dict[(op_go_link.end_nid, op_go_link.start_nid)]
+        if link_id not in link_id_dict:
+          # straight ahead link is one way
+          return go_vehs
+        op_go_link = link_id_dict[link_id]
         op_go_vehs_list = self.find_go_vehs(op_go_link, agent_id_dict=agent_id_dict, link_id_dict=link_id_dict, node2link_dict=node2link_dict, node_id_dict=node_id_dict)
         # self.go_vehs += [veh for veh in op_go_vehs_list if veh[-1]>-45] ### only straight ahead or right turns allowed for vehicles from the opposite side
         go_vehs += [veh for veh in op_go_vehs_list if veh[-1]>-45]
