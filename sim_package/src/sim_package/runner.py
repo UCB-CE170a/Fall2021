@@ -6,7 +6,6 @@ import numpy as np
 class Runner:
     def __init__(self, 
       links_csv: str, nodes_csv: str, od_csv: str,
-      output_folder:str,
       NodeClass=Node, LinkClass=Link,
       reroute_freq=10800):
         self.nodes_df = pd.read_csv(nodes_csv)
