@@ -3,6 +3,7 @@ import random
 import numpy as np
 from ctypes import c_double
 from shapely.wkt import loads
+import interface
 
 
 class Node:
@@ -244,12 +245,16 @@ class Agent:
 
 
 class Simulation:
-    def __init__(self):
+    def __init__(self, NodeClass=Node, LinkClass=Link):
         self.g = None
         self.all_nodes = dict()
         self.all_links = dict()
         self.node_to_link_dict = dict()
         self.all_agents = dict()
+        assert issubclass(NodeClass, Node), 'arg: NodeClass, must submit Node class that is a Node'
+        assert issubclass(LinkClass, Link), 'arg: LinkClass, must submit Link class that is a Link'
+        self.NodeClass = NodeClass
+        self.LinkClass = LinkClass
 
     def create_network(self, nodes_df, links_df):
         ### create graph
@@ -261,14 +266,14 @@ class Simulation:
         nodes = []
         links = []
         for row in nodes_df.itertuples():
-            real_node = Node(getattr(row, 'node_id'), getattr(row, 'lon'), getattr(row, 'lat'), getattr(row, 'type'), getattr(row, 'node_osmid'), simulation=self)
+            real_node = self.NodeClass(getattr(row, 'node_id'), getattr(row, 'lon'), getattr(row, 'lat'), getattr(row, 'type'), getattr(row, 'node_osmid'), simulation=self)
             virtual_node = real_node.create_virtual_node()
             virtual_link = real_node.create_virtual_link()
             nodes.append(real_node)
             nodes.append(virtual_node)
             links.append(virtual_link)
         for row in links_df.itertuples():
-            real_link = Link(getattr(row, 'link_id'), getattr(row, 'lanes'), getattr(row, 'length'), getattr(row, 'fft'), getattr(row, 'capacity'), getattr(row, 'type'), getattr(row, 'start_node_id'), getattr(row, 'end_node_id'), getattr(row, 'geometry'), simulation=self)
+            real_link = self.LinkClass(getattr(row, 'link_id'), getattr(row, 'lanes'), getattr(row, 'length'), getattr(row, 'fft'), getattr(row, 'capacity'), getattr(row, 'type'), getattr(row, 'start_node_id'), getattr(row, 'end_node_id'), getattr(row, 'geometry'), simulation=self)
             links.append(real_link)
 
         ### dictionaries for quick look-up
@@ -278,7 +283,7 @@ class Simulation:
         for link_id, link in self.all_links.items():
             self.all_nodes[link.start_nid].out_links.append(link_id)
             self.all_nodes[link.end_nid].in_links[link_id] = None
-        for node_id, node in self.all_nodes.items():
+        for node in self.all_nodes.values():
             node.calculate_straight_ahead_links(node_id_dict=self.all_nodes, link_id_dict=self.all_links)
 
     def create_demand(self, od_df):
