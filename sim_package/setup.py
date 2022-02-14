@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='TrafficSimPATH',
-    version='0.0.1',    
+    version='0.0.3',    
     description='A traffic simulation package made by berkeley PATH',
     url='https://github.com/ucbtrans/Fall2021/traffic_sim',
     author='Abhinav Dhulipala',
@@ -17,7 +17,7 @@ setup(
 		package_dir={"": "src"},
     packages=find_packages(where="src"),
     include_package_data=True,
-    data_files=[('dlls', ['src/sim_package/dlls/liblsp.so'])],
+    data_files=[('dlls', ['src/sim_package/dlls/liblsp.so', 'src/sim_package/dlls/liblsp.dylib'])],
 
     classifiers=[
         'Development Status :: 1 - Planning',

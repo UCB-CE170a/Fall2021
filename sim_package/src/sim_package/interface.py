@@ -6,14 +6,16 @@ from numpy.ctypeslib import ndpointer
 import pandas as pd
 import numpy as np
 from os import path, environ
-import os
-import sys
+import platform
 
-try:
-  libsp = cdll.LoadLibrary(f"{path.dirname(path.abspath(__file__))}/dlls/liblsp.so")
-except OSError:
-  dr = os.path.dirname(sys.prefix)
-  libsp = cdll.LoadLibrary(os.path.join(dr, 'liblsp.so'))
+
+
+
+if platform.machine() == 'arm64':
+    libsp = cdll.LoadLibrary(f"{path.dirname(path.abspath(__file__))}/dlls/liblsp.dylib")
+else:
+    libsp = cdll.LoadLibrary(f"{path.dirname(path.abspath(__file__))}/dlls/liblsp.so")
+
 
 
 libsp.distance.restype = c_double

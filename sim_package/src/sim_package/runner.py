@@ -2,17 +2,15 @@ import interface
 from queue_model import Simulation, Node, Link
 import pandas as pd
 import numpy as np
+from concurrent.futures import ProcessPoolExecutor
 
 class Runner:
     def __init__(self, 
       links_csv: str, nodes_csv: str, od_csv: str,
-      NodeClass=Node, LinkClass=Link,
-      reroute_freq=10800):
+      NodeClass=Node, LinkClass=Link):
         self.nodes_df = pd.read_csv(nodes_csv)
         self.links_df = pd.read_csv(links_csv)
         self.od_df = pd.read_csv(od_csv)
-        self.reroute_freq = reroute_freq
-        self.output_folder = output_folder
         self.sim = Simulation(NodeClass, LinkClass)
 
     def init_sq_simulation(self):
@@ -46,6 +44,9 @@ class Runner:
         for node_id in node_ids_to_run:
             node = self.sim.all_nodes[node_id] 
             node.run_node_model(t)
+
+        with ProcessPoolExecutor() as ex:
+            ex.map(lambda node_id: self.sim.all_nodes[node_id].run_node_model(t), node_ids_to_run)
 
     # count the number of evacuees that have successfully reach their destination
     def arrival_counts(self, t,save_path):

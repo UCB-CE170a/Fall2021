@@ -1,8 +1,6 @@
 import time
 import random
-import numpy as np
 from ctypes import c_double
-from shapely.wkt import loads
 import interface
 
 
@@ -91,9 +89,8 @@ class Node:
         agent_id_dict = self.simulation.all_agents
         node2link_dict = self.simulation.node2link_dict
         go_vehs = self.non_conflict_vehs(t_now=t_now, link_id_dict=link_id_dict, agent_id_dict=agent_id_dict, node2link_dict=node2link_dict, node_id_dict=node_id_dict)
-
         ### Agent reaching destination
-        for [agent_id, next_node, il, ol, agent_dir] in go_vehs:
+        for [agent_id, next_node, il, ol, _] in go_vehs:
             veh_len = agent_id_dict[agent_id].veh_len
 
             ### arrival
@@ -105,7 +102,7 @@ class Node:
             elif link_id_dict[ol].st_c < veh_len:
                 pass ### no blocking, as # veh = # lanes
             ### inlink-sending, outlink-receiving both permits
-            elif (link_id_dict[il].ou_c >= 1) & (link_id_dict[ol].in_c >= 1):
+            elif link_id_dict[il].ou_c >= 1 & link_id_dict[ol].in_c >= 1:
                 ### before move agent as it uses the old agent.cl_enter_time
                 link_id_dict[il].send_veh(t_now, agent_id, agent_id_dict)
                 agent_id_dict[agent_id].move_agent(t_now, self.nid, next_node, 'flow')
