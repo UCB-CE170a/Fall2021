@@ -1,4 +1,5 @@
 from setuptools import setup, find_packages
+from Cython.Build import cythonize
 
 
 setup(
@@ -12,7 +13,8 @@ setup(
     install_requires=['numpy',
                       'scipy',
                       'shapely',
-                      'pandas'
+                      'pandas',
+                      'cython'
                       ],
 		package_dir={"": "src"},
     packages=find_packages(where="src"),
@@ -26,4 +28,5 @@ setup(
         'Operating System :: POSIX :: Linux', 
         'Programming Language :: Python :: 3.9',
     ],
+    ext_modules=cythonize("src/queue_model.pyx")
 )

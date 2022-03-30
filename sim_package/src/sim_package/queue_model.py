@@ -1,9 +1,22 @@
 import time
 import random
 from ctypes import c_double
+from turtle import clear
 import interface
+import numpy as np
+# from numba import jitclass, types, typed
 
+# node_spec = [
+#     ('nid', type.int32),
+#     ('lon', type.float32),
+#     ('lat', type.float32),
+#     ('ntype', type.int32),
+#     ('osmid', type.int32),
+#     ('in_links', typed.Dict()),
 
+# ]
+
+#@jitclass(node_spec)
 class Node:
     def __init__(self, node_id, lon, lat, ntype, osmid=None, simulation=None):
         self.nid = node_id

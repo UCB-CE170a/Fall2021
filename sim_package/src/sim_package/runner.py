@@ -2,7 +2,7 @@ import interface
 from queue_model import Simulation, Node, Link
 import pandas as pd
 import numpy as np
-from concurrent.futures import ProcessPoolExecutor
+from numba import jit
 
 class Runner:
     def __init__(self, 
@@ -41,12 +41,19 @@ class Runner:
             link.run_link_model(t)
         ### run node model
         node_ids_to_run = {link.end_nid for link in self.sim.all_links.values() if len(link.queue_veh) > 0}
-        for node_id in node_ids_to_run:
-            node = self.sim.all_nodes[node_id] 
-            node.run_node_model(t)
+        # for node_id in node_ids_to_run:
+        #     node = self.sim.all_nodes[node_id] 
+        #     node.run_node_model(t)
 
-        with ProcessPoolExecutor() as ex:
-            ex.map(lambda node_id: self.sim.all_nodes[node_id].run_node_model(t), node_ids_to_run)
+        @jit(nogil=True)
+        def cmp_node_model():
+            for nid in node_ids_to_run:
+                node = self.sim.all_nodes[nid]
+                node.run_node_model(t)
+        
+        cmp_node_model()
+
+
 
     # count the number of evacuees that have successfully reach their destination
     def arrival_counts(self, t,save_path):

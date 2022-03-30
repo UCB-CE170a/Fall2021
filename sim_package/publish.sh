@@ -20,6 +20,8 @@ while getopts ":h" option; do
    esac
 done
 
+rm -rf build
+
 # install build package if not preinstalled, install twine for upload of package
 python3 -m pip install build twine
 # create distribution files

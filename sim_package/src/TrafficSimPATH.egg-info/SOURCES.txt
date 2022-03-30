@@ -1,5 +1,6 @@
 README.md
 setup.py
+src/node.c
 src/TrafficSimPATH.egg-info/PKG-INFO
 src/TrafficSimPATH.egg-info/SOURCES.txt
 src/TrafficSimPATH.egg-info/dependency_links.txt

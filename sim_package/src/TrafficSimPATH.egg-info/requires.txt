@@ -2,3 +2,4 @@ numpy
 scipy
 shapely
 pandas
+cython
