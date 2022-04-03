@@ -11,7 +11,6 @@ setup(
     author_email='abhinav.dhulipala@berkeley.edu',
     license='MIT',
     install_requires=['numpy',
-                      'scipy',
                       'shapely',
                       'pandas',
                       'cython'
@@ -28,5 +27,5 @@ setup(
         'Operating System :: POSIX :: Linux', 
         'Programming Language :: Python :: 3.9',
     ],
-    ext_modules=cythonize("src/queue_model.pyx")
+    ext_modules=cythonize("src/queue_model.pyx", language_level='3')
 )

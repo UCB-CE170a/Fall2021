@@ -4,19 +4,7 @@ from ctypes import c_double
 from turtle import clear
 import interface
 import numpy as np
-# from numba import jitclass, types, typed
 
-# node_spec = [
-#     ('nid', type.int32),
-#     ('lon', type.float32),
-#     ('lat', type.float32),
-#     ('ntype', type.int32),
-#     ('osmid', type.int32),
-#     ('in_links', typed.Dict()),
-
-# ]
-
-#@jitclass(node_spec)
 class Node:
     def __init__(self, node_id, lon, lat, ntype, osmid=None, simulation=None):
         self.nid = node_id
@@ -82,8 +70,8 @@ class Node:
         go_vehs += go_vehs_list
 
         ### a non-conflicting direction
-        if (np.min([veh[-1] for veh in go_vehs_list])<-45) or (go_link.ltype=='vl_in'): return go_vehs ### no opposite veh allows to move if there is left turn veh in the primary direction; or if the primary incoming link is a virtual link
-        if self.in_links[go_link.lid] == None: return go_vehs ### no straight ahead opposite links
+        if (np.min([veh[-1] for veh in go_vehs_list])< -45) or (go_link.ltype=='vl_in'): return go_vehs ### no opposite veh allows to move if there is left turn veh in the primary direction; or if the primary incoming link is a virtual link
+        if self.in_links[go_link.lid] is None: return go_vehs ### no straight ahead opposite links
         op_go_link = link_id_dict[self.in_links[go_link.lid]]
         link_id = node2link_dict[(op_go_link.end_nid, op_go_link.start_nid)]
         if link_id not in link_id_dict:
@@ -92,7 +80,7 @@ class Node:
         op_go_link = link_id_dict[link_id]
         op_go_vehs_list = self.find_go_vehs(op_go_link, agent_id_dict=agent_id_dict, link_id_dict=link_id_dict, node2link_dict=node2link_dict, node_id_dict=node_id_dict)
         # self.go_vehs += [veh for veh in op_go_vehs_list if veh[-1]>-45] ### only straight ahead or right turns allowed for vehicles from the opposite side
-        go_vehs += [veh for veh in op_go_vehs_list if veh[-1]>-45]
+        go_vehs += [veh for veh in op_go_vehs_list if veh[-1] > -45]
         return go_vehs
 
     def run_node_model(self, t_now):
@@ -306,7 +294,7 @@ class Simulation:
         # print('# trips {}'.format(od_df.shape[0]))
 
         for row in od_df.itertuples():
-            self.all_agents[getattr(row, 'agent_id')] = Agent(getattr(row, 'agent_id'), getattr(row, 'origin_node_id'), getattr(row, 'destin_node_id'), getattr(row, 'dept_time'), getattr(row, 'veh_len'), getattr(row, 'gps_reroute'), simulation=self)
+            self.all_agents[row.agent_id] = Agent(getattr(row, 'agent_id'), getattr(row, 'origin_node_id'), getattr(row, 'destin_node_id'), getattr(row, 'dept_time'), getattr(row, 'veh_len'), getattr(row, 'gps_reroute'), simulation=self)
 
 
 

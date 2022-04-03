@@ -5,7 +5,7 @@ from ctypes import *
 from numpy.ctypeslib import ndpointer
 import pandas as pd
 import numpy as np
-from os import path, environ
+from os import path
 import platform
 
 
