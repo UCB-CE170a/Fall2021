@@ -5,12 +5,12 @@
     "distutils": {
         "depends": [],
         "language": "c++",
-        "name": "queue_model",
+        "name": "sim_package.queue_model",
         "sources": [
-            "src/queue_model.pyx"
+            "src/sim_package/queue_model.pyx"
         ]
     },
-    "module_name": "queue_model"
+    "module_name": "sim_package.queue_model"
 }
 END: Cython Metadata */
 
@@ -707,8 +707,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__queue_model
-#define __PYX_HAVE_API__queue_model
+#define __PYX_HAVE__sim_package__queue_model
+#define __PYX_HAVE_API__sim_package__queue_model
 /* Early includes */
 #include "ios"
 #include "new"
@@ -938,12 +938,12 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "src/queue_model.pyx",
+  "src/sim_package/queue_model.pyx",
   "stringsource",
 };
 
 /*--- Type declarations ---*/
-struct __pyx_obj_11queue_model_Node;
+struct __pyx_obj_11sim_package_11queue_model_Node;
 struct __pyx_defaults;
 typedef struct __pyx_defaults __pyx_defaults;
 struct __pyx_defaults {
@@ -951,14 +951,14 @@ struct __pyx_defaults {
   PyObject *__pyx_arg_LinkClass;
 };
 
-/* "queue_model.pyx":13
+/* "sim_package/queue_model.pyx":13
  * 
  * 
  * cdef class Node:             # <<<<<<<<<<<<<<
  * 
  *     cdef double nid, lon, lat
  */
-struct __pyx_obj_11queue_model_Node {
+struct __pyx_obj_11sim_package_11queue_model_Node {
   PyObject_HEAD
   double nid;
   double lon;
@@ -1612,14 +1612,14 @@ static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
 /* Module declarations from 'libcpp.vector' */
 
-/* Module declarations from 'queue_model' */
-static PyTypeObject *__pyx_ptype_11queue_model_Node = 0;
-static PyObject *__pyx_f_11queue_model___pyx_unpickle_Node__set_state(struct __pyx_obj_11queue_model_Node *, PyObject *); /*proto*/
-#define __Pyx_MODULE_NAME "queue_model"
-extern int __pyx_module_is_main_queue_model;
-int __pyx_module_is_main_queue_model = 0;
+/* Module declarations from 'sim_package.queue_model' */
+static PyTypeObject *__pyx_ptype_11sim_package_11queue_model_Node = 0;
+static PyObject *__pyx_f_11sim_package_11queue_model___pyx_unpickle_Node__set_state(struct __pyx_obj_11sim_package_11queue_model_Node *, PyObject *); /*proto*/
+#define __Pyx_MODULE_NAME "sim_package.queue_model"
+extern int __pyx_module_is_main_sim_package__queue_model;
+int __pyx_module_is_main_sim_package__queue_model = 0;
 
-/* Implementation of 'queue_model' */
+/* Implementation of 'sim_package.queue_model' */
 static PyObject *__pyx_builtin_range;
 static PyObject *__pyx_builtin_AssertionError;
 static const char __pyx_k_[] = "";
@@ -1788,7 +1788,6 @@ static const char __pyx_k_PickleError[] = "PickleError";
 static const char __pyx_k_end_node_id[] = "end_node_id";
 static const char __pyx_k_gps_reroute[] = "gps_reroute";
 static const char __pyx_k_interpolate[] = "interpolate";
-static const char __pyx_k_queue_model[] = "queue_model";
 static const char __pyx_k_receive_veh[] = "receive_veh";
 static const char __pyx_k_reset_index[] = "reset_index";
 static const char __pyx_k_shapely_wkt[] = "shapely.wkt";
@@ -1837,16 +1836,18 @@ static const char __pyx_k_Agent_prepare_agent[] = "Agent.prepare_agent";
 static const char __pyx_k_Link_run_link_model[] = "Link.run_link_model";
 static const char __pyx_k_create_virtual_link[] = "create_virtual_link";
 static const char __pyx_k_create_virtual_node[] = "create_virtual_node";
-static const char __pyx_k_src_queue_model_pyx[] = "src/queue_model.pyx";
 static const char __pyx_k_Link_update_travel_time[] = "Link.update_travel_time";
 static const char __pyx_k_link_time_lookback_freq[] = "link_time_lookback_freq";
+static const char __pyx_k_sim_package_queue_model[] = "sim_package.queue_model";
 static const char __pyx_k_Simulation_create_demand[] = "Simulation.create_demand";
 static const char __pyx_k_Simulation_create_network[] = "Simulation.create_network";
 static const char __pyx_k_calculate_straight_ahead_links[] = "calculate_straight_ahead_links";
+static const char __pyx_k_src_sim_package_queue_model_pyx[] = "src/sim_package/queue_model.pyx";
 static const char __pyx_k_Incompatible_checksums_s_vs_0x82[] = "Incompatible checksums (%s vs 0x826a0ae = (lat, lon, nid))";
 static const char __pyx_k_agent_next_node_is_not_the_trans[] = "agent next node {} is not the transferring node {}, route {}";
 static const char __pyx_k_arg_LinkClass_must_submit_Link_c[] = "arg: LinkClass, must submit Link class that is a Link";
 static const char __pyx_k_arg_NodeClass_must_submit_Node_c[] = "arg: NodeClass, must submit Node class that is a Node";
+static PyObject *__pyx_n_s_;
 static PyObject *__pyx_kp_u_;
 static PyObject *__pyx_n_s_Agent;
 static PyObject *__pyx_n_s_Agent___init;
@@ -2015,7 +2016,6 @@ static PyObject *__pyx_n_s_pyx_state;
 static PyObject *__pyx_n_s_pyx_type;
 static PyObject *__pyx_n_s_pyx_unpickle_Node;
 static PyObject *__pyx_n_s_qualname;
-static PyObject *__pyx_n_s_queue_model;
 static PyObject *__pyx_n_s_queue_veh;
 static PyObject *__pyx_n_s_random;
 static PyObject *__pyx_n_s_range;
@@ -2038,11 +2038,12 @@ static PyObject *__pyx_n_s_setstate;
 static PyObject *__pyx_n_s_setstate_cython;
 static PyObject *__pyx_n_s_shape;
 static PyObject *__pyx_n_s_shapely_wkt;
+static PyObject *__pyx_n_s_sim_package_queue_model;
 static PyObject *__pyx_n_s_simulation;
 static PyObject *__pyx_n_s_sp;
 static PyObject *__pyx_n_s_sp_dist;
 static PyObject *__pyx_n_s_sp_route;
-static PyObject *__pyx_kp_s_src_queue_model_pyx;
+static PyObject *__pyx_kp_s_src_sim_package_queue_model_pyx;
 static PyObject *__pyx_n_s_st_c;
 static PyObject *__pyx_n_s_start;
 static PyObject *__pyx_n_s_start_nid;
@@ -2082,31 +2083,31 @@ static PyObject *__pyx_n_s_x_start;
 static PyObject *__pyx_n_s_y_end;
 static PyObject *__pyx_n_s_y_mid;
 static PyObject *__pyx_n_s_y_start;
-static int __pyx_pf_11queue_model_4Node___init__(struct __pyx_obj_11queue_model_Node *__pyx_v_self, PyObject *__pyx_v_node_id, PyObject *__pyx_v_lon, PyObject *__pyx_v_lat, PyObject *__pyx_v_ntype, PyObject *__pyx_v_osmid); /* proto */
-static PyObject *__pyx_pf_11queue_model_4Node_2create_virtual_node(struct __pyx_obj_11queue_model_Node *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_11queue_model_4Node_4create_virtual_link(struct __pyx_obj_11queue_model_Node *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_11queue_model_4Node_6calculate_straight_ahead_links(struct __pyx_obj_11queue_model_Node *__pyx_v_self, PyObject *__pyx_v_node_id_dict, PyObject *__pyx_v_link_id_dict); /* proto */
-static PyObject *__pyx_pf_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11queue_model_Node *__pyx_v_self, PyObject *__pyx_v_go_link); /* proto */
-static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_obj_11queue_model_Node *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_t_now, PyObject *__pyx_v_link_id_dict, PyObject *__pyx_v_agent_id_dict, PyObject *__pyx_v_node2link_dict, PyObject *__pyx_v_node_id_dict); /* proto */
-static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_11queue_model_Node *__pyx_v_self, PyObject *__pyx_v_t_now); /* proto */
-static PyObject *__pyx_pf_11queue_model_4Node_14__reduce_cython__(struct __pyx_obj_11queue_model_Node *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_11queue_model_4Node_16__setstate_cython__(struct __pyx_obj_11queue_model_Node *__pyx_v_self, PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_pf_11queue_model_4Link___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_link_id, PyObject *__pyx_v_lanes, PyObject *__pyx_v_length, PyObject *__pyx_v_fft, PyObject *__pyx_v_capacity, PyObject *__pyx_v_ltype, PyObject *__pyx_v_start_nid, PyObject *__pyx_v_end_nid, PyObject *__pyx_v_geometry, PyObject *__pyx_v_simulation); /* proto */
-static PyObject *__pyx_pf_11queue_model_4Link_2send_veh(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_t_now, PyObject *__pyx_v_agent_id, PyObject *__pyx_v_agent_id_dict); /* proto */
-static PyObject *__pyx_pf_11queue_model_4Link_4receive_veh(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_agent_id); /* proto */
-static PyObject *__pyx_pf_11queue_model_4Link_6run_link_model(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_t_now); /* proto */
-static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_t_now, PyObject *__pyx_v_link_time_lookback_freq, PyObject *__pyx_v_g); /* proto */
-static PyObject *__pyx_pf_11queue_model_5Agent___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id, PyObject *__pyx_v_origin_nid, PyObject *__pyx_v_destin_nid, PyObject *__pyx_v_dept_time, PyObject *__pyx_v_veh_len, PyObject *__pyx_v_gps_reroute, PyObject *__pyx_v_simulation); /* proto */
-static PyObject *__pyx_pf_11queue_model_5Agent_2load_trips(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_t_now); /* proto */
-static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_node_id, PyObject *__pyx_v_node2link_dict, PyObject *__pyx_v_node_id_dict); /* proto */
-static PyObject *__pyx_pf_11queue_model_5Agent_6move_agent(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_t_now, PyObject *__pyx_v_new_cls, PyObject *__pyx_v_new_cle, PyObject *__pyx_v_new_status); /* proto */
-static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_g); /* proto */
-static PyObject *__pyx_pf_11queue_model_2__defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
-static PyObject *__pyx_pf_11queue_model_10Simulation___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_NodeClass, PyObject *__pyx_v_LinkClass); /* proto */
-static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_nodes_df, PyObject *__pyx_v_links_df); /* proto */
-static PyObject *__pyx_pf_11queue_model_10Simulation_4create_demand(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_od_df); /* proto */
-static PyObject *__pyx_pf_11queue_model___pyx_unpickle_Node(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_tp_new_11queue_model_Node(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static int __pyx_pf_11sim_package_11queue_model_4Node___init__(struct __pyx_obj_11sim_package_11queue_model_Node *__pyx_v_self, PyObject *__pyx_v_node_id, PyObject *__pyx_v_lon, PyObject *__pyx_v_lat, PyObject *__pyx_v_ntype, PyObject *__pyx_v_osmid); /* proto */
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Node_2create_virtual_node(struct __pyx_obj_11sim_package_11queue_model_Node *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Node_4create_virtual_link(struct __pyx_obj_11sim_package_11queue_model_Node *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Node_6calculate_straight_ahead_links(struct __pyx_obj_11sim_package_11queue_model_Node *__pyx_v_self, PyObject *__pyx_v_node_id_dict, PyObject *__pyx_v_link_id_dict); /* proto */
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11sim_package_11queue_model_Node *__pyx_v_self, PyObject *__pyx_v_go_link); /* proto */
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Node_10non_conflict_vehs(struct __pyx_obj_11sim_package_11queue_model_Node *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_t_now, PyObject *__pyx_v_link_id_dict, PyObject *__pyx_v_agent_id_dict, PyObject *__pyx_v_node2link_dict, PyObject *__pyx_v_node_id_dict); /* proto */
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Node_12run_node_model(struct __pyx_obj_11sim_package_11queue_model_Node *__pyx_v_self, PyObject *__pyx_v_t_now); /* proto */
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Node_14__reduce_cython__(struct __pyx_obj_11sim_package_11queue_model_Node *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Node_16__setstate_cython__(struct __pyx_obj_11sim_package_11queue_model_Node *__pyx_v_self, PyObject *__pyx_v___pyx_state); /* proto */
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Link___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_link_id, PyObject *__pyx_v_lanes, PyObject *__pyx_v_length, PyObject *__pyx_v_fft, PyObject *__pyx_v_capacity, PyObject *__pyx_v_ltype, PyObject *__pyx_v_start_nid, PyObject *__pyx_v_end_nid, PyObject *__pyx_v_geometry, PyObject *__pyx_v_simulation); /* proto */
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Link_2send_veh(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_t_now, PyObject *__pyx_v_agent_id, PyObject *__pyx_v_agent_id_dict); /* proto */
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Link_4receive_veh(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_agent_id); /* proto */
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Link_6run_link_model(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_t_now); /* proto */
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_t_now, PyObject *__pyx_v_link_time_lookback_freq, PyObject *__pyx_v_g); /* proto */
+static PyObject *__pyx_pf_11sim_package_11queue_model_5Agent___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id, PyObject *__pyx_v_origin_nid, PyObject *__pyx_v_destin_nid, PyObject *__pyx_v_dept_time, PyObject *__pyx_v_veh_len, PyObject *__pyx_v_gps_reroute, PyObject *__pyx_v_simulation); /* proto */
+static PyObject *__pyx_pf_11sim_package_11queue_model_5Agent_2load_trips(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_t_now); /* proto */
+static PyObject *__pyx_pf_11sim_package_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_node_id, PyObject *__pyx_v_node2link_dict, PyObject *__pyx_v_node_id_dict); /* proto */
+static PyObject *__pyx_pf_11sim_package_11queue_model_5Agent_6move_agent(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_t_now, PyObject *__pyx_v_new_cls, PyObject *__pyx_v_new_cle, PyObject *__pyx_v_new_status); /* proto */
+static PyObject *__pyx_pf_11sim_package_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_g); /* proto */
+static PyObject *__pyx_pf_11sim_package_11queue_model_2__defaults__(CYTHON_UNUSED PyObject *__pyx_self); /* proto */
+static PyObject *__pyx_pf_11sim_package_11queue_model_10Simulation___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_NodeClass, PyObject *__pyx_v_LinkClass); /* proto */
+static PyObject *__pyx_pf_11sim_package_11queue_model_10Simulation_2create_network(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_nodes_df, PyObject *__pyx_v_links_df); /* proto */
+static PyObject *__pyx_pf_11sim_package_11queue_model_10Simulation_4create_demand(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_od_df); /* proto */
+static PyObject *__pyx_pf_11sim_package_11queue_model___pyx_unpickle_Node(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
+static PyObject *__pyx_tp_new_11sim_package_11queue_model_Node(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_float_0_5;
 static PyObject *__pyx_float_1e8;
 static PyObject *__pyx_float_10e7;
@@ -2164,7 +2165,7 @@ static PyObject *__pyx_codeobj__37;
 static PyObject *__pyx_codeobj__39;
 /* Late includes */
 
-/* "queue_model.pyx":17
+/* "sim_package/queue_model.pyx":17
  *     cdef double nid, lon, lat
  * 
  *     def __init__(self, node_id, lon, lat, ntype, osmid=None):             # <<<<<<<<<<<<<<
@@ -2173,8 +2174,8 @@ static PyObject *__pyx_codeobj__39;
  */
 
 /* Python wrapper */
-static int __pyx_pw_11queue_model_4Node_1__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_11queue_model_4Node_1__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_11sim_package_11queue_model_4Node_1__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_11sim_package_11queue_model_4Node_1__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_node_id = 0;
   PyObject *__pyx_v_lon = 0;
   PyObject *__pyx_v_lat = 0;
@@ -2262,18 +2263,18 @@ static int __pyx_pw_11queue_model_4Node_1__init__(PyObject *__pyx_v_self, PyObje
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__init__", 0, 4, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 17, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("queue_model.Node.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Node.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_11queue_model_4Node___init__(((struct __pyx_obj_11queue_model_Node *)__pyx_v_self), __pyx_v_node_id, __pyx_v_lon, __pyx_v_lat, __pyx_v_ntype, __pyx_v_osmid);
+  __pyx_r = __pyx_pf_11sim_package_11queue_model_4Node___init__(((struct __pyx_obj_11sim_package_11queue_model_Node *)__pyx_v_self), __pyx_v_node_id, __pyx_v_lon, __pyx_v_lat, __pyx_v_ntype, __pyx_v_osmid);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_11queue_model_4Node___init__(struct __pyx_obj_11queue_model_Node *__pyx_v_self, PyObject *__pyx_v_node_id, PyObject *__pyx_v_lon, PyObject *__pyx_v_lat, PyObject *__pyx_v_ntype, PyObject *__pyx_v_osmid) {
+static int __pyx_pf_11sim_package_11queue_model_4Node___init__(struct __pyx_obj_11sim_package_11queue_model_Node *__pyx_v_self, PyObject *__pyx_v_node_id, PyObject *__pyx_v_lon, PyObject *__pyx_v_lat, PyObject *__pyx_v_ntype, PyObject *__pyx_v_osmid) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   double __pyx_t_1;
@@ -2283,7 +2284,7 @@ static int __pyx_pf_11queue_model_4Node___init__(struct __pyx_obj_11queue_model_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "queue_model.pyx":18
+  /* "sim_package/queue_model.pyx":18
  * 
  *     def __init__(self, node_id, lon, lat, ntype, osmid=None):
  *         self.nid = node_id             # <<<<<<<<<<<<<<
@@ -2293,7 +2294,7 @@ static int __pyx_pf_11queue_model_4Node___init__(struct __pyx_obj_11queue_model_
   __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_node_id); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 18, __pyx_L1_error)
   __pyx_v_self->nid = __pyx_t_1;
 
-  /* "queue_model.pyx":19
+  /* "sim_package/queue_model.pyx":19
  *     def __init__(self, node_id, lon, lat, ntype, osmid=None):
  *         self.nid = node_id
  *         self.lon = lon             # <<<<<<<<<<<<<<
@@ -2303,7 +2304,7 @@ static int __pyx_pf_11queue_model_4Node___init__(struct __pyx_obj_11queue_model_
   __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_lon); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 19, __pyx_L1_error)
   __pyx_v_self->lon = __pyx_t_1;
 
-  /* "queue_model.pyx":20
+  /* "sim_package/queue_model.pyx":20
  *         self.nid = node_id
  *         self.lon = lon
  *         self.lat = lat             # <<<<<<<<<<<<<<
@@ -2313,7 +2314,7 @@ static int __pyx_pf_11queue_model_4Node___init__(struct __pyx_obj_11queue_model_
   __pyx_t_1 = __pyx_PyFloat_AsDouble(__pyx_v_lat); if (unlikely((__pyx_t_1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 20, __pyx_L1_error)
   __pyx_v_self->lat = __pyx_t_1;
 
-  /* "queue_model.pyx":21
+  /* "sim_package/queue_model.pyx":21
  *         self.lon = lon
  *         self.lat = lat
  *         self.ntype = ntype             # <<<<<<<<<<<<<<
@@ -2322,7 +2323,7 @@ static int __pyx_pf_11queue_model_4Node___init__(struct __pyx_obj_11queue_model_
  */
   if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_ntype, __pyx_v_ntype) < 0) __PYX_ERR(0, 21, __pyx_L1_error)
 
-  /* "queue_model.pyx":22
+  /* "sim_package/queue_model.pyx":22
  *         self.lat = lat
  *         self.ntype = ntype
  *         self.osmid = osmid             # <<<<<<<<<<<<<<
@@ -2331,7 +2332,7 @@ static int __pyx_pf_11queue_model_4Node___init__(struct __pyx_obj_11queue_model_
  */
   if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_osmid, __pyx_v_osmid) < 0) __PYX_ERR(0, 22, __pyx_L1_error)
 
-  /* "queue_model.pyx":24
+  /* "sim_package/queue_model.pyx":24
  *         self.osmid = osmid
  *         ### derived
  *         self.in_links = {} ### {in_link_id: straight_ahead_out_link_id, ...}             # <<<<<<<<<<<<<<
@@ -2343,7 +2344,7 @@ static int __pyx_pf_11queue_model_4Node___init__(struct __pyx_obj_11queue_model_
   if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_in_links, __pyx_t_2) < 0) __PYX_ERR(0, 24, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":25
+  /* "sim_package/queue_model.pyx":25
  *         ### derived
  *         self.in_links = {} ### {in_link_id: straight_ahead_out_link_id, ...}
  *         self.out_links = []             # <<<<<<<<<<<<<<
@@ -2355,7 +2356,7 @@ static int __pyx_pf_11queue_model_4Node___init__(struct __pyx_obj_11queue_model_
   if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_out_links, __pyx_t_2) < 0) __PYX_ERR(0, 25, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":26
+  /* "sim_package/queue_model.pyx":26
  *         self.in_links = {} ### {in_link_id: straight_ahead_out_link_id, ...}
  *         self.out_links = []
  *         self.go_vehs = [] ### veh that moves in this time step             # <<<<<<<<<<<<<<
@@ -2367,7 +2368,7 @@ static int __pyx_pf_11queue_model_4Node___init__(struct __pyx_obj_11queue_model_
   if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_go_vehs, __pyx_t_2) < 0) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":27
+  /* "sim_package/queue_model.pyx":27
  *         self.out_links = []
  *         self.go_vehs = [] ### veh that moves in this time step
  *         self.status = ''             # <<<<<<<<<<<<<<
@@ -2376,7 +2377,7 @@ static int __pyx_pf_11queue_model_4Node___init__(struct __pyx_obj_11queue_model_
  */
   if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_status, __pyx_kp_u_) < 0) __PYX_ERR(0, 27, __pyx_L1_error)
 
-  /* "queue_model.pyx":17
+  /* "sim_package/queue_model.pyx":17
  *     cdef double nid, lon, lat
  * 
  *     def __init__(self, node_id, lon, lat, ntype, osmid=None):             # <<<<<<<<<<<<<<
@@ -2389,14 +2390,14 @@ static int __pyx_pf_11queue_model_4Node___init__(struct __pyx_obj_11queue_model_
   goto __pyx_L0;
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("queue_model.Node.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Node.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "queue_model.pyx":29
+/* "sim_package/queue_model.pyx":29
  *         self.status = ''
  * 
  *     def create_virtual_node(self):             # <<<<<<<<<<<<<<
@@ -2405,19 +2406,19 @@ static int __pyx_pf_11queue_model_4Node___init__(struct __pyx_obj_11queue_model_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_11queue_model_4Node_3create_virtual_node(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_11queue_model_4Node_3create_virtual_node(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Node_3create_virtual_node(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Node_3create_virtual_node(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("create_virtual_node (wrapper)", 0);
-  __pyx_r = __pyx_pf_11queue_model_4Node_2create_virtual_node(((struct __pyx_obj_11queue_model_Node *)__pyx_v_self));
+  __pyx_r = __pyx_pf_11sim_package_11queue_model_4Node_2create_virtual_node(((struct __pyx_obj_11sim_package_11queue_model_Node *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_11queue_model_4Node_2create_virtual_node(struct __pyx_obj_11queue_model_Node *__pyx_v_self) {
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Node_2create_virtual_node(struct __pyx_obj_11sim_package_11queue_model_Node *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2429,7 +2430,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_2create_virtual_node(struct __pyx_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("create_virtual_node", 0);
 
-  /* "queue_model.pyx":30
+  /* "sim_package/queue_model.pyx":30
  * 
  *     def create_virtual_node(self):
  *         return Node('vn_source_{}'.format(self.nid), self.lon+0.001, self.lat+0.001, 'vn_source')             # <<<<<<<<<<<<<<
@@ -2475,14 +2476,14 @@ static PyObject *__pyx_pf_11queue_model_4Node_2create_virtual_node(struct __pyx_
   __pyx_t_1 = 0;
   __pyx_t_2 = 0;
   __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_11queue_model_Node), __pyx_t_4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_11sim_package_11queue_model_Node), __pyx_t_4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_r = __pyx_t_3;
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "queue_model.pyx":29
+  /* "sim_package/queue_model.pyx":29
  *         self.status = ''
  * 
  *     def create_virtual_node(self):             # <<<<<<<<<<<<<<
@@ -2496,7 +2497,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_2create_virtual_node(struct __pyx_
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("queue_model.Node.create_virtual_node", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Node.create_virtual_node", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2504,7 +2505,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_2create_virtual_node(struct __pyx_
   return __pyx_r;
 }
 
-/* "queue_model.pyx":32
+/* "sim_package/queue_model.pyx":32
  *         return Node('vn_source_{}'.format(self.nid), self.lon+0.001, self.lat+0.001, 'vn_source')
  * 
  *     def create_virtual_link(self):             # <<<<<<<<<<<<<<
@@ -2513,19 +2514,19 @@ static PyObject *__pyx_pf_11queue_model_4Node_2create_virtual_node(struct __pyx_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_11queue_model_4Node_5create_virtual_link(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_11queue_model_4Node_5create_virtual_link(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Node_5create_virtual_link(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Node_5create_virtual_link(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("create_virtual_link (wrapper)", 0);
-  __pyx_r = __pyx_pf_11queue_model_4Node_4create_virtual_link(((struct __pyx_obj_11queue_model_Node *)__pyx_v_self));
+  __pyx_r = __pyx_pf_11sim_package_11queue_model_4Node_4create_virtual_link(((struct __pyx_obj_11sim_package_11queue_model_Node *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_11queue_model_4Node_4create_virtual_link(struct __pyx_obj_11queue_model_Node *__pyx_v_self) {
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Node_4create_virtual_link(struct __pyx_obj_11sim_package_11queue_model_Node *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2546,7 +2547,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_4create_virtual_link(struct __pyx_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("create_virtual_link", 0);
 
-  /* "queue_model.pyx":33
+  /* "sim_package/queue_model.pyx":33
  * 
  *     def create_virtual_link(self):
  *         return Link('vl_in_{}'.format(self.nid), 100, 0, 0, 100000, 'vl_in', 'vn_source_{}'.format(self.nid), self.nid, 'LINESTRING({} {}, {} {})'.format(self.lon+0.001, self.lat+0.001, self.lon, self.lat), simulation=self.simulation)             # <<<<<<<<<<<<<<
@@ -2711,7 +2712,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_4create_virtual_link(struct __pyx_
   __pyx_t_4 = 0;
   goto __pyx_L0;
 
-  /* "queue_model.pyx":32
+  /* "sim_package/queue_model.pyx":32
  *         return Node('vn_source_{}'.format(self.nid), self.lon+0.001, self.lat+0.001, 'vn_source')
  * 
  *     def create_virtual_link(self):             # <<<<<<<<<<<<<<
@@ -2733,7 +2734,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_4create_virtual_link(struct __pyx_
   __Pyx_XDECREF(__pyx_t_10);
   __Pyx_XDECREF(__pyx_t_11);
   __Pyx_XDECREF(__pyx_t_13);
-  __Pyx_AddTraceback("queue_model.Node.create_virtual_link", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Node.create_virtual_link", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2741,17 +2742,17 @@ static PyObject *__pyx_pf_11queue_model_4Node_4create_virtual_link(struct __pyx_
   return __pyx_r;
 }
 
-/* "queue_model.pyx":35
+/* "sim_package/queue_model.pyx":35
  *         return Link('vl_in_{}'.format(self.nid), 100, 0, 0, 100000, 'vl_in', 'vn_source_{}'.format(self.nid), self.nid, 'LINESTRING({} {}, {} {})'.format(self.lon+0.001, self.lat+0.001, self.lon, self.lat), simulation=self.simulation)
  * 
  *     def calculate_straight_ahead_links(self, node_id_dict=None, link_id_dict=None):             # <<<<<<<<<<<<<<
+ *         cdef double x_start, y_start, x_end, y_end
  *         for il in self.in_links.keys():
- *             x_start = node_id_dict[link_id_dict[il].start_nid].lon
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_11queue_model_4Node_7calculate_straight_ahead_links(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_11queue_model_4Node_7calculate_straight_ahead_links(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Node_7calculate_straight_ahead_links(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Node_7calculate_straight_ahead_links(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_node_id_dict = 0;
   PyObject *__pyx_v_link_id_dict = 0;
   int __pyx_lineno = 0;
@@ -2810,27 +2811,27 @@ static PyObject *__pyx_pw_11queue_model_4Node_7calculate_straight_ahead_links(Py
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("calculate_straight_ahead_links", 0, 0, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 35, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("queue_model.Node.calculate_straight_ahead_links", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Node.calculate_straight_ahead_links", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_11queue_model_4Node_6calculate_straight_ahead_links(((struct __pyx_obj_11queue_model_Node *)__pyx_v_self), __pyx_v_node_id_dict, __pyx_v_link_id_dict);
+  __pyx_r = __pyx_pf_11sim_package_11queue_model_4Node_6calculate_straight_ahead_links(((struct __pyx_obj_11sim_package_11queue_model_Node *)__pyx_v_self), __pyx_v_node_id_dict, __pyx_v_link_id_dict);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_11queue_model_4Node_6calculate_straight_ahead_links(struct __pyx_obj_11queue_model_Node *__pyx_v_self, PyObject *__pyx_v_node_id_dict, PyObject *__pyx_v_link_id_dict) {
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Node_6calculate_straight_ahead_links(struct __pyx_obj_11sim_package_11queue_model_Node *__pyx_v_self, PyObject *__pyx_v_node_id_dict, PyObject *__pyx_v_link_id_dict) {
+  double __pyx_v_x_start;
+  double __pyx_v_y_start;
+  double __pyx_v_x_end;
+  double __pyx_v_y_end;
   PyObject *__pyx_v_il = NULL;
-  PyObject *__pyx_v_x_start = NULL;
-  PyObject *__pyx_v_y_start = NULL;
   PyObject *__pyx_v_in_vec = NULL;
   PyObject *__pyx_v_sa_ol = NULL;
   PyObject *__pyx_v_ol_dir = NULL;
   PyObject *__pyx_v_ol = NULL;
-  PyObject *__pyx_v_x_end = NULL;
-  PyObject *__pyx_v_y_end = NULL;
   PyObject *__pyx_v_out_vec = NULL;
   PyObject *__pyx_v_dot = NULL;
   PyObject *__pyx_v_det = NULL;
@@ -2844,33 +2845,34 @@ static PyObject *__pyx_pf_11queue_model_4Node_6calculate_straight_ahead_links(st
   PyObject *__pyx_t_5 = NULL;
   PyObject *__pyx_t_6 = NULL;
   int __pyx_t_7;
-  PyObject *__pyx_t_8 = NULL;
-  Py_ssize_t __pyx_t_9;
-  PyObject *(*__pyx_t_10)(PyObject *);
-  PyObject *__pyx_t_11 = NULL;
+  double __pyx_t_8;
+  PyObject *__pyx_t_9 = NULL;
+  Py_ssize_t __pyx_t_10;
+  PyObject *(*__pyx_t_11)(PyObject *);
   PyObject *__pyx_t_12 = NULL;
-  int __pyx_t_13;
+  PyObject *__pyx_t_13 = NULL;
   int __pyx_t_14;
+  int __pyx_t_15;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("calculate_straight_ahead_links", 0);
 
-  /* "queue_model.pyx":36
- * 
+  /* "sim_package/queue_model.pyx":37
  *     def calculate_straight_ahead_links(self, node_id_dict=None, link_id_dict=None):
+ *         cdef double x_start, y_start, x_end, y_end
  *         for il in self.in_links.keys():             # <<<<<<<<<<<<<<
  *             x_start = node_id_dict[link_id_dict[il].start_nid].lon
  *             y_start = node_id_dict[link_id_dict[il].start_nid].lat
  */
   __pyx_t_2 = 0;
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_in_links); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 36, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_in_links); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 37, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   if (unlikely(__pyx_t_5 == Py_None)) {
     PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "keys");
-    __PYX_ERR(0, 36, __pyx_L1_error)
+    __PYX_ERR(0, 37, __pyx_L1_error)
   }
-  __pyx_t_6 = __Pyx_dict_iterator(__pyx_t_5, 0, __pyx_n_s_keys, (&__pyx_t_3), (&__pyx_t_4)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 36, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_dict_iterator(__pyx_t_5, 0, __pyx_n_s_keys, (&__pyx_t_3), (&__pyx_t_4)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 37, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_XDECREF(__pyx_t_1);
@@ -2879,82 +2881,78 @@ static PyObject *__pyx_pf_11queue_model_4Node_6calculate_straight_ahead_links(st
   while (1) {
     __pyx_t_7 = __Pyx_dict_iter_next(__pyx_t_1, __pyx_t_3, &__pyx_t_2, &__pyx_t_6, NULL, NULL, __pyx_t_4);
     if (unlikely(__pyx_t_7 == 0)) break;
-    if (unlikely(__pyx_t_7 == -1)) __PYX_ERR(0, 36, __pyx_L1_error)
+    if (unlikely(__pyx_t_7 == -1)) __PYX_ERR(0, 37, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_XDECREF_SET(__pyx_v_il, __pyx_t_6);
     __pyx_t_6 = 0;
 
-    /* "queue_model.pyx":37
- *     def calculate_straight_ahead_links(self, node_id_dict=None, link_id_dict=None):
+    /* "sim_package/queue_model.pyx":38
+ *         cdef double x_start, y_start, x_end, y_end
  *         for il in self.in_links.keys():
  *             x_start = node_id_dict[link_id_dict[il].start_nid].lon             # <<<<<<<<<<<<<<
  *             y_start = node_id_dict[link_id_dict[il].start_nid].lat
  *             in_vec = (self.lon-x_start, self.lat-y_start)
  */
-    __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_v_link_id_dict, __pyx_v_il); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 37, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_v_link_id_dict, __pyx_v_il); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 38, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_start_nid); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 37, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_start_nid); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 38, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_v_node_id_dict, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 37, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_v_node_id_dict, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 38, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_lon); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 37, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_lon); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 38, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __Pyx_XDECREF_SET(__pyx_v_x_start, __pyx_t_5);
-    __pyx_t_5 = 0;
+    __pyx_t_8 = __pyx_PyFloat_AsDouble(__pyx_t_5); if (unlikely((__pyx_t_8 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 38, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __pyx_v_x_start = __pyx_t_8;
 
-    /* "queue_model.pyx":38
+    /* "sim_package/queue_model.pyx":39
  *         for il in self.in_links.keys():
  *             x_start = node_id_dict[link_id_dict[il].start_nid].lon
  *             y_start = node_id_dict[link_id_dict[il].start_nid].lat             # <<<<<<<<<<<<<<
  *             in_vec = (self.lon-x_start, self.lat-y_start)
  *             sa_ol = None ### straight ahead out link
  */
-    __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_v_link_id_dict, __pyx_v_il); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 38, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_v_link_id_dict, __pyx_v_il); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 39, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_start_nid); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 38, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_start_nid); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 39, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_v_node_id_dict, __pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 38, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_v_node_id_dict, __pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 39, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_lat); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 38, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_lat); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 39, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __Pyx_XDECREF_SET(__pyx_v_y_start, __pyx_t_6);
-    __pyx_t_6 = 0;
+    __pyx_t_8 = __pyx_PyFloat_AsDouble(__pyx_t_6); if (unlikely((__pyx_t_8 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 39, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+    __pyx_v_y_start = __pyx_t_8;
 
-    /* "queue_model.pyx":39
+    /* "sim_package/queue_model.pyx":40
  *             x_start = node_id_dict[link_id_dict[il].start_nid].lon
  *             y_start = node_id_dict[link_id_dict[il].start_nid].lat
  *             in_vec = (self.lon-x_start, self.lat-y_start)             # <<<<<<<<<<<<<<
  *             sa_ol = None ### straight ahead out link
  *             ol_dir = 180
  */
-    __pyx_t_6 = PyFloat_FromDouble(__pyx_v_self->lon); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 39, __pyx_L1_error)
+    __pyx_t_6 = PyFloat_FromDouble((__pyx_v_self->lon - __pyx_v_x_start)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 40, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_5 = PyNumber_Subtract(__pyx_t_6, __pyx_v_x_start); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 39, __pyx_L1_error)
+    __pyx_t_5 = PyFloat_FromDouble((__pyx_v_self->lat - __pyx_v_y_start)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 40, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = PyFloat_FromDouble(__pyx_v_self->lat); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 39, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_8 = PyNumber_Subtract(__pyx_t_6, __pyx_v_y_start); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 39, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_8);
-    __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = PyTuple_New(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 39, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_6);
+    __pyx_t_9 = PyTuple_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 40, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_9);
+    __Pyx_GIVEREF(__pyx_t_6);
+    PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_6);
     __Pyx_GIVEREF(__pyx_t_5);
-    PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_5);
-    __Pyx_GIVEREF(__pyx_t_8);
-    PyTuple_SET_ITEM(__pyx_t_6, 1, __pyx_t_8);
-    __pyx_t_5 = 0;
-    __pyx_t_8 = 0;
-    __Pyx_XDECREF_SET(__pyx_v_in_vec, ((PyObject*)__pyx_t_6));
+    PyTuple_SET_ITEM(__pyx_t_9, 1, __pyx_t_5);
     __pyx_t_6 = 0;
+    __pyx_t_5 = 0;
+    __Pyx_XDECREF_SET(__pyx_v_in_vec, __pyx_t_9);
+    __pyx_t_9 = 0;
 
-    /* "queue_model.pyx":40
+    /* "sim_package/queue_model.pyx":41
  *             y_start = node_id_dict[link_id_dict[il].start_nid].lat
  *             in_vec = (self.lon-x_start, self.lat-y_start)
  *             sa_ol = None ### straight ahead out link             # <<<<<<<<<<<<<<
@@ -2964,7 +2962,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_6calculate_straight_ahead_links(st
     __Pyx_INCREF(Py_None);
     __Pyx_XDECREF_SET(__pyx_v_sa_ol, Py_None);
 
-    /* "queue_model.pyx":41
+    /* "sim_package/queue_model.pyx":42
  *             in_vec = (self.lon-x_start, self.lat-y_start)
  *             sa_ol = None ### straight ahead out link
  *             ol_dir = 180             # <<<<<<<<<<<<<<
@@ -2974,276 +2972,272 @@ static PyObject *__pyx_pf_11queue_model_4Node_6calculate_straight_ahead_links(st
     __Pyx_INCREF(__pyx_int_180);
     __Pyx_XDECREF_SET(__pyx_v_ol_dir, __pyx_int_180);
 
-    /* "queue_model.pyx":42
+    /* "sim_package/queue_model.pyx":43
  *             sa_ol = None ### straight ahead out link
  *             ol_dir = 180
  *             for ol in self.out_links:             # <<<<<<<<<<<<<<
  *                 x_end = node_id_dict[link_id_dict[ol].end_nid].lon
  *                 y_end = node_id_dict[link_id_dict[ol].end_nid].lat
  */
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_out_links); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 42, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_6);
-    if (likely(PyList_CheckExact(__pyx_t_6)) || PyTuple_CheckExact(__pyx_t_6)) {
-      __pyx_t_8 = __pyx_t_6; __Pyx_INCREF(__pyx_t_8); __pyx_t_9 = 0;
-      __pyx_t_10 = NULL;
+    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_out_links); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 43, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_9);
+    if (likely(PyList_CheckExact(__pyx_t_9)) || PyTuple_CheckExact(__pyx_t_9)) {
+      __pyx_t_5 = __pyx_t_9; __Pyx_INCREF(__pyx_t_5); __pyx_t_10 = 0;
+      __pyx_t_11 = NULL;
     } else {
-      __pyx_t_9 = -1; __pyx_t_8 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 42, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_8);
-      __pyx_t_10 = Py_TYPE(__pyx_t_8)->tp_iternext; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 42, __pyx_L1_error)
+      __pyx_t_10 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_t_9); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 43, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_5);
+      __pyx_t_11 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 43, __pyx_L1_error)
     }
-    __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+    __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
     for (;;) {
-      if (likely(!__pyx_t_10)) {
-        if (likely(PyList_CheckExact(__pyx_t_8))) {
-          if (__pyx_t_9 >= PyList_GET_SIZE(__pyx_t_8)) break;
+      if (likely(!__pyx_t_11)) {
+        if (likely(PyList_CheckExact(__pyx_t_5))) {
+          if (__pyx_t_10 >= PyList_GET_SIZE(__pyx_t_5)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_6 = PyList_GET_ITEM(__pyx_t_8, __pyx_t_9); __Pyx_INCREF(__pyx_t_6); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 42, __pyx_L1_error)
+          __pyx_t_9 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_10); __Pyx_INCREF(__pyx_t_9); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 43, __pyx_L1_error)
           #else
-          __pyx_t_6 = PySequence_ITEM(__pyx_t_8, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 42, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_6);
+          __pyx_t_9 = PySequence_ITEM(__pyx_t_5, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 43, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_9);
           #endif
         } else {
-          if (__pyx_t_9 >= PyTuple_GET_SIZE(__pyx_t_8)) break;
+          if (__pyx_t_10 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_8, __pyx_t_9); __Pyx_INCREF(__pyx_t_6); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 42, __pyx_L1_error)
+          __pyx_t_9 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_10); __Pyx_INCREF(__pyx_t_9); __pyx_t_10++; if (unlikely(0 < 0)) __PYX_ERR(0, 43, __pyx_L1_error)
           #else
-          __pyx_t_6 = PySequence_ITEM(__pyx_t_8, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 42, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_6);
+          __pyx_t_9 = PySequence_ITEM(__pyx_t_5, __pyx_t_10); __pyx_t_10++; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 43, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_9);
           #endif
         }
       } else {
-        __pyx_t_6 = __pyx_t_10(__pyx_t_8);
-        if (unlikely(!__pyx_t_6)) {
+        __pyx_t_9 = __pyx_t_11(__pyx_t_5);
+        if (unlikely(!__pyx_t_9)) {
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 42, __pyx_L1_error)
+            else __PYX_ERR(0, 43, __pyx_L1_error)
           }
           break;
         }
-        __Pyx_GOTREF(__pyx_t_6);
+        __Pyx_GOTREF(__pyx_t_9);
       }
-      __Pyx_XDECREF_SET(__pyx_v_ol, __pyx_t_6);
-      __pyx_t_6 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_ol, __pyx_t_9);
+      __pyx_t_9 = 0;
 
-      /* "queue_model.pyx":43
+      /* "sim_package/queue_model.pyx":44
  *             ol_dir = 180
  *             for ol in self.out_links:
  *                 x_end = node_id_dict[link_id_dict[ol].end_nid].lon             # <<<<<<<<<<<<<<
  *                 y_end = node_id_dict[link_id_dict[ol].end_nid].lat
  *                 out_vec = (x_end-self.lon, y_end-self.lat)
  */
-      __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_v_link_id_dict, __pyx_v_ol); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 43, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_link_id_dict, __pyx_v_ol); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 44, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_end_nid); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 44, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_end_nid); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 43, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_5);
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_v_node_id_dict, __pyx_t_6); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 44, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_v_node_id_dict, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 43, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_lon); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 44, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_lon); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 43, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_5);
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      __pyx_t_8 = __pyx_PyFloat_AsDouble(__pyx_t_6); if (unlikely((__pyx_t_8 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 44, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __Pyx_XDECREF_SET(__pyx_v_x_end, __pyx_t_5);
-      __pyx_t_5 = 0;
+      __pyx_v_x_end = __pyx_t_8;
 
-      /* "queue_model.pyx":44
+      /* "sim_package/queue_model.pyx":45
  *             for ol in self.out_links:
  *                 x_end = node_id_dict[link_id_dict[ol].end_nid].lon
  *                 y_end = node_id_dict[link_id_dict[ol].end_nid].lat             # <<<<<<<<<<<<<<
  *                 out_vec = (x_end-self.lon, y_end-self.lat)
  *                 dot = (in_vec[0]*out_vec[0] + in_vec[1]*out_vec[1])
  */
-      __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_v_link_id_dict, __pyx_v_ol); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 44, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_end_nid); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 44, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_v_link_id_dict, __pyx_v_ol); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 45, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_v_node_id_dict, __pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 44, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_5);
+      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_end_nid); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 45, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_lat); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 44, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_v_node_id_dict, __pyx_t_9); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 45, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      __Pyx_XDECREF_SET(__pyx_v_y_end, __pyx_t_6);
-      __pyx_t_6 = 0;
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_lat); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 45, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+      __pyx_t_8 = __pyx_PyFloat_AsDouble(__pyx_t_9); if (unlikely((__pyx_t_8 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 45, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      __pyx_v_y_end = __pyx_t_8;
 
-      /* "queue_model.pyx":45
+      /* "sim_package/queue_model.pyx":46
  *                 x_end = node_id_dict[link_id_dict[ol].end_nid].lon
  *                 y_end = node_id_dict[link_id_dict[ol].end_nid].lat
  *                 out_vec = (x_end-self.lon, y_end-self.lat)             # <<<<<<<<<<<<<<
  *                 dot = (in_vec[0]*out_vec[0] + in_vec[1]*out_vec[1])
  *                 det = (in_vec[0]*out_vec[1] - in_vec[1]*out_vec[0])
  */
-      __pyx_t_6 = PyFloat_FromDouble(__pyx_v_self->lon); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 45, __pyx_L1_error)
+      __pyx_t_9 = PyFloat_FromDouble((__pyx_v_x_end - __pyx_v_self->lon)); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 46, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __pyx_t_6 = PyFloat_FromDouble((__pyx_v_y_end - __pyx_v_self->lat)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 46, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_5 = PyNumber_Subtract(__pyx_v_x_end, __pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 45, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_5);
-      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_6 = PyFloat_FromDouble(__pyx_v_self->lat); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 45, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_11 = PyNumber_Subtract(__pyx_v_y_end, __pyx_t_6); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 45, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_11);
-      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_6 = PyTuple_New(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 45, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_6);
-      __Pyx_GIVEREF(__pyx_t_5);
-      PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_5);
-      __Pyx_GIVEREF(__pyx_t_11);
-      PyTuple_SET_ITEM(__pyx_t_6, 1, __pyx_t_11);
-      __pyx_t_5 = 0;
-      __pyx_t_11 = 0;
-      __Pyx_XDECREF_SET(__pyx_v_out_vec, ((PyObject*)__pyx_t_6));
+      __pyx_t_12 = PyTuple_New(2); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 46, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_12);
+      __Pyx_GIVEREF(__pyx_t_9);
+      PyTuple_SET_ITEM(__pyx_t_12, 0, __pyx_t_9);
+      __Pyx_GIVEREF(__pyx_t_6);
+      PyTuple_SET_ITEM(__pyx_t_12, 1, __pyx_t_6);
+      __pyx_t_9 = 0;
       __pyx_t_6 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_out_vec, __pyx_t_12);
+      __pyx_t_12 = 0;
 
-      /* "queue_model.pyx":46
+      /* "sim_package/queue_model.pyx":47
  *                 y_end = node_id_dict[link_id_dict[ol].end_nid].lat
  *                 out_vec = (x_end-self.lon, y_end-self.lat)
  *                 dot = (in_vec[0]*out_vec[0] + in_vec[1]*out_vec[1])             # <<<<<<<<<<<<<<
  *                 det = (in_vec[0]*out_vec[1] - in_vec[1]*out_vec[0])
  *                 new_ol_dir = np.arctan2(det, dot)*180/np.pi
  */
-      __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v_in_vec, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 46, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_11 = __Pyx_GetItemInt_Tuple(__pyx_v_out_vec, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 46, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_11);
-      __pyx_t_5 = PyNumber_Multiply(__pyx_t_6, __pyx_t_11); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 46, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_5);
-      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-      __pyx_t_11 = __Pyx_GetItemInt_Tuple(__pyx_v_in_vec, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 46, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_11);
-      __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v_out_vec, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 46, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_12 = PyNumber_Multiply(__pyx_t_11, __pyx_t_6); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 46, __pyx_L1_error)
+      __pyx_t_12 = __Pyx_GetItemInt(__pyx_v_in_vec, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 47, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
-      __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_6 = PyNumber_Add(__pyx_t_5, __pyx_t_12); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 46, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_GetItemInt(__pyx_v_out_vec, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 47, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __pyx_t_9 = PyNumber_Multiply(__pyx_t_12, __pyx_t_6); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 47, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-      __Pyx_XDECREF_SET(__pyx_v_dot, __pyx_t_6);
-      __pyx_t_6 = 0;
+      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+      __pyx_t_6 = __Pyx_GetItemInt(__pyx_v_in_vec, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 47, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_6);
+      __pyx_t_12 = __Pyx_GetItemInt(__pyx_v_out_vec, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 47, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_12);
+      __pyx_t_13 = PyNumber_Multiply(__pyx_t_6, __pyx_t_12); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 47, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_13);
+      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+      __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
+      __pyx_t_12 = PyNumber_Add(__pyx_t_9, __pyx_t_13); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 47, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_12);
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_dot, __pyx_t_12);
+      __pyx_t_12 = 0;
 
-      /* "queue_model.pyx":47
+      /* "sim_package/queue_model.pyx":48
  *                 out_vec = (x_end-self.lon, y_end-self.lat)
  *                 dot = (in_vec[0]*out_vec[0] + in_vec[1]*out_vec[1])
  *                 det = (in_vec[0]*out_vec[1] - in_vec[1]*out_vec[0])             # <<<<<<<<<<<<<<
  *                 new_ol_dir = np.arctan2(det, dot)*180/np.pi
  *                 if abs(new_ol_dir)<ol_dir:
  */
-      __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v_in_vec, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 47, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_12 = __Pyx_GetItemInt_Tuple(__pyx_v_out_vec, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 47, __pyx_L1_error)
+      __pyx_t_12 = __Pyx_GetItemInt(__pyx_v_in_vec, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 48, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
-      __pyx_t_5 = PyNumber_Multiply(__pyx_t_6, __pyx_t_12); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 47, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_5);
-      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+      __pyx_t_13 = __Pyx_GetItemInt(__pyx_v_out_vec, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 48, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_13);
+      __pyx_t_9 = PyNumber_Multiply(__pyx_t_12, __pyx_t_13); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 48, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-      __pyx_t_12 = __Pyx_GetItemInt_Tuple(__pyx_v_in_vec, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 47, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
+      __pyx_t_13 = __Pyx_GetItemInt(__pyx_v_in_vec, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 48, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_13);
+      __pyx_t_12 = __Pyx_GetItemInt(__pyx_v_out_vec, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 48, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
-      __pyx_t_6 = __Pyx_GetItemInt_Tuple(__pyx_v_out_vec, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 47, __pyx_L1_error)
+      __pyx_t_6 = PyNumber_Multiply(__pyx_t_13, __pyx_t_12); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 48, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_11 = PyNumber_Multiply(__pyx_t_12, __pyx_t_6); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 47, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_11);
+      __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
+      __pyx_t_12 = PyNumber_Subtract(__pyx_t_9, __pyx_t_6); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 48, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_12);
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_6 = PyNumber_Subtract(__pyx_t_5, __pyx_t_11); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 47, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_6);
-      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-      __Pyx_XDECREF_SET(__pyx_v_det, __pyx_t_6);
-      __pyx_t_6 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_det, __pyx_t_12);
+      __pyx_t_12 = 0;
 
-      /* "queue_model.pyx":48
+      /* "sim_package/queue_model.pyx":49
  *                 dot = (in_vec[0]*out_vec[0] + in_vec[1]*out_vec[1])
  *                 det = (in_vec[0]*out_vec[1] - in_vec[1]*out_vec[0])
  *                 new_ol_dir = np.arctan2(det, dot)*180/np.pi             # <<<<<<<<<<<<<<
  *                 if abs(new_ol_dir)<ol_dir:
  *                     sa_ol = ol
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_n_s_np); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 48, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_11);
-      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_arctan2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 48, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_5);
-      __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-      __pyx_t_11 = NULL;
+      __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 49, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_6);
+      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_arctan2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 49, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
+      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+      __pyx_t_6 = NULL;
       __pyx_t_7 = 0;
-      if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_5))) {
-        __pyx_t_11 = PyMethod_GET_SELF(__pyx_t_5);
-        if (likely(__pyx_t_11)) {
-          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
-          __Pyx_INCREF(__pyx_t_11);
+      if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_9))) {
+        __pyx_t_6 = PyMethod_GET_SELF(__pyx_t_9);
+        if (likely(__pyx_t_6)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_9);
+          __Pyx_INCREF(__pyx_t_6);
           __Pyx_INCREF(function);
-          __Pyx_DECREF_SET(__pyx_t_5, function);
+          __Pyx_DECREF_SET(__pyx_t_9, function);
           __pyx_t_7 = 1;
         }
       }
       #if CYTHON_FAST_PYCALL
-      if (PyFunction_Check(__pyx_t_5)) {
-        PyObject *__pyx_temp[3] = {__pyx_t_11, __pyx_v_det, __pyx_v_dot};
-        __pyx_t_6 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 48, __pyx_L1_error)
-        __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
-        __Pyx_GOTREF(__pyx_t_6);
+      if (PyFunction_Check(__pyx_t_9)) {
+        PyObject *__pyx_temp[3] = {__pyx_t_6, __pyx_v_det, __pyx_v_dot};
+        __pyx_t_12 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 49, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
+        __Pyx_GOTREF(__pyx_t_12);
       } else
       #endif
       #if CYTHON_FAST_PYCCALL
-      if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
-        PyObject *__pyx_temp[3] = {__pyx_t_11, __pyx_v_det, __pyx_v_dot};
-        __pyx_t_6 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 48, __pyx_L1_error)
-        __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
-        __Pyx_GOTREF(__pyx_t_6);
+      if (__Pyx_PyFastCFunction_Check(__pyx_t_9)) {
+        PyObject *__pyx_temp[3] = {__pyx_t_6, __pyx_v_det, __pyx_v_dot};
+        __pyx_t_12 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 49, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
+        __Pyx_GOTREF(__pyx_t_12);
       } else
       #endif
       {
-        __pyx_t_12 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 48, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_12);
-        if (__pyx_t_11) {
-          __Pyx_GIVEREF(__pyx_t_11); PyTuple_SET_ITEM(__pyx_t_12, 0, __pyx_t_11); __pyx_t_11 = NULL;
+        __pyx_t_13 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 49, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_13);
+        if (__pyx_t_6) {
+          __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_13, 0, __pyx_t_6); __pyx_t_6 = NULL;
         }
         __Pyx_INCREF(__pyx_v_det);
         __Pyx_GIVEREF(__pyx_v_det);
-        PyTuple_SET_ITEM(__pyx_t_12, 0+__pyx_t_7, __pyx_v_det);
+        PyTuple_SET_ITEM(__pyx_t_13, 0+__pyx_t_7, __pyx_v_det);
         __Pyx_INCREF(__pyx_v_dot);
         __Pyx_GIVEREF(__pyx_v_dot);
-        PyTuple_SET_ITEM(__pyx_t_12, 1+__pyx_t_7, __pyx_v_dot);
-        __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_12, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 48, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_6);
-        __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
+        PyTuple_SET_ITEM(__pyx_t_13, 1+__pyx_t_7, __pyx_v_dot);
+        __pyx_t_12 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_13, NULL); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 49, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_12);
+        __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
       }
-      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      __pyx_t_5 = PyNumber_Multiply(__pyx_t_6, __pyx_int_180); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 48, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_5);
-      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 48, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_pi); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 48, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_12);
-      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_6 = __Pyx_PyNumber_Divide(__pyx_t_5, __pyx_t_12); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 48, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_6);
-      __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      __pyx_t_9 = PyNumber_Multiply(__pyx_t_12, __pyx_int_180); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 49, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-      __Pyx_XDECREF_SET(__pyx_v_new_ol_dir, __pyx_t_6);
-      __pyx_t_6 = 0;
+      __Pyx_GetModuleGlobalName(__pyx_t_12, __pyx_n_s_np); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 49, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_12);
+      __pyx_t_13 = __Pyx_PyObject_GetAttrStr(__pyx_t_12, __pyx_n_s_pi); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 49, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_13);
+      __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
+      __pyx_t_12 = __Pyx_PyNumber_Divide(__pyx_t_9, __pyx_t_13); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 49, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_12);
+      __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+      __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
+      __Pyx_XDECREF_SET(__pyx_v_new_ol_dir, __pyx_t_12);
+      __pyx_t_12 = 0;
 
-      /* "queue_model.pyx":49
+      /* "sim_package/queue_model.pyx":50
  *                 det = (in_vec[0]*out_vec[1] - in_vec[1]*out_vec[0])
  *                 new_ol_dir = np.arctan2(det, dot)*180/np.pi
  *                 if abs(new_ol_dir)<ol_dir:             # <<<<<<<<<<<<<<
  *                     sa_ol = ol
  *                     ol_dir = new_ol_dir
  */
-      __pyx_t_6 = __Pyx_PyNumber_Absolute(__pyx_v_new_ol_dir); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 49, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_12 = PyObject_RichCompare(__pyx_t_6, __pyx_v_ol_dir, Py_LT); __Pyx_XGOTREF(__pyx_t_12); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 49, __pyx_L1_error)
-      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_13 = __Pyx_PyObject_IsTrue(__pyx_t_12); if (unlikely(__pyx_t_13 < 0)) __PYX_ERR(0, 49, __pyx_L1_error)
+      __pyx_t_12 = __Pyx_PyNumber_Absolute(__pyx_v_new_ol_dir); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 50, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_12);
+      __pyx_t_13 = PyObject_RichCompare(__pyx_t_12, __pyx_v_ol_dir, Py_LT); __Pyx_XGOTREF(__pyx_t_13); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 50, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-      if (__pyx_t_13) {
+      __pyx_t_14 = __Pyx_PyObject_IsTrue(__pyx_t_13); if (unlikely(__pyx_t_14 < 0)) __PYX_ERR(0, 50, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
+      if (__pyx_t_14) {
 
-        /* "queue_model.pyx":50
+        /* "sim_package/queue_model.pyx":51
  *                 new_ol_dir = np.arctan2(det, dot)*180/np.pi
  *                 if abs(new_ol_dir)<ol_dir:
  *                     sa_ol = ol             # <<<<<<<<<<<<<<
@@ -3253,7 +3247,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_6calculate_straight_ahead_links(st
         __Pyx_INCREF(__pyx_v_ol);
         __Pyx_DECREF_SET(__pyx_v_sa_ol, __pyx_v_ol);
 
-        /* "queue_model.pyx":51
+        /* "sim_package/queue_model.pyx":52
  *                 if abs(new_ol_dir)<ol_dir:
  *                     sa_ol = ol
  *                     ol_dir = new_ol_dir             # <<<<<<<<<<<<<<
@@ -3263,7 +3257,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_6calculate_straight_ahead_links(st
         __Pyx_INCREF(__pyx_v_new_ol_dir);
         __Pyx_DECREF_SET(__pyx_v_ol_dir, __pyx_v_new_ol_dir);
 
-        /* "queue_model.pyx":49
+        /* "sim_package/queue_model.pyx":50
  *                 det = (in_vec[0]*out_vec[1] - in_vec[1]*out_vec[0])
  *                 new_ol_dir = np.arctan2(det, dot)*180/np.pi
  *                 if abs(new_ol_dir)<ol_dir:             # <<<<<<<<<<<<<<
@@ -3272,7 +3266,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_6calculate_straight_ahead_links(st
  */
       }
 
-      /* "queue_model.pyx":42
+      /* "sim_package/queue_model.pyx":43
  *             sa_ol = None ### straight ahead out link
  *             ol_dir = 180
  *             for ol in self.out_links:             # <<<<<<<<<<<<<<
@@ -3280,53 +3274,53 @@ static PyObject *__pyx_pf_11queue_model_4Node_6calculate_straight_ahead_links(st
  *                 y_end = node_id_dict[link_id_dict[ol].end_nid].lat
  */
     }
-    __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "queue_model.pyx":52
+    /* "sim_package/queue_model.pyx":53
  *                     sa_ol = ol
  *                     ol_dir = new_ol_dir
  *             if (abs(ol_dir)<=45) and link_id_dict[il].ltype[0:2]!='vl':             # <<<<<<<<<<<<<<
  *                 self.in_links[il] = sa_ol
  * 
  */
-    __pyx_t_8 = __Pyx_PyNumber_Absolute(__pyx_v_ol_dir); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 52, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_12 = PyObject_RichCompare(__pyx_t_8, __pyx_int_45, Py_LE); __Pyx_XGOTREF(__pyx_t_12); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 52, __pyx_L1_error)
-    __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __pyx_t_14 = __Pyx_PyObject_IsTrue(__pyx_t_12); if (unlikely(__pyx_t_14 < 0)) __PYX_ERR(0, 52, __pyx_L1_error)
-    __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-    if (__pyx_t_14) {
+    __pyx_t_5 = __Pyx_PyNumber_Absolute(__pyx_v_ol_dir); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 53, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __pyx_t_13 = PyObject_RichCompare(__pyx_t_5, __pyx_int_45, Py_LE); __Pyx_XGOTREF(__pyx_t_13); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 53, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __pyx_t_15 = __Pyx_PyObject_IsTrue(__pyx_t_13); if (unlikely(__pyx_t_15 < 0)) __PYX_ERR(0, 53, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
+    if (__pyx_t_15) {
     } else {
-      __pyx_t_13 = __pyx_t_14;
+      __pyx_t_14 = __pyx_t_15;
       goto __pyx_L9_bool_binop_done;
     }
-    __pyx_t_12 = __Pyx_PyObject_GetItem(__pyx_v_link_id_dict, __pyx_v_il); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 52, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_12);
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_12, __pyx_n_s_ltype); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 52, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_8);
-    __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-    __pyx_t_12 = __Pyx_PyObject_GetSlice(__pyx_t_8, 0, 2, NULL, NULL, &__pyx_slice__2, 1, 1, 1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 52, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_12);
-    __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __pyx_t_14 = (__Pyx_PyUnicode_Equals(__pyx_t_12, __pyx_n_u_vl, Py_NE)); if (unlikely(__pyx_t_14 < 0)) __PYX_ERR(0, 52, __pyx_L1_error)
-    __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-    __pyx_t_13 = __pyx_t_14;
+    __pyx_t_13 = __Pyx_PyObject_GetItem(__pyx_v_link_id_dict, __pyx_v_il); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 53, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_13);
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_13, __pyx_n_s_ltype); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 53, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
+    __pyx_t_13 = __Pyx_PyObject_GetSlice(__pyx_t_5, 0, 2, NULL, NULL, &__pyx_slice__2, 1, 1, 1); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 53, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_13);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __pyx_t_15 = (__Pyx_PyUnicode_Equals(__pyx_t_13, __pyx_n_u_vl, Py_NE)); if (unlikely(__pyx_t_15 < 0)) __PYX_ERR(0, 53, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
+    __pyx_t_14 = __pyx_t_15;
     __pyx_L9_bool_binop_done:;
-    if (__pyx_t_13) {
+    if (__pyx_t_14) {
 
-      /* "queue_model.pyx":53
+      /* "sim_package/queue_model.pyx":54
  *                     ol_dir = new_ol_dir
  *             if (abs(ol_dir)<=45) and link_id_dict[il].ltype[0:2]!='vl':
  *                 self.in_links[il] = sa_ol             # <<<<<<<<<<<<<<
  * 
  *     def find_go_vehs(self, go_link):
  */
-      __pyx_t_12 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_in_links); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 53, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_12);
-      if (unlikely(PyObject_SetItem(__pyx_t_12, __pyx_v_il, __pyx_v_sa_ol) < 0)) __PYX_ERR(0, 53, __pyx_L1_error)
-      __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
+      __pyx_t_13 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_in_links); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 54, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_13);
+      if (unlikely(PyObject_SetItem(__pyx_t_13, __pyx_v_il, __pyx_v_sa_ol) < 0)) __PYX_ERR(0, 54, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
 
-      /* "queue_model.pyx":52
+      /* "sim_package/queue_model.pyx":53
  *                     sa_ol = ol
  *                     ol_dir = new_ol_dir
  *             if (abs(ol_dir)<=45) and link_id_dict[il].ltype[0:2]!='vl':             # <<<<<<<<<<<<<<
@@ -3337,12 +3331,12 @@ static PyObject *__pyx_pf_11queue_model_4Node_6calculate_straight_ahead_links(st
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":35
+  /* "sim_package/queue_model.pyx":35
  *         return Link('vl_in_{}'.format(self.nid), 100, 0, 0, 100000, 'vl_in', 'vn_source_{}'.format(self.nid), self.nid, 'LINESTRING({} {}, {} {})'.format(self.lon+0.001, self.lat+0.001, self.lon, self.lat), simulation=self.simulation)
  * 
  *     def calculate_straight_ahead_links(self, node_id_dict=None, link_id_dict=None):             # <<<<<<<<<<<<<<
+ *         cdef double x_start, y_start, x_end, y_end
  *         for il in self.in_links.keys():
- *             x_start = node_id_dict[link_id_dict[il].start_nid].lon
  */
 
   /* function exit code */
@@ -3352,21 +3346,17 @@ static PyObject *__pyx_pf_11queue_model_4Node_6calculate_straight_ahead_links(st
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_XDECREF(__pyx_t_8);
-  __Pyx_XDECREF(__pyx_t_11);
+  __Pyx_XDECREF(__pyx_t_9);
   __Pyx_XDECREF(__pyx_t_12);
-  __Pyx_AddTraceback("queue_model.Node.calculate_straight_ahead_links", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_XDECREF(__pyx_t_13);
+  __Pyx_AddTraceback("sim_package.queue_model.Node.calculate_straight_ahead_links", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_il);
-  __Pyx_XDECREF(__pyx_v_x_start);
-  __Pyx_XDECREF(__pyx_v_y_start);
   __Pyx_XDECREF(__pyx_v_in_vec);
   __Pyx_XDECREF(__pyx_v_sa_ol);
   __Pyx_XDECREF(__pyx_v_ol_dir);
   __Pyx_XDECREF(__pyx_v_ol);
-  __Pyx_XDECREF(__pyx_v_x_end);
-  __Pyx_XDECREF(__pyx_v_y_end);
   __Pyx_XDECREF(__pyx_v_out_vec);
   __Pyx_XDECREF(__pyx_v_dot);
   __Pyx_XDECREF(__pyx_v_det);
@@ -3376,7 +3366,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_6calculate_straight_ahead_links(st
   return __pyx_r;
 }
 
-/* "queue_model.pyx":55
+/* "sim_package/queue_model.pyx":56
  *                 self.in_links[il] = sa_ol
  * 
  *     def find_go_vehs(self, go_link):             # <<<<<<<<<<<<<<
@@ -3385,19 +3375,19 @@ static PyObject *__pyx_pf_11queue_model_4Node_6calculate_straight_ahead_links(st
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_11queue_model_4Node_9find_go_vehs(PyObject *__pyx_v_self, PyObject *__pyx_v_go_link); /*proto*/
-static PyObject *__pyx_pw_11queue_model_4Node_9find_go_vehs(PyObject *__pyx_v_self, PyObject *__pyx_v_go_link) {
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Node_9find_go_vehs(PyObject *__pyx_v_self, PyObject *__pyx_v_go_link); /*proto*/
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Node_9find_go_vehs(PyObject *__pyx_v_self, PyObject *__pyx_v_go_link) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("find_go_vehs (wrapper)", 0);
-  __pyx_r = __pyx_pf_11queue_model_4Node_8find_go_vehs(((struct __pyx_obj_11queue_model_Node *)__pyx_v_self), ((PyObject *)__pyx_v_go_link));
+  __pyx_r = __pyx_pf_11sim_package_11queue_model_4Node_8find_go_vehs(((struct __pyx_obj_11sim_package_11queue_model_Node *)__pyx_v_self), ((PyObject *)__pyx_v_go_link));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11queue_model_Node *__pyx_v_self, PyObject *__pyx_v_go_link) {
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11sim_package_11queue_model_Node *__pyx_v_self, PyObject *__pyx_v_go_link) {
   PyObject *__pyx_v_go_vehs_list = NULL;
   PyObject *__pyx_v_incoming_lanes = NULL;
   Py_ssize_t __pyx_v_incoming_vehs;
@@ -3428,31 +3418,31 @@ static PyObject *__pyx_pf_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11q
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("find_go_vehs", 0);
 
-  /* "queue_model.pyx":56
+  /* "sim_package/queue_model.pyx":57
  * 
  *     def find_go_vehs(self, go_link):
  *         go_vehs_list = []             # <<<<<<<<<<<<<<
  *         incoming_lanes = int(np.floor(go_link.lanes))
  *         incoming_vehs = len(go_link.queue_veh)
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 56, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_go_vehs_list = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":57
+  /* "sim_package/queue_model.pyx":58
  *     def find_go_vehs(self, go_link):
  *         go_vehs_list = []
  *         incoming_lanes = int(np.floor(go_link.lanes))             # <<<<<<<<<<<<<<
  *         incoming_vehs = len(go_link.queue_veh)
  *         for ln in range(min(incoming_lanes, incoming_vehs)):
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 57, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_floor); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 57, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_floor); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_go_link, __pyx_n_s_lanes); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 57, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_go_link, __pyx_n_s_lanes); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
@@ -3467,29 +3457,29 @@ static PyObject *__pyx_pf_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11q
   __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_4, __pyx_t_2) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 57, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyNumber_Int(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 57, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyNumber_Int(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_incoming_lanes = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "queue_model.pyx":58
+  /* "sim_package/queue_model.pyx":59
  *         go_vehs_list = []
  *         incoming_lanes = int(np.floor(go_link.lanes))
  *         incoming_vehs = len(go_link.queue_veh)             # <<<<<<<<<<<<<<
  *         for ln in range(min(incoming_lanes, incoming_vehs)):
  *             agent_id = go_link.queue_veh[ln]
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_go_link, __pyx_n_s_queue_veh); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 58, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_go_link, __pyx_n_s_queue_veh); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = PyObject_Length(__pyx_t_3); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 58, __pyx_L1_error)
+  __pyx_t_5 = PyObject_Length(__pyx_t_3); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_incoming_vehs = __pyx_t_5;
 
-  /* "queue_model.pyx":59
+  /* "sim_package/queue_model.pyx":60
  *         incoming_lanes = int(np.floor(go_link.lanes))
  *         incoming_vehs = len(go_link.queue_veh)
  *         for ln in range(min(incoming_lanes, incoming_vehs)):             # <<<<<<<<<<<<<<
@@ -3499,14 +3489,14 @@ static PyObject *__pyx_pf_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11q
   __pyx_t_5 = __pyx_v_incoming_vehs;
   __Pyx_INCREF(__pyx_v_incoming_lanes);
   __pyx_t_3 = __pyx_v_incoming_lanes;
-  __pyx_t_2 = PyInt_FromSsize_t(__pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 59, __pyx_L1_error)
+  __pyx_t_2 = PyInt_FromSsize_t(__pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 60, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = PyObject_RichCompare(__pyx_t_2, __pyx_t_3, Py_LT); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 59, __pyx_L1_error)
+  __pyx_t_4 = PyObject_RichCompare(__pyx_t_2, __pyx_t_3, Py_LT); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 60, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 59, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 60, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   if (__pyx_t_6) {
-    __pyx_t_4 = PyInt_FromSsize_t(__pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 59, __pyx_L1_error)
+    __pyx_t_4 = PyInt_FromSsize_t(__pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 60, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_1 = __pyx_t_4;
     __pyx_t_4 = 0;
@@ -3515,16 +3505,16 @@ static PyObject *__pyx_pf_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11q
     __pyx_t_1 = __pyx_t_3;
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 59, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 60, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (likely(PyList_CheckExact(__pyx_t_3)) || PyTuple_CheckExact(__pyx_t_3)) {
     __pyx_t_1 = __pyx_t_3; __Pyx_INCREF(__pyx_t_1); __pyx_t_5 = 0;
     __pyx_t_7 = NULL;
   } else {
-    __pyx_t_5 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 59, __pyx_L1_error)
+    __pyx_t_5 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 60, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_7 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 59, __pyx_L1_error)
+    __pyx_t_7 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 60, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   for (;;) {
@@ -3532,17 +3522,17 @@ static PyObject *__pyx_pf_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11q
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_5); __Pyx_INCREF(__pyx_t_3); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 59, __pyx_L1_error)
+        __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_5); __Pyx_INCREF(__pyx_t_3); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 60, __pyx_L1_error)
         #else
-        __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 59, __pyx_L1_error)
+        __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 60, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         #endif
       } else {
         if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_5); __Pyx_INCREF(__pyx_t_3); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 59, __pyx_L1_error)
+        __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_5); __Pyx_INCREF(__pyx_t_3); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 60, __pyx_L1_error)
         #else
-        __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 59, __pyx_L1_error)
+        __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 60, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         #endif
       }
@@ -3552,7 +3542,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11q
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 59, __pyx_L1_error)
+          else __PYX_ERR(0, 60, __pyx_L1_error)
         }
         break;
       }
@@ -3561,22 +3551,22 @@ static PyObject *__pyx_pf_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11q
     __Pyx_XDECREF_SET(__pyx_v_ln, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "queue_model.pyx":60
+    /* "sim_package/queue_model.pyx":61
  *         incoming_vehs = len(go_link.queue_veh)
  *         for ln in range(min(incoming_lanes, incoming_vehs)):
  *             agent_id = go_link.queue_veh[ln]             # <<<<<<<<<<<<<<
  *             try:
  *                 agent_next_node, ol, agent_dir = self.agent_id_dict[agent_id].prepare_agent(self.nid, node2link_dict=self.node2link_dict, node_id_dict=self.node_id_dict)
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_go_link, __pyx_n_s_queue_veh); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 60, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_go_link, __pyx_n_s_queue_veh); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 61, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_GetItem(__pyx_t_3, __pyx_v_ln); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 60, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetItem(__pyx_t_3, __pyx_v_ln); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 61, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_XDECREF_SET(__pyx_v_agent_id, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "queue_model.pyx":61
+    /* "sim_package/queue_model.pyx":62
  *         for ln in range(min(incoming_lanes, incoming_vehs)):
  *             agent_id = go_link.queue_veh[ln]
  *             try:             # <<<<<<<<<<<<<<
@@ -3592,39 +3582,39 @@ static PyObject *__pyx_pf_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11q
       __Pyx_XGOTREF(__pyx_t_10);
       /*try:*/ {
 
-        /* "queue_model.pyx":62
+        /* "sim_package/queue_model.pyx":63
  *             agent_id = go_link.queue_veh[ln]
  *             try:
  *                 agent_next_node, ol, agent_dir = self.agent_id_dict[agent_id].prepare_agent(self.nid, node2link_dict=self.node2link_dict, node_id_dict=self.node_id_dict)             # <<<<<<<<<<<<<<
  *             except AssertionError:
  *                 pass
  */
-        __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_agent_id_dict); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 62, __pyx_L5_error)
+        __pyx_t_4 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_agent_id_dict); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 63, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_4);
-        __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_t_4, __pyx_v_agent_id); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 62, __pyx_L5_error)
+        __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_t_4, __pyx_v_agent_id); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 63, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-        __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_prepare_agent); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 62, __pyx_L5_error)
+        __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_prepare_agent); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 63, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        __pyx_t_3 = PyFloat_FromDouble(__pyx_v_self->nid); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 62, __pyx_L5_error)
+        __pyx_t_3 = PyFloat_FromDouble(__pyx_v_self->nid); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 63, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_3);
-        __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 62, __pyx_L5_error)
+        __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 63, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_GIVEREF(__pyx_t_3);
         PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_3);
         __pyx_t_3 = 0;
-        __pyx_t_3 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 62, __pyx_L5_error)
+        __pyx_t_3 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 63, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_3);
-        __pyx_t_11 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_node2link_dict); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 62, __pyx_L5_error)
+        __pyx_t_11 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_node2link_dict); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 63, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_11);
-        if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_node2link_dict, __pyx_t_11) < 0) __PYX_ERR(0, 62, __pyx_L5_error)
+        if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_node2link_dict, __pyx_t_11) < 0) __PYX_ERR(0, 63, __pyx_L5_error)
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-        __pyx_t_11 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_node_id_dict); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 62, __pyx_L5_error)
+        __pyx_t_11 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_node_id_dict); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 63, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_11);
-        if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_node_id_dict, __pyx_t_11) < 0) __PYX_ERR(0, 62, __pyx_L5_error)
+        if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_node_id_dict, __pyx_t_11) < 0) __PYX_ERR(0, 63, __pyx_L5_error)
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-        __pyx_t_11 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 62, __pyx_L5_error)
+        __pyx_t_11 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 63, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_11);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -3635,7 +3625,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11q
           if (unlikely(size != 3)) {
             if (size > 3) __Pyx_RaiseTooManyValuesError(3);
             else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-            __PYX_ERR(0, 62, __pyx_L5_error)
+            __PYX_ERR(0, 63, __pyx_L5_error)
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
           if (likely(PyTuple_CheckExact(sequence))) {
@@ -3651,17 +3641,17 @@ static PyObject *__pyx_pf_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11q
           __Pyx_INCREF(__pyx_t_2);
           __Pyx_INCREF(__pyx_t_4);
           #else
-          __pyx_t_3 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 62, __pyx_L5_error)
+          __pyx_t_3 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 63, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_3);
-          __pyx_t_2 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 62, __pyx_L5_error)
+          __pyx_t_2 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 63, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_2);
-          __pyx_t_4 = PySequence_ITEM(sequence, 2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 62, __pyx_L5_error)
+          __pyx_t_4 = PySequence_ITEM(sequence, 2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 63, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_4);
           #endif
           __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
         } else {
           Py_ssize_t index = -1;
-          __pyx_t_12 = PyObject_GetIter(__pyx_t_11); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 62, __pyx_L5_error)
+          __pyx_t_12 = PyObject_GetIter(__pyx_t_11); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 63, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_12);
           __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
           __pyx_t_13 = Py_TYPE(__pyx_t_12)->tp_iternext;
@@ -3671,7 +3661,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11q
           __Pyx_GOTREF(__pyx_t_2);
           index = 2; __pyx_t_4 = __pyx_t_13(__pyx_t_12); if (unlikely(!__pyx_t_4)) goto __pyx_L13_unpacking_failed;
           __Pyx_GOTREF(__pyx_t_4);
-          if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_12), 3) < 0) __PYX_ERR(0, 62, __pyx_L5_error)
+          if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_12), 3) < 0) __PYX_ERR(0, 63, __pyx_L5_error)
           __pyx_t_13 = NULL;
           __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
           goto __pyx_L14_unpacking_done;
@@ -3679,7 +3669,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11q
           __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
           __pyx_t_13 = NULL;
           if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-          __PYX_ERR(0, 62, __pyx_L5_error)
+          __PYX_ERR(0, 63, __pyx_L5_error)
           __pyx_L14_unpacking_done:;
         }
         __Pyx_XDECREF_SET(__pyx_v_agent_next_node, __pyx_t_3);
@@ -3689,7 +3679,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11q
         __Pyx_XDECREF_SET(__pyx_v_agent_dir, __pyx_t_4);
         __pyx_t_4 = 0;
 
-        /* "queue_model.pyx":61
+        /* "sim_package/queue_model.pyx":62
  *         for ln in range(min(incoming_lanes, incoming_vehs)):
  *             agent_id = go_link.queue_veh[ln]
  *             try:             # <<<<<<<<<<<<<<
@@ -3708,7 +3698,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11q
       __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "queue_model.pyx":63
+      /* "sim_package/queue_model.pyx":64
  *             try:
  *                 agent_next_node, ol, agent_dir = self.agent_id_dict[agent_id].prepare_agent(self.nid, node2link_dict=self.node2link_dict, node_id_dict=self.node_id_dict)
  *             except AssertionError:             # <<<<<<<<<<<<<<
@@ -3723,7 +3713,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11q
       goto __pyx_L7_except_error;
       __pyx_L7_except_error:;
 
-      /* "queue_model.pyx":61
+      /* "sim_package/queue_model.pyx":62
  *         for ln in range(min(incoming_lanes, incoming_vehs)):
  *             agent_id = go_link.queue_veh[ln]
  *             try:             # <<<<<<<<<<<<<<
@@ -3743,19 +3733,19 @@ static PyObject *__pyx_pf_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11q
       __pyx_L12_try_end:;
     }
 
-    /* "queue_model.pyx":65
+    /* "sim_package/queue_model.pyx":66
  *             except AssertionError:
  *                 pass
  *             go_vehs_list.append([agent_id, agent_next_node, go_link.lid, ol, agent_dir])             # <<<<<<<<<<<<<<
  *         return go_vehs_list
  * 
  */
-    if (unlikely(!__pyx_v_agent_next_node)) { __Pyx_RaiseUnboundLocalError("agent_next_node"); __PYX_ERR(0, 65, __pyx_L1_error) }
-    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_go_link, __pyx_n_s_lid); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 65, __pyx_L1_error)
+    if (unlikely(!__pyx_v_agent_next_node)) { __Pyx_RaiseUnboundLocalError("agent_next_node"); __PYX_ERR(0, 66, __pyx_L1_error) }
+    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_go_link, __pyx_n_s_lid); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 66, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
-    if (unlikely(!__pyx_v_ol)) { __Pyx_RaiseUnboundLocalError("ol"); __PYX_ERR(0, 65, __pyx_L1_error) }
-    if (unlikely(!__pyx_v_agent_dir)) { __Pyx_RaiseUnboundLocalError("agent_dir"); __PYX_ERR(0, 65, __pyx_L1_error) }
-    __pyx_t_4 = PyList_New(5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 65, __pyx_L1_error)
+    if (unlikely(!__pyx_v_ol)) { __Pyx_RaiseUnboundLocalError("ol"); __PYX_ERR(0, 66, __pyx_L1_error) }
+    if (unlikely(!__pyx_v_agent_dir)) { __Pyx_RaiseUnboundLocalError("agent_dir"); __PYX_ERR(0, 66, __pyx_L1_error) }
+    __pyx_t_4 = PyList_New(5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 66, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_v_agent_id);
     __Pyx_GIVEREF(__pyx_v_agent_id);
@@ -3772,10 +3762,10 @@ static PyObject *__pyx_pf_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11q
     __Pyx_GIVEREF(__pyx_v_agent_dir);
     PyList_SET_ITEM(__pyx_t_4, 4, __pyx_v_agent_dir);
     __pyx_t_11 = 0;
-    __pyx_t_15 = __Pyx_PyList_Append(__pyx_v_go_vehs_list, __pyx_t_4); if (unlikely(__pyx_t_15 == ((int)-1))) __PYX_ERR(0, 65, __pyx_L1_error)
+    __pyx_t_15 = __Pyx_PyList_Append(__pyx_v_go_vehs_list, __pyx_t_4); if (unlikely(__pyx_t_15 == ((int)-1))) __PYX_ERR(0, 66, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "queue_model.pyx":59
+    /* "sim_package/queue_model.pyx":60
  *         incoming_lanes = int(np.floor(go_link.lanes))
  *         incoming_vehs = len(go_link.queue_veh)
  *         for ln in range(min(incoming_lanes, incoming_vehs)):             # <<<<<<<<<<<<<<
@@ -3785,7 +3775,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11q
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":66
+  /* "sim_package/queue_model.pyx":67
  *                 pass
  *             go_vehs_list.append([agent_id, agent_next_node, go_link.lid, ol, agent_dir])
  *         return go_vehs_list             # <<<<<<<<<<<<<<
@@ -3797,7 +3787,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11q
   __pyx_r = __pyx_v_go_vehs_list;
   goto __pyx_L0;
 
-  /* "queue_model.pyx":55
+  /* "sim_package/queue_model.pyx":56
  *                 self.in_links[il] = sa_ol
  * 
  *     def find_go_vehs(self, go_link):             # <<<<<<<<<<<<<<
@@ -3813,7 +3803,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11q
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_11);
   __Pyx_XDECREF(__pyx_t_12);
-  __Pyx_AddTraceback("queue_model.Node.find_go_vehs", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Node.find_go_vehs", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_go_vehs_list);
@@ -3828,7 +3818,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11q
   return __pyx_r;
 }
 
-/* "queue_model.pyx":69
+/* "sim_package/queue_model.pyx":70
  * 
  *     # must find non-conflicts before running model at each time step. decoupled due to write=read data deps
  *     def non_conflict_vehs(self, t_now, link_id_dict=None, agent_id_dict=None, node2link_dict=None, node_id_dict=None):             # <<<<<<<<<<<<<<
@@ -3837,8 +3827,8 @@ static PyObject *__pyx_pf_11queue_model_4Node_8find_go_vehs(struct __pyx_obj_11q
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_11queue_model_4Node_11non_conflict_vehs(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_11queue_model_4Node_11non_conflict_vehs(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Node_11non_conflict_vehs(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Node_11non_conflict_vehs(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   CYTHON_UNUSED PyObject *__pyx_v_t_now = 0;
   PyObject *__pyx_v_link_id_dict = 0;
   PyObject *__pyx_v_agent_id_dict = 0;
@@ -3905,7 +3895,7 @@ static PyObject *__pyx_pw_11queue_model_4Node_11non_conflict_vehs(PyObject *__py
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "non_conflict_vehs") < 0)) __PYX_ERR(0, 69, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "non_conflict_vehs") < 0)) __PYX_ERR(0, 70, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -3930,20 +3920,20 @@ static PyObject *__pyx_pw_11queue_model_4Node_11non_conflict_vehs(PyObject *__py
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("non_conflict_vehs", 0, 1, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 69, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("non_conflict_vehs", 0, 1, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 70, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("queue_model.Node.non_conflict_vehs", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Node.non_conflict_vehs", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_11queue_model_4Node_10non_conflict_vehs(((struct __pyx_obj_11queue_model_Node *)__pyx_v_self), __pyx_v_t_now, __pyx_v_link_id_dict, __pyx_v_agent_id_dict, __pyx_v_node2link_dict, __pyx_v_node_id_dict);
+  __pyx_r = __pyx_pf_11sim_package_11queue_model_4Node_10non_conflict_vehs(((struct __pyx_obj_11sim_package_11queue_model_Node *)__pyx_v_self), __pyx_v_t_now, __pyx_v_link_id_dict, __pyx_v_agent_id_dict, __pyx_v_node2link_dict, __pyx_v_node_id_dict);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_obj_11queue_model_Node *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_t_now, PyObject *__pyx_v_link_id_dict, PyObject *__pyx_v_agent_id_dict, PyObject *__pyx_v_node2link_dict, PyObject *__pyx_v_node_id_dict) {
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Node_10non_conflict_vehs(struct __pyx_obj_11sim_package_11queue_model_Node *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v_t_now, PyObject *__pyx_v_link_id_dict, PyObject *__pyx_v_agent_id_dict, PyObject *__pyx_v_node2link_dict, PyObject *__pyx_v_node_id_dict) {
   PyObject *__pyx_v_in_links = NULL;
   PyObject *__pyx_v_go_link = NULL;
   PyObject *__pyx_v_go_vehs_list = NULL;
@@ -3973,55 +3963,55 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("non_conflict_vehs", 0);
 
-  /* "queue_model.pyx":71
+  /* "sim_package/queue_model.pyx":72
  *     def non_conflict_vehs(self, t_now, link_id_dict=None, agent_id_dict=None, node2link_dict=None, node_id_dict=None):
  * 
  *         self.go_vehs = []             # <<<<<<<<<<<<<<
  *         self.link_id_dict = link_id_dict
  *         self.agent_id_dict = agent_id_dict
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_go_vehs, __pyx_t_1) < 0) __PYX_ERR(0, 71, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_go_vehs, __pyx_t_1) < 0) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":72
+  /* "sim_package/queue_model.pyx":73
  * 
  *         self.go_vehs = []
  *         self.link_id_dict = link_id_dict             # <<<<<<<<<<<<<<
  *         self.agent_id_dict = agent_id_dict
  *         self.node2link_dict = node2link_dict
  */
-  if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict, __pyx_v_link_id_dict) < 0) __PYX_ERR(0, 72, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict, __pyx_v_link_id_dict) < 0) __PYX_ERR(0, 73, __pyx_L1_error)
 
-  /* "queue_model.pyx":73
+  /* "sim_package/queue_model.pyx":74
  *         self.go_vehs = []
  *         self.link_id_dict = link_id_dict
  *         self.agent_id_dict = agent_id_dict             # <<<<<<<<<<<<<<
  *         self.node2link_dict = node2link_dict
  *         self.node_id_dict = node_id_dict
  */
-  if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_agent_id_dict, __pyx_v_agent_id_dict) < 0) __PYX_ERR(0, 73, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_agent_id_dict, __pyx_v_agent_id_dict) < 0) __PYX_ERR(0, 74, __pyx_L1_error)
 
-  /* "queue_model.pyx":74
+  /* "sim_package/queue_model.pyx":75
  *         self.link_id_dict = link_id_dict
  *         self.agent_id_dict = agent_id_dict
  *         self.node2link_dict = node2link_dict             # <<<<<<<<<<<<<<
  *         self.node_id_dict = node_id_dict
  *         ### a primary direction
  */
-  if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_node2link_dict, __pyx_v_node2link_dict) < 0) __PYX_ERR(0, 74, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_node2link_dict, __pyx_v_node2link_dict) < 0) __PYX_ERR(0, 75, __pyx_L1_error)
 
-  /* "queue_model.pyx":75
+  /* "sim_package/queue_model.pyx":76
  *         self.agent_id_dict = agent_id_dict
  *         self.node2link_dict = node2link_dict
  *         self.node_id_dict = node_id_dict             # <<<<<<<<<<<<<<
  *         ### a primary direction
  *         in_links = [l for l in self.in_links.keys() if len(link_id_dict[l].queue_veh)>0]
  */
-  if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_node_id_dict, __pyx_v_node_id_dict) < 0) __PYX_ERR(0, 75, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_node_id_dict, __pyx_v_node_id_dict) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
 
-  /* "queue_model.pyx":77
+  /* "sim_package/queue_model.pyx":78
  *         self.node_id_dict = node_id_dict
  *         ### a primary direction
  *         in_links = [l for l in self.in_links.keys() if len(link_id_dict[l].queue_veh)>0]             # <<<<<<<<<<<<<<
@@ -4029,16 +4019,16 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
  *         if len(in_links) == 0:
  */
   { /* enter inner scope */
-    __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 77, __pyx_L5_error)
+    __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 78, __pyx_L5_error)
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_t_3 = 0;
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_in_links); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 77, __pyx_L5_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_in_links); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 78, __pyx_L5_error)
     __Pyx_GOTREF(__pyx_t_6);
     if (unlikely(__pyx_t_6 == Py_None)) {
       PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "keys");
-      __PYX_ERR(0, 77, __pyx_L5_error)
+      __PYX_ERR(0, 78, __pyx_L5_error)
     }
-    __pyx_t_7 = __Pyx_dict_iterator(__pyx_t_6, 0, __pyx_n_s_keys, (&__pyx_t_4), (&__pyx_t_5)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 77, __pyx_L5_error)
+    __pyx_t_7 = __Pyx_dict_iterator(__pyx_t_6, 0, __pyx_n_s_keys, (&__pyx_t_4), (&__pyx_t_5)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 78, __pyx_L5_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_XDECREF(__pyx_t_2);
@@ -4047,20 +4037,20 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
     while (1) {
       __pyx_t_8 = __Pyx_dict_iter_next(__pyx_t_2, __pyx_t_4, &__pyx_t_3, &__pyx_t_7, NULL, NULL, __pyx_t_5);
       if (unlikely(__pyx_t_8 == 0)) break;
-      if (unlikely(__pyx_t_8 == -1)) __PYX_ERR(0, 77, __pyx_L5_error)
+      if (unlikely(__pyx_t_8 == -1)) __PYX_ERR(0, 78, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_XDECREF_SET(__pyx_7genexpr__pyx_v_l, __pyx_t_7);
       __pyx_t_7 = 0;
-      __pyx_t_7 = __Pyx_PyObject_GetItem(__pyx_v_link_id_dict, __pyx_7genexpr__pyx_v_l); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 77, __pyx_L5_error)
+      __pyx_t_7 = __Pyx_PyObject_GetItem(__pyx_v_link_id_dict, __pyx_7genexpr__pyx_v_l); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 78, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_7);
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_queue_veh); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 77, __pyx_L5_error)
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_queue_veh); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 78, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-      __pyx_t_9 = PyObject_Length(__pyx_t_6); if (unlikely(__pyx_t_9 == ((Py_ssize_t)-1))) __PYX_ERR(0, 77, __pyx_L5_error)
+      __pyx_t_9 = PyObject_Length(__pyx_t_6); if (unlikely(__pyx_t_9 == ((Py_ssize_t)-1))) __PYX_ERR(0, 78, __pyx_L5_error)
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __pyx_t_10 = ((__pyx_t_9 > 0) != 0);
       if (__pyx_t_10) {
-        if (unlikely(__Pyx_ListComp_Append(__pyx_t_1, (PyObject*)__pyx_7genexpr__pyx_v_l))) __PYX_ERR(0, 77, __pyx_L5_error)
+        if (unlikely(__Pyx_ListComp_Append(__pyx_t_1, (PyObject*)__pyx_7genexpr__pyx_v_l))) __PYX_ERR(0, 78, __pyx_L5_error)
       }
     }
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -4074,18 +4064,18 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
   __pyx_v_in_links = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":79
+  /* "sim_package/queue_model.pyx":80
  *         in_links = [l for l in self.in_links.keys() if len(link_id_dict[l].queue_veh)>0]
  * 
  *         if len(in_links) == 0:             # <<<<<<<<<<<<<<
  *             return self.go_vehs
  *         go_link = link_id_dict[random.choice(in_links)]
  */
-  __pyx_t_4 = PyList_GET_SIZE(__pyx_v_in_links); if (unlikely(__pyx_t_4 == ((Py_ssize_t)-1))) __PYX_ERR(0, 79, __pyx_L1_error)
+  __pyx_t_4 = PyList_GET_SIZE(__pyx_v_in_links); if (unlikely(__pyx_t_4 == ((Py_ssize_t)-1))) __PYX_ERR(0, 80, __pyx_L1_error)
   __pyx_t_10 = ((__pyx_t_4 == 0) != 0);
   if (__pyx_t_10) {
 
-    /* "queue_model.pyx":80
+    /* "sim_package/queue_model.pyx":81
  * 
  *         if len(in_links) == 0:
  *             return self.go_vehs             # <<<<<<<<<<<<<<
@@ -4093,13 +4083,13 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
  *         go_vehs_list = self.find_go_vehs(go_link)
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_go_vehs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 80, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_go_vehs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 81, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_r = __pyx_t_1;
     __pyx_t_1 = 0;
     goto __pyx_L0;
 
-    /* "queue_model.pyx":79
+    /* "sim_package/queue_model.pyx":80
  *         in_links = [l for l in self.in_links.keys() if len(link_id_dict[l].queue_veh)>0]
  * 
  *         if len(in_links) == 0:             # <<<<<<<<<<<<<<
@@ -4108,16 +4098,16 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
  */
   }
 
-  /* "queue_model.pyx":81
+  /* "sim_package/queue_model.pyx":82
  *         if len(in_links) == 0:
  *             return self.go_vehs
  *         go_link = link_id_dict[random.choice(in_links)]             # <<<<<<<<<<<<<<
  *         go_vehs_list = self.find_go_vehs(go_link)
  *         self.go_vehs += go_vehs_list
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_random); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 81, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_random); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_choice); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 81, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_choice); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = NULL;
@@ -4132,23 +4122,23 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
   }
   __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_2, __pyx_v_in_links) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_in_links);
   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 81, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_v_link_id_dict, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 81, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_v_link_id_dict, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_go_link = __pyx_t_6;
   __pyx_t_6 = 0;
 
-  /* "queue_model.pyx":82
+  /* "sim_package/queue_model.pyx":83
  *             return self.go_vehs
  *         go_link = link_id_dict[random.choice(in_links)]
  *         go_vehs_list = self.find_go_vehs(go_link)             # <<<<<<<<<<<<<<
  *         self.go_vehs += go_vehs_list
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_find_go_vehs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 82, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_find_go_vehs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -4162,66 +4152,66 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
   }
   __pyx_t_6 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_2, __pyx_v_go_link) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_v_go_link);
   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 82, __pyx_L1_error)
+  if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_go_vehs_list = __pyx_t_6;
   __pyx_t_6 = 0;
 
-  /* "queue_model.pyx":83
+  /* "sim_package/queue_model.pyx":84
  *         go_link = link_id_dict[random.choice(in_links)]
  *         go_vehs_list = self.find_go_vehs(go_link)
  *         self.go_vehs += go_vehs_list             # <<<<<<<<<<<<<<
  * 
  *         ### a non-conflicting direction
  */
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_go_vehs); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 83, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_go_vehs); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_1 = PyNumber_InPlaceAdd(__pyx_t_6, __pyx_v_go_vehs_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 83, __pyx_L1_error)
+  __pyx_t_1 = PyNumber_InPlaceAdd(__pyx_t_6, __pyx_v_go_vehs_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_go_vehs, __pyx_t_1) < 0) __PYX_ERR(0, 83, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_go_vehs, __pyx_t_1) < 0) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":86
+  /* "sim_package/queue_model.pyx":87
  * 
  *         ### a non-conflicting direction
  *         if (np.min([veh[-1] for veh in go_vehs_list]) < -45) or (go_link.ltype=='vl_in'):             # <<<<<<<<<<<<<<
  *             ### no opposite veh allows to move if there is left turn veh in the primary direction; or if the primary incoming link is a virtual link
  *             return self.go_vehs
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 86, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_min); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 86, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_min); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   { /* enter inner scope */
-    __pyx_t_6 = PyList_New(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 86, __pyx_L16_error)
+    __pyx_t_6 = PyList_New(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 87, __pyx_L16_error)
     __Pyx_GOTREF(__pyx_t_6);
     if (likely(PyList_CheckExact(__pyx_v_go_vehs_list)) || PyTuple_CheckExact(__pyx_v_go_vehs_list)) {
       __pyx_t_7 = __pyx_v_go_vehs_list; __Pyx_INCREF(__pyx_t_7); __pyx_t_4 = 0;
       __pyx_t_11 = NULL;
     } else {
-      __pyx_t_4 = -1; __pyx_t_7 = PyObject_GetIter(__pyx_v_go_vehs_list); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 86, __pyx_L16_error)
+      __pyx_t_4 = -1; __pyx_t_7 = PyObject_GetIter(__pyx_v_go_vehs_list); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 87, __pyx_L16_error)
       __Pyx_GOTREF(__pyx_t_7);
-      __pyx_t_11 = Py_TYPE(__pyx_t_7)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 86, __pyx_L16_error)
+      __pyx_t_11 = Py_TYPE(__pyx_t_7)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 87, __pyx_L16_error)
     }
     for (;;) {
       if (likely(!__pyx_t_11)) {
         if (likely(PyList_CheckExact(__pyx_t_7))) {
           if (__pyx_t_4 >= PyList_GET_SIZE(__pyx_t_7)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_12 = PyList_GET_ITEM(__pyx_t_7, __pyx_t_4); __Pyx_INCREF(__pyx_t_12); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 86, __pyx_L16_error)
+          __pyx_t_12 = PyList_GET_ITEM(__pyx_t_7, __pyx_t_4); __Pyx_INCREF(__pyx_t_12); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 87, __pyx_L16_error)
           #else
-          __pyx_t_12 = PySequence_ITEM(__pyx_t_7, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 86, __pyx_L16_error)
+          __pyx_t_12 = PySequence_ITEM(__pyx_t_7, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 87, __pyx_L16_error)
           __Pyx_GOTREF(__pyx_t_12);
           #endif
         } else {
           if (__pyx_t_4 >= PyTuple_GET_SIZE(__pyx_t_7)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_12 = PyTuple_GET_ITEM(__pyx_t_7, __pyx_t_4); __Pyx_INCREF(__pyx_t_12); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 86, __pyx_L16_error)
+          __pyx_t_12 = PyTuple_GET_ITEM(__pyx_t_7, __pyx_t_4); __Pyx_INCREF(__pyx_t_12); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 87, __pyx_L16_error)
           #else
-          __pyx_t_12 = PySequence_ITEM(__pyx_t_7, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 86, __pyx_L16_error)
+          __pyx_t_12 = PySequence_ITEM(__pyx_t_7, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 87, __pyx_L16_error)
           __Pyx_GOTREF(__pyx_t_12);
           #endif
         }
@@ -4231,7 +4221,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 86, __pyx_L16_error)
+            else __PYX_ERR(0, 87, __pyx_L16_error)
           }
           break;
         }
@@ -4239,9 +4229,9 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
       }
       __Pyx_XDECREF_SET(__pyx_8genexpr1__pyx_v_veh, __pyx_t_12);
       __pyx_t_12 = 0;
-      __pyx_t_12 = __Pyx_GetItemInt(__pyx_8genexpr1__pyx_v_veh, -1L, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 86, __pyx_L16_error)
+      __pyx_t_12 = __Pyx_GetItemInt(__pyx_8genexpr1__pyx_v_veh, -1L, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 87, __pyx_L16_error)
       __Pyx_GOTREF(__pyx_t_12);
-      if (unlikely(__Pyx_ListComp_Append(__pyx_t_6, (PyObject*)__pyx_t_12))) __PYX_ERR(0, 86, __pyx_L16_error)
+      if (unlikely(__Pyx_ListComp_Append(__pyx_t_6, (PyObject*)__pyx_t_12))) __PYX_ERR(0, 87, __pyx_L16_error)
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
     }
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -4265,27 +4255,27 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
   __pyx_t_1 = (__pyx_t_7) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_7, __pyx_t_6) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 86, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyObject_RichCompare(__pyx_t_1, __pyx_int_neg_45, Py_LT); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 86, __pyx_L1_error)
+  __pyx_t_2 = PyObject_RichCompare(__pyx_t_1, __pyx_int_neg_45, Py_LT); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_13 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_13 < 0)) __PYX_ERR(0, 86, __pyx_L1_error)
+  __pyx_t_13 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_13 < 0)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if (!__pyx_t_13) {
   } else {
     __pyx_t_10 = __pyx_t_13;
     goto __pyx_L12_bool_binop_done;
   }
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_go_link, __pyx_n_s_ltype); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 86, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_go_link, __pyx_n_s_ltype); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_13 = (__Pyx_PyUnicode_Equals(__pyx_t_2, __pyx_n_u_vl_in_2, Py_EQ)); if (unlikely(__pyx_t_13 < 0)) __PYX_ERR(0, 86, __pyx_L1_error)
+  __pyx_t_13 = (__Pyx_PyUnicode_Equals(__pyx_t_2, __pyx_n_u_vl_in_2, Py_EQ)); if (unlikely(__pyx_t_13 < 0)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_10 = __pyx_t_13;
   __pyx_L12_bool_binop_done:;
   if (__pyx_t_10) {
 
-    /* "queue_model.pyx":88
+    /* "sim_package/queue_model.pyx":89
  *         if (np.min([veh[-1] for veh in go_vehs_list]) < -45) or (go_link.ltype=='vl_in'):
  *             ### no opposite veh allows to move if there is left turn veh in the primary direction; or if the primary incoming link is a virtual link
  *             return self.go_vehs             # <<<<<<<<<<<<<<
@@ -4293,13 +4283,13 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
  *             return self.go_vehs ### no straight ahead opposite links
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_go_vehs); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 88, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_go_vehs); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_r = __pyx_t_2;
     __pyx_t_2 = 0;
     goto __pyx_L0;
 
-    /* "queue_model.pyx":86
+    /* "sim_package/queue_model.pyx":87
  * 
  *         ### a non-conflicting direction
  *         if (np.min([veh[-1] for veh in go_vehs_list]) < -45) or (go_link.ltype=='vl_in'):             # <<<<<<<<<<<<<<
@@ -4308,18 +4298,18 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
  */
   }
 
-  /* "queue_model.pyx":89
+  /* "sim_package/queue_model.pyx":90
  *             ### no opposite veh allows to move if there is left turn veh in the primary direction; or if the primary incoming link is a virtual link
  *             return self.go_vehs
  *         if self.in_links[go_link.lid] is None:             # <<<<<<<<<<<<<<
  *             return self.go_vehs ### no straight ahead opposite links
  *         op_go_link = link_id_dict[self.in_links[go_link.lid]]
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_in_links); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 89, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_in_links); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 90, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_go_link, __pyx_n_s_lid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 89, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_go_link, __pyx_n_s_lid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 90, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 89, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 90, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -4328,7 +4318,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
   __pyx_t_13 = (__pyx_t_10 != 0);
   if (__pyx_t_13) {
 
-    /* "queue_model.pyx":90
+    /* "sim_package/queue_model.pyx":91
  *             return self.go_vehs
  *         if self.in_links[go_link.lid] is None:
  *             return self.go_vehs ### no straight ahead opposite links             # <<<<<<<<<<<<<<
@@ -4336,13 +4326,13 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
  *         link_id = node2link_dict[(op_go_link.end_nid, op_go_link.start_nid)]
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_go_vehs); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 90, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_go_vehs); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 91, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_r = __pyx_t_6;
     __pyx_t_6 = 0;
     goto __pyx_L0;
 
-    /* "queue_model.pyx":89
+    /* "sim_package/queue_model.pyx":90
  *             ### no opposite veh allows to move if there is left turn veh in the primary direction; or if the primary incoming link is a virtual link
  *             return self.go_vehs
  *         if self.in_links[go_link.lid] is None:             # <<<<<<<<<<<<<<
@@ -4351,39 +4341,39 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
  */
   }
 
-  /* "queue_model.pyx":91
+  /* "sim_package/queue_model.pyx":92
  *         if self.in_links[go_link.lid] is None:
  *             return self.go_vehs ### no straight ahead opposite links
  *         op_go_link = link_id_dict[self.in_links[go_link.lid]]             # <<<<<<<<<<<<<<
  *         link_id = node2link_dict[(op_go_link.end_nid, op_go_link.start_nid)]
  *         if link_id not in link_id_dict:
  */
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_in_links); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 91, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_in_links); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_go_link, __pyx_n_s_lid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 91, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_go_link, __pyx_n_s_lid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_t_6, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 91, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_t_6, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_link_id_dict, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 91, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_link_id_dict, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_op_go_link = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":92
+  /* "sim_package/queue_model.pyx":93
  *             return self.go_vehs ### no straight ahead opposite links
  *         op_go_link = link_id_dict[self.in_links[go_link.lid]]
  *         link_id = node2link_dict[(op_go_link.end_nid, op_go_link.start_nid)]             # <<<<<<<<<<<<<<
  *         if link_id not in link_id_dict:
  *           # straight ahead link is one way
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_op_go_link, __pyx_n_s_end_nid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 92, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_op_go_link, __pyx_n_s_end_nid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_op_go_link, __pyx_n_s_start_nid); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 92, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_op_go_link, __pyx_n_s_start_nid); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_6 = PyTuple_New(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 92, __pyx_L1_error)
+  __pyx_t_6 = PyTuple_New(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_1);
@@ -4391,24 +4381,24 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
   PyTuple_SET_ITEM(__pyx_t_6, 1, __pyx_t_2);
   __pyx_t_1 = 0;
   __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_node2link_dict, __pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 92, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_node2link_dict, __pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_v_link_id = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":93
+  /* "sim_package/queue_model.pyx":94
  *         op_go_link = link_id_dict[self.in_links[go_link.lid]]
  *         link_id = node2link_dict[(op_go_link.end_nid, op_go_link.start_nid)]
  *         if link_id not in link_id_dict:             # <<<<<<<<<<<<<<
  *           # straight ahead link is one way
  *           return self.go_vehs
  */
-  __pyx_t_13 = (__Pyx_PySequence_ContainsTF(__pyx_v_link_id, __pyx_v_link_id_dict, Py_NE)); if (unlikely(__pyx_t_13 < 0)) __PYX_ERR(0, 93, __pyx_L1_error)
+  __pyx_t_13 = (__Pyx_PySequence_ContainsTF(__pyx_v_link_id, __pyx_v_link_id_dict, Py_NE)); if (unlikely(__pyx_t_13 < 0)) __PYX_ERR(0, 94, __pyx_L1_error)
   __pyx_t_10 = (__pyx_t_13 != 0);
   if (__pyx_t_10) {
 
-    /* "queue_model.pyx":95
+    /* "sim_package/queue_model.pyx":96
  *         if link_id not in link_id_dict:
  *           # straight ahead link is one way
  *           return self.go_vehs             # <<<<<<<<<<<<<<
@@ -4416,13 +4406,13 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
  *         op_go_vehs_list = self.find_go_vehs(op_go_link)
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_go_vehs); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 95, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_go_vehs); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 96, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_r = __pyx_t_2;
     __pyx_t_2 = 0;
     goto __pyx_L0;
 
-    /* "queue_model.pyx":93
+    /* "sim_package/queue_model.pyx":94
  *         op_go_link = link_id_dict[self.in_links[go_link.lid]]
  *         link_id = node2link_dict[(op_go_link.end_nid, op_go_link.start_nid)]
  *         if link_id not in link_id_dict:             # <<<<<<<<<<<<<<
@@ -4431,26 +4421,26 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
  */
   }
 
-  /* "queue_model.pyx":96
+  /* "sim_package/queue_model.pyx":97
  *           # straight ahead link is one way
  *           return self.go_vehs
  *         op_go_link = link_id_dict[link_id]             # <<<<<<<<<<<<<<
  *         op_go_vehs_list = self.find_go_vehs(op_go_link)
- *         # self.go_vehs += [veh for veh in op_go_vehs_list if veh[-1]>-45] ### only straight ahead or right turns allowed for vehicles from the opposite side
+ * 
  */
-  __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_link_id_dict, __pyx_v_link_id); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 96, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_link_id_dict, __pyx_v_link_id); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 97, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF_SET(__pyx_v_op_go_link, __pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":97
+  /* "sim_package/queue_model.pyx":98
  *           return self.go_vehs
  *         op_go_link = link_id_dict[link_id]
  *         op_go_vehs_list = self.find_go_vehs(op_go_link)             # <<<<<<<<<<<<<<
- *         # self.go_vehs += [veh for veh in op_go_vehs_list if veh[-1]>-45] ### only straight ahead or right turns allowed for vehicles from the opposite side
- *         self.go_vehs += [veh for veh in op_go_vehs_list if veh[-1]>-45]
+ * 
+ *         self.go_vehs += [veh for veh in op_go_vehs_list if veh[-1] > -45]
  */
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_find_go_vehs); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 97, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_find_go_vehs); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 98, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_1 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_6))) {
@@ -4464,48 +4454,48 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
   }
   __pyx_t_2 = (__pyx_t_1) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_1, __pyx_v_op_go_link) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_op_go_link);
   __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 97, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 98, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_v_op_go_vehs_list = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":99
+  /* "sim_package/queue_model.pyx":100
  *         op_go_vehs_list = self.find_go_vehs(op_go_link)
- *         # self.go_vehs += [veh for veh in op_go_vehs_list if veh[-1]>-45] ### only straight ahead or right turns allowed for vehicles from the opposite side
- *         self.go_vehs += [veh for veh in op_go_vehs_list if veh[-1]>-45]             # <<<<<<<<<<<<<<
+ * 
+ *         self.go_vehs += [veh for veh in op_go_vehs_list if veh[-1] > -45]             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_go_vehs); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 99, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_go_vehs); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 100, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   { /* enter inner scope */
-    __pyx_t_6 = PyList_New(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 99, __pyx_L24_error)
+    __pyx_t_6 = PyList_New(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 100, __pyx_L24_error)
     __Pyx_GOTREF(__pyx_t_6);
     if (likely(PyList_CheckExact(__pyx_v_op_go_vehs_list)) || PyTuple_CheckExact(__pyx_v_op_go_vehs_list)) {
       __pyx_t_1 = __pyx_v_op_go_vehs_list; __Pyx_INCREF(__pyx_t_1); __pyx_t_4 = 0;
       __pyx_t_11 = NULL;
     } else {
-      __pyx_t_4 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_op_go_vehs_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 99, __pyx_L24_error)
+      __pyx_t_4 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_op_go_vehs_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 100, __pyx_L24_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_11 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 99, __pyx_L24_error)
+      __pyx_t_11 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 100, __pyx_L24_error)
     }
     for (;;) {
       if (likely(!__pyx_t_11)) {
         if (likely(PyList_CheckExact(__pyx_t_1))) {
           if (__pyx_t_4 >= PyList_GET_SIZE(__pyx_t_1)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_7 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_4); __Pyx_INCREF(__pyx_t_7); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 99, __pyx_L24_error)
+          __pyx_t_7 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_4); __Pyx_INCREF(__pyx_t_7); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 100, __pyx_L24_error)
           #else
-          __pyx_t_7 = PySequence_ITEM(__pyx_t_1, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 99, __pyx_L24_error)
+          __pyx_t_7 = PySequence_ITEM(__pyx_t_1, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 100, __pyx_L24_error)
           __Pyx_GOTREF(__pyx_t_7);
           #endif
         } else {
           if (__pyx_t_4 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_7 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_4); __Pyx_INCREF(__pyx_t_7); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 99, __pyx_L24_error)
+          __pyx_t_7 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_4); __Pyx_INCREF(__pyx_t_7); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 100, __pyx_L24_error)
           #else
-          __pyx_t_7 = PySequence_ITEM(__pyx_t_1, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 99, __pyx_L24_error)
+          __pyx_t_7 = PySequence_ITEM(__pyx_t_1, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 100, __pyx_L24_error)
           __Pyx_GOTREF(__pyx_t_7);
           #endif
         }
@@ -4515,7 +4505,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 99, __pyx_L24_error)
+            else __PYX_ERR(0, 100, __pyx_L24_error)
           }
           break;
         }
@@ -4523,14 +4513,14 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
       }
       __Pyx_XDECREF_SET(__pyx_8genexpr2__pyx_v_veh, __pyx_t_7);
       __pyx_t_7 = 0;
-      __pyx_t_7 = __Pyx_GetItemInt(__pyx_8genexpr2__pyx_v_veh, -1L, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 99, __pyx_L24_error)
+      __pyx_t_7 = __Pyx_GetItemInt(__pyx_8genexpr2__pyx_v_veh, -1L, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 100, __pyx_L24_error)
       __Pyx_GOTREF(__pyx_t_7);
-      __pyx_t_12 = PyObject_RichCompare(__pyx_t_7, __pyx_int_neg_45, Py_GT); __Pyx_XGOTREF(__pyx_t_12); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 99, __pyx_L24_error)
+      __pyx_t_12 = PyObject_RichCompare(__pyx_t_7, __pyx_int_neg_45, Py_GT); __Pyx_XGOTREF(__pyx_t_12); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 100, __pyx_L24_error)
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-      __pyx_t_10 = __Pyx_PyObject_IsTrue(__pyx_t_12); if (unlikely(__pyx_t_10 < 0)) __PYX_ERR(0, 99, __pyx_L24_error)
+      __pyx_t_10 = __Pyx_PyObject_IsTrue(__pyx_t_12); if (unlikely(__pyx_t_10 < 0)) __PYX_ERR(0, 100, __pyx_L24_error)
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
       if (__pyx_t_10) {
-        if (unlikely(__Pyx_ListComp_Append(__pyx_t_6, (PyObject*)__pyx_8genexpr2__pyx_v_veh))) __PYX_ERR(0, 99, __pyx_L24_error)
+        if (unlikely(__Pyx_ListComp_Append(__pyx_t_6, (PyObject*)__pyx_8genexpr2__pyx_v_veh))) __PYX_ERR(0, 100, __pyx_L24_error)
       }
     }
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -4541,14 +4531,14 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
     goto __pyx_L1_error;
     __pyx_L28_exit_scope:;
   } /* exit inner scope */
-  __pyx_t_1 = PyNumber_InPlaceAdd(__pyx_t_2, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 99, __pyx_L1_error)
+  __pyx_t_1 = PyNumber_InPlaceAdd(__pyx_t_2, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 100, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_go_vehs, __pyx_t_1) < 0) __PYX_ERR(0, 99, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_go_vehs, __pyx_t_1) < 0) __PYX_ERR(0, 100, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":69
+  /* "sim_package/queue_model.pyx":70
  * 
  *     # must find non-conflicts before running model at each time step. decoupled due to write=read data deps
  *     def non_conflict_vehs(self, t_now, link_id_dict=None, agent_id_dict=None, node2link_dict=None, node_id_dict=None):             # <<<<<<<<<<<<<<
@@ -4565,7 +4555,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_12);
-  __Pyx_AddTraceback("queue_model.Node.non_conflict_vehs", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Node.non_conflict_vehs", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_in_links);
@@ -4582,7 +4572,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
   return __pyx_r;
 }
 
-/* "queue_model.pyx":102
+/* "sim_package/queue_model.pyx":103
  * 
  * 
  *     def run_node_model(self, t_now):             # <<<<<<<<<<<<<<
@@ -4591,19 +4581,19 @@ static PyObject *__pyx_pf_11queue_model_4Node_10non_conflict_vehs(struct __pyx_o
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_11queue_model_4Node_13run_node_model(PyObject *__pyx_v_self, PyObject *__pyx_v_t_now); /*proto*/
-static PyObject *__pyx_pw_11queue_model_4Node_13run_node_model(PyObject *__pyx_v_self, PyObject *__pyx_v_t_now) {
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Node_13run_node_model(PyObject *__pyx_v_self, PyObject *__pyx_v_t_now); /*proto*/
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Node_13run_node_model(PyObject *__pyx_v_self, PyObject *__pyx_v_t_now) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("run_node_model (wrapper)", 0);
-  __pyx_r = __pyx_pf_11queue_model_4Node_12run_node_model(((struct __pyx_obj_11queue_model_Node *)__pyx_v_self), ((PyObject *)__pyx_v_t_now));
+  __pyx_r = __pyx_pf_11sim_package_11queue_model_4Node_12run_node_model(((struct __pyx_obj_11sim_package_11queue_model_Node *)__pyx_v_self), ((PyObject *)__pyx_v_t_now));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_11queue_model_Node *__pyx_v_self, PyObject *__pyx_v_t_now) {
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Node_12run_node_model(struct __pyx_obj_11sim_package_11queue_model_Node *__pyx_v_self, PyObject *__pyx_v_t_now) {
   PyObject *__pyx_v_agent_id = NULL;
   PyObject *__pyx_v_next_node = NULL;
   PyObject *__pyx_v_il = NULL;
@@ -4635,22 +4625,22 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("run_node_model", 0);
 
-  /* "queue_model.pyx":104
+  /* "sim_package/queue_model.pyx":105
  *     def run_node_model(self, t_now):
  *         ### Agent reaching destination
  *         for [agent_id, next_node, il, ol, _] in self.go_vehs:             # <<<<<<<<<<<<<<
  *             veh_len = self.agent_id_dict[agent_id].veh_len
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_go_vehs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 104, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_go_vehs); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 105, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (likely(PyList_CheckExact(__pyx_t_1)) || PyTuple_CheckExact(__pyx_t_1)) {
     __pyx_t_2 = __pyx_t_1; __Pyx_INCREF(__pyx_t_2); __pyx_t_3 = 0;
     __pyx_t_4 = NULL;
   } else {
-    __pyx_t_3 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 104, __pyx_L1_error)
+    __pyx_t_3 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 105, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 104, __pyx_L1_error)
+    __pyx_t_4 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 105, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   for (;;) {
@@ -4658,17 +4648,17 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
       if (likely(PyList_CheckExact(__pyx_t_2))) {
         if (__pyx_t_3 >= PyList_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_1); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 104, __pyx_L1_error)
+        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_1); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 105, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 104, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 105, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       } else {
         if (__pyx_t_3 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_1); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 104, __pyx_L1_error)
+        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_1); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 105, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 104, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 105, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       }
@@ -4678,7 +4668,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 104, __pyx_L1_error)
+          else __PYX_ERR(0, 105, __pyx_L1_error)
         }
         break;
       }
@@ -4690,7 +4680,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
       if (unlikely(size != 5)) {
         if (size > 5) __Pyx_RaiseTooManyValuesError(5);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 104, __pyx_L1_error)
+        __PYX_ERR(0, 105, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -4716,7 +4706,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
         Py_ssize_t i;
         PyObject** temps[5] = {&__pyx_t_5,&__pyx_t_6,&__pyx_t_7,&__pyx_t_8,&__pyx_t_9};
         for (i=0; i < 5; i++) {
-          PyObject* item = PySequence_ITEM(sequence, i); if (unlikely(!item)) __PYX_ERR(0, 104, __pyx_L1_error)
+          PyObject* item = PySequence_ITEM(sequence, i); if (unlikely(!item)) __PYX_ERR(0, 105, __pyx_L1_error)
           __Pyx_GOTREF(item);
           *(temps[i]) = item;
         }
@@ -4726,7 +4716,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
     } else {
       Py_ssize_t index = -1;
       PyObject** temps[5] = {&__pyx_t_5,&__pyx_t_6,&__pyx_t_7,&__pyx_t_8,&__pyx_t_9};
-      __pyx_t_10 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 104, __pyx_L1_error)
+      __pyx_t_10 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 105, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_11 = Py_TYPE(__pyx_t_10)->tp_iternext;
@@ -4735,7 +4725,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
         __Pyx_GOTREF(item);
         *(temps[index]) = item;
       }
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_11(__pyx_t_10), 5) < 0) __PYX_ERR(0, 104, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_11(__pyx_t_10), 5) < 0) __PYX_ERR(0, 105, __pyx_L1_error)
       __pyx_t_11 = NULL;
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       goto __pyx_L6_unpacking_done;
@@ -4743,7 +4733,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       __pyx_t_11 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 104, __pyx_L1_error)
+      __PYX_ERR(0, 105, __pyx_L1_error)
       __pyx_L6_unpacking_done:;
     }
     __Pyx_XDECREF_SET(__pyx_v_agent_id, __pyx_t_5);
@@ -4757,25 +4747,25 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
     __Pyx_XDECREF_SET(__pyx_v__, __pyx_t_9);
     __pyx_t_9 = 0;
 
-    /* "queue_model.pyx":105
+    /* "sim_package/queue_model.pyx":106
  *         ### Agent reaching destination
  *         for [agent_id, next_node, il, ol, _] in self.go_vehs:
  *             veh_len = self.agent_id_dict[agent_id].veh_len             # <<<<<<<<<<<<<<
  * 
  *             ### arrival
  */
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_agent_id_dict); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 105, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_agent_id_dict); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 106, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_v_agent_id); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 105, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_v_agent_id); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 106, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_veh_len); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 105, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_veh_len); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 106, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
     __Pyx_XDECREF_SET(__pyx_v_veh_len, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "queue_model.pyx":108
+    /* "sim_package/queue_model.pyx":109
  * 
  *             ### arrival
  *             if (next_node is None) and (self.nid == self.agent_id_dict[agent_id].destin_nid):             # <<<<<<<<<<<<<<
@@ -4789,41 +4779,41 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
       __pyx_t_12 = __pyx_t_14;
       goto __pyx_L8_bool_binop_done;
     }
-    __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->nid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 108, __pyx_L1_error)
+    __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->nid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_agent_id_dict); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 108, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_agent_id_dict); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
-    __pyx_t_8 = __Pyx_PyObject_GetItem(__pyx_t_9, __pyx_v_agent_id); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 108, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetItem(__pyx_t_9, __pyx_v_agent_id); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_destin_nid); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 108, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_destin_nid); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __pyx_t_8 = PyObject_RichCompare(__pyx_t_1, __pyx_t_9, Py_EQ); __Pyx_XGOTREF(__pyx_t_8); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 108, __pyx_L1_error)
+    __pyx_t_8 = PyObject_RichCompare(__pyx_t_1, __pyx_t_9, Py_EQ); __Pyx_XGOTREF(__pyx_t_8); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    __pyx_t_14 = __Pyx_PyObject_IsTrue(__pyx_t_8); if (unlikely(__pyx_t_14 < 0)) __PYX_ERR(0, 108, __pyx_L1_error)
+    __pyx_t_14 = __Pyx_PyObject_IsTrue(__pyx_t_8); if (unlikely(__pyx_t_14 < 0)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __pyx_t_12 = __pyx_t_14;
     __pyx_L8_bool_binop_done:;
     if (__pyx_t_12) {
 
-      /* "queue_model.pyx":109
+      /* "sim_package/queue_model.pyx":110
  *             ### arrival
  *             if (next_node is None) and (self.nid == self.agent_id_dict[agent_id].destin_nid):
  *                 self.link_id_dict[il].send_veh(t_now, agent_id, self.agent_id_dict)             # <<<<<<<<<<<<<<
  *                 self.agent_id_dict[agent_id].move_agent(t_now, self.nid, None, 'arr')
  * 
  */
-      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 109, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 110, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
-      __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_9, __pyx_v_il); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_9, __pyx_v_il); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 110, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_send_veh); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 109, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_send_veh); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 110, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_agent_id_dict); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_agent_id_dict); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 110, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __pyx_t_7 = NULL;
       __pyx_t_15 = 0;
@@ -4840,7 +4830,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_9)) {
         PyObject *__pyx_temp[4] = {__pyx_t_7, __pyx_v_t_now, __pyx_v_agent_id, __pyx_t_1};
-        __pyx_t_8 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_15, 3+__pyx_t_15); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 109, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_15, 3+__pyx_t_15); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 110, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -4849,14 +4839,14 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_9)) {
         PyObject *__pyx_temp[4] = {__pyx_t_7, __pyx_v_t_now, __pyx_v_agent_id, __pyx_t_1};
-        __pyx_t_8 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_15, 3+__pyx_t_15); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 109, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_15, 3+__pyx_t_15); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 110, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       } else
       #endif
       {
-        __pyx_t_6 = PyTuple_New(3+__pyx_t_15); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 109, __pyx_L1_error)
+        __pyx_t_6 = PyTuple_New(3+__pyx_t_15); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 110, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         if (__pyx_t_7) {
           __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_7); __pyx_t_7 = NULL;
@@ -4870,29 +4860,29 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
         __Pyx_GIVEREF(__pyx_t_1);
         PyTuple_SET_ITEM(__pyx_t_6, 2+__pyx_t_15, __pyx_t_1);
         __pyx_t_1 = 0;
-        __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_6, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 109, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_6, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 110, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       }
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-      /* "queue_model.pyx":110
+      /* "sim_package/queue_model.pyx":111
  *             if (next_node is None) and (self.nid == self.agent_id_dict[agent_id].destin_nid):
  *                 self.link_id_dict[il].send_veh(t_now, agent_id, self.agent_id_dict)
  *                 self.agent_id_dict[agent_id].move_agent(t_now, self.nid, None, 'arr')             # <<<<<<<<<<<<<<
  * 
  *             ### no storage capacity downstream
  */
-      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_agent_id_dict); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 110, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_agent_id_dict); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 111, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
-      __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_t_9, __pyx_v_agent_id); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 110, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_t_9, __pyx_v_agent_id); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 111, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_move_agent); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 110, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_move_agent); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 111, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_6 = PyFloat_FromDouble(__pyx_v_self->nid); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 110, __pyx_L1_error)
+      __pyx_t_6 = PyFloat_FromDouble(__pyx_v_self->nid); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 111, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __pyx_t_1 = NULL;
       __pyx_t_15 = 0;
@@ -4909,7 +4899,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_9)) {
         PyObject *__pyx_temp[5] = {__pyx_t_1, __pyx_v_t_now, __pyx_t_6, Py_None, __pyx_n_u_arr};
-        __pyx_t_8 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_15, 4+__pyx_t_15); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 110, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_15, 4+__pyx_t_15); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 111, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -4918,14 +4908,14 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_9)) {
         PyObject *__pyx_temp[5] = {__pyx_t_1, __pyx_v_t_now, __pyx_t_6, Py_None, __pyx_n_u_arr};
-        __pyx_t_8 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_15, 4+__pyx_t_15); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 110, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_15, 4+__pyx_t_15); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 111, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       } else
       #endif
       {
-        __pyx_t_7 = PyTuple_New(4+__pyx_t_15); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 110, __pyx_L1_error)
+        __pyx_t_7 = PyTuple_New(4+__pyx_t_15); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 111, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_7);
         if (__pyx_t_1) {
           __Pyx_GIVEREF(__pyx_t_1); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_1); __pyx_t_1 = NULL;
@@ -4942,14 +4932,14 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
         __Pyx_GIVEREF(__pyx_n_u_arr);
         PyTuple_SET_ITEM(__pyx_t_7, 3+__pyx_t_15, __pyx_n_u_arr);
         __pyx_t_6 = 0;
-        __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_7, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 110, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_7, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 111, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       }
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-      /* "queue_model.pyx":108
+      /* "sim_package/queue_model.pyx":109
  * 
  *             ### arrival
  *             if (next_node is None) and (self.nid == self.agent_id_dict[agent_id].destin_nid):             # <<<<<<<<<<<<<<
@@ -4959,85 +4949,85 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
       goto __pyx_L7;
     }
 
-    /* "queue_model.pyx":113
+    /* "sim_package/queue_model.pyx":114
  * 
  *             ### no storage capacity downstream
  *             elif self.link_id_dict[ol].st_c < veh_len:             # <<<<<<<<<<<<<<
  *                 pass ### no blocking, as # veh = # lanes
  *             ### inlink-sending, outlink-receiving both permits
  */
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 113, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 114, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_t_8, __pyx_v_ol); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 113, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_t_8, __pyx_v_ol); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 114, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_st_c); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 113, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_st_c); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 114, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    __pyx_t_9 = PyObject_RichCompare(__pyx_t_8, __pyx_v_veh_len, Py_LT); __Pyx_XGOTREF(__pyx_t_9); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 113, __pyx_L1_error)
+    __pyx_t_9 = PyObject_RichCompare(__pyx_t_8, __pyx_v_veh_len, Py_LT); __Pyx_XGOTREF(__pyx_t_9); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 114, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_t_9); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 113, __pyx_L1_error)
+    __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_t_9); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 114, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
     if (__pyx_t_12) {
       goto __pyx_L7;
     }
 
-    /* "queue_model.pyx":116
+    /* "sim_package/queue_model.pyx":117
  *                 pass ### no blocking, as # veh = # lanes
  *             ### inlink-sending, outlink-receiving both permits
  *             elif self.link_id_dict[il].ou_c >= 1 and self.link_id_dict[ol].in_c >= 1:             # <<<<<<<<<<<<<<
  *                 ### before move agent as it uses the old agent.cl_enter_time
  *                 self.link_id_dict[il].send_veh(t_now, agent_id, self.agent_id_dict)
  */
-    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
-    __pyx_t_8 = __Pyx_PyObject_GetItem(__pyx_t_9, __pyx_v_il); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetItem(__pyx_t_9, __pyx_v_il); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_ou_c); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_ou_c); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __pyx_t_8 = PyObject_RichCompare(__pyx_t_9, __pyx_int_1, Py_GE); __Pyx_XGOTREF(__pyx_t_8); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __pyx_t_8 = PyObject_RichCompare(__pyx_t_9, __pyx_int_1, Py_GE); __Pyx_XGOTREF(__pyx_t_8); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    __pyx_t_14 = __Pyx_PyObject_IsTrue(__pyx_t_8); if (unlikely(__pyx_t_14 < 0)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __pyx_t_14 = __Pyx_PyObject_IsTrue(__pyx_t_8); if (unlikely(__pyx_t_14 < 0)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     if (__pyx_t_14) {
     } else {
       __pyx_t_12 = __pyx_t_14;
       goto __pyx_L10_bool_binop_done;
     }
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_t_8, __pyx_v_ol); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_t_8, __pyx_v_ol); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_in_c); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_in_c); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    __pyx_t_9 = PyObject_RichCompare(__pyx_t_8, __pyx_int_1, Py_GE); __Pyx_XGOTREF(__pyx_t_9); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __pyx_t_9 = PyObject_RichCompare(__pyx_t_8, __pyx_int_1, Py_GE); __Pyx_XGOTREF(__pyx_t_9); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __pyx_t_14 = __Pyx_PyObject_IsTrue(__pyx_t_9); if (unlikely(__pyx_t_14 < 0)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __pyx_t_14 = __Pyx_PyObject_IsTrue(__pyx_t_9); if (unlikely(__pyx_t_14 < 0)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
     __pyx_t_12 = __pyx_t_14;
     __pyx_L10_bool_binop_done:;
     if (__pyx_t_12) {
 
-      /* "queue_model.pyx":118
+      /* "sim_package/queue_model.pyx":119
  *             elif self.link_id_dict[il].ou_c >= 1 and self.link_id_dict[ol].in_c >= 1:
  *                 ### before move agent as it uses the old agent.cl_enter_time
  *                 self.link_id_dict[il].send_veh(t_now, agent_id, self.agent_id_dict)             # <<<<<<<<<<<<<<
  *                 self.agent_id_dict[agent_id].move_agent(t_now, self.nid, next_node, 'flow')
  *                 self.link_id_dict[ol].receive_veh(agent_id)
  */
-      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 118, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 119, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
-      __pyx_t_7 = __Pyx_PyObject_GetItem(__pyx_t_8, __pyx_v_il); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 118, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyObject_GetItem(__pyx_t_8, __pyx_v_il); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 119, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_send_veh); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 118, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_send_veh); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 119, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-      __pyx_t_7 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_agent_id_dict); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 118, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_agent_id_dict); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 119, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __pyx_t_6 = NULL;
       __pyx_t_15 = 0;
@@ -5054,7 +5044,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_8)) {
         PyObject *__pyx_temp[4] = {__pyx_t_6, __pyx_v_t_now, __pyx_v_agent_id, __pyx_t_7};
-        __pyx_t_9 = __Pyx_PyFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_15, 3+__pyx_t_15); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 118, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_15, 3+__pyx_t_15); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 119, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -5063,14 +5053,14 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_8)) {
         PyObject *__pyx_temp[4] = {__pyx_t_6, __pyx_v_t_now, __pyx_v_agent_id, __pyx_t_7};
-        __pyx_t_9 = __Pyx_PyCFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_15, 3+__pyx_t_15); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 118, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyCFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_15, 3+__pyx_t_15); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 119, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       } else
       #endif
       {
-        __pyx_t_1 = PyTuple_New(3+__pyx_t_15); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 118, __pyx_L1_error)
+        __pyx_t_1 = PyTuple_New(3+__pyx_t_15); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 119, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         if (__pyx_t_6) {
           __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_6); __pyx_t_6 = NULL;
@@ -5084,29 +5074,29 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
         __Pyx_GIVEREF(__pyx_t_7);
         PyTuple_SET_ITEM(__pyx_t_1, 2+__pyx_t_15, __pyx_t_7);
         __pyx_t_7 = 0;
-        __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_1, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 118, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_1, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 119, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       }
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-      /* "queue_model.pyx":119
+      /* "sim_package/queue_model.pyx":120
  *                 ### before move agent as it uses the old agent.cl_enter_time
  *                 self.link_id_dict[il].send_veh(t_now, agent_id, self.agent_id_dict)
  *                 self.agent_id_dict[agent_id].move_agent(t_now, self.nid, next_node, 'flow')             # <<<<<<<<<<<<<<
  *                 self.link_id_dict[ol].receive_veh(agent_id)
  *             ### either inlink-sending or outlink-receiving or both exhaust
  */
-      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_agent_id_dict); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 119, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_agent_id_dict); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 120, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
-      __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_8, __pyx_v_agent_id); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 119, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_8, __pyx_v_agent_id); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 120, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_move_agent); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 119, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_move_agent); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 120, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->nid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 119, __pyx_L1_error)
+      __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->nid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 120, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __pyx_t_7 = NULL;
       __pyx_t_15 = 0;
@@ -5123,7 +5113,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_8)) {
         PyObject *__pyx_temp[5] = {__pyx_t_7, __pyx_v_t_now, __pyx_t_1, __pyx_v_next_node, __pyx_n_u_flow};
-        __pyx_t_9 = __Pyx_PyFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_15, 4+__pyx_t_15); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 119, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_15, 4+__pyx_t_15); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 120, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -5132,14 +5122,14 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_8)) {
         PyObject *__pyx_temp[5] = {__pyx_t_7, __pyx_v_t_now, __pyx_t_1, __pyx_v_next_node, __pyx_n_u_flow};
-        __pyx_t_9 = __Pyx_PyCFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_15, 4+__pyx_t_15); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 119, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyCFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_15, 4+__pyx_t_15); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 120, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       } else
       #endif
       {
-        __pyx_t_6 = PyTuple_New(4+__pyx_t_15); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 119, __pyx_L1_error)
+        __pyx_t_6 = PyTuple_New(4+__pyx_t_15); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 120, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         if (__pyx_t_7) {
           __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_7); __pyx_t_7 = NULL;
@@ -5156,26 +5146,26 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
         __Pyx_GIVEREF(__pyx_n_u_flow);
         PyTuple_SET_ITEM(__pyx_t_6, 3+__pyx_t_15, __pyx_n_u_flow);
         __pyx_t_1 = 0;
-        __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_6, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 119, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_6, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 120, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       }
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-      /* "queue_model.pyx":120
+      /* "sim_package/queue_model.pyx":121
  *                 self.link_id_dict[il].send_veh(t_now, agent_id, self.agent_id_dict)
  *                 self.agent_id_dict[agent_id].move_agent(t_now, self.nid, next_node, 'flow')
  *                 self.link_id_dict[ol].receive_veh(agent_id)             # <<<<<<<<<<<<<<
  *             ### either inlink-sending or outlink-receiving or both exhaust
  *             else:
  */
-      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 120, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 121, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
-      __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_t_8, __pyx_v_ol); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 120, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_t_8, __pyx_v_ol); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 121, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_receive_veh); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 120, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_receive_veh); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 121, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __pyx_t_6 = NULL;
@@ -5190,12 +5180,12 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
       }
       __pyx_t_9 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_8, __pyx_t_6, __pyx_v_agent_id) : __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_v_agent_id);
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-      if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 120, __pyx_L1_error)
+      if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 121, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-      /* "queue_model.pyx":116
+      /* "sim_package/queue_model.pyx":117
  *                 pass ### no blocking, as # veh = # lanes
  *             ### inlink-sending, outlink-receiving both permits
  *             elif self.link_id_dict[il].ou_c >= 1 and self.link_id_dict[ol].in_c >= 1:             # <<<<<<<<<<<<<<
@@ -5205,7 +5195,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
       goto __pyx_L7;
     }
 
-    /* "queue_model.pyx":124
+    /* "sim_package/queue_model.pyx":125
  *             else:
  * 
  *                 control_cap = min(self.link_id_dict[il].ou_c, self.link_id_dict[ol].in_c)             # <<<<<<<<<<<<<<
@@ -5213,24 +5203,24 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
  *                 if toss_coin[0]: ### vehicle can move
  */
     /*else*/ {
-      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 124, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 125, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
-      __pyx_t_8 = __Pyx_PyObject_GetItem(__pyx_t_9, __pyx_v_ol); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 124, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_GetItem(__pyx_t_9, __pyx_v_ol); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 125, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_in_c); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 124, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_in_c); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 125, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 124, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 125, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
-      __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_t_8, __pyx_v_il); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 124, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_t_8, __pyx_v_il); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 125, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_ou_c); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 124, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_ou_c); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 125, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_1 = PyObject_RichCompare(__pyx_t_9, __pyx_t_8, Py_LT); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 124, __pyx_L1_error)
-      __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 124, __pyx_L1_error)
+      __pyx_t_1 = PyObject_RichCompare(__pyx_t_9, __pyx_t_8, Py_LT); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 125, __pyx_L1_error)
+      __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 125, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       if (__pyx_t_12) {
         __Pyx_INCREF(__pyx_t_9);
@@ -5247,19 +5237,19 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
       __Pyx_XDECREF_SET(__pyx_v_control_cap, __pyx_t_9);
       __pyx_t_9 = 0;
 
-      /* "queue_model.pyx":125
+      /* "sim_package/queue_model.pyx":126
  * 
  *                 control_cap = min(self.link_id_dict[il].ou_c, self.link_id_dict[ol].in_c)
  *                 toss_coin = random.choices([0,1], weights=[1-control_cap, control_cap], k=1)             # <<<<<<<<<<<<<<
  *                 if toss_coin[0]: ### vehicle can move
  *                     ### before move agent as it uses the old agent.cl_enter_time
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_random); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 125, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_random); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 126, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_choices); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 125, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_choices); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 126, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-      __pyx_t_9 = PyList_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 125, __pyx_L1_error)
+      __pyx_t_9 = PyList_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 126, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       __Pyx_INCREF(__pyx_int_0);
       __Pyx_GIVEREF(__pyx_int_0);
@@ -5267,16 +5257,16 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
       __Pyx_INCREF(__pyx_int_1);
       __Pyx_GIVEREF(__pyx_int_1);
       PyList_SET_ITEM(__pyx_t_9, 1, __pyx_int_1);
-      __pyx_t_8 = PyTuple_New(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 125, __pyx_L1_error)
+      __pyx_t_8 = PyTuple_New(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 126, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_GIVEREF(__pyx_t_9);
       PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_9);
       __pyx_t_9 = 0;
-      __pyx_t_9 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 125, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 126, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
-      __pyx_t_1 = __Pyx_PyInt_SubtractCObj(__pyx_int_1, __pyx_v_control_cap, 1, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 125, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyInt_SubtractCObj(__pyx_int_1, __pyx_v_control_cap, 1, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 126, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_7 = PyList_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 125, __pyx_L1_error)
+      __pyx_t_7 = PyList_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 126, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_GIVEREF(__pyx_t_1);
       PyList_SET_ITEM(__pyx_t_7, 0, __pyx_t_1);
@@ -5284,10 +5274,10 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
       __Pyx_GIVEREF(__pyx_v_control_cap);
       PyList_SET_ITEM(__pyx_t_7, 1, __pyx_v_control_cap);
       __pyx_t_1 = 0;
-      if (PyDict_SetItem(__pyx_t_9, __pyx_n_s_weights, __pyx_t_7) < 0) __PYX_ERR(0, 125, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_9, __pyx_n_s_weights, __pyx_t_7) < 0) __PYX_ERR(0, 126, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-      if (PyDict_SetItem(__pyx_t_9, __pyx_n_s_k, __pyx_int_1) < 0) __PYX_ERR(0, 125, __pyx_L1_error)
-      __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_8, __pyx_t_9); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 125, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_9, __pyx_n_s_k, __pyx_int_1) < 0) __PYX_ERR(0, 126, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_8, __pyx_t_9); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 126, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -5295,35 +5285,35 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
       __Pyx_XDECREF_SET(__pyx_v_toss_coin, __pyx_t_7);
       __pyx_t_7 = 0;
 
-      /* "queue_model.pyx":126
+      /* "sim_package/queue_model.pyx":127
  *                 control_cap = min(self.link_id_dict[il].ou_c, self.link_id_dict[ol].in_c)
  *                 toss_coin = random.choices([0,1], weights=[1-control_cap, control_cap], k=1)
  *                 if toss_coin[0]: ### vehicle can move             # <<<<<<<<<<<<<<
  *                     ### before move agent as it uses the old agent.cl_enter_time
  *                     self.link_id_dict[il].send_veh(t_now, agent_id, self.agent_id_dict)
  */
-      __pyx_t_7 = __Pyx_GetItemInt(__pyx_v_toss_coin, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 126, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_GetItemInt(__pyx_v_toss_coin, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 127, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
-      __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_t_7); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 126, __pyx_L1_error)
+      __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_t_7); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 127, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       if (__pyx_t_12) {
 
-        /* "queue_model.pyx":128
+        /* "sim_package/queue_model.pyx":129
  *                 if toss_coin[0]: ### vehicle can move
  *                     ### before move agent as it uses the old agent.cl_enter_time
  *                     self.link_id_dict[il].send_veh(t_now, agent_id, self.agent_id_dict)             # <<<<<<<<<<<<<<
  *                     self.agent_id_dict[agent_id].move_agent(t_now, self.nid, next_node, 'chance')
  *                     self.link_id_dict[ol].receive_veh(agent_id)
  */
-        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 128, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 129, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
-        __pyx_t_8 = __Pyx_PyObject_GetItem(__pyx_t_9, __pyx_v_il); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 128, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyObject_GetItem(__pyx_t_9, __pyx_v_il); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 129, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_send_veh); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 128, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_send_veh); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 129, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-        __pyx_t_8 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_agent_id_dict); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 128, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_agent_id_dict); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 129, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         __pyx_t_6 = NULL;
         __pyx_t_15 = 0;
@@ -5340,7 +5330,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
         #if CYTHON_FAST_PYCALL
         if (PyFunction_Check(__pyx_t_9)) {
           PyObject *__pyx_temp[4] = {__pyx_t_6, __pyx_v_t_now, __pyx_v_agent_id, __pyx_t_8};
-          __pyx_t_7 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_15, 3+__pyx_t_15); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 128, __pyx_L1_error)
+          __pyx_t_7 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_15, 3+__pyx_t_15); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 129, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
           __Pyx_GOTREF(__pyx_t_7);
           __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -5349,14 +5339,14 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
         #if CYTHON_FAST_PYCCALL
         if (__Pyx_PyFastCFunction_Check(__pyx_t_9)) {
           PyObject *__pyx_temp[4] = {__pyx_t_6, __pyx_v_t_now, __pyx_v_agent_id, __pyx_t_8};
-          __pyx_t_7 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_15, 3+__pyx_t_15); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 128, __pyx_L1_error)
+          __pyx_t_7 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_15, 3+__pyx_t_15); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 129, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
           __Pyx_GOTREF(__pyx_t_7);
           __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         } else
         #endif
         {
-          __pyx_t_1 = PyTuple_New(3+__pyx_t_15); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 128, __pyx_L1_error)
+          __pyx_t_1 = PyTuple_New(3+__pyx_t_15); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 129, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
           if (__pyx_t_6) {
             __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_6); __pyx_t_6 = NULL;
@@ -5370,29 +5360,29 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
           __Pyx_GIVEREF(__pyx_t_8);
           PyTuple_SET_ITEM(__pyx_t_1, 2+__pyx_t_15, __pyx_t_8);
           __pyx_t_8 = 0;
-          __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_1, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 128, __pyx_L1_error)
+          __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_1, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 129, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_7);
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         }
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-        /* "queue_model.pyx":129
+        /* "sim_package/queue_model.pyx":130
  *                     ### before move agent as it uses the old agent.cl_enter_time
  *                     self.link_id_dict[il].send_veh(t_now, agent_id, self.agent_id_dict)
  *                     self.agent_id_dict[agent_id].move_agent(t_now, self.nid, next_node, 'chance')             # <<<<<<<<<<<<<<
  *                     self.link_id_dict[ol].receive_veh(agent_id)
  *                 else: ### even though vehicle cannot move, the remaining capacity needs to be adjusted
  */
-        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_agent_id_dict); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 129, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_agent_id_dict); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 130, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
-        __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_9, __pyx_v_agent_id); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 129, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_9, __pyx_v_agent_id); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 130, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_move_agent); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 129, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_move_agent); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 130, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-        __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->nid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 129, __pyx_L1_error)
+        __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->nid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 130, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __pyx_t_8 = NULL;
         __pyx_t_15 = 0;
@@ -5409,7 +5399,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
         #if CYTHON_FAST_PYCALL
         if (PyFunction_Check(__pyx_t_9)) {
           PyObject *__pyx_temp[5] = {__pyx_t_8, __pyx_v_t_now, __pyx_t_1, __pyx_v_next_node, __pyx_n_u_chance};
-          __pyx_t_7 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_15, 4+__pyx_t_15); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 129, __pyx_L1_error)
+          __pyx_t_7 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_15, 4+__pyx_t_15); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 130, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
           __Pyx_GOTREF(__pyx_t_7);
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -5418,14 +5408,14 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
         #if CYTHON_FAST_PYCCALL
         if (__Pyx_PyFastCFunction_Check(__pyx_t_9)) {
           PyObject *__pyx_temp[5] = {__pyx_t_8, __pyx_v_t_now, __pyx_t_1, __pyx_v_next_node, __pyx_n_u_chance};
-          __pyx_t_7 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_15, 4+__pyx_t_15); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 129, __pyx_L1_error)
+          __pyx_t_7 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_15, 4+__pyx_t_15); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 130, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
           __Pyx_GOTREF(__pyx_t_7);
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         } else
         #endif
         {
-          __pyx_t_6 = PyTuple_New(4+__pyx_t_15); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 129, __pyx_L1_error)
+          __pyx_t_6 = PyTuple_New(4+__pyx_t_15); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 130, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           if (__pyx_t_8) {
             __Pyx_GIVEREF(__pyx_t_8); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_8); __pyx_t_8 = NULL;
@@ -5442,26 +5432,26 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
           __Pyx_GIVEREF(__pyx_n_u_chance);
           PyTuple_SET_ITEM(__pyx_t_6, 3+__pyx_t_15, __pyx_n_u_chance);
           __pyx_t_1 = 0;
-          __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_6, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 129, __pyx_L1_error)
+          __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_6, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 130, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_7);
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
         }
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-        /* "queue_model.pyx":130
+        /* "sim_package/queue_model.pyx":131
  *                     self.link_id_dict[il].send_veh(t_now, agent_id, self.agent_id_dict)
  *                     self.agent_id_dict[agent_id].move_agent(t_now, self.nid, next_node, 'chance')
  *                     self.link_id_dict[ol].receive_veh(agent_id)             # <<<<<<<<<<<<<<
  *                 else: ### even though vehicle cannot move, the remaining capacity needs to be adjusted
  *                     if self.link_id_dict[il].ou_c < self.link_id_dict[ol].in_c:
  */
-        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 130, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 131, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
-        __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_t_9, __pyx_v_ol); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 130, __pyx_L1_error)
+        __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_t_9, __pyx_v_ol); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 131, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_receive_veh); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 130, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_receive_veh); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 131, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
         __pyx_t_6 = NULL;
@@ -5476,12 +5466,12 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
         }
         __pyx_t_7 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_9, __pyx_t_6, __pyx_v_agent_id) : __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_v_agent_id);
         __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-        if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 130, __pyx_L1_error)
+        if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 131, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_7);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-        /* "queue_model.pyx":126
+        /* "sim_package/queue_model.pyx":127
  *                 control_cap = min(self.link_id_dict[il].ou_c, self.link_id_dict[ol].in_c)
  *                 toss_coin = random.choices([0,1], weights=[1-control_cap, control_cap], k=1)
  *                 if toss_coin[0]: ### vehicle can move             # <<<<<<<<<<<<<<
@@ -5491,7 +5481,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
         goto __pyx_L12;
       }
 
-      /* "queue_model.pyx":132
+      /* "sim_package/queue_model.pyx":133
  *                     self.link_id_dict[ol].receive_veh(agent_id)
  *                 else: ### even though vehicle cannot move, the remaining capacity needs to be adjusted
  *                     if self.link_id_dict[il].ou_c < self.link_id_dict[ol].in_c:             # <<<<<<<<<<<<<<
@@ -5499,59 +5489,59 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
  *                     elif self.link_id_dict[ol].in_c < self.link_id_dict[il].ou_c:
  */
       /*else*/ {
-        __pyx_t_7 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 132, __pyx_L1_error)
+        __pyx_t_7 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 133, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_7);
-        __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_t_7, __pyx_v_il); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 132, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_t_7, __pyx_v_il); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 133, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-        __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_ou_c); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 132, __pyx_L1_error)
+        __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_ou_c); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 133, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_7);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 132, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 133, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
-        __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_t_9, __pyx_v_ol); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 132, __pyx_L1_error)
+        __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_t_9, __pyx_v_ol); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_in_c); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 132, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_in_c); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 133, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-        __pyx_t_6 = PyObject_RichCompare(__pyx_t_7, __pyx_t_9, Py_LT); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 132, __pyx_L1_error)
+        __pyx_t_6 = PyObject_RichCompare(__pyx_t_7, __pyx_t_9, Py_LT); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-        __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 132, __pyx_L1_error)
+        __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 133, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
         if (__pyx_t_12) {
 
-          /* "queue_model.pyx":133
+          /* "sim_package/queue_model.pyx":134
  *                 else: ### even though vehicle cannot move, the remaining capacity needs to be adjusted
  *                     if self.link_id_dict[il].ou_c < self.link_id_dict[ol].in_c:
  *                        self.link_id_dict[il].ou_c = max(0, self.link_id_dict[il].ou_c - 1)             # <<<<<<<<<<<<<<
  *                     elif self.link_id_dict[ol].in_c < self.link_id_dict[il].ou_c:
  *                         self.link_id_dict[ol].in_c = max(0, self.link_id_dict[ol].in_c - 1)
  */
-          __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
+          __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 134, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
-          __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_t_6, __pyx_v_il); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 133, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_t_6, __pyx_v_il); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 134, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-          __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_ou_c); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
+          __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_ou_c); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 134, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-          __pyx_t_9 = __Pyx_PyInt_SubtractObjC(__pyx_t_6, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 133, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyInt_SubtractObjC(__pyx_t_6, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 134, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
           __pyx_t_16 = 0;
-          __pyx_t_7 = __Pyx_PyInt_From_long(__pyx_t_16); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 133, __pyx_L1_error)
+          __pyx_t_7 = __Pyx_PyInt_From_long(__pyx_t_16); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 134, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_7);
-          __pyx_t_1 = PyObject_RichCompare(__pyx_t_9, __pyx_t_7, Py_GT); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
+          __pyx_t_1 = PyObject_RichCompare(__pyx_t_9, __pyx_t_7, Py_GT); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 134, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-          __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 133, __pyx_L1_error)
+          __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 134, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
           if (__pyx_t_12) {
             __Pyx_INCREF(__pyx_t_9);
             __pyx_t_6 = __pyx_t_9;
           } else {
-            __pyx_t_1 = __Pyx_PyInt_From_long(__pyx_t_16); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
+            __pyx_t_1 = __Pyx_PyInt_From_long(__pyx_t_16); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 134, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_1);
             __pyx_t_6 = __pyx_t_1;
             __pyx_t_1 = 0;
@@ -5560,16 +5550,16 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
           __pyx_t_9 = __pyx_t_6;
           __Pyx_INCREF(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-          __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
+          __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 134, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
-          __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_6, __pyx_v_il); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
+          __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_6, __pyx_v_il); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 134, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-          if (__Pyx_PyObject_SetAttrStr(__pyx_t_1, __pyx_n_s_ou_c, __pyx_t_9) < 0) __PYX_ERR(0, 133, __pyx_L1_error)
+          if (__Pyx_PyObject_SetAttrStr(__pyx_t_1, __pyx_n_s_ou_c, __pyx_t_9) < 0) __PYX_ERR(0, 134, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-          /* "queue_model.pyx":132
+          /* "sim_package/queue_model.pyx":133
  *                     self.link_id_dict[ol].receive_veh(agent_id)
  *                 else: ### even though vehicle cannot move, the remaining capacity needs to be adjusted
  *                     if self.link_id_dict[il].ou_c < self.link_id_dict[ol].in_c:             # <<<<<<<<<<<<<<
@@ -5579,66 +5569,66 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
           goto __pyx_L13;
         }
 
-        /* "queue_model.pyx":134
+        /* "sim_package/queue_model.pyx":135
  *                     if self.link_id_dict[il].ou_c < self.link_id_dict[ol].in_c:
  *                        self.link_id_dict[il].ou_c = max(0, self.link_id_dict[il].ou_c - 1)
  *                     elif self.link_id_dict[ol].in_c < self.link_id_dict[il].ou_c:             # <<<<<<<<<<<<<<
  *                         self.link_id_dict[ol].in_c = max(0, self.link_id_dict[ol].in_c - 1)
  *                     else:
  */
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 134, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_v_ol); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 134, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_v_ol); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 135, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_in_c); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 134, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_in_c); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 134, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 135, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
-        __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_t_9, __pyx_v_il); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 134, __pyx_L1_error)
+        __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_t_9, __pyx_v_il); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 135, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_ou_c); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 134, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_ou_c); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 135, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-        __pyx_t_6 = PyObject_RichCompare(__pyx_t_1, __pyx_t_9, Py_LT); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 134, __pyx_L1_error)
+        __pyx_t_6 = PyObject_RichCompare(__pyx_t_1, __pyx_t_9, Py_LT); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 135, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-        __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 134, __pyx_L1_error)
+        __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 135, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
         if (__pyx_t_12) {
 
-          /* "queue_model.pyx":135
+          /* "sim_package/queue_model.pyx":136
  *                        self.link_id_dict[il].ou_c = max(0, self.link_id_dict[il].ou_c - 1)
  *                     elif self.link_id_dict[ol].in_c < self.link_id_dict[il].ou_c:
  *                         self.link_id_dict[ol].in_c = max(0, self.link_id_dict[ol].in_c - 1)             # <<<<<<<<<<<<<<
  *                     else:
  *                         self.link_id_dict[il].ou_c -= 1
  */
-          __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 135, __pyx_L1_error)
+          __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 136, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
-          __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_t_6, __pyx_v_ol); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 135, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_t_6, __pyx_v_ol); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 136, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-          __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_in_c); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 135, __pyx_L1_error)
+          __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_in_c); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 136, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-          __pyx_t_9 = __Pyx_PyInt_SubtractObjC(__pyx_t_6, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 135, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyInt_SubtractObjC(__pyx_t_6, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 136, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
           __pyx_t_16 = 0;
-          __pyx_t_1 = __Pyx_PyInt_From_long(__pyx_t_16); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
+          __pyx_t_1 = __Pyx_PyInt_From_long(__pyx_t_16); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 136, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_1);
-          __pyx_t_7 = PyObject_RichCompare(__pyx_t_9, __pyx_t_1, Py_GT); __Pyx_XGOTREF(__pyx_t_7); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 135, __pyx_L1_error)
+          __pyx_t_7 = PyObject_RichCompare(__pyx_t_9, __pyx_t_1, Py_GT); __Pyx_XGOTREF(__pyx_t_7); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 136, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-          __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_t_7); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 135, __pyx_L1_error)
+          __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_t_7); if (unlikely(__pyx_t_12 < 0)) __PYX_ERR(0, 136, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
           if (__pyx_t_12) {
             __Pyx_INCREF(__pyx_t_9);
             __pyx_t_6 = __pyx_t_9;
           } else {
-            __pyx_t_7 = __Pyx_PyInt_From_long(__pyx_t_16); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 135, __pyx_L1_error)
+            __pyx_t_7 = __Pyx_PyInt_From_long(__pyx_t_16); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 136, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_7);
             __pyx_t_6 = __pyx_t_7;
             __pyx_t_7 = 0;
@@ -5647,16 +5637,16 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
           __pyx_t_9 = __pyx_t_6;
           __Pyx_INCREF(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-          __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 135, __pyx_L1_error)
+          __pyx_t_6 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 136, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
-          __pyx_t_7 = __Pyx_PyObject_GetItem(__pyx_t_6, __pyx_v_ol); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 135, __pyx_L1_error)
+          __pyx_t_7 = __Pyx_PyObject_GetItem(__pyx_t_6, __pyx_v_ol); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 136, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_7);
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-          if (__Pyx_PyObject_SetAttrStr(__pyx_t_7, __pyx_n_s_in_c, __pyx_t_9) < 0) __PYX_ERR(0, 135, __pyx_L1_error)
+          if (__Pyx_PyObject_SetAttrStr(__pyx_t_7, __pyx_n_s_in_c, __pyx_t_9) < 0) __PYX_ERR(0, 136, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
           __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-          /* "queue_model.pyx":134
+          /* "sim_package/queue_model.pyx":135
  *                     if self.link_id_dict[il].ou_c < self.link_id_dict[ol].in_c:
  *                        self.link_id_dict[il].ou_c = max(0, self.link_id_dict[il].ou_c - 1)
  *                     elif self.link_id_dict[ol].in_c < self.link_id_dict[il].ou_c:             # <<<<<<<<<<<<<<
@@ -5666,7 +5656,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
           goto __pyx_L13;
         }
 
-        /* "queue_model.pyx":137
+        /* "sim_package/queue_model.pyx":138
  *                         self.link_id_dict[ol].in_c = max(0, self.link_id_dict[ol].in_c - 1)
  *                     else:
  *                         self.link_id_dict[il].ou_c -= 1             # <<<<<<<<<<<<<<
@@ -5674,38 +5664,38 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
  * 
  */
         /*else*/ {
-          __pyx_t_7 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 137, __pyx_L1_error)
+          __pyx_t_7 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 138, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_7);
-          __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_t_7, __pyx_v_il); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 137, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyObject_GetItem(__pyx_t_7, __pyx_v_il); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 138, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
           __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-          __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_ou_c); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 137, __pyx_L1_error)
+          __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_ou_c); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 138, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_7);
-          __pyx_t_6 = __Pyx_PyInt_SubtractObjC(__pyx_t_7, __pyx_int_1, 1, 1, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
+          __pyx_t_6 = __Pyx_PyInt_SubtractObjC(__pyx_t_7, __pyx_int_1, 1, 1, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 138, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-          if (__Pyx_PyObject_SetAttrStr(__pyx_t_9, __pyx_n_s_ou_c, __pyx_t_6) < 0) __PYX_ERR(0, 137, __pyx_L1_error)
+          if (__Pyx_PyObject_SetAttrStr(__pyx_t_9, __pyx_n_s_ou_c, __pyx_t_6) < 0) __PYX_ERR(0, 138, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-          /* "queue_model.pyx":138
+          /* "sim_package/queue_model.pyx":139
  *                     else:
  *                         self.link_id_dict[il].ou_c -= 1
  *                         self.link_id_dict[ol].in_c -= 1             # <<<<<<<<<<<<<<
  * 
  * 
  */
-          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 138, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_link_id_dict); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 139, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
-          __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_t_9, __pyx_v_ol); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 138, __pyx_L1_error)
+          __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_t_9, __pyx_v_ol); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 139, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_6);
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_in_c); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 138, __pyx_L1_error)
+          __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_in_c); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 139, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_9);
-          __pyx_t_7 = __Pyx_PyInt_SubtractObjC(__pyx_t_9, __pyx_int_1, 1, 1, 0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 138, __pyx_L1_error)
+          __pyx_t_7 = __Pyx_PyInt_SubtractObjC(__pyx_t_9, __pyx_int_1, 1, 1, 0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 139, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_7);
           __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-          if (__Pyx_PyObject_SetAttrStr(__pyx_t_6, __pyx_n_s_in_c, __pyx_t_7) < 0) __PYX_ERR(0, 138, __pyx_L1_error)
+          if (__Pyx_PyObject_SetAttrStr(__pyx_t_6, __pyx_n_s_in_c, __pyx_t_7) < 0) __PYX_ERR(0, 139, __pyx_L1_error)
           __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
           __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
         }
@@ -5715,7 +5705,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
     }
     __pyx_L7:;
 
-    /* "queue_model.pyx":104
+    /* "sim_package/queue_model.pyx":105
  *     def run_node_model(self, t_now):
  *         ### Agent reaching destination
  *         for [agent_id, next_node, il, ol, _] in self.go_vehs:             # <<<<<<<<<<<<<<
@@ -5725,7 +5715,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":102
+  /* "sim_package/queue_model.pyx":103
  * 
  * 
  *     def run_node_model(self, t_now):             # <<<<<<<<<<<<<<
@@ -5745,7 +5735,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
   __Pyx_XDECREF(__pyx_t_8);
   __Pyx_XDECREF(__pyx_t_9);
   __Pyx_XDECREF(__pyx_t_10);
-  __Pyx_AddTraceback("queue_model.Node.run_node_model", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Node.run_node_model", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_agent_id);
@@ -5768,19 +5758,19 @@ static PyObject *__pyx_pf_11queue_model_4Node_12run_node_model(struct __pyx_obj_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_11queue_model_4Node_15__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_11queue_model_4Node_15__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Node_15__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Node_15__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_11queue_model_4Node_14__reduce_cython__(((struct __pyx_obj_11queue_model_Node *)__pyx_v_self));
+  __pyx_r = __pyx_pf_11sim_package_11queue_model_4Node_14__reduce_cython__(((struct __pyx_obj_11sim_package_11queue_model_Node *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_11queue_model_4Node_14__reduce_cython__(struct __pyx_obj_11queue_model_Node *__pyx_v_self) {
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Node_14__reduce_cython__(struct __pyx_obj_11sim_package_11queue_model_Node *__pyx_v_self) {
   PyObject *__pyx_v_state = 0;
   PyObject *__pyx_v__dict = 0;
   int __pyx_v_use_setstate;
@@ -5998,7 +5988,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_14__reduce_cython__(struct __pyx_o
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("queue_model.Node.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Node.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_state);
@@ -6016,19 +6006,19 @@ static PyObject *__pyx_pf_11queue_model_4Node_14__reduce_cython__(struct __pyx_o
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_11queue_model_4Node_17__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static PyObject *__pyx_pw_11queue_model_4Node_17__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Node_17__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Node_17__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_11queue_model_4Node_16__setstate_cython__(((struct __pyx_obj_11queue_model_Node *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_11sim_package_11queue_model_4Node_16__setstate_cython__(((struct __pyx_obj_11sim_package_11queue_model_Node *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_11queue_model_4Node_16__setstate_cython__(struct __pyx_obj_11queue_model_Node *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Node_16__setstate_cython__(struct __pyx_obj_11sim_package_11queue_model_Node *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -6043,7 +6033,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_16__setstate_cython__(struct __pyx
  *     __pyx_unpickle_Node__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
  */
   if (!(likely(PyTuple_CheckExact(__pyx_v___pyx_state))||((__pyx_v___pyx_state) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_v___pyx_state)->tp_name), 0))) __PYX_ERR(1, 17, __pyx_L1_error)
-  __pyx_t_1 = __pyx_f_11queue_model___pyx_unpickle_Node__set_state(__pyx_v_self, ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 17, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_11sim_package_11queue_model___pyx_unpickle_Node__set_state(__pyx_v_self, ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
@@ -6059,7 +6049,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_16__setstate_cython__(struct __pyx
   goto __pyx_L0;
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("queue_model.Node.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Node.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -6067,7 +6057,7 @@ static PyObject *__pyx_pf_11queue_model_4Node_16__setstate_cython__(struct __pyx
   return __pyx_r;
 }
 
-/* "queue_model.pyx":142
+/* "sim_package/queue_model.pyx":143
  * 
  * class Link:
  *     def __init__(self, link_id, lanes, length, fft, capacity, ltype, start_nid, end_nid, geometry, simulation=None):             # <<<<<<<<<<<<<<
@@ -6076,9 +6066,9 @@ static PyObject *__pyx_pf_11queue_model_4Node_16__setstate_cython__(struct __pyx
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_11queue_model_4Link_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_11queue_model_4Link_1__init__ = {"__init__", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11queue_model_4Link_1__init__, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_11queue_model_4Link_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Link_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_11sim_package_11queue_model_4Link_1__init__ = {"__init__", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11sim_package_11queue_model_4Link_1__init__, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Link_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_link_id = 0;
   PyObject *__pyx_v_lanes = 0;
@@ -6138,55 +6128,55 @@ static PyObject *__pyx_pw_11queue_model_4Link_1__init__(PyObject *__pyx_self, Py
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_link_id)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 10, 11, 1); __PYX_ERR(0, 142, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 10, 11, 1); __PYX_ERR(0, 143, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_lanes)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 10, 11, 2); __PYX_ERR(0, 142, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 10, 11, 2); __PYX_ERR(0, 143, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_length)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 10, 11, 3); __PYX_ERR(0, 142, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 10, 11, 3); __PYX_ERR(0, 143, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  4:
         if (likely((values[4] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_fft)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 10, 11, 4); __PYX_ERR(0, 142, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 10, 11, 4); __PYX_ERR(0, 143, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  5:
         if (likely((values[5] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_capacity)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 10, 11, 5); __PYX_ERR(0, 142, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 10, 11, 5); __PYX_ERR(0, 143, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  6:
         if (likely((values[6] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_ltype)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 10, 11, 6); __PYX_ERR(0, 142, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 10, 11, 6); __PYX_ERR(0, 143, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  7:
         if (likely((values[7] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_start_nid)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 10, 11, 7); __PYX_ERR(0, 142, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 10, 11, 7); __PYX_ERR(0, 143, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  8:
         if (likely((values[8] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_end_nid)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 10, 11, 8); __PYX_ERR(0, 142, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 10, 11, 8); __PYX_ERR(0, 143, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  9:
         if (likely((values[9] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_geometry)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 10, 11, 9); __PYX_ERR(0, 142, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 10, 11, 9); __PYX_ERR(0, 143, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case 10:
@@ -6196,7 +6186,7 @@ static PyObject *__pyx_pw_11queue_model_4Link_1__init__(PyObject *__pyx_self, Py
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(0, 142, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(0, 143, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -6230,20 +6220,20 @@ static PyObject *__pyx_pw_11queue_model_4Link_1__init__(PyObject *__pyx_self, Py
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 0, 10, 11, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 142, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 0, 10, 11, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 143, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("queue_model.Link.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Link.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_11queue_model_4Link___init__(__pyx_self, __pyx_v_self, __pyx_v_link_id, __pyx_v_lanes, __pyx_v_length, __pyx_v_fft, __pyx_v_capacity, __pyx_v_ltype, __pyx_v_start_nid, __pyx_v_end_nid, __pyx_v_geometry, __pyx_v_simulation);
+  __pyx_r = __pyx_pf_11sim_package_11queue_model_4Link___init__(__pyx_self, __pyx_v_self, __pyx_v_link_id, __pyx_v_lanes, __pyx_v_length, __pyx_v_fft, __pyx_v_capacity, __pyx_v_ltype, __pyx_v_start_nid, __pyx_v_end_nid, __pyx_v_geometry, __pyx_v_simulation);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_11queue_model_4Link___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_link_id, PyObject *__pyx_v_lanes, PyObject *__pyx_v_length, PyObject *__pyx_v_fft, PyObject *__pyx_v_capacity, PyObject *__pyx_v_ltype, PyObject *__pyx_v_start_nid, PyObject *__pyx_v_end_nid, PyObject *__pyx_v_geometry, PyObject *__pyx_v_simulation) {
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Link___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_link_id, PyObject *__pyx_v_lanes, PyObject *__pyx_v_length, PyObject *__pyx_v_fft, PyObject *__pyx_v_capacity, PyObject *__pyx_v_ltype, PyObject *__pyx_v_start_nid, PyObject *__pyx_v_end_nid, PyObject *__pyx_v_geometry, PyObject *__pyx_v_simulation) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -6257,86 +6247,86 @@ static PyObject *__pyx_pf_11queue_model_4Link___init__(CYTHON_UNUSED PyObject *_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "queue_model.pyx":144
+  /* "sim_package/queue_model.pyx":145
  *     def __init__(self, link_id, lanes, length, fft, capacity, ltype, start_nid, end_nid, geometry, simulation=None):
  *         ### input
  *         self.lid = link_id             # <<<<<<<<<<<<<<
  *         self.lanes = lanes
  *         self.length = length
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_lid, __pyx_v_link_id) < 0) __PYX_ERR(0, 144, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_lid, __pyx_v_link_id) < 0) __PYX_ERR(0, 145, __pyx_L1_error)
 
-  /* "queue_model.pyx":145
+  /* "sim_package/queue_model.pyx":146
  *         ### input
  *         self.lid = link_id
  *         self.lanes = lanes             # <<<<<<<<<<<<<<
  *         self.length = length
  *         self.fft = fft
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_lanes, __pyx_v_lanes) < 0) __PYX_ERR(0, 145, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_lanes, __pyx_v_lanes) < 0) __PYX_ERR(0, 146, __pyx_L1_error)
 
-  /* "queue_model.pyx":146
+  /* "sim_package/queue_model.pyx":147
  *         self.lid = link_id
  *         self.lanes = lanes
  *         self.length = length             # <<<<<<<<<<<<<<
  *         self.fft = fft
  *         self.capacity = capacity
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_length, __pyx_v_length) < 0) __PYX_ERR(0, 146, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_length, __pyx_v_length) < 0) __PYX_ERR(0, 147, __pyx_L1_error)
 
-  /* "queue_model.pyx":147
+  /* "sim_package/queue_model.pyx":148
  *         self.lanes = lanes
  *         self.length = length
  *         self.fft = fft             # <<<<<<<<<<<<<<
  *         self.capacity = capacity
  *         self.ltype = ltype
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_fft, __pyx_v_fft) < 0) __PYX_ERR(0, 147, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_fft, __pyx_v_fft) < 0) __PYX_ERR(0, 148, __pyx_L1_error)
 
-  /* "queue_model.pyx":148
+  /* "sim_package/queue_model.pyx":149
  *         self.length = length
  *         self.fft = fft
  *         self.capacity = capacity             # <<<<<<<<<<<<<<
  *         self.ltype = ltype
  *         self.start_nid = start_nid
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_capacity, __pyx_v_capacity) < 0) __PYX_ERR(0, 148, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_capacity, __pyx_v_capacity) < 0) __PYX_ERR(0, 149, __pyx_L1_error)
 
-  /* "queue_model.pyx":149
+  /* "sim_package/queue_model.pyx":150
  *         self.fft = fft
  *         self.capacity = capacity
  *         self.ltype = ltype             # <<<<<<<<<<<<<<
  *         self.start_nid = start_nid
  *         self.end_nid = end_nid
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_ltype, __pyx_v_ltype) < 0) __PYX_ERR(0, 149, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_ltype, __pyx_v_ltype) < 0) __PYX_ERR(0, 150, __pyx_L1_error)
 
-  /* "queue_model.pyx":150
+  /* "sim_package/queue_model.pyx":151
  *         self.capacity = capacity
  *         self.ltype = ltype
  *         self.start_nid = start_nid             # <<<<<<<<<<<<<<
  *         self.end_nid = end_nid
  *         self.geometry = loads(geometry)
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_start_nid, __pyx_v_start_nid) < 0) __PYX_ERR(0, 150, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_start_nid, __pyx_v_start_nid) < 0) __PYX_ERR(0, 151, __pyx_L1_error)
 
-  /* "queue_model.pyx":151
+  /* "sim_package/queue_model.pyx":152
  *         self.ltype = ltype
  *         self.start_nid = start_nid
  *         self.end_nid = end_nid             # <<<<<<<<<<<<<<
  *         self.geometry = loads(geometry)
  *         self.simulation = simulation
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_end_nid, __pyx_v_end_nid) < 0) __PYX_ERR(0, 151, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_end_nid, __pyx_v_end_nid) < 0) __PYX_ERR(0, 152, __pyx_L1_error)
 
-  /* "queue_model.pyx":152
+  /* "sim_package/queue_model.pyx":153
  *         self.start_nid = start_nid
  *         self.end_nid = end_nid
  *         self.geometry = loads(geometry)             # <<<<<<<<<<<<<<
  *         self.simulation = simulation
  *         ### derived
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_loads); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 152, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_loads); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
@@ -6350,42 +6340,42 @@ static PyObject *__pyx_pf_11queue_model_4Link___init__(CYTHON_UNUSED PyObject *_
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_3, __pyx_v_geometry) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_geometry);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 152, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_geometry, __pyx_t_1) < 0) __PYX_ERR(0, 152, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_geometry, __pyx_t_1) < 0) __PYX_ERR(0, 153, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":153
+  /* "sim_package/queue_model.pyx":154
  *         self.end_nid = end_nid
  *         self.geometry = loads(geometry)
  *         self.simulation = simulation             # <<<<<<<<<<<<<<
  *         ### derived
  *         self.store_cap = max(18, length*lanes) ### at least allow any vehicle to pass. i.e., the road won't block any vehicle because of the road length
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_simulation, __pyx_v_simulation) < 0) __PYX_ERR(0, 153, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_simulation, __pyx_v_simulation) < 0) __PYX_ERR(0, 154, __pyx_L1_error)
 
-  /* "queue_model.pyx":155
+  /* "sim_package/queue_model.pyx":156
  *         self.simulation = simulation
  *         ### derived
  *         self.store_cap = max(18, length*lanes) ### at least allow any vehicle to pass. i.e., the road won't block any vehicle because of the road length             # <<<<<<<<<<<<<<
  *         self.in_c = self.capacity/3600.0 # capacity in veh/s
  *         self.ou_c = self.capacity/3600.0
  */
-  __pyx_t_1 = PyNumber_Multiply(__pyx_v_length, __pyx_v_lanes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 155, __pyx_L1_error)
+  __pyx_t_1 = PyNumber_Multiply(__pyx_v_length, __pyx_v_lanes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_4 = 18;
-  __pyx_t_3 = __Pyx_PyInt_From_long(__pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 155, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_From_long(__pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = PyObject_RichCompare(__pyx_t_1, __pyx_t_3, Py_GT); __Pyx_XGOTREF(__pyx_t_5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 155, __pyx_L1_error)
+  __pyx_t_5 = PyObject_RichCompare(__pyx_t_1, __pyx_t_3, Py_GT); __Pyx_XGOTREF(__pyx_t_5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 156, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 155, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_5); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 156, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   if (__pyx_t_6) {
     __Pyx_INCREF(__pyx_t_1);
     __pyx_t_2 = __pyx_t_1;
   } else {
-    __pyx_t_5 = __Pyx_PyInt_From_long(__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 155, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyInt_From_long(__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 156, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __pyx_t_2 = __pyx_t_5;
     __pyx_t_5 = 0;
@@ -6394,146 +6384,146 @@ static PyObject *__pyx_pf_11queue_model_4Link___init__(CYTHON_UNUSED PyObject *_
   __pyx_t_1 = __pyx_t_2;
   __Pyx_INCREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_store_cap, __pyx_t_1) < 0) __PYX_ERR(0, 155, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_store_cap, __pyx_t_1) < 0) __PYX_ERR(0, 156, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":156
+  /* "sim_package/queue_model.pyx":157
  *         ### derived
  *         self.store_cap = max(18, length*lanes) ### at least allow any vehicle to pass. i.e., the road won't block any vehicle because of the road length
  *         self.in_c = self.capacity/3600.0 # capacity in veh/s             # <<<<<<<<<<<<<<
  *         self.ou_c = self.capacity/3600.0
  *         self.st_c = self.store_cap # remaining storage capacity
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_capacity); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 156, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_capacity); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 157, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyFloat_TrueDivideObjC(__pyx_t_1, __pyx_float_3600_0, 3600.0, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 156, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyFloat_TrueDivideObjC(__pyx_t_1, __pyx_float_3600_0, 3600.0, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 157, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_in_c, __pyx_t_2) < 0) __PYX_ERR(0, 156, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_in_c, __pyx_t_2) < 0) __PYX_ERR(0, 157, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":157
+  /* "sim_package/queue_model.pyx":158
  *         self.store_cap = max(18, length*lanes) ### at least allow any vehicle to pass. i.e., the road won't block any vehicle because of the road length
  *         self.in_c = self.capacity/3600.0 # capacity in veh/s
  *         self.ou_c = self.capacity/3600.0             # <<<<<<<<<<<<<<
  *         self.st_c = self.store_cap # remaining storage capacity
  *         self.midpoint = list(self.geometry.interpolate(0.5, normalized=True).coords)[0]
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_capacity); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 157, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_capacity); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyFloat_TrueDivideObjC(__pyx_t_2, __pyx_float_3600_0, 3600.0, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 157, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyFloat_TrueDivideObjC(__pyx_t_2, __pyx_float_3600_0, 3600.0, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_ou_c, __pyx_t_1) < 0) __PYX_ERR(0, 157, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_ou_c, __pyx_t_1) < 0) __PYX_ERR(0, 158, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":158
+  /* "sim_package/queue_model.pyx":159
  *         self.in_c = self.capacity/3600.0 # capacity in veh/s
  *         self.ou_c = self.capacity/3600.0
  *         self.st_c = self.store_cap # remaining storage capacity             # <<<<<<<<<<<<<<
  *         self.midpoint = list(self.geometry.interpolate(0.5, normalized=True).coords)[0]
  *         ### empty
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_store_cap); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 158, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_store_cap); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_st_c, __pyx_t_1) < 0) __PYX_ERR(0, 158, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_st_c, __pyx_t_1) < 0) __PYX_ERR(0, 159, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":159
+  /* "sim_package/queue_model.pyx":160
  *         self.ou_c = self.capacity/3600.0
  *         self.st_c = self.store_cap # remaining storage capacity
  *         self.midpoint = list(self.geometry.interpolate(0.5, normalized=True).coords)[0]             # <<<<<<<<<<<<<<
  *         ### empty
  *         self.queue_veh = [] # [(agent, t_enter), (agent, t_enter), ...]
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_geometry); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 159, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_geometry); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_interpolate); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 159, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_interpolate); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 159, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_normalized, Py_True) < 0) __PYX_ERR(0, 159, __pyx_L1_error)
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 159, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_normalized, Py_True) < 0) __PYX_ERR(0, 160, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__3, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_coords); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 159, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_coords); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PySequence_List(__pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 159, __pyx_L1_error)
+  __pyx_t_5 = PySequence_List(__pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_t_5, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 159, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_List(__pyx_t_5, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_midpoint, __pyx_t_1) < 0) __PYX_ERR(0, 159, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_midpoint, __pyx_t_1) < 0) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":161
+  /* "sim_package/queue_model.pyx":162
  *         self.midpoint = list(self.geometry.interpolate(0.5, normalized=True).coords)[0]
  *         ### empty
  *         self.queue_veh = [] # [(agent, t_enter), (agent, t_enter), ...]             # <<<<<<<<<<<<<<
  *         self.run_veh = []
  *         self.travel_time_list = [] ### [(t_enter, dur), ...] travel time of each agent left the link in a given period; reset at times
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 161, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 162, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_queue_veh, __pyx_t_1) < 0) __PYX_ERR(0, 161, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_queue_veh, __pyx_t_1) < 0) __PYX_ERR(0, 162, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":162
+  /* "sim_package/queue_model.pyx":163
  *         ### empty
  *         self.queue_veh = [] # [(agent, t_enter), (agent, t_enter), ...]
  *         self.run_veh = []             # <<<<<<<<<<<<<<
  *         self.travel_time_list = [] ### [(t_enter, dur), ...] travel time of each agent left the link in a given period; reset at times
  *         self.travel_time = fft
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 162, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 163, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_run_veh, __pyx_t_1) < 0) __PYX_ERR(0, 162, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_run_veh, __pyx_t_1) < 0) __PYX_ERR(0, 163, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":163
+  /* "sim_package/queue_model.pyx":164
  *         self.queue_veh = [] # [(agent, t_enter), (agent, t_enter), ...]
  *         self.run_veh = []
  *         self.travel_time_list = [] ### [(t_enter, dur), ...] travel time of each agent left the link in a given period; reset at times             # <<<<<<<<<<<<<<
  *         self.travel_time = fft
  *         self.start_node = None
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 163, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 164, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_travel_time_list, __pyx_t_1) < 0) __PYX_ERR(0, 163, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_travel_time_list, __pyx_t_1) < 0) __PYX_ERR(0, 164, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":164
+  /* "sim_package/queue_model.pyx":165
  *         self.run_veh = []
  *         self.travel_time_list = [] ### [(t_enter, dur), ...] travel time of each agent left the link in a given period; reset at times
  *         self.travel_time = fft             # <<<<<<<<<<<<<<
  *         self.start_node = None
  *         self.end_node = None
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_travel_time, __pyx_v_fft) < 0) __PYX_ERR(0, 164, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_travel_time, __pyx_v_fft) < 0) __PYX_ERR(0, 165, __pyx_L1_error)
 
-  /* "queue_model.pyx":165
+  /* "sim_package/queue_model.pyx":166
  *         self.travel_time_list = [] ### [(t_enter, dur), ...] travel time of each agent left the link in a given period; reset at times
  *         self.travel_time = fft
  *         self.start_node = None             # <<<<<<<<<<<<<<
  *         self.end_node = None
  * 
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_start_node, Py_None) < 0) __PYX_ERR(0, 165, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_start_node, Py_None) < 0) __PYX_ERR(0, 166, __pyx_L1_error)
 
-  /* "queue_model.pyx":166
+  /* "sim_package/queue_model.pyx":167
  *         self.travel_time = fft
  *         self.start_node = None
  *         self.end_node = None             # <<<<<<<<<<<<<<
  * 
  *     def send_veh(self, t_now, agent_id, agent_id_dict=None):
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_end_node, Py_None) < 0) __PYX_ERR(0, 166, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_end_node, Py_None) < 0) __PYX_ERR(0, 167, __pyx_L1_error)
 
-  /* "queue_model.pyx":142
+  /* "sim_package/queue_model.pyx":143
  * 
  * class Link:
  *     def __init__(self, link_id, lanes, length, fft, capacity, ltype, start_nid, end_nid, geometry, simulation=None):             # <<<<<<<<<<<<<<
@@ -6549,7 +6539,7 @@ static PyObject *__pyx_pf_11queue_model_4Link___init__(CYTHON_UNUSED PyObject *_
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("queue_model.Link.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Link.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -6557,7 +6547,7 @@ static PyObject *__pyx_pf_11queue_model_4Link___init__(CYTHON_UNUSED PyObject *_
   return __pyx_r;
 }
 
-/* "queue_model.pyx":168
+/* "sim_package/queue_model.pyx":169
  *         self.end_node = None
  * 
  *     def send_veh(self, t_now, agent_id, agent_id_dict=None):             # <<<<<<<<<<<<<<
@@ -6566,9 +6556,9 @@ static PyObject *__pyx_pf_11queue_model_4Link___init__(CYTHON_UNUSED PyObject *_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_11queue_model_4Link_3send_veh(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_11queue_model_4Link_3send_veh = {"send_veh", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11queue_model_4Link_3send_veh, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_11queue_model_4Link_3send_veh(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Link_3send_veh(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_11sim_package_11queue_model_4Link_3send_veh = {"send_veh", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11sim_package_11queue_model_4Link_3send_veh, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Link_3send_veh(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_t_now = 0;
   PyObject *__pyx_v_agent_id = 0;
@@ -6607,13 +6597,13 @@ static PyObject *__pyx_pw_11queue_model_4Link_3send_veh(PyObject *__pyx_self, Py
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_t_now)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("send_veh", 0, 3, 4, 1); __PYX_ERR(0, 168, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("send_veh", 0, 3, 4, 1); __PYX_ERR(0, 169, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_agent_id)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("send_veh", 0, 3, 4, 2); __PYX_ERR(0, 168, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("send_veh", 0, 3, 4, 2); __PYX_ERR(0, 169, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
@@ -6623,7 +6613,7 @@ static PyObject *__pyx_pw_11queue_model_4Link_3send_veh(PyObject *__pyx_self, Py
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "send_veh") < 0)) __PYX_ERR(0, 168, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "send_veh") < 0)) __PYX_ERR(0, 169, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -6643,20 +6633,20 @@ static PyObject *__pyx_pw_11queue_model_4Link_3send_veh(PyObject *__pyx_self, Py
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("send_veh", 0, 3, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 168, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("send_veh", 0, 3, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 169, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("queue_model.Link.send_veh", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Link.send_veh", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_11queue_model_4Link_2send_veh(__pyx_self, __pyx_v_self, __pyx_v_t_now, __pyx_v_agent_id, __pyx_v_agent_id_dict);
+  __pyx_r = __pyx_pf_11sim_package_11queue_model_4Link_2send_veh(__pyx_self, __pyx_v_self, __pyx_v_t_now, __pyx_v_agent_id, __pyx_v_agent_id_dict);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_11queue_model_4Link_2send_veh(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_t_now, PyObject *__pyx_v_agent_id, PyObject *__pyx_v_agent_id_dict) {
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Link_2send_veh(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_t_now, PyObject *__pyx_v_agent_id, PyObject *__pyx_v_agent_id_dict) {
   PyObject *__pyx_8genexpr3__pyx_v_v = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -6674,25 +6664,25 @@ static PyObject *__pyx_pf_11queue_model_4Link_2send_veh(CYTHON_UNUSED PyObject *
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("send_veh", 0);
 
-  /* "queue_model.pyx":170
+  /* "sim_package/queue_model.pyx":171
  *     def send_veh(self, t_now, agent_id, agent_id_dict=None):
  *         ### remove the agent from queue
  *         self.queue_veh = [v for v in self.queue_veh if v!=agent_id]             # <<<<<<<<<<<<<<
  *         self.ou_c = max(0, self.ou_c-1)
- *         if self.ltype[0:2]!='vl': self.travel_time_list.append((t_now, t_now - agent_id_dict[agent_id].cl_enter_time))
+ *         if self.ltype[0:2] != 'vl': self.travel_time_list.append((t_now, t_now - agent_id_dict[agent_id].cl_enter_time))
  */
   { /* enter inner scope */
-    __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 170, __pyx_L5_error)
+    __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 171, __pyx_L5_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_queue_veh); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 170, __pyx_L5_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_queue_veh); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 171, __pyx_L5_error)
     __Pyx_GOTREF(__pyx_t_2);
     if (likely(PyList_CheckExact(__pyx_t_2)) || PyTuple_CheckExact(__pyx_t_2)) {
       __pyx_t_3 = __pyx_t_2; __Pyx_INCREF(__pyx_t_3); __pyx_t_4 = 0;
       __pyx_t_5 = NULL;
     } else {
-      __pyx_t_4 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 170, __pyx_L5_error)
+      __pyx_t_4 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 171, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_5 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 170, __pyx_L5_error)
+      __pyx_t_5 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 171, __pyx_L5_error)
     }
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     for (;;) {
@@ -6700,17 +6690,17 @@ static PyObject *__pyx_pf_11queue_model_4Link_2send_veh(CYTHON_UNUSED PyObject *
         if (likely(PyList_CheckExact(__pyx_t_3))) {
           if (__pyx_t_4 >= PyList_GET_SIZE(__pyx_t_3)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_2 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_2); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 170, __pyx_L5_error)
+          __pyx_t_2 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_2); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 171, __pyx_L5_error)
           #else
-          __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 170, __pyx_L5_error)
+          __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 171, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_2);
           #endif
         } else {
           if (__pyx_t_4 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_2); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 170, __pyx_L5_error)
+          __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_2); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 171, __pyx_L5_error)
           #else
-          __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 170, __pyx_L5_error)
+          __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 171, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_2);
           #endif
         }
@@ -6720,7 +6710,7 @@ static PyObject *__pyx_pf_11queue_model_4Link_2send_veh(CYTHON_UNUSED PyObject *
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 170, __pyx_L5_error)
+            else __PYX_ERR(0, 171, __pyx_L5_error)
           }
           break;
         }
@@ -6728,11 +6718,11 @@ static PyObject *__pyx_pf_11queue_model_4Link_2send_veh(CYTHON_UNUSED PyObject *
       }
       __Pyx_XDECREF_SET(__pyx_8genexpr3__pyx_v_v, __pyx_t_2);
       __pyx_t_2 = 0;
-      __pyx_t_2 = PyObject_RichCompare(__pyx_8genexpr3__pyx_v_v, __pyx_v_agent_id, Py_NE); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 170, __pyx_L5_error)
-      __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 170, __pyx_L5_error)
+      __pyx_t_2 = PyObject_RichCompare(__pyx_8genexpr3__pyx_v_v, __pyx_v_agent_id, Py_NE); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 171, __pyx_L5_error)
+      __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 171, __pyx_L5_error)
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       if (__pyx_t_6) {
-        if (unlikely(__Pyx_ListComp_Append(__pyx_t_1, (PyObject*)__pyx_8genexpr3__pyx_v_v))) __PYX_ERR(0, 170, __pyx_L5_error)
+        if (unlikely(__Pyx_ListComp_Append(__pyx_t_1, (PyObject*)__pyx_8genexpr3__pyx_v_v))) __PYX_ERR(0, 171, __pyx_L5_error)
       }
     }
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -6743,33 +6733,33 @@ static PyObject *__pyx_pf_11queue_model_4Link_2send_veh(CYTHON_UNUSED PyObject *
     goto __pyx_L1_error;
     __pyx_L9_exit_scope:;
   } /* exit inner scope */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_queue_veh, __pyx_t_1) < 0) __PYX_ERR(0, 170, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_queue_veh, __pyx_t_1) < 0) __PYX_ERR(0, 171, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":171
+  /* "sim_package/queue_model.pyx":172
  *         ### remove the agent from queue
  *         self.queue_veh = [v for v in self.queue_veh if v!=agent_id]
  *         self.ou_c = max(0, self.ou_c-1)             # <<<<<<<<<<<<<<
- *         if self.ltype[0:2]!='vl': self.travel_time_list.append((t_now, t_now - agent_id_dict[agent_id].cl_enter_time))
+ *         if self.ltype[0:2] != 'vl': self.travel_time_list.append((t_now, t_now - agent_id_dict[agent_id].cl_enter_time))
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ou_c); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 171, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ou_c); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyInt_SubtractObjC(__pyx_t_1, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 171, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_SubtractObjC(__pyx_t_1, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_7 = 0;
-  __pyx_t_2 = __Pyx_PyInt_From_long(__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 171, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_From_long(__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_8 = PyObject_RichCompare(__pyx_t_3, __pyx_t_2, Py_GT); __Pyx_XGOTREF(__pyx_t_8); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 171, __pyx_L1_error)
+  __pyx_t_8 = PyObject_RichCompare(__pyx_t_3, __pyx_t_2, Py_GT); __Pyx_XGOTREF(__pyx_t_8); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_8); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 171, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_8); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   if (__pyx_t_6) {
     __Pyx_INCREF(__pyx_t_3);
     __pyx_t_1 = __pyx_t_3;
   } else {
-    __pyx_t_8 = __Pyx_PyInt_From_long(__pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 171, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyInt_From_long(__pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 172, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __pyx_t_1 = __pyx_t_8;
     __pyx_t_8 = 0;
@@ -6778,35 +6768,35 @@ static PyObject *__pyx_pf_11queue_model_4Link_2send_veh(CYTHON_UNUSED PyObject *
   __pyx_t_3 = __pyx_t_1;
   __Pyx_INCREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_ou_c, __pyx_t_3) < 0) __PYX_ERR(0, 171, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_ou_c, __pyx_t_3) < 0) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "queue_model.pyx":172
+  /* "sim_package/queue_model.pyx":173
  *         self.queue_veh = [v for v in self.queue_veh if v!=agent_id]
  *         self.ou_c = max(0, self.ou_c-1)
- *         if self.ltype[0:2]!='vl': self.travel_time_list.append((t_now, t_now - agent_id_dict[agent_id].cl_enter_time))             # <<<<<<<<<<<<<<
+ *         if self.ltype[0:2] != 'vl': self.travel_time_list.append((t_now, t_now - agent_id_dict[agent_id].cl_enter_time))             # <<<<<<<<<<<<<<
  * 
  *     def receive_veh(self, agent_id):
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ltype); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 172, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ltype); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 173, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_t_3, 0, 2, NULL, NULL, &__pyx_slice__2, 1, 1, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 172, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_t_3, 0, 2, NULL, NULL, &__pyx_slice__2, 1, 1, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 173, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_6 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_vl, Py_NE)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 172, __pyx_L1_error)
+  __pyx_t_6 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_vl, Py_NE)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 173, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (__pyx_t_6) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_travel_time_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 172, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_travel_time_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 173, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_v_agent_id_dict, __pyx_v_agent_id); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 172, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_v_agent_id_dict, __pyx_v_agent_id); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 173, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_cl_enter_time); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 172, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_cl_enter_time); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 173, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = PyNumber_Subtract(__pyx_v_t_now, __pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 172, __pyx_L1_error)
+    __pyx_t_3 = PyNumber_Subtract(__pyx_v_t_now, __pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 173, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __pyx_t_8 = PyTuple_New(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 172, __pyx_L1_error)
+    __pyx_t_8 = PyTuple_New(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 173, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_INCREF(__pyx_v_t_now);
     __Pyx_GIVEREF(__pyx_v_t_now);
@@ -6814,12 +6804,12 @@ static PyObject *__pyx_pf_11queue_model_4Link_2send_veh(CYTHON_UNUSED PyObject *
     __Pyx_GIVEREF(__pyx_t_3);
     PyTuple_SET_ITEM(__pyx_t_8, 1, __pyx_t_3);
     __pyx_t_3 = 0;
-    __pyx_t_9 = __Pyx_PyObject_Append(__pyx_t_1, __pyx_t_8); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(0, 172, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_Append(__pyx_t_1, __pyx_t_8); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(0, 173, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   }
 
-  /* "queue_model.pyx":168
+  /* "sim_package/queue_model.pyx":169
  *         self.end_node = None
  * 
  *     def send_veh(self, t_now, agent_id, agent_id_dict=None):             # <<<<<<<<<<<<<<
@@ -6835,7 +6825,7 @@ static PyObject *__pyx_pf_11queue_model_4Link_2send_veh(CYTHON_UNUSED PyObject *
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_8);
-  __Pyx_AddTraceback("queue_model.Link.send_veh", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Link.send_veh", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_8genexpr3__pyx_v_v);
@@ -6844,8 +6834,8 @@ static PyObject *__pyx_pf_11queue_model_4Link_2send_veh(CYTHON_UNUSED PyObject *
   return __pyx_r;
 }
 
-/* "queue_model.pyx":174
- *         if self.ltype[0:2]!='vl': self.travel_time_list.append((t_now, t_now - agent_id_dict[agent_id].cl_enter_time))
+/* "sim_package/queue_model.pyx":175
+ *         if self.ltype[0:2] != 'vl': self.travel_time_list.append((t_now, t_now - agent_id_dict[agent_id].cl_enter_time))
  * 
  *     def receive_veh(self, agent_id):             # <<<<<<<<<<<<<<
  *         self.run_veh.append(agent_id)
@@ -6853,9 +6843,9 @@ static PyObject *__pyx_pf_11queue_model_4Link_2send_veh(CYTHON_UNUSED PyObject *
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_11queue_model_4Link_5receive_veh(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_11queue_model_4Link_5receive_veh = {"receive_veh", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11queue_model_4Link_5receive_veh, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_11queue_model_4Link_5receive_veh(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Link_5receive_veh(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_11sim_package_11queue_model_4Link_5receive_veh = {"receive_veh", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11sim_package_11queue_model_4Link_5receive_veh, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Link_5receive_veh(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_agent_id = 0;
   int __pyx_lineno = 0;
@@ -6887,11 +6877,11 @@ static PyObject *__pyx_pw_11queue_model_4Link_5receive_veh(PyObject *__pyx_self,
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_agent_id)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("receive_veh", 1, 2, 2, 1); __PYX_ERR(0, 174, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("receive_veh", 1, 2, 2, 1); __PYX_ERR(0, 175, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "receive_veh") < 0)) __PYX_ERR(0, 174, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "receive_veh") < 0)) __PYX_ERR(0, 175, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -6904,20 +6894,20 @@ static PyObject *__pyx_pw_11queue_model_4Link_5receive_veh(PyObject *__pyx_self,
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("receive_veh", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 174, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("receive_veh", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 175, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("queue_model.Link.receive_veh", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Link.receive_veh", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_11queue_model_4Link_4receive_veh(__pyx_self, __pyx_v_self, __pyx_v_agent_id);
+  __pyx_r = __pyx_pf_11sim_package_11queue_model_4Link_4receive_veh(__pyx_self, __pyx_v_self, __pyx_v_agent_id);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_11queue_model_4Link_4receive_veh(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_agent_id) {
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Link_4receive_veh(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_agent_id) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -6932,42 +6922,42 @@ static PyObject *__pyx_pf_11queue_model_4Link_4receive_veh(CYTHON_UNUSED PyObjec
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("receive_veh", 0);
 
-  /* "queue_model.pyx":175
+  /* "sim_package/queue_model.pyx":176
  * 
  *     def receive_veh(self, agent_id):
  *         self.run_veh.append(agent_id)             # <<<<<<<<<<<<<<
  *         self.in_c = max(0, self.in_c-1)
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_run_veh); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 175, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_run_veh); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 176, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_Append(__pyx_t_1, __pyx_v_agent_id); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 175, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Append(__pyx_t_1, __pyx_v_agent_id); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 176, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":176
+  /* "sim_package/queue_model.pyx":177
  *     def receive_veh(self, agent_id):
  *         self.run_veh.append(agent_id)
  *         self.in_c = max(0, self.in_c-1)             # <<<<<<<<<<<<<<
  * 
  *     def run_link_model(self, t_now):
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_in_c); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 176, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_in_c); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 177, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyInt_SubtractObjC(__pyx_t_1, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 176, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_SubtractObjC(__pyx_t_1, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 177, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_4 = 0;
-  __pyx_t_5 = __Pyx_PyInt_From_long(__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 176, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_From_long(__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 177, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = PyObject_RichCompare(__pyx_t_3, __pyx_t_5, Py_GT); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 176, __pyx_L1_error)
+  __pyx_t_6 = PyObject_RichCompare(__pyx_t_3, __pyx_t_5, Py_GT); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 177, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 176, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_7 < 0)) __PYX_ERR(0, 177, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   if (__pyx_t_7) {
     __Pyx_INCREF(__pyx_t_3);
     __pyx_t_1 = __pyx_t_3;
   } else {
-    __pyx_t_6 = __Pyx_PyInt_From_long(__pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 176, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyInt_From_long(__pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 177, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_1 = __pyx_t_6;
     __pyx_t_6 = 0;
@@ -6976,11 +6966,11 @@ static PyObject *__pyx_pf_11queue_model_4Link_4receive_veh(CYTHON_UNUSED PyObjec
   __pyx_t_3 = __pyx_t_1;
   __Pyx_INCREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_in_c, __pyx_t_3) < 0) __PYX_ERR(0, 176, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_in_c, __pyx_t_3) < 0) __PYX_ERR(0, 177, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "queue_model.pyx":174
- *         if self.ltype[0:2]!='vl': self.travel_time_list.append((t_now, t_now - agent_id_dict[agent_id].cl_enter_time))
+  /* "sim_package/queue_model.pyx":175
+ *         if self.ltype[0:2] != 'vl': self.travel_time_list.append((t_now, t_now - agent_id_dict[agent_id].cl_enter_time))
  * 
  *     def receive_veh(self, agent_id):             # <<<<<<<<<<<<<<
  *         self.run_veh.append(agent_id)
@@ -6995,7 +6985,7 @@ static PyObject *__pyx_pf_11queue_model_4Link_4receive_veh(CYTHON_UNUSED PyObjec
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_AddTraceback("queue_model.Link.receive_veh", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Link.receive_veh", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -7003,7 +6993,7 @@ static PyObject *__pyx_pf_11queue_model_4Link_4receive_veh(CYTHON_UNUSED PyObjec
   return __pyx_r;
 }
 
-/* "queue_model.pyx":178
+/* "sim_package/queue_model.pyx":179
  *         self.in_c = max(0, self.in_c-1)
  * 
  *     def run_link_model(self, t_now):             # <<<<<<<<<<<<<<
@@ -7012,9 +7002,9 @@ static PyObject *__pyx_pf_11queue_model_4Link_4receive_veh(CYTHON_UNUSED PyObjec
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_11queue_model_4Link_7run_link_model(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_11queue_model_4Link_7run_link_model = {"run_link_model", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11queue_model_4Link_7run_link_model, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_11queue_model_4Link_7run_link_model(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Link_7run_link_model(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_11sim_package_11queue_model_4Link_7run_link_model = {"run_link_model", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11sim_package_11queue_model_4Link_7run_link_model, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Link_7run_link_model(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_t_now = 0;
   int __pyx_lineno = 0;
@@ -7046,11 +7036,11 @@ static PyObject *__pyx_pw_11queue_model_4Link_7run_link_model(PyObject *__pyx_se
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_t_now)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("run_link_model", 1, 2, 2, 1); __PYX_ERR(0, 178, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("run_link_model", 1, 2, 2, 1); __PYX_ERR(0, 179, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "run_link_model") < 0)) __PYX_ERR(0, 178, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "run_link_model") < 0)) __PYX_ERR(0, 179, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -7063,20 +7053,20 @@ static PyObject *__pyx_pw_11queue_model_4Link_7run_link_model(PyObject *__pyx_se
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("run_link_model", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 178, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("run_link_model", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 179, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("queue_model.Link.run_link_model", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Link.run_link_model", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_11queue_model_4Link_6run_link_model(__pyx_self, __pyx_v_self, __pyx_v_t_now);
+  __pyx_r = __pyx_pf_11sim_package_11queue_model_4Link_6run_link_model(__pyx_self, __pyx_v_self, __pyx_v_t_now);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_11queue_model_4Link_6run_link_model(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_t_now) {
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Link_6run_link_model(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_t_now) {
   PyObject *__pyx_v_agent_id = NULL;
   PyObject *__pyx_8genexpr4__pyx_v_v = NULL;
   PyObject *__pyx_8genexpr5__pyx_v_agent_id = NULL;
@@ -7099,39 +7089,39 @@ static PyObject *__pyx_pf_11queue_model_4Link_6run_link_model(CYTHON_UNUSED PyOb
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("run_link_model", 0);
 
-  /* "queue_model.pyx":179
+  /* "sim_package/queue_model.pyx":180
  * 
  *     def run_link_model(self, t_now):
  *         if t_now%60 == 0: self.update_travel_time(t_now, link_time_lookback_freq=60, g=self.simulation.g)             # <<<<<<<<<<<<<<
  *         for agent_id in self.run_veh:
  *             if self.simulation.all_agents[agent_id].cl_enter_time < t_now - self.fft:
  */
-  __pyx_t_1 = __Pyx_PyInt_RemainderObjC(__pyx_v_t_now, __pyx_int_60, 60, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 179, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyInt_RemainderObjC(__pyx_v_t_now, __pyx_int_60, 60, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 180, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_EqObjC(__pyx_t_1, __pyx_int_0, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 179, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_EqObjC(__pyx_t_1, __pyx_int_0, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 180, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 179, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 180, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if (__pyx_t_3) {
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_update_travel_time); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 179, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_update_travel_time); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 180, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 179, __pyx_L1_error)
+    __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 180, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_v_t_now);
     __Pyx_GIVEREF(__pyx_v_t_now);
     PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_v_t_now);
-    __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 179, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 180, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_link_time_lookback_freq, __pyx_int_60) < 0) __PYX_ERR(0, 179, __pyx_L1_error)
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_simulation); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 179, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_link_time_lookback_freq, __pyx_int_60) < 0) __PYX_ERR(0, 180, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_simulation); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 180, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_g); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 179, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_g); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 180, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_g, __pyx_t_6) < 0) __PYX_ERR(0, 179, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_g, __pyx_t_6) < 0) __PYX_ERR(0, 180, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 179, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 180, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -7139,22 +7129,22 @@ static PyObject *__pyx_pf_11queue_model_4Link_6run_link_model(CYTHON_UNUSED PyOb
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   }
 
-  /* "queue_model.pyx":180
+  /* "sim_package/queue_model.pyx":181
  *     def run_link_model(self, t_now):
  *         if t_now%60 == 0: self.update_travel_time(t_now, link_time_lookback_freq=60, g=self.simulation.g)
  *         for agent_id in self.run_veh:             # <<<<<<<<<<<<<<
  *             if self.simulation.all_agents[agent_id].cl_enter_time < t_now - self.fft:
  *                 self.queue_veh.append(agent_id)
  */
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_run_veh); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 180, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_run_veh); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 181, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   if (likely(PyList_CheckExact(__pyx_t_6)) || PyTuple_CheckExact(__pyx_t_6)) {
     __pyx_t_4 = __pyx_t_6; __Pyx_INCREF(__pyx_t_4); __pyx_t_7 = 0;
     __pyx_t_8 = NULL;
   } else {
-    __pyx_t_7 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 180, __pyx_L1_error)
+    __pyx_t_7 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 181, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_8 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 180, __pyx_L1_error)
+    __pyx_t_8 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 181, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   for (;;) {
@@ -7162,17 +7152,17 @@ static PyObject *__pyx_pf_11queue_model_4Link_6run_link_model(CYTHON_UNUSED PyOb
       if (likely(PyList_CheckExact(__pyx_t_4))) {
         if (__pyx_t_7 >= PyList_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_6 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_7); __Pyx_INCREF(__pyx_t_6); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 180, __pyx_L1_error)
+        __pyx_t_6 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_7); __Pyx_INCREF(__pyx_t_6); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 181, __pyx_L1_error)
         #else
-        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 180, __pyx_L1_error)
+        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 181, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         #endif
       } else {
         if (__pyx_t_7 >= PyTuple_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_7); __Pyx_INCREF(__pyx_t_6); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 180, __pyx_L1_error)
+        __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_7); __Pyx_INCREF(__pyx_t_6); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 181, __pyx_L1_error)
         #else
-        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 180, __pyx_L1_error)
+        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 181, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         #endif
       }
@@ -7182,7 +7172,7 @@ static PyObject *__pyx_pf_11queue_model_4Link_6run_link_model(CYTHON_UNUSED PyOb
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 180, __pyx_L1_error)
+          else __PYX_ERR(0, 181, __pyx_L1_error)
         }
         break;
       }
@@ -7191,49 +7181,49 @@ static PyObject *__pyx_pf_11queue_model_4Link_6run_link_model(CYTHON_UNUSED PyOb
     __Pyx_XDECREF_SET(__pyx_v_agent_id, __pyx_t_6);
     __pyx_t_6 = 0;
 
-    /* "queue_model.pyx":181
+    /* "sim_package/queue_model.pyx":182
  *         if t_now%60 == 0: self.update_travel_time(t_now, link_time_lookback_freq=60, g=self.simulation.g)
  *         for agent_id in self.run_veh:
  *             if self.simulation.all_agents[agent_id].cl_enter_time < t_now - self.fft:             # <<<<<<<<<<<<<<
  *                 self.queue_veh.append(agent_id)
  *         self.run_veh = [v for v in self.run_veh if v not in self.queue_veh]
  */
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_simulation); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 181, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_simulation); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 182, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_all_agents); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 181, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_all_agents); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 182, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_v_agent_id); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 181, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_v_agent_id); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 182, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_cl_enter_time); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 181, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_cl_enter_time); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 182, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fft); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 181, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_fft); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 182, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_2 = PyNumber_Subtract(__pyx_v_t_now, __pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 181, __pyx_L1_error)
+    __pyx_t_2 = PyNumber_Subtract(__pyx_v_t_now, __pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 182, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = PyObject_RichCompare(__pyx_t_1, __pyx_t_2, Py_LT); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 181, __pyx_L1_error)
+    __pyx_t_6 = PyObject_RichCompare(__pyx_t_1, __pyx_t_2, Py_LT); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 182, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 181, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 182, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     if (__pyx_t_3) {
 
-      /* "queue_model.pyx":182
+      /* "sim_package/queue_model.pyx":183
  *         for agent_id in self.run_veh:
  *             if self.simulation.all_agents[agent_id].cl_enter_time < t_now - self.fft:
  *                 self.queue_veh.append(agent_id)             # <<<<<<<<<<<<<<
  *         self.run_veh = [v for v in self.run_veh if v not in self.queue_veh]
  *         ### remaining spaces on link for the node model to move vehicles to this link
  */
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_queue_veh); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 182, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_queue_veh); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 183, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_9 = __Pyx_PyObject_Append(__pyx_t_6, __pyx_v_agent_id); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(0, 182, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyObject_Append(__pyx_t_6, __pyx_v_agent_id); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(0, 183, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-      /* "queue_model.pyx":181
+      /* "sim_package/queue_model.pyx":182
  *         if t_now%60 == 0: self.update_travel_time(t_now, link_time_lookback_freq=60, g=self.simulation.g)
  *         for agent_id in self.run_veh:
  *             if self.simulation.all_agents[agent_id].cl_enter_time < t_now - self.fft:             # <<<<<<<<<<<<<<
@@ -7242,7 +7232,7 @@ static PyObject *__pyx_pf_11queue_model_4Link_6run_link_model(CYTHON_UNUSED PyOb
  */
     }
 
-    /* "queue_model.pyx":180
+    /* "sim_package/queue_model.pyx":181
  *     def run_link_model(self, t_now):
  *         if t_now%60 == 0: self.update_travel_time(t_now, link_time_lookback_freq=60, g=self.simulation.g)
  *         for agent_id in self.run_veh:             # <<<<<<<<<<<<<<
@@ -7252,25 +7242,25 @@ static PyObject *__pyx_pf_11queue_model_4Link_6run_link_model(CYTHON_UNUSED PyOb
   }
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "queue_model.pyx":183
+  /* "sim_package/queue_model.pyx":184
  *             if self.simulation.all_agents[agent_id].cl_enter_time < t_now - self.fft:
  *                 self.queue_veh.append(agent_id)
  *         self.run_veh = [v for v in self.run_veh if v not in self.queue_veh]             # <<<<<<<<<<<<<<
  *         ### remaining spaces on link for the node model to move vehicles to this link
- *         self.st_c = self.store_cap - np.sum([self.simulation.all_agents[agent_id].veh_len for agent_id in self.run_veh+self.queue_veh])
+ *         self.st_c = self.store_cap - np.sum([self.simulation.all_agents[agent_id].veh_len for agent_id in self.run_veh + self.queue_veh])
  */
   { /* enter inner scope */
-    __pyx_t_4 = PyList_New(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 183, __pyx_L9_error)
+    __pyx_t_4 = PyList_New(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 184, __pyx_L9_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_run_veh); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 183, __pyx_L9_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_run_veh); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 184, __pyx_L9_error)
     __Pyx_GOTREF(__pyx_t_6);
     if (likely(PyList_CheckExact(__pyx_t_6)) || PyTuple_CheckExact(__pyx_t_6)) {
       __pyx_t_2 = __pyx_t_6; __Pyx_INCREF(__pyx_t_2); __pyx_t_7 = 0;
       __pyx_t_8 = NULL;
     } else {
-      __pyx_t_7 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 183, __pyx_L9_error)
+      __pyx_t_7 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 184, __pyx_L9_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_8 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 183, __pyx_L9_error)
+      __pyx_t_8 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 184, __pyx_L9_error)
     }
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     for (;;) {
@@ -7278,17 +7268,17 @@ static PyObject *__pyx_pf_11queue_model_4Link_6run_link_model(CYTHON_UNUSED PyOb
         if (likely(PyList_CheckExact(__pyx_t_2))) {
           if (__pyx_t_7 >= PyList_GET_SIZE(__pyx_t_2)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_6 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_7); __Pyx_INCREF(__pyx_t_6); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 183, __pyx_L9_error)
+          __pyx_t_6 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_7); __Pyx_INCREF(__pyx_t_6); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 184, __pyx_L9_error)
           #else
-          __pyx_t_6 = PySequence_ITEM(__pyx_t_2, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 183, __pyx_L9_error)
+          __pyx_t_6 = PySequence_ITEM(__pyx_t_2, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 184, __pyx_L9_error)
           __Pyx_GOTREF(__pyx_t_6);
           #endif
         } else {
           if (__pyx_t_7 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_7); __Pyx_INCREF(__pyx_t_6); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 183, __pyx_L9_error)
+          __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_7); __Pyx_INCREF(__pyx_t_6); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 184, __pyx_L9_error)
           #else
-          __pyx_t_6 = PySequence_ITEM(__pyx_t_2, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 183, __pyx_L9_error)
+          __pyx_t_6 = PySequence_ITEM(__pyx_t_2, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 184, __pyx_L9_error)
           __Pyx_GOTREF(__pyx_t_6);
           #endif
         }
@@ -7298,7 +7288,7 @@ static PyObject *__pyx_pf_11queue_model_4Link_6run_link_model(CYTHON_UNUSED PyOb
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 183, __pyx_L9_error)
+            else __PYX_ERR(0, 184, __pyx_L9_error)
           }
           break;
         }
@@ -7306,13 +7296,13 @@ static PyObject *__pyx_pf_11queue_model_4Link_6run_link_model(CYTHON_UNUSED PyOb
       }
       __Pyx_XDECREF_SET(__pyx_8genexpr4__pyx_v_v, __pyx_t_6);
       __pyx_t_6 = 0;
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_queue_veh); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 183, __pyx_L9_error)
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_queue_veh); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 184, __pyx_L9_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_3 = (__Pyx_PySequence_ContainsTF(__pyx_8genexpr4__pyx_v_v, __pyx_t_6, Py_NE)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 183, __pyx_L9_error)
+      __pyx_t_3 = (__Pyx_PySequence_ContainsTF(__pyx_8genexpr4__pyx_v_v, __pyx_t_6, Py_NE)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 184, __pyx_L9_error)
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __pyx_t_10 = (__pyx_t_3 != 0);
       if (__pyx_t_10) {
-        if (unlikely(__Pyx_ListComp_Append(__pyx_t_4, (PyObject*)__pyx_8genexpr4__pyx_v_v))) __PYX_ERR(0, 183, __pyx_L9_error)
+        if (unlikely(__Pyx_ListComp_Append(__pyx_t_4, (PyObject*)__pyx_8genexpr4__pyx_v_v))) __PYX_ERR(0, 184, __pyx_L9_error)
       }
     }
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -7323,31 +7313,31 @@ static PyObject *__pyx_pf_11queue_model_4Link_6run_link_model(CYTHON_UNUSED PyOb
     goto __pyx_L1_error;
     __pyx_L13_exit_scope:;
   } /* exit inner scope */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_run_veh, __pyx_t_4) < 0) __PYX_ERR(0, 183, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_run_veh, __pyx_t_4) < 0) __PYX_ERR(0, 184, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "queue_model.pyx":185
+  /* "sim_package/queue_model.pyx":186
  *         self.run_veh = [v for v in self.run_veh if v not in self.queue_veh]
  *         ### remaining spaces on link for the node model to move vehicles to this link
- *         self.st_c = self.store_cap - np.sum([self.simulation.all_agents[agent_id].veh_len for agent_id in self.run_veh+self.queue_veh])             # <<<<<<<<<<<<<<
+ *         self.st_c = self.store_cap - np.sum([self.simulation.all_agents[agent_id].veh_len for agent_id in self.run_veh + self.queue_veh])             # <<<<<<<<<<<<<<
  *         self.in_c, self.ou_c = self.capacity/3600, self.capacity/3600
  * 
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_store_cap); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 185, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_store_cap); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 185, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_sum); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 185, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_sum); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   { /* enter inner scope */
-    __pyx_t_6 = PyList_New(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 185, __pyx_L16_error)
+    __pyx_t_6 = PyList_New(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 186, __pyx_L16_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_run_veh); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 185, __pyx_L16_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_run_veh); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 186, __pyx_L16_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_queue_veh); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 185, __pyx_L16_error)
+    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_queue_veh); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 186, __pyx_L16_error)
     __Pyx_GOTREF(__pyx_t_11);
-    __pyx_t_12 = PyNumber_Add(__pyx_t_5, __pyx_t_11); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 185, __pyx_L16_error)
+    __pyx_t_12 = PyNumber_Add(__pyx_t_5, __pyx_t_11); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 186, __pyx_L16_error)
     __Pyx_GOTREF(__pyx_t_12);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
@@ -7355,9 +7345,9 @@ static PyObject *__pyx_pf_11queue_model_4Link_6run_link_model(CYTHON_UNUSED PyOb
       __pyx_t_11 = __pyx_t_12; __Pyx_INCREF(__pyx_t_11); __pyx_t_7 = 0;
       __pyx_t_8 = NULL;
     } else {
-      __pyx_t_7 = -1; __pyx_t_11 = PyObject_GetIter(__pyx_t_12); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 185, __pyx_L16_error)
+      __pyx_t_7 = -1; __pyx_t_11 = PyObject_GetIter(__pyx_t_12); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 186, __pyx_L16_error)
       __Pyx_GOTREF(__pyx_t_11);
-      __pyx_t_8 = Py_TYPE(__pyx_t_11)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 185, __pyx_L16_error)
+      __pyx_t_8 = Py_TYPE(__pyx_t_11)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 186, __pyx_L16_error)
     }
     __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
     for (;;) {
@@ -7365,17 +7355,17 @@ static PyObject *__pyx_pf_11queue_model_4Link_6run_link_model(CYTHON_UNUSED PyOb
         if (likely(PyList_CheckExact(__pyx_t_11))) {
           if (__pyx_t_7 >= PyList_GET_SIZE(__pyx_t_11)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_12 = PyList_GET_ITEM(__pyx_t_11, __pyx_t_7); __Pyx_INCREF(__pyx_t_12); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 185, __pyx_L16_error)
+          __pyx_t_12 = PyList_GET_ITEM(__pyx_t_11, __pyx_t_7); __Pyx_INCREF(__pyx_t_12); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 186, __pyx_L16_error)
           #else
-          __pyx_t_12 = PySequence_ITEM(__pyx_t_11, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 185, __pyx_L16_error)
+          __pyx_t_12 = PySequence_ITEM(__pyx_t_11, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 186, __pyx_L16_error)
           __Pyx_GOTREF(__pyx_t_12);
           #endif
         } else {
           if (__pyx_t_7 >= PyTuple_GET_SIZE(__pyx_t_11)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_12 = PyTuple_GET_ITEM(__pyx_t_11, __pyx_t_7); __Pyx_INCREF(__pyx_t_12); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 185, __pyx_L16_error)
+          __pyx_t_12 = PyTuple_GET_ITEM(__pyx_t_11, __pyx_t_7); __Pyx_INCREF(__pyx_t_12); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 186, __pyx_L16_error)
           #else
-          __pyx_t_12 = PySequence_ITEM(__pyx_t_11, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 185, __pyx_L16_error)
+          __pyx_t_12 = PySequence_ITEM(__pyx_t_11, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 186, __pyx_L16_error)
           __Pyx_GOTREF(__pyx_t_12);
           #endif
         }
@@ -7385,7 +7375,7 @@ static PyObject *__pyx_pf_11queue_model_4Link_6run_link_model(CYTHON_UNUSED PyOb
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 185, __pyx_L16_error)
+            else __PYX_ERR(0, 186, __pyx_L16_error)
           }
           break;
         }
@@ -7393,18 +7383,18 @@ static PyObject *__pyx_pf_11queue_model_4Link_6run_link_model(CYTHON_UNUSED PyOb
       }
       __Pyx_XDECREF_SET(__pyx_8genexpr5__pyx_v_agent_id, __pyx_t_12);
       __pyx_t_12 = 0;
-      __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_simulation); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 185, __pyx_L16_error)
+      __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_simulation); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 186, __pyx_L16_error)
       __Pyx_GOTREF(__pyx_t_12);
-      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_12, __pyx_n_s_all_agents); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 185, __pyx_L16_error)
+      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_12, __pyx_n_s_all_agents); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 186, __pyx_L16_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-      __pyx_t_12 = __Pyx_PyObject_GetItem(__pyx_t_5, __pyx_8genexpr5__pyx_v_agent_id); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 185, __pyx_L16_error)
+      __pyx_t_12 = __Pyx_PyObject_GetItem(__pyx_t_5, __pyx_8genexpr5__pyx_v_agent_id); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 186, __pyx_L16_error)
       __Pyx_GOTREF(__pyx_t_12);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_12, __pyx_n_s_veh_len); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 185, __pyx_L16_error)
+      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_12, __pyx_n_s_veh_len); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 186, __pyx_L16_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-      if (unlikely(__Pyx_ListComp_Append(__pyx_t_6, (PyObject*)__pyx_t_5))) __PYX_ERR(0, 185, __pyx_L16_error)
+      if (unlikely(__Pyx_ListComp_Append(__pyx_t_6, (PyObject*)__pyx_t_5))) __PYX_ERR(0, 186, __pyx_L16_error)
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     }
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
@@ -7428,39 +7418,39 @@ static PyObject *__pyx_pf_11queue_model_4Link_6run_link_model(CYTHON_UNUSED PyOb
   __pyx_t_2 = (__pyx_t_11) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_11, __pyx_t_6) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_6);
   __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 185, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyNumber_Subtract(__pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 185, __pyx_L1_error)
+  __pyx_t_1 = PyNumber_Subtract(__pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_st_c, __pyx_t_1) < 0) __PYX_ERR(0, 185, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_st_c, __pyx_t_1) < 0) __PYX_ERR(0, 186, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":186
+  /* "sim_package/queue_model.pyx":187
  *         ### remaining spaces on link for the node model to move vehicles to this link
- *         self.st_c = self.store_cap - np.sum([self.simulation.all_agents[agent_id].veh_len for agent_id in self.run_veh+self.queue_veh])
+ *         self.st_c = self.store_cap - np.sum([self.simulation.all_agents[agent_id].veh_len for agent_id in self.run_veh + self.queue_veh])
  *         self.in_c, self.ou_c = self.capacity/3600, self.capacity/3600             # <<<<<<<<<<<<<<
  * 
  *     def update_travel_time(self, t_now, link_time_lookback_freq=None, g=None):
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_capacity); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 186, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_capacity); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 187, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_TrueDivideObjC(__pyx_t_1, __pyx_int_3600, 0xE10, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 186, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_TrueDivideObjC(__pyx_t_1, __pyx_int_3600, 0xE10, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 187, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_capacity); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 186, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_capacity); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 187, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = __Pyx_PyInt_TrueDivideObjC(__pyx_t_1, __pyx_int_3600, 0xE10, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 186, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_TrueDivideObjC(__pyx_t_1, __pyx_int_3600, 0xE10, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 187, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_in_c, __pyx_t_2) < 0) __PYX_ERR(0, 186, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_in_c, __pyx_t_2) < 0) __PYX_ERR(0, 187, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_ou_c, __pyx_t_4) < 0) __PYX_ERR(0, 186, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_ou_c, __pyx_t_4) < 0) __PYX_ERR(0, 187, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "queue_model.pyx":178
+  /* "sim_package/queue_model.pyx":179
  *         self.in_c = max(0, self.in_c-1)
  * 
  *     def run_link_model(self, t_now):             # <<<<<<<<<<<<<<
@@ -7479,7 +7469,7 @@ static PyObject *__pyx_pf_11queue_model_4Link_6run_link_model(CYTHON_UNUSED PyOb
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_11);
   __Pyx_XDECREF(__pyx_t_12);
-  __Pyx_AddTraceback("queue_model.Link.run_link_model", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Link.run_link_model", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_agent_id);
@@ -7490,7 +7480,7 @@ static PyObject *__pyx_pf_11queue_model_4Link_6run_link_model(CYTHON_UNUSED PyOb
   return __pyx_r;
 }
 
-/* "queue_model.pyx":188
+/* "sim_package/queue_model.pyx":189
  *         self.in_c, self.ou_c = self.capacity/3600, self.capacity/3600
  * 
  *     def update_travel_time(self, t_now, link_time_lookback_freq=None, g=None):             # <<<<<<<<<<<<<<
@@ -7499,9 +7489,9 @@ static PyObject *__pyx_pf_11queue_model_4Link_6run_link_model(CYTHON_UNUSED PyOb
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_11queue_model_4Link_9update_travel_time(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_11queue_model_4Link_9update_travel_time = {"update_travel_time", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11queue_model_4Link_9update_travel_time, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_11queue_model_4Link_9update_travel_time(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Link_9update_travel_time(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_11sim_package_11queue_model_4Link_9update_travel_time = {"update_travel_time", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11sim_package_11queue_model_4Link_9update_travel_time, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_11sim_package_11queue_model_4Link_9update_travel_time(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_t_now = 0;
   PyObject *__pyx_v_link_time_lookback_freq = 0;
@@ -7541,7 +7531,7 @@ static PyObject *__pyx_pw_11queue_model_4Link_9update_travel_time(PyObject *__py
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_t_now)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("update_travel_time", 0, 2, 4, 1); __PYX_ERR(0, 188, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("update_travel_time", 0, 2, 4, 1); __PYX_ERR(0, 189, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -7557,7 +7547,7 @@ static PyObject *__pyx_pw_11queue_model_4Link_9update_travel_time(PyObject *__py
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "update_travel_time") < 0)) __PYX_ERR(0, 188, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "update_travel_time") < 0)) __PYX_ERR(0, 189, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -7578,20 +7568,20 @@ static PyObject *__pyx_pw_11queue_model_4Link_9update_travel_time(PyObject *__py
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("update_travel_time", 0, 2, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 188, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("update_travel_time", 0, 2, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 189, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("queue_model.Link.update_travel_time", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Link.update_travel_time", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_11queue_model_4Link_8update_travel_time(__pyx_self, __pyx_v_self, __pyx_v_t_now, __pyx_v_link_time_lookback_freq, __pyx_v_g);
+  __pyx_r = __pyx_pf_11sim_package_11queue_model_4Link_8update_travel_time(__pyx_self, __pyx_v_self, __pyx_v_t_now, __pyx_v_link_time_lookback_freq, __pyx_v_g);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_t_now, PyObject *__pyx_v_link_time_lookback_freq, PyObject *__pyx_v_g) {
+static PyObject *__pyx_pf_11sim_package_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_t_now, PyObject *__pyx_v_link_time_lookback_freq, PyObject *__pyx_v_g) {
   PyObject *__pyx_8genexpr6__pyx_v_t_rec = NULL;
   PyObject *__pyx_8genexpr6__pyx_v_dur = NULL;
   CYTHON_UNUSED PyObject *__pyx_8genexpr7__pyx_v__ = NULL;
@@ -7617,7 +7607,7 @@ static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("update_travel_time", 0);
 
-  /* "queue_model.pyx":189
+  /* "sim_package/queue_model.pyx":190
  * 
  *     def update_travel_time(self, t_now, link_time_lookback_freq=None, g=None):
  *         self.travel_time_list = [(t_rec, dur) for (t_rec, dur) in self.travel_time_list if (t_now-t_rec < link_time_lookback_freq)]             # <<<<<<<<<<<<<<
@@ -7625,17 +7615,17 @@ static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED 
  *             self.travel_time = np.mean([dur for (_, dur) in self.travel_time_list])
  */
   { /* enter inner scope */
-    __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 189, __pyx_L5_error)
+    __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 190, __pyx_L5_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_travel_time_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 189, __pyx_L5_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_travel_time_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 190, __pyx_L5_error)
     __Pyx_GOTREF(__pyx_t_2);
     if (likely(PyList_CheckExact(__pyx_t_2)) || PyTuple_CheckExact(__pyx_t_2)) {
       __pyx_t_3 = __pyx_t_2; __Pyx_INCREF(__pyx_t_3); __pyx_t_4 = 0;
       __pyx_t_5 = NULL;
     } else {
-      __pyx_t_4 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 189, __pyx_L5_error)
+      __pyx_t_4 = -1; __pyx_t_3 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 190, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_5 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 189, __pyx_L5_error)
+      __pyx_t_5 = Py_TYPE(__pyx_t_3)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 190, __pyx_L5_error)
     }
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     for (;;) {
@@ -7643,17 +7633,17 @@ static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED 
         if (likely(PyList_CheckExact(__pyx_t_3))) {
           if (__pyx_t_4 >= PyList_GET_SIZE(__pyx_t_3)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_2 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_2); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 189, __pyx_L5_error)
+          __pyx_t_2 = PyList_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_2); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 190, __pyx_L5_error)
           #else
-          __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 189, __pyx_L5_error)
+          __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 190, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_2);
           #endif
         } else {
           if (__pyx_t_4 >= PyTuple_GET_SIZE(__pyx_t_3)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_2); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 189, __pyx_L5_error)
+          __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_3, __pyx_t_4); __Pyx_INCREF(__pyx_t_2); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 190, __pyx_L5_error)
           #else
-          __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 189, __pyx_L5_error)
+          __pyx_t_2 = PySequence_ITEM(__pyx_t_3, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 190, __pyx_L5_error)
           __Pyx_GOTREF(__pyx_t_2);
           #endif
         }
@@ -7663,7 +7653,7 @@ static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED 
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 189, __pyx_L5_error)
+            else __PYX_ERR(0, 190, __pyx_L5_error)
           }
           break;
         }
@@ -7675,7 +7665,7 @@ static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED 
         if (unlikely(size != 2)) {
           if (size > 2) __Pyx_RaiseTooManyValuesError(2);
           else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-          __PYX_ERR(0, 189, __pyx_L5_error)
+          __PYX_ERR(0, 190, __pyx_L5_error)
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
@@ -7688,15 +7678,15 @@ static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED 
         __Pyx_INCREF(__pyx_t_6);
         __Pyx_INCREF(__pyx_t_7);
         #else
-        __pyx_t_6 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 189, __pyx_L5_error)
+        __pyx_t_6 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 190, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_6);
-        __pyx_t_7 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 189, __pyx_L5_error)
+        __pyx_t_7 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 190, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_7);
         #endif
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       } else {
         Py_ssize_t index = -1;
-        __pyx_t_8 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 189, __pyx_L5_error)
+        __pyx_t_8 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 190, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_t_9 = Py_TYPE(__pyx_t_8)->tp_iternext;
@@ -7704,7 +7694,7 @@ static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED 
         __Pyx_GOTREF(__pyx_t_6);
         index = 1; __pyx_t_7 = __pyx_t_9(__pyx_t_8); if (unlikely(!__pyx_t_7)) goto __pyx_L8_unpacking_failed;
         __Pyx_GOTREF(__pyx_t_7);
-        if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_8), 2) < 0) __PYX_ERR(0, 189, __pyx_L5_error)
+        if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_8), 2) < 0) __PYX_ERR(0, 190, __pyx_L5_error)
         __pyx_t_9 = NULL;
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         goto __pyx_L9_unpacking_done;
@@ -7712,21 +7702,21 @@ static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED 
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         __pyx_t_9 = NULL;
         if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-        __PYX_ERR(0, 189, __pyx_L5_error)
+        __PYX_ERR(0, 190, __pyx_L5_error)
         __pyx_L9_unpacking_done:;
       }
       __Pyx_XDECREF_SET(__pyx_8genexpr6__pyx_v_t_rec, __pyx_t_6);
       __pyx_t_6 = 0;
       __Pyx_XDECREF_SET(__pyx_8genexpr6__pyx_v_dur, __pyx_t_7);
       __pyx_t_7 = 0;
-      __pyx_t_2 = PyNumber_Subtract(__pyx_v_t_now, __pyx_8genexpr6__pyx_v_t_rec); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 189, __pyx_L5_error)
+      __pyx_t_2 = PyNumber_Subtract(__pyx_v_t_now, __pyx_8genexpr6__pyx_v_t_rec); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 190, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_7 = PyObject_RichCompare(__pyx_t_2, __pyx_v_link_time_lookback_freq, Py_LT); __Pyx_XGOTREF(__pyx_t_7); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 189, __pyx_L5_error)
+      __pyx_t_7 = PyObject_RichCompare(__pyx_t_2, __pyx_v_link_time_lookback_freq, Py_LT); __Pyx_XGOTREF(__pyx_t_7); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 190, __pyx_L5_error)
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_10 = __Pyx_PyObject_IsTrue(__pyx_t_7); if (unlikely(__pyx_t_10 < 0)) __PYX_ERR(0, 189, __pyx_L5_error)
+      __pyx_t_10 = __Pyx_PyObject_IsTrue(__pyx_t_7); if (unlikely(__pyx_t_10 < 0)) __PYX_ERR(0, 190, __pyx_L5_error)
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       if (__pyx_t_10) {
-        __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 189, __pyx_L5_error)
+        __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 190, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_7);
         __Pyx_INCREF(__pyx_8genexpr6__pyx_v_t_rec);
         __Pyx_GIVEREF(__pyx_8genexpr6__pyx_v_t_rec);
@@ -7734,7 +7724,7 @@ static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED 
         __Pyx_INCREF(__pyx_8genexpr6__pyx_v_dur);
         __Pyx_GIVEREF(__pyx_8genexpr6__pyx_v_dur);
         PyTuple_SET_ITEM(__pyx_t_7, 1, __pyx_8genexpr6__pyx_v_dur);
-        if (unlikely(__Pyx_ListComp_Append(__pyx_t_1, (PyObject*)__pyx_t_7))) __PYX_ERR(0, 189, __pyx_L5_error)
+        if (unlikely(__Pyx_ListComp_Append(__pyx_t_1, (PyObject*)__pyx_t_7))) __PYX_ERR(0, 190, __pyx_L5_error)
         __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       }
     }
@@ -7748,47 +7738,47 @@ static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED 
     goto __pyx_L1_error;
     __pyx_L11_exit_scope:;
   } /* exit inner scope */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_travel_time_list, __pyx_t_1) < 0) __PYX_ERR(0, 189, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_travel_time_list, __pyx_t_1) < 0) __PYX_ERR(0, 190, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":190
+  /* "sim_package/queue_model.pyx":191
  *     def update_travel_time(self, t_now, link_time_lookback_freq=None, g=None):
  *         self.travel_time_list = [(t_rec, dur) for (t_rec, dur) in self.travel_time_list if (t_now-t_rec < link_time_lookback_freq)]
  *         if len(self.travel_time_list) > 0:             # <<<<<<<<<<<<<<
  *             self.travel_time = np.mean([dur for (_, dur) in self.travel_time_list])
  *             g.update_edge(self.start_nid, self.end_nid, <double> self.travel_time)
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_travel_time_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 190, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_travel_time_list); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 191, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = PyObject_Length(__pyx_t_1); if (unlikely(__pyx_t_4 == ((Py_ssize_t)-1))) __PYX_ERR(0, 190, __pyx_L1_error)
+  __pyx_t_4 = PyObject_Length(__pyx_t_1); if (unlikely(__pyx_t_4 == ((Py_ssize_t)-1))) __PYX_ERR(0, 191, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_10 = ((__pyx_t_4 > 0) != 0);
   if (__pyx_t_10) {
 
-    /* "queue_model.pyx":191
+    /* "sim_package/queue_model.pyx":192
  *         self.travel_time_list = [(t_rec, dur) for (t_rec, dur) in self.travel_time_list if (t_now-t_rec < link_time_lookback_freq)]
  *         if len(self.travel_time_list) > 0:
  *             self.travel_time = np.mean([dur for (_, dur) in self.travel_time_list])             # <<<<<<<<<<<<<<
  *             g.update_edge(self.start_nid, self.end_nid, <double> self.travel_time)
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 191, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 192, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_mean); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 191, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_mean); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 192, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     { /* enter inner scope */
-      __pyx_t_3 = PyList_New(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 191, __pyx_L15_error)
+      __pyx_t_3 = PyList_New(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 192, __pyx_L15_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_travel_time_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 191, __pyx_L15_error)
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_travel_time_list); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 192, __pyx_L15_error)
       __Pyx_GOTREF(__pyx_t_2);
       if (likely(PyList_CheckExact(__pyx_t_2)) || PyTuple_CheckExact(__pyx_t_2)) {
         __pyx_t_6 = __pyx_t_2; __Pyx_INCREF(__pyx_t_6); __pyx_t_4 = 0;
         __pyx_t_5 = NULL;
       } else {
-        __pyx_t_4 = -1; __pyx_t_6 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 191, __pyx_L15_error)
+        __pyx_t_4 = -1; __pyx_t_6 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 192, __pyx_L15_error)
         __Pyx_GOTREF(__pyx_t_6);
-        __pyx_t_5 = Py_TYPE(__pyx_t_6)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 191, __pyx_L15_error)
+        __pyx_t_5 = Py_TYPE(__pyx_t_6)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 192, __pyx_L15_error)
       }
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       for (;;) {
@@ -7796,17 +7786,17 @@ static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED 
           if (likely(PyList_CheckExact(__pyx_t_6))) {
             if (__pyx_t_4 >= PyList_GET_SIZE(__pyx_t_6)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_2 = PyList_GET_ITEM(__pyx_t_6, __pyx_t_4); __Pyx_INCREF(__pyx_t_2); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 191, __pyx_L15_error)
+            __pyx_t_2 = PyList_GET_ITEM(__pyx_t_6, __pyx_t_4); __Pyx_INCREF(__pyx_t_2); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 192, __pyx_L15_error)
             #else
-            __pyx_t_2 = PySequence_ITEM(__pyx_t_6, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 191, __pyx_L15_error)
+            __pyx_t_2 = PySequence_ITEM(__pyx_t_6, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 192, __pyx_L15_error)
             __Pyx_GOTREF(__pyx_t_2);
             #endif
           } else {
             if (__pyx_t_4 >= PyTuple_GET_SIZE(__pyx_t_6)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_6, __pyx_t_4); __Pyx_INCREF(__pyx_t_2); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 191, __pyx_L15_error)
+            __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_6, __pyx_t_4); __Pyx_INCREF(__pyx_t_2); __pyx_t_4++; if (unlikely(0 < 0)) __PYX_ERR(0, 192, __pyx_L15_error)
             #else
-            __pyx_t_2 = PySequence_ITEM(__pyx_t_6, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 191, __pyx_L15_error)
+            __pyx_t_2 = PySequence_ITEM(__pyx_t_6, __pyx_t_4); __pyx_t_4++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 192, __pyx_L15_error)
             __Pyx_GOTREF(__pyx_t_2);
             #endif
           }
@@ -7816,7 +7806,7 @@ static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED 
             PyObject* exc_type = PyErr_Occurred();
             if (exc_type) {
               if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-              else __PYX_ERR(0, 191, __pyx_L15_error)
+              else __PYX_ERR(0, 192, __pyx_L15_error)
             }
             break;
           }
@@ -7828,7 +7818,7 @@ static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED 
           if (unlikely(size != 2)) {
             if (size > 2) __Pyx_RaiseTooManyValuesError(2);
             else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-            __PYX_ERR(0, 191, __pyx_L15_error)
+            __PYX_ERR(0, 192, __pyx_L15_error)
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
           if (likely(PyTuple_CheckExact(sequence))) {
@@ -7841,15 +7831,15 @@ static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED 
           __Pyx_INCREF(__pyx_t_8);
           __Pyx_INCREF(__pyx_t_11);
           #else
-          __pyx_t_8 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 191, __pyx_L15_error)
+          __pyx_t_8 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 192, __pyx_L15_error)
           __Pyx_GOTREF(__pyx_t_8);
-          __pyx_t_11 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 191, __pyx_L15_error)
+          __pyx_t_11 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 192, __pyx_L15_error)
           __Pyx_GOTREF(__pyx_t_11);
           #endif
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         } else {
           Py_ssize_t index = -1;
-          __pyx_t_12 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 191, __pyx_L15_error)
+          __pyx_t_12 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 192, __pyx_L15_error)
           __Pyx_GOTREF(__pyx_t_12);
           __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
           __pyx_t_9 = Py_TYPE(__pyx_t_12)->tp_iternext;
@@ -7857,7 +7847,7 @@ static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED 
           __Pyx_GOTREF(__pyx_t_8);
           index = 1; __pyx_t_11 = __pyx_t_9(__pyx_t_12); if (unlikely(!__pyx_t_11)) goto __pyx_L18_unpacking_failed;
           __Pyx_GOTREF(__pyx_t_11);
-          if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_12), 2) < 0) __PYX_ERR(0, 191, __pyx_L15_error)
+          if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_12), 2) < 0) __PYX_ERR(0, 192, __pyx_L15_error)
           __pyx_t_9 = NULL;
           __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
           goto __pyx_L19_unpacking_done;
@@ -7865,14 +7855,14 @@ static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED 
           __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
           __pyx_t_9 = NULL;
           if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-          __PYX_ERR(0, 191, __pyx_L15_error)
+          __PYX_ERR(0, 192, __pyx_L15_error)
           __pyx_L19_unpacking_done:;
         }
         __Pyx_XDECREF_SET(__pyx_8genexpr7__pyx_v__, __pyx_t_8);
         __pyx_t_8 = 0;
         __Pyx_XDECREF_SET(__pyx_8genexpr7__pyx_v_dur, __pyx_t_11);
         __pyx_t_11 = 0;
-        if (unlikely(__Pyx_ListComp_Append(__pyx_t_3, (PyObject*)__pyx_8genexpr7__pyx_v_dur))) __PYX_ERR(0, 191, __pyx_L15_error)
+        if (unlikely(__Pyx_ListComp_Append(__pyx_t_3, (PyObject*)__pyx_8genexpr7__pyx_v_dur))) __PYX_ERR(0, 192, __pyx_L15_error)
       }
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_XDECREF(__pyx_8genexpr7__pyx_v__); __pyx_8genexpr7__pyx_v__ = 0;
@@ -7897,30 +7887,30 @@ static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED 
     __pyx_t_1 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_7, __pyx_t_6, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_t_3);
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 191, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 192, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_travel_time, __pyx_t_1) < 0) __PYX_ERR(0, 191, __pyx_L1_error)
+    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_travel_time, __pyx_t_1) < 0) __PYX_ERR(0, 192, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "queue_model.pyx":192
+    /* "sim_package/queue_model.pyx":193
  *         if len(self.travel_time_list) > 0:
  *             self.travel_time = np.mean([dur for (_, dur) in self.travel_time_list])
  *             g.update_edge(self.start_nid, self.end_nid, <double> self.travel_time)             # <<<<<<<<<<<<<<
  * 
  * class Agent:
  */
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_update_edge); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 192, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_update_edge); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 193, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_start_nid); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 192, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_start_nid); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 193, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_end_nid); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 192, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_end_nid); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 193, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_travel_time); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 192, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_travel_time); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 193, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_13 = __pyx_PyFloat_AsDouble(__pyx_t_2); if (unlikely((__pyx_t_13 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 192, __pyx_L1_error)
+    __pyx_t_13 = __pyx_PyFloat_AsDouble(__pyx_t_2); if (unlikely((__pyx_t_13 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 193, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = PyFloat_FromDouble(((double)__pyx_t_13)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 192, __pyx_L1_error)
+    __pyx_t_2 = PyFloat_FromDouble(((double)__pyx_t_13)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 193, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_t_11 = NULL;
     __pyx_t_14 = 0;
@@ -7937,7 +7927,7 @@ static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED 
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_7)) {
       PyObject *__pyx_temp[4] = {__pyx_t_11, __pyx_t_3, __pyx_t_6, __pyx_t_2};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_7, __pyx_temp+1-__pyx_t_14, 3+__pyx_t_14); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 192, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_7, __pyx_temp+1-__pyx_t_14, 3+__pyx_t_14); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 193, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -7948,7 +7938,7 @@ static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED 
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_7)) {
       PyObject *__pyx_temp[4] = {__pyx_t_11, __pyx_t_3, __pyx_t_6, __pyx_t_2};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_7, __pyx_temp+1-__pyx_t_14, 3+__pyx_t_14); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 192, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_7, __pyx_temp+1-__pyx_t_14, 3+__pyx_t_14); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 193, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -7957,7 +7947,7 @@ static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED 
     } else
     #endif
     {
-      __pyx_t_8 = PyTuple_New(3+__pyx_t_14); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 192, __pyx_L1_error)
+      __pyx_t_8 = PyTuple_New(3+__pyx_t_14); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 193, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       if (__pyx_t_11) {
         __Pyx_GIVEREF(__pyx_t_11); PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_11); __pyx_t_11 = NULL;
@@ -7971,14 +7961,14 @@ static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED 
       __pyx_t_3 = 0;
       __pyx_t_6 = 0;
       __pyx_t_2 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_8, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 192, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_8, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 193, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     }
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "queue_model.pyx":190
+    /* "sim_package/queue_model.pyx":191
  *     def update_travel_time(self, t_now, link_time_lookback_freq=None, g=None):
  *         self.travel_time_list = [(t_rec, dur) for (t_rec, dur) in self.travel_time_list if (t_now-t_rec < link_time_lookback_freq)]
  *         if len(self.travel_time_list) > 0:             # <<<<<<<<<<<<<<
@@ -7987,7 +7977,7 @@ static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED 
  */
   }
 
-  /* "queue_model.pyx":188
+  /* "sim_package/queue_model.pyx":189
  *         self.in_c, self.ou_c = self.capacity/3600, self.capacity/3600
  * 
  *     def update_travel_time(self, t_now, link_time_lookback_freq=None, g=None):             # <<<<<<<<<<<<<<
@@ -8007,7 +7997,7 @@ static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED 
   __Pyx_XDECREF(__pyx_t_8);
   __Pyx_XDECREF(__pyx_t_11);
   __Pyx_XDECREF(__pyx_t_12);
-  __Pyx_AddTraceback("queue_model.Link.update_travel_time", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Link.update_travel_time", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_8genexpr6__pyx_v_t_rec);
@@ -8019,7 +8009,7 @@ static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED 
   return __pyx_r;
 }
 
-/* "queue_model.pyx":195
+/* "sim_package/queue_model.pyx":196
  * 
  * class Agent:
  *     def __init__(self, id, origin_nid, destin_nid, dept_time, veh_len, gps_reroute, simulation=None):             # <<<<<<<<<<<<<<
@@ -8028,9 +8018,9 @@ static PyObject *__pyx_pf_11queue_model_4Link_8update_travel_time(CYTHON_UNUSED 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_11queue_model_5Agent_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_11queue_model_5Agent_1__init__ = {"__init__", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11queue_model_5Agent_1__init__, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_11queue_model_5Agent_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_11sim_package_11queue_model_5Agent_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_11sim_package_11queue_model_5Agent_1__init__ = {"__init__", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11sim_package_11queue_model_5Agent_1__init__, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_11sim_package_11queue_model_5Agent_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_id = 0;
   PyObject *__pyx_v_origin_nid = 0;
@@ -8081,37 +8071,37 @@ static PyObject *__pyx_pw_11queue_model_5Agent_1__init__(PyObject *__pyx_self, P
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_id)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 7, 8, 1); __PYX_ERR(0, 195, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 7, 8, 1); __PYX_ERR(0, 196, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_origin_nid)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 7, 8, 2); __PYX_ERR(0, 195, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 7, 8, 2); __PYX_ERR(0, 196, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_destin_nid)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 7, 8, 3); __PYX_ERR(0, 195, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 7, 8, 3); __PYX_ERR(0, 196, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  4:
         if (likely((values[4] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_dept_time)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 7, 8, 4); __PYX_ERR(0, 195, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 7, 8, 4); __PYX_ERR(0, 196, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  5:
         if (likely((values[5] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_veh_len)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 7, 8, 5); __PYX_ERR(0, 195, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 7, 8, 5); __PYX_ERR(0, 196, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  6:
         if (likely((values[6] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_gps_reroute)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 7, 8, 6); __PYX_ERR(0, 195, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 7, 8, 6); __PYX_ERR(0, 196, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  7:
@@ -8121,7 +8111,7 @@ static PyObject *__pyx_pw_11queue_model_5Agent_1__init__(PyObject *__pyx_self, P
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(0, 195, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(0, 196, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -8149,20 +8139,20 @@ static PyObject *__pyx_pw_11queue_model_5Agent_1__init__(PyObject *__pyx_self, P
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 0, 7, 8, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 195, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 0, 7, 8, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 196, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("queue_model.Agent.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Agent.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_11queue_model_5Agent___init__(__pyx_self, __pyx_v_self, __pyx_v_id, __pyx_v_origin_nid, __pyx_v_destin_nid, __pyx_v_dept_time, __pyx_v_veh_len, __pyx_v_gps_reroute, __pyx_v_simulation);
+  __pyx_r = __pyx_pf_11sim_package_11queue_model_5Agent___init__(__pyx_self, __pyx_v_self, __pyx_v_id, __pyx_v_origin_nid, __pyx_v_destin_nid, __pyx_v_dept_time, __pyx_v_veh_len, __pyx_v_gps_reroute, __pyx_v_simulation);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_11queue_model_5Agent___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id, PyObject *__pyx_v_origin_nid, PyObject *__pyx_v_destin_nid, PyObject *__pyx_v_dept_time, PyObject *__pyx_v_veh_len, PyObject *__pyx_v_gps_reroute, PyObject *__pyx_v_simulation) {
+static PyObject *__pyx_pf_11sim_package_11queue_model_5Agent___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_id, PyObject *__pyx_v_origin_nid, PyObject *__pyx_v_destin_nid, PyObject *__pyx_v_dept_time, PyObject *__pyx_v_veh_len, PyObject *__pyx_v_gps_reroute, PyObject *__pyx_v_simulation) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -8174,79 +8164,79 @@ static PyObject *__pyx_pf_11queue_model_5Agent___init__(CYTHON_UNUSED PyObject *
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "queue_model.pyx":197
+  /* "sim_package/queue_model.pyx":198
  *     def __init__(self, id, origin_nid, destin_nid, dept_time, veh_len, gps_reroute, simulation=None):
  *         #input
  *         self.aid = id             # <<<<<<<<<<<<<<
  *         self.origin_nid = origin_nid
  *         self.destin_nid = destin_nid
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_aid, __pyx_v_id) < 0) __PYX_ERR(0, 197, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_aid, __pyx_v_id) < 0) __PYX_ERR(0, 198, __pyx_L1_error)
 
-  /* "queue_model.pyx":198
+  /* "sim_package/queue_model.pyx":199
  *         #input
  *         self.aid = id
  *         self.origin_nid = origin_nid             # <<<<<<<<<<<<<<
  *         self.destin_nid = destin_nid
  *         self.dept_time = dept_time
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_origin_nid, __pyx_v_origin_nid) < 0) __PYX_ERR(0, 198, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_origin_nid, __pyx_v_origin_nid) < 0) __PYX_ERR(0, 199, __pyx_L1_error)
 
-  /* "queue_model.pyx":199
+  /* "sim_package/queue_model.pyx":200
  *         self.aid = id
  *         self.origin_nid = origin_nid
  *         self.destin_nid = destin_nid             # <<<<<<<<<<<<<<
  *         self.dept_time = dept_time
  *         self.veh_len = veh_len
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_destin_nid, __pyx_v_destin_nid) < 0) __PYX_ERR(0, 199, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_destin_nid, __pyx_v_destin_nid) < 0) __PYX_ERR(0, 200, __pyx_L1_error)
 
-  /* "queue_model.pyx":200
+  /* "sim_package/queue_model.pyx":201
  *         self.origin_nid = origin_nid
  *         self.destin_nid = destin_nid
  *         self.dept_time = dept_time             # <<<<<<<<<<<<<<
  *         self.veh_len = veh_len
  *         self.gps_reroute = gps_reroute
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_dept_time, __pyx_v_dept_time) < 0) __PYX_ERR(0, 200, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_dept_time, __pyx_v_dept_time) < 0) __PYX_ERR(0, 201, __pyx_L1_error)
 
-  /* "queue_model.pyx":201
+  /* "sim_package/queue_model.pyx":202
  *         self.destin_nid = destin_nid
  *         self.dept_time = dept_time
  *         self.veh_len = veh_len             # <<<<<<<<<<<<<<
  *         self.gps_reroute = gps_reroute
  *         self.simulation = simulation
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_veh_len, __pyx_v_veh_len) < 0) __PYX_ERR(0, 201, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_veh_len, __pyx_v_veh_len) < 0) __PYX_ERR(0, 202, __pyx_L1_error)
 
-  /* "queue_model.pyx":202
+  /* "sim_package/queue_model.pyx":203
  *         self.dept_time = dept_time
  *         self.veh_len = veh_len
  *         self.gps_reroute = gps_reroute             # <<<<<<<<<<<<<<
  *         self.simulation = simulation
  *         ### derived
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_gps_reroute, __pyx_v_gps_reroute) < 0) __PYX_ERR(0, 202, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_gps_reroute, __pyx_v_gps_reroute) < 0) __PYX_ERR(0, 203, __pyx_L1_error)
 
-  /* "queue_model.pyx":203
+  /* "sim_package/queue_model.pyx":204
  *         self.veh_len = veh_len
  *         self.gps_reroute = gps_reroute
  *         self.simulation = simulation             # <<<<<<<<<<<<<<
  *         ### derived
  *         self.cls = 'vn_source_{}'.format(self.origin_nid) # current link start node
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_simulation, __pyx_v_simulation) < 0) __PYX_ERR(0, 203, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_simulation, __pyx_v_simulation) < 0) __PYX_ERR(0, 204, __pyx_L1_error)
 
-  /* "queue_model.pyx":205
+  /* "sim_package/queue_model.pyx":206
  *         self.simulation = simulation
  *         ### derived
  *         self.cls = 'vn_source_{}'.format(self.origin_nid) # current link start node             # <<<<<<<<<<<<<<
  *         self.cle = self.origin_nid # current link end node
  *         ### Empty
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_kp_u_vn_source, __pyx_n_s_format); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 205, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_kp_u_vn_source, __pyx_n_s_format); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_origin_nid); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 205, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_origin_nid); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -8261,64 +8251,64 @@ static PyObject *__pyx_pf_11queue_model_5Agent___init__(CYTHON_UNUSED PyObject *
   __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_4, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 205, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_cls, __pyx_t_1) < 0) __PYX_ERR(0, 205, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_cls, __pyx_t_1) < 0) __PYX_ERR(0, 206, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":206
+  /* "sim_package/queue_model.pyx":207
  *         ### derived
  *         self.cls = 'vn_source_{}'.format(self.origin_nid) # current link start node
  *         self.cle = self.origin_nid # current link end node             # <<<<<<<<<<<<<<
  *         ### Empty
  *         self.route_igraph = []
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_origin_nid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 206, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_origin_nid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 207, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_cle, __pyx_t_1) < 0) __PYX_ERR(0, 206, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_cle, __pyx_t_1) < 0) __PYX_ERR(0, 207, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":208
+  /* "sim_package/queue_model.pyx":209
  *         self.cle = self.origin_nid # current link end node
  *         ### Empty
  *         self.route_igraph = []             # <<<<<<<<<<<<<<
  *         self.find_route = None
  *         self.status = None
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 208, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 209, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_route_igraph, __pyx_t_1) < 0) __PYX_ERR(0, 208, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_route_igraph, __pyx_t_1) < 0) __PYX_ERR(0, 209, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":209
+  /* "sim_package/queue_model.pyx":210
  *         ### Empty
  *         self.route_igraph = []
  *         self.find_route = None             # <<<<<<<<<<<<<<
  *         self.status = None
  *         self.cl_enter_time = None
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_find_route, Py_None) < 0) __PYX_ERR(0, 209, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_find_route, Py_None) < 0) __PYX_ERR(0, 210, __pyx_L1_error)
 
-  /* "queue_model.pyx":210
+  /* "sim_package/queue_model.pyx":211
  *         self.route_igraph = []
  *         self.find_route = None
  *         self.status = None             # <<<<<<<<<<<<<<
  *         self.cl_enter_time = None
  * 
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_status, Py_None) < 0) __PYX_ERR(0, 210, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_status, Py_None) < 0) __PYX_ERR(0, 211, __pyx_L1_error)
 
-  /* "queue_model.pyx":211
+  /* "sim_package/queue_model.pyx":212
  *         self.find_route = None
  *         self.status = None
  *         self.cl_enter_time = None             # <<<<<<<<<<<<<<
  * 
  *     def load_trips(self, t_now):
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_cl_enter_time, Py_None) < 0) __PYX_ERR(0, 211, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_cl_enter_time, Py_None) < 0) __PYX_ERR(0, 212, __pyx_L1_error)
 
-  /* "queue_model.pyx":195
+  /* "sim_package/queue_model.pyx":196
  * 
  * class Agent:
  *     def __init__(self, id, origin_nid, destin_nid, dept_time, veh_len, gps_reroute, simulation=None):             # <<<<<<<<<<<<<<
@@ -8334,7 +8324,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent___init__(CYTHON_UNUSED PyObject *
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("queue_model.Agent.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Agent.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -8342,7 +8332,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent___init__(CYTHON_UNUSED PyObject *
   return __pyx_r;
 }
 
-/* "queue_model.pyx":213
+/* "sim_package/queue_model.pyx":214
  *         self.cl_enter_time = None
  * 
  *     def load_trips(self, t_now):             # <<<<<<<<<<<<<<
@@ -8351,9 +8341,9 @@ static PyObject *__pyx_pf_11queue_model_5Agent___init__(CYTHON_UNUSED PyObject *
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_11queue_model_5Agent_3load_trips(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_11queue_model_5Agent_3load_trips = {"load_trips", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11queue_model_5Agent_3load_trips, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_11queue_model_5Agent_3load_trips(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_11sim_package_11queue_model_5Agent_3load_trips(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_11sim_package_11queue_model_5Agent_3load_trips = {"load_trips", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11sim_package_11queue_model_5Agent_3load_trips, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_11sim_package_11queue_model_5Agent_3load_trips(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_t_now = 0;
   int __pyx_lineno = 0;
@@ -8385,11 +8375,11 @@ static PyObject *__pyx_pw_11queue_model_5Agent_3load_trips(PyObject *__pyx_self,
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_t_now)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("load_trips", 1, 2, 2, 1); __PYX_ERR(0, 213, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("load_trips", 1, 2, 2, 1); __PYX_ERR(0, 214, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "load_trips") < 0)) __PYX_ERR(0, 213, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "load_trips") < 0)) __PYX_ERR(0, 214, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -8402,20 +8392,20 @@ static PyObject *__pyx_pw_11queue_model_5Agent_3load_trips(PyObject *__pyx_self,
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("load_trips", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 213, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("load_trips", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 214, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("queue_model.Agent.load_trips", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Agent.load_trips", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_11queue_model_5Agent_2load_trips(__pyx_self, __pyx_v_self, __pyx_v_t_now);
+  __pyx_r = __pyx_pf_11sim_package_11queue_model_5Agent_2load_trips(__pyx_self, __pyx_v_self, __pyx_v_t_now);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_11queue_model_5Agent_2load_trips(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_t_now) {
+static PyObject *__pyx_pf_11sim_package_11queue_model_5Agent_2load_trips(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_t_now) {
   PyObject *__pyx_v_initial_edge = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -8429,88 +8419,88 @@ static PyObject *__pyx_pf_11queue_model_5Agent_2load_trips(CYTHON_UNUSED PyObjec
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("load_trips", 0);
 
-  /* "queue_model.pyx":214
+  /* "sim_package/queue_model.pyx":215
  * 
  *     def load_trips(self, t_now):
  *         if (self.dept_time == t_now):             # <<<<<<<<<<<<<<
  *             initial_edge = self.simulation.node2link_dict[self.route_igraph[0]]
  *             self.simulation.all_links[initial_edge].run_veh.append(self.aid)
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_dept_time); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 214, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_dept_time); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyObject_RichCompare(__pyx_t_1, __pyx_v_t_now, Py_EQ); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 214, __pyx_L1_error)
+  __pyx_t_2 = PyObject_RichCompare(__pyx_t_1, __pyx_v_t_now, Py_EQ); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 214, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 215, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if (__pyx_t_3) {
 
-    /* "queue_model.pyx":215
+    /* "sim_package/queue_model.pyx":216
  *     def load_trips(self, t_now):
  *         if (self.dept_time == t_now):
  *             initial_edge = self.simulation.node2link_dict[self.route_igraph[0]]             # <<<<<<<<<<<<<<
  *             self.simulation.all_links[initial_edge].run_veh.append(self.aid)
  *             self.status = 'loaded'
  */
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_simulation); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 215, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_simulation); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 216, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_node2link_dict); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 215, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_node2link_dict); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 216, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_route_igraph); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 215, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_route_igraph); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 216, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = __Pyx_GetItemInt(__pyx_t_2, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 215, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_GetItemInt(__pyx_t_2, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 216, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 215, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 216, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_v_initial_edge = __pyx_t_2;
     __pyx_t_2 = 0;
 
-    /* "queue_model.pyx":216
+    /* "sim_package/queue_model.pyx":217
  *         if (self.dept_time == t_now):
  *             initial_edge = self.simulation.node2link_dict[self.route_igraph[0]]
  *             self.simulation.all_links[initial_edge].run_veh.append(self.aid)             # <<<<<<<<<<<<<<
  *             self.status = 'loaded'
  *             self.cl_enter_time = t_now
  */
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_simulation); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 216, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_simulation); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 217, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_all_links); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 216, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_all_links); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 217, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_t_4, __pyx_v_initial_edge); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 216, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_t_4, __pyx_v_initial_edge); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 217, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_run_veh); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 216, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_run_veh); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 217, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_aid); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 216, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_aid); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 217, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_5 = __Pyx_PyObject_Append(__pyx_t_4, __pyx_t_2); if (unlikely(__pyx_t_5 == ((int)-1))) __PYX_ERR(0, 216, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Append(__pyx_t_4, __pyx_t_2); if (unlikely(__pyx_t_5 == ((int)-1))) __PYX_ERR(0, 217, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "queue_model.pyx":217
+    /* "sim_package/queue_model.pyx":218
  *             initial_edge = self.simulation.node2link_dict[self.route_igraph[0]]
  *             self.simulation.all_links[initial_edge].run_veh.append(self.aid)
  *             self.status = 'loaded'             # <<<<<<<<<<<<<<
  *             self.cl_enter_time = t_now
  * 
  */
-    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_status, __pyx_n_u_loaded) < 0) __PYX_ERR(0, 217, __pyx_L1_error)
+    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_status, __pyx_n_u_loaded) < 0) __PYX_ERR(0, 218, __pyx_L1_error)
 
-    /* "queue_model.pyx":218
+    /* "sim_package/queue_model.pyx":219
  *             self.simulation.all_links[initial_edge].run_veh.append(self.aid)
  *             self.status = 'loaded'
  *             self.cl_enter_time = t_now             # <<<<<<<<<<<<<<
  * 
  *     def prepare_agent(self, node_id, node2link_dict=None, node_id_dict=None):
  */
-    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_cl_enter_time, __pyx_v_t_now) < 0) __PYX_ERR(0, 218, __pyx_L1_error)
+    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_cl_enter_time, __pyx_v_t_now) < 0) __PYX_ERR(0, 219, __pyx_L1_error)
 
-    /* "queue_model.pyx":214
+    /* "sim_package/queue_model.pyx":215
  * 
  *     def load_trips(self, t_now):
  *         if (self.dept_time == t_now):             # <<<<<<<<<<<<<<
@@ -8519,7 +8509,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_2load_trips(CYTHON_UNUSED PyObjec
  */
   }
 
-  /* "queue_model.pyx":213
+  /* "sim_package/queue_model.pyx":214
  *         self.cl_enter_time = None
  * 
  *     def load_trips(self, t_now):             # <<<<<<<<<<<<<<
@@ -8534,7 +8524,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_2load_trips(CYTHON_UNUSED PyObjec
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("queue_model.Agent.load_trips", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Agent.load_trips", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_initial_edge);
@@ -8543,7 +8533,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_2load_trips(CYTHON_UNUSED PyObjec
   return __pyx_r;
 }
 
-/* "queue_model.pyx":220
+/* "sim_package/queue_model.pyx":221
  *             self.cl_enter_time = t_now
  * 
  *     def prepare_agent(self, node_id, node2link_dict=None, node_id_dict=None):             # <<<<<<<<<<<<<<
@@ -8552,9 +8542,9 @@ static PyObject *__pyx_pf_11queue_model_5Agent_2load_trips(CYTHON_UNUSED PyObjec
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_11queue_model_5Agent_5prepare_agent(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_11queue_model_5Agent_5prepare_agent = {"prepare_agent", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11queue_model_5Agent_5prepare_agent, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_11queue_model_5Agent_5prepare_agent(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_11sim_package_11queue_model_5Agent_5prepare_agent(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_11sim_package_11queue_model_5Agent_5prepare_agent = {"prepare_agent", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11sim_package_11queue_model_5Agent_5prepare_agent, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_11sim_package_11queue_model_5Agent_5prepare_agent(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_node_id = 0;
   PyObject *__pyx_v_node2link_dict = 0;
@@ -8594,7 +8584,7 @@ static PyObject *__pyx_pw_11queue_model_5Agent_5prepare_agent(PyObject *__pyx_se
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_node_id)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("prepare_agent", 0, 2, 4, 1); __PYX_ERR(0, 220, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("prepare_agent", 0, 2, 4, 1); __PYX_ERR(0, 221, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -8610,7 +8600,7 @@ static PyObject *__pyx_pw_11queue_model_5Agent_5prepare_agent(PyObject *__pyx_se
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "prepare_agent") < 0)) __PYX_ERR(0, 220, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "prepare_agent") < 0)) __PYX_ERR(0, 221, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -8631,20 +8621,20 @@ static PyObject *__pyx_pw_11queue_model_5Agent_5prepare_agent(PyObject *__pyx_se
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("prepare_agent", 0, 2, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 220, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("prepare_agent", 0, 2, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 221, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("queue_model.Agent.prepare_agent", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Agent.prepare_agent", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_11queue_model_5Agent_4prepare_agent(__pyx_self, __pyx_v_self, __pyx_v_node_id, __pyx_v_node2link_dict, __pyx_v_node_id_dict);
+  __pyx_r = __pyx_pf_11sim_package_11queue_model_5Agent_4prepare_agent(__pyx_self, __pyx_v_self, __pyx_v_node_id, __pyx_v_node2link_dict, __pyx_v_node_id_dict);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_node_id, PyObject *__pyx_v_node2link_dict, PyObject *__pyx_v_node_id_dict) {
+static PyObject *__pyx_pf_11sim_package_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_node_id, PyObject *__pyx_v_node2link_dict, PyObject *__pyx_v_node_id_dict) {
   PyObject *__pyx_v_agent_next_node = NULL;
   PyObject *__pyx_v_ol = NULL;
   PyObject *__pyx_v_x_start = NULL;
@@ -8678,7 +8668,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("prepare_agent", 0);
 
-  /* "queue_model.pyx":221
+  /* "sim_package/queue_model.pyx":222
  * 
  *     def prepare_agent(self, node_id, node2link_dict=None, node_id_dict=None):
  *         assert self.cle == node_id, "agent next node {} is not the transferring node {}, route {}".format(self.cle, node_id, self.route_igraph)             # <<<<<<<<<<<<<<
@@ -8687,18 +8677,18 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
  */
   #ifndef CYTHON_WITHOUT_ASSERTIONS
   if (unlikely(!Py_OptimizeFlag)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_cle); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 221, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_cle); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 222, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = PyObject_RichCompare(__pyx_t_1, __pyx_v_node_id, Py_EQ); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 221, __pyx_L1_error)
+    __pyx_t_2 = PyObject_RichCompare(__pyx_t_1, __pyx_v_node_id, Py_EQ); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 222, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 221, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 222, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     if (unlikely(!__pyx_t_3)) {
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_kp_u_agent_next_node_is_not_the_trans, __pyx_n_s_format); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 221, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_kp_u_agent_next_node_is_not_the_trans, __pyx_n_s_format); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 222, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_cle); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 221, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_cle); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 222, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_route_igraph); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 221, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_route_igraph); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 222, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __pyx_t_6 = NULL;
       __pyx_t_7 = 0;
@@ -8715,7 +8705,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_1)) {
         PyObject *__pyx_temp[4] = {__pyx_t_6, __pyx_t_4, __pyx_v_node_id, __pyx_t_5};
-        __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 221, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 222, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -8725,7 +8715,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_1)) {
         PyObject *__pyx_temp[4] = {__pyx_t_6, __pyx_t_4, __pyx_v_node_id, __pyx_t_5};
-        __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 221, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 222, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -8733,7 +8723,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
       } else
       #endif
       {
-        __pyx_t_8 = PyTuple_New(3+__pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 221, __pyx_L1_error)
+        __pyx_t_8 = PyTuple_New(3+__pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 222, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         if (__pyx_t_6) {
           __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_6); __pyx_t_6 = NULL;
@@ -8747,37 +8737,37 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
         PyTuple_SET_ITEM(__pyx_t_8, 2+__pyx_t_7, __pyx_t_5);
         __pyx_t_4 = 0;
         __pyx_t_5 = 0;
-        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_8, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 221, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_8, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 222, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       }
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __pyx_t_1 = PyTuple_Pack(1, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 221, __pyx_L1_error)
+      __pyx_t_1 = PyTuple_Pack(1, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 222, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       PyErr_SetObject(PyExc_AssertionError, __pyx_t_1);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __PYX_ERR(0, 221, __pyx_L1_error)
+      __PYX_ERR(0, 222, __pyx_L1_error)
     }
   }
   #endif
 
-  /* "queue_model.pyx":222
+  /* "sim_package/queue_model.pyx":223
  *     def prepare_agent(self, node_id, node2link_dict=None, node_id_dict=None):
  *         assert self.cle == node_id, "agent next node {} is not the transferring node {}, route {}".format(self.cle, node_id, self.route_igraph)
  *         if self.destin_nid == node_id: ### current node is agent destination             # <<<<<<<<<<<<<<
  *             return None, None, 0 ### id, next_node, dir
  *         agent_next_node = [end for (start, end) in self.route_igraph if start == node_id][0]
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_destin_nid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 222, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_destin_nid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 223, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyObject_RichCompare(__pyx_t_1, __pyx_v_node_id, Py_EQ); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 222, __pyx_L1_error)
+  __pyx_t_2 = PyObject_RichCompare(__pyx_t_1, __pyx_v_node_id, Py_EQ); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 223, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 222, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 223, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if (__pyx_t_3) {
 
-    /* "queue_model.pyx":223
+    /* "sim_package/queue_model.pyx":224
  *         assert self.cle == node_id, "agent next node {} is not the transferring node {}, route {}".format(self.cle, node_id, self.route_igraph)
  *         if self.destin_nid == node_id: ### current node is agent destination
  *             return None, None, 0 ### id, next_node, dir             # <<<<<<<<<<<<<<
@@ -8789,7 +8779,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
     __pyx_r = __pyx_tuple__4;
     goto __pyx_L0;
 
-    /* "queue_model.pyx":222
+    /* "sim_package/queue_model.pyx":223
  *     def prepare_agent(self, node_id, node2link_dict=None, node_id_dict=None):
  *         assert self.cle == node_id, "agent next node {} is not the transferring node {}, route {}".format(self.cle, node_id, self.route_igraph)
  *         if self.destin_nid == node_id: ### current node is agent destination             # <<<<<<<<<<<<<<
@@ -8798,7 +8788,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
  */
   }
 
-  /* "queue_model.pyx":224
+  /* "sim_package/queue_model.pyx":225
  *         if self.destin_nid == node_id: ### current node is agent destination
  *             return None, None, 0 ### id, next_node, dir
  *         agent_next_node = [end for (start, end) in self.route_igraph if start == node_id][0]             # <<<<<<<<<<<<<<
@@ -8806,17 +8796,17 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
  *         x_start, y_start = node_id_dict[self.cls].lon, node_id_dict[self.cls].lat
  */
   { /* enter inner scope */
-    __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 224, __pyx_L6_error)
+    __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 225, __pyx_L6_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_route_igraph); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 224, __pyx_L6_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_route_igraph); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 225, __pyx_L6_error)
     __Pyx_GOTREF(__pyx_t_1);
     if (likely(PyList_CheckExact(__pyx_t_1)) || PyTuple_CheckExact(__pyx_t_1)) {
       __pyx_t_8 = __pyx_t_1; __Pyx_INCREF(__pyx_t_8); __pyx_t_9 = 0;
       __pyx_t_10 = NULL;
     } else {
-      __pyx_t_9 = -1; __pyx_t_8 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 224, __pyx_L6_error)
+      __pyx_t_9 = -1; __pyx_t_8 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 225, __pyx_L6_error)
       __Pyx_GOTREF(__pyx_t_8);
-      __pyx_t_10 = Py_TYPE(__pyx_t_8)->tp_iternext; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 224, __pyx_L6_error)
+      __pyx_t_10 = Py_TYPE(__pyx_t_8)->tp_iternext; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 225, __pyx_L6_error)
     }
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     for (;;) {
@@ -8824,17 +8814,17 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
         if (likely(PyList_CheckExact(__pyx_t_8))) {
           if (__pyx_t_9 >= PyList_GET_SIZE(__pyx_t_8)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_1 = PyList_GET_ITEM(__pyx_t_8, __pyx_t_9); __Pyx_INCREF(__pyx_t_1); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 224, __pyx_L6_error)
+          __pyx_t_1 = PyList_GET_ITEM(__pyx_t_8, __pyx_t_9); __Pyx_INCREF(__pyx_t_1); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 225, __pyx_L6_error)
           #else
-          __pyx_t_1 = PySequence_ITEM(__pyx_t_8, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 224, __pyx_L6_error)
+          __pyx_t_1 = PySequence_ITEM(__pyx_t_8, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 225, __pyx_L6_error)
           __Pyx_GOTREF(__pyx_t_1);
           #endif
         } else {
           if (__pyx_t_9 >= PyTuple_GET_SIZE(__pyx_t_8)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_8, __pyx_t_9); __Pyx_INCREF(__pyx_t_1); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 224, __pyx_L6_error)
+          __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_8, __pyx_t_9); __Pyx_INCREF(__pyx_t_1); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 225, __pyx_L6_error)
           #else
-          __pyx_t_1 = PySequence_ITEM(__pyx_t_8, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 224, __pyx_L6_error)
+          __pyx_t_1 = PySequence_ITEM(__pyx_t_8, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 225, __pyx_L6_error)
           __Pyx_GOTREF(__pyx_t_1);
           #endif
         }
@@ -8844,7 +8834,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 224, __pyx_L6_error)
+            else __PYX_ERR(0, 225, __pyx_L6_error)
           }
           break;
         }
@@ -8856,7 +8846,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
         if (unlikely(size != 2)) {
           if (size > 2) __Pyx_RaiseTooManyValuesError(2);
           else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-          __PYX_ERR(0, 224, __pyx_L6_error)
+          __PYX_ERR(0, 225, __pyx_L6_error)
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
@@ -8869,15 +8859,15 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
         __Pyx_INCREF(__pyx_t_5);
         __Pyx_INCREF(__pyx_t_4);
         #else
-        __pyx_t_5 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 224, __pyx_L6_error)
+        __pyx_t_5 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 225, __pyx_L6_error)
         __Pyx_GOTREF(__pyx_t_5);
-        __pyx_t_4 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 224, __pyx_L6_error)
+        __pyx_t_4 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 225, __pyx_L6_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       } else {
         Py_ssize_t index = -1;
-        __pyx_t_6 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 224, __pyx_L6_error)
+        __pyx_t_6 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 225, __pyx_L6_error)
         __Pyx_GOTREF(__pyx_t_6);
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __pyx_t_11 = Py_TYPE(__pyx_t_6)->tp_iternext;
@@ -8885,7 +8875,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
         __Pyx_GOTREF(__pyx_t_5);
         index = 1; __pyx_t_4 = __pyx_t_11(__pyx_t_6); if (unlikely(!__pyx_t_4)) goto __pyx_L9_unpacking_failed;
         __Pyx_GOTREF(__pyx_t_4);
-        if (__Pyx_IternextUnpackEndCheck(__pyx_t_11(__pyx_t_6), 2) < 0) __PYX_ERR(0, 224, __pyx_L6_error)
+        if (__Pyx_IternextUnpackEndCheck(__pyx_t_11(__pyx_t_6), 2) < 0) __PYX_ERR(0, 225, __pyx_L6_error)
         __pyx_t_11 = NULL;
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
         goto __pyx_L10_unpacking_done;
@@ -8893,18 +8883,18 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
         __pyx_t_11 = NULL;
         if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-        __PYX_ERR(0, 224, __pyx_L6_error)
+        __PYX_ERR(0, 225, __pyx_L6_error)
         __pyx_L10_unpacking_done:;
       }
       __Pyx_XDECREF_SET(__pyx_8genexpr8__pyx_v_start, __pyx_t_5);
       __pyx_t_5 = 0;
       __Pyx_XDECREF_SET(__pyx_8genexpr8__pyx_v_end, __pyx_t_4);
       __pyx_t_4 = 0;
-      __pyx_t_1 = PyObject_RichCompare(__pyx_8genexpr8__pyx_v_start, __pyx_v_node_id, Py_EQ); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 224, __pyx_L6_error)
-      __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 224, __pyx_L6_error)
+      __pyx_t_1 = PyObject_RichCompare(__pyx_8genexpr8__pyx_v_start, __pyx_v_node_id, Py_EQ); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 225, __pyx_L6_error)
+      __pyx_t_3 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 225, __pyx_L6_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       if (__pyx_t_3) {
-        if (unlikely(__Pyx_ListComp_Append(__pyx_t_2, (PyObject*)__pyx_8genexpr8__pyx_v_end))) __PYX_ERR(0, 224, __pyx_L6_error)
+        if (unlikely(__Pyx_ListComp_Append(__pyx_t_2, (PyObject*)__pyx_8genexpr8__pyx_v_end))) __PYX_ERR(0, 225, __pyx_L6_error)
       }
     }
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -8917,20 +8907,20 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
     goto __pyx_L1_error;
     __pyx_L12_exit_scope:;
   } /* exit inner scope */
-  __pyx_t_8 = __Pyx_GetItemInt_List(__pyx_t_2, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 224, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_GetItemInt_List(__pyx_t_2, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 225, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_agent_next_node = __pyx_t_8;
   __pyx_t_8 = 0;
 
-  /* "queue_model.pyx":225
+  /* "sim_package/queue_model.pyx":226
  *             return None, None, 0 ### id, next_node, dir
  *         agent_next_node = [end for (start, end) in self.route_igraph if start == node_id][0]
  *         ol = node2link_dict[(node_id, agent_next_node)]             # <<<<<<<<<<<<<<
  *         x_start, y_start = node_id_dict[self.cls].lon, node_id_dict[self.cls].lat
  *         x_mid, y_mid = node_id_dict[node_id].lon, node_id_dict[node_id].lat
  */
-  __pyx_t_8 = PyTuple_New(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 225, __pyx_L1_error)
+  __pyx_t_8 = PyTuple_New(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 226, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_INCREF(__pyx_v_node_id);
   __Pyx_GIVEREF(__pyx_v_node_id);
@@ -8938,33 +8928,33 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
   __Pyx_INCREF(__pyx_v_agent_next_node);
   __Pyx_GIVEREF(__pyx_v_agent_next_node);
   PyTuple_SET_ITEM(__pyx_t_8, 1, __pyx_v_agent_next_node);
-  __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_node2link_dict, __pyx_t_8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 225, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_node2link_dict, __pyx_t_8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 226, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   __pyx_v_ol = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":226
+  /* "sim_package/queue_model.pyx":227
  *         agent_next_node = [end for (start, end) in self.route_igraph if start == node_id][0]
  *         ol = node2link_dict[(node_id, agent_next_node)]
  *         x_start, y_start = node_id_dict[self.cls].lon, node_id_dict[self.cls].lat             # <<<<<<<<<<<<<<
  *         x_mid, y_mid = node_id_dict[node_id].lon, node_id_dict[node_id].lat
  *         x_end, y_end = node_id_dict[agent_next_node].lon, node_id_dict[agent_next_node].lat
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_cls); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 226, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_cls); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 227, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_8 = __Pyx_PyObject_GetItem(__pyx_v_node_id_dict, __pyx_t_2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 226, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_GetItem(__pyx_v_node_id_dict, __pyx_t_2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 227, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_lon); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 226, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_lon); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 227, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_cls); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 226, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_cls); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 227, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_node_id_dict, __pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 226, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_node_id_dict, __pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 227, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_lat); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 226, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_lat); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 227, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_x_start = __pyx_t_2;
@@ -8972,21 +8962,21 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
   __pyx_v_y_start = __pyx_t_8;
   __pyx_t_8 = 0;
 
-  /* "queue_model.pyx":227
+  /* "sim_package/queue_model.pyx":228
  *         ol = node2link_dict[(node_id, agent_next_node)]
  *         x_start, y_start = node_id_dict[self.cls].lon, node_id_dict[self.cls].lat
  *         x_mid, y_mid = node_id_dict[node_id].lon, node_id_dict[node_id].lat             # <<<<<<<<<<<<<<
  *         x_end, y_end = node_id_dict[agent_next_node].lon, node_id_dict[agent_next_node].lat
  *         in_vec, out_vec = (x_mid-x_start, y_mid-y_start), (x_end-x_mid, y_end-y_mid)
  */
-  __pyx_t_8 = __Pyx_PyObject_GetItem(__pyx_v_node_id_dict, __pyx_v_node_id); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 227, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_GetItem(__pyx_v_node_id_dict, __pyx_v_node_id); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 228, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_lon); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 227, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_lon); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 228, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-  __pyx_t_8 = __Pyx_PyObject_GetItem(__pyx_v_node_id_dict, __pyx_v_node_id); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 227, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_GetItem(__pyx_v_node_id_dict, __pyx_v_node_id); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 228, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_lat); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 227, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_lat); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 228, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   __pyx_v_x_mid = __pyx_t_2;
@@ -8994,21 +8984,21 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
   __pyx_v_y_mid = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":228
+  /* "sim_package/queue_model.pyx":229
  *         x_start, y_start = node_id_dict[self.cls].lon, node_id_dict[self.cls].lat
  *         x_mid, y_mid = node_id_dict[node_id].lon, node_id_dict[node_id].lat
  *         x_end, y_end = node_id_dict[agent_next_node].lon, node_id_dict[agent_next_node].lat             # <<<<<<<<<<<<<<
  *         in_vec, out_vec = (x_mid-x_start, y_mid-y_start), (x_end-x_mid, y_end-y_mid)
  *         dot, det = (in_vec[0]*out_vec[0] + in_vec[1]*out_vec[1]), (in_vec[0]*out_vec[1] - in_vec[1]*out_vec[0])
  */
-  __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_node_id_dict, __pyx_v_agent_next_node); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 228, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_node_id_dict, __pyx_v_agent_next_node); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 229, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_lon); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 228, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_lon); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 229, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_node_id_dict, __pyx_v_agent_next_node); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 228, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_node_id_dict, __pyx_v_agent_next_node); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 229, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_lat); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 228, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_lat); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 229, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_x_end = __pyx_t_2;
@@ -9016,18 +9006,18 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
   __pyx_v_y_end = __pyx_t_8;
   __pyx_t_8 = 0;
 
-  /* "queue_model.pyx":229
+  /* "sim_package/queue_model.pyx":230
  *         x_mid, y_mid = node_id_dict[node_id].lon, node_id_dict[node_id].lat
  *         x_end, y_end = node_id_dict[agent_next_node].lon, node_id_dict[agent_next_node].lat
  *         in_vec, out_vec = (x_mid-x_start, y_mid-y_start), (x_end-x_mid, y_end-y_mid)             # <<<<<<<<<<<<<<
  *         dot, det = (in_vec[0]*out_vec[0] + in_vec[1]*out_vec[1]), (in_vec[0]*out_vec[1] - in_vec[1]*out_vec[0])
- *         agent_dir = np.arctan2(det, dot)*180/np.pi
+ *         agent_dir = np.arctan2(det, dot) * 180 / np.pi
  */
-  __pyx_t_8 = PyNumber_Subtract(__pyx_v_x_mid, __pyx_v_x_start); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 229, __pyx_L1_error)
+  __pyx_t_8 = PyNumber_Subtract(__pyx_v_x_mid, __pyx_v_x_start); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 230, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_2 = PyNumber_Subtract(__pyx_v_y_mid, __pyx_v_y_start); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 229, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_Subtract(__pyx_v_y_mid, __pyx_v_y_start); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 230, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 229, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 230, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_8);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_8);
@@ -9035,11 +9025,11 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
   PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_t_2);
   __pyx_t_8 = 0;
   __pyx_t_2 = 0;
-  __pyx_t_2 = PyNumber_Subtract(__pyx_v_x_end, __pyx_v_x_mid); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 229, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_Subtract(__pyx_v_x_end, __pyx_v_x_mid); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 230, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_8 = PyNumber_Subtract(__pyx_v_y_end, __pyx_v_y_mid); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 229, __pyx_L1_error)
+  __pyx_t_8 = PyNumber_Subtract(__pyx_v_y_end, __pyx_v_y_mid); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 230, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 229, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 230, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2);
@@ -9052,50 +9042,50 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
   __pyx_v_out_vec = ((PyObject*)__pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "queue_model.pyx":230
+  /* "sim_package/queue_model.pyx":231
  *         x_end, y_end = node_id_dict[agent_next_node].lon, node_id_dict[agent_next_node].lat
  *         in_vec, out_vec = (x_mid-x_start, y_mid-y_start), (x_end-x_mid, y_end-y_mid)
  *         dot, det = (in_vec[0]*out_vec[0] + in_vec[1]*out_vec[1]), (in_vec[0]*out_vec[1] - in_vec[1]*out_vec[0])             # <<<<<<<<<<<<<<
- *         agent_dir = np.arctan2(det, dot)*180/np.pi
+ *         agent_dir = np.arctan2(det, dot) * 180 / np.pi
  *         return agent_next_node, ol, agent_dir
  */
-  __pyx_t_4 = __Pyx_GetItemInt_Tuple(__pyx_v_in_vec, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 230, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_GetItemInt_Tuple(__pyx_v_in_vec, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 231, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v_out_vec, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 230, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v_out_vec, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 231, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_8 = PyNumber_Multiply(__pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 230, __pyx_L1_error)
+  __pyx_t_8 = PyNumber_Multiply(__pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 231, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v_in_vec, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 230, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_GetItemInt_Tuple(__pyx_v_in_vec, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 231, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = __Pyx_GetItemInt_Tuple(__pyx_v_out_vec, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 230, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_GetItemInt_Tuple(__pyx_v_out_vec, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 231, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_2 = PyNumber_Multiply(__pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 230, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 231, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = PyNumber_Add(__pyx_t_8, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 230, __pyx_L1_error)
+  __pyx_t_4 = PyNumber_Add(__pyx_t_8, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 231, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_GetItemInt_Tuple(__pyx_v_in_vec, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 230, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetItemInt_Tuple(__pyx_v_in_vec, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 231, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_8 = __Pyx_GetItemInt_Tuple(__pyx_v_out_vec, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 230, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_GetItemInt_Tuple(__pyx_v_out_vec, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 231, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_1 = PyNumber_Multiply(__pyx_t_2, __pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 230, __pyx_L1_error)
+  __pyx_t_1 = PyNumber_Multiply(__pyx_t_2, __pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 231, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-  __pyx_t_8 = __Pyx_GetItemInt_Tuple(__pyx_v_in_vec, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 230, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_GetItemInt_Tuple(__pyx_v_in_vec, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 231, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_2 = __Pyx_GetItemInt_Tuple(__pyx_v_out_vec, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 230, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetItemInt_Tuple(__pyx_v_out_vec, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 231, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_5 = PyNumber_Multiply(__pyx_t_8, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 230, __pyx_L1_error)
+  __pyx_t_5 = PyNumber_Multiply(__pyx_t_8, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 231, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = PyNumber_Subtract(__pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 230, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_Subtract(__pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 231, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -9104,16 +9094,16 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
   __pyx_v_det = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":231
+  /* "sim_package/queue_model.pyx":232
  *         in_vec, out_vec = (x_mid-x_start, y_mid-y_start), (x_end-x_mid, y_end-y_mid)
  *         dot, det = (in_vec[0]*out_vec[0] + in_vec[1]*out_vec[1]), (in_vec[0]*out_vec[1] - in_vec[1]*out_vec[0])
- *         agent_dir = np.arctan2(det, dot)*180/np.pi             # <<<<<<<<<<<<<<
+ *         agent_dir = np.arctan2(det, dot) * 180 / np.pi             # <<<<<<<<<<<<<<
  *         return agent_next_node, ol, agent_dir
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 231, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 232, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_arctan2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 231, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_arctan2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 232, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_4 = NULL;
@@ -9131,7 +9121,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_5)) {
     PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_det, __pyx_v_dot};
-    __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 231, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 232, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_2);
   } else
@@ -9139,13 +9129,13 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
     PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_det, __pyx_v_dot};
-    __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 231, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 232, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GOTREF(__pyx_t_2);
   } else
   #endif
   {
-    __pyx_t_1 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 231, __pyx_L1_error)
+    __pyx_t_1 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 232, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     if (__pyx_t_4) {
       __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_4); __pyx_t_4 = NULL;
@@ -9156,35 +9146,35 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
     __Pyx_INCREF(__pyx_v_dot);
     __Pyx_GIVEREF(__pyx_v_dot);
     PyTuple_SET_ITEM(__pyx_t_1, 1+__pyx_t_7, __pyx_v_dot);
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 231, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 232, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PyNumber_Multiply(__pyx_t_2, __pyx_int_180); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 231, __pyx_L1_error)
+  __pyx_t_5 = PyNumber_Multiply(__pyx_t_2, __pyx_int_180); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 232, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 231, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 232, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_pi); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 231, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_pi); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 232, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyNumber_Divide(__pyx_t_5, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 231, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyNumber_Divide(__pyx_t_5, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 232, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_agent_dir = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":232
+  /* "sim_package/queue_model.pyx":233
  *         dot, det = (in_vec[0]*out_vec[0] + in_vec[1]*out_vec[1]), (in_vec[0]*out_vec[1] - in_vec[1]*out_vec[0])
- *         agent_dir = np.arctan2(det, dot)*180/np.pi
+ *         agent_dir = np.arctan2(det, dot) * 180 / np.pi
  *         return agent_next_node, ol, agent_dir             # <<<<<<<<<<<<<<
  * 
  *     def move_agent(self, t_now, new_cls, new_cle, new_status):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = PyTuple_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 232, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 233, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_v_agent_next_node);
   __Pyx_GIVEREF(__pyx_v_agent_next_node);
@@ -9199,7 +9189,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "queue_model.pyx":220
+  /* "sim_package/queue_model.pyx":221
  *             self.cl_enter_time = t_now
  * 
  *     def prepare_agent(self, node_id, node2link_dict=None, node_id_dict=None):             # <<<<<<<<<<<<<<
@@ -9215,7 +9205,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_8);
-  __Pyx_AddTraceback("queue_model.Agent.prepare_agent", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Agent.prepare_agent", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_agent_next_node);
@@ -9238,7 +9228,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
   return __pyx_r;
 }
 
-/* "queue_model.pyx":234
+/* "sim_package/queue_model.pyx":235
  *         return agent_next_node, ol, agent_dir
  * 
  *     def move_agent(self, t_now, new_cls, new_cle, new_status):             # <<<<<<<<<<<<<<
@@ -9247,9 +9237,9 @@ static PyObject *__pyx_pf_11queue_model_5Agent_4prepare_agent(CYTHON_UNUSED PyOb
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_11queue_model_5Agent_7move_agent(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_11queue_model_5Agent_7move_agent = {"move_agent", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11queue_model_5Agent_7move_agent, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_11queue_model_5Agent_7move_agent(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_11sim_package_11queue_model_5Agent_7move_agent(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_11sim_package_11queue_model_5Agent_7move_agent = {"move_agent", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11sim_package_11queue_model_5Agent_7move_agent, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_11sim_package_11queue_model_5Agent_7move_agent(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_t_now = 0;
   PyObject *__pyx_v_new_cls = 0;
@@ -9290,29 +9280,29 @@ static PyObject *__pyx_pw_11queue_model_5Agent_7move_agent(PyObject *__pyx_self,
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_t_now)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("move_agent", 1, 5, 5, 1); __PYX_ERR(0, 234, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("move_agent", 1, 5, 5, 1); __PYX_ERR(0, 235, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_new_cls)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("move_agent", 1, 5, 5, 2); __PYX_ERR(0, 234, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("move_agent", 1, 5, 5, 2); __PYX_ERR(0, 235, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_new_cle)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("move_agent", 1, 5, 5, 3); __PYX_ERR(0, 234, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("move_agent", 1, 5, 5, 3); __PYX_ERR(0, 235, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  4:
         if (likely((values[4] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_new_status)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("move_agent", 1, 5, 5, 4); __PYX_ERR(0, 234, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("move_agent", 1, 5, 5, 4); __PYX_ERR(0, 235, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "move_agent") < 0)) __PYX_ERR(0, 234, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "move_agent") < 0)) __PYX_ERR(0, 235, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 5) {
       goto __pyx_L5_argtuple_error;
@@ -9331,20 +9321,20 @@ static PyObject *__pyx_pw_11queue_model_5Agent_7move_agent(PyObject *__pyx_self,
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("move_agent", 1, 5, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 234, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("move_agent", 1, 5, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 235, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("queue_model.Agent.move_agent", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Agent.move_agent", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_11queue_model_5Agent_6move_agent(__pyx_self, __pyx_v_self, __pyx_v_t_now, __pyx_v_new_cls, __pyx_v_new_cle, __pyx_v_new_status);
+  __pyx_r = __pyx_pf_11sim_package_11queue_model_5Agent_6move_agent(__pyx_self, __pyx_v_self, __pyx_v_t_now, __pyx_v_new_cls, __pyx_v_new_cle, __pyx_v_new_status);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_11queue_model_5Agent_6move_agent(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_t_now, PyObject *__pyx_v_new_cls, PyObject *__pyx_v_new_cle, PyObject *__pyx_v_new_status) {
+static PyObject *__pyx_pf_11sim_package_11queue_model_5Agent_6move_agent(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_t_now, PyObject *__pyx_v_new_cls, PyObject *__pyx_v_new_cle, PyObject *__pyx_v_new_status) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_lineno = 0;
@@ -9352,43 +9342,43 @@ static PyObject *__pyx_pf_11queue_model_5Agent_6move_agent(CYTHON_UNUSED PyObjec
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("move_agent", 0);
 
-  /* "queue_model.pyx":235
+  /* "sim_package/queue_model.pyx":236
  * 
  *     def move_agent(self, t_now, new_cls, new_cle, new_status):
  *         self.cls = new_cls             # <<<<<<<<<<<<<<
  *         self.cle = new_cle
  *         self.status = new_status
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_cls, __pyx_v_new_cls) < 0) __PYX_ERR(0, 235, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_cls, __pyx_v_new_cls) < 0) __PYX_ERR(0, 236, __pyx_L1_error)
 
-  /* "queue_model.pyx":236
+  /* "sim_package/queue_model.pyx":237
  *     def move_agent(self, t_now, new_cls, new_cle, new_status):
  *         self.cls = new_cls
  *         self.cle = new_cle             # <<<<<<<<<<<<<<
  *         self.status = new_status
  *         self.cl_enter_time = t_now
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_cle, __pyx_v_new_cle) < 0) __PYX_ERR(0, 236, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_cle, __pyx_v_new_cle) < 0) __PYX_ERR(0, 237, __pyx_L1_error)
 
-  /* "queue_model.pyx":237
+  /* "sim_package/queue_model.pyx":238
  *         self.cls = new_cls
  *         self.cle = new_cle
  *         self.status = new_status             # <<<<<<<<<<<<<<
  *         self.cl_enter_time = t_now
  * 
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_status, __pyx_v_new_status) < 0) __PYX_ERR(0, 237, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_status, __pyx_v_new_status) < 0) __PYX_ERR(0, 238, __pyx_L1_error)
 
-  /* "queue_model.pyx":238
+  /* "sim_package/queue_model.pyx":239
  *         self.cle = new_cle
  *         self.status = new_status
  *         self.cl_enter_time = t_now             # <<<<<<<<<<<<<<
  * 
  *     def get_path(self, g=None):
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_cl_enter_time, __pyx_v_t_now) < 0) __PYX_ERR(0, 238, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_cl_enter_time, __pyx_v_t_now) < 0) __PYX_ERR(0, 239, __pyx_L1_error)
 
-  /* "queue_model.pyx":234
+  /* "sim_package/queue_model.pyx":235
  *         return agent_next_node, ol, agent_dir
  * 
  *     def move_agent(self, t_now, new_cls, new_cle, new_status):             # <<<<<<<<<<<<<<
@@ -9400,7 +9390,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_6move_agent(CYTHON_UNUSED PyObjec
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_AddTraceback("queue_model.Agent.move_agent", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Agent.move_agent", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -9408,7 +9398,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_6move_agent(CYTHON_UNUSED PyObjec
   return __pyx_r;
 }
 
-/* "queue_model.pyx":240
+/* "sim_package/queue_model.pyx":241
  *         self.cl_enter_time = t_now
  * 
  *     def get_path(self, g=None):             # <<<<<<<<<<<<<<
@@ -9417,9 +9407,9 @@ static PyObject *__pyx_pf_11queue_model_5Agent_6move_agent(CYTHON_UNUSED PyObjec
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_11queue_model_5Agent_9get_path(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_11queue_model_5Agent_9get_path = {"get_path", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11queue_model_5Agent_9get_path, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_11queue_model_5Agent_9get_path(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_11sim_package_11queue_model_5Agent_9get_path(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_11sim_package_11queue_model_5Agent_9get_path = {"get_path", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11sim_package_11queue_model_5Agent_9get_path, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_11sim_package_11queue_model_5Agent_9get_path(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_g = 0;
   int __pyx_lineno = 0;
@@ -9456,7 +9446,7 @@ static PyObject *__pyx_pw_11queue_model_5Agent_9get_path(PyObject *__pyx_self, P
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "get_path") < 0)) __PYX_ERR(0, 240, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "get_path") < 0)) __PYX_ERR(0, 241, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -9472,20 +9462,20 @@ static PyObject *__pyx_pw_11queue_model_5Agent_9get_path(PyObject *__pyx_self, P
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("get_path", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 240, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("get_path", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 241, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("queue_model.Agent.get_path", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Agent.get_path", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_11queue_model_5Agent_8get_path(__pyx_self, __pyx_v_self, __pyx_v_g);
+  __pyx_r = __pyx_pf_11sim_package_11queue_model_5Agent_8get_path(__pyx_self, __pyx_v_self, __pyx_v_g);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_g) {
+static PyObject *__pyx_pf_11sim_package_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_g) {
   PyObject *__pyx_v_sp = NULL;
   PyObject *__pyx_v_sp_dist = NULL;
   PyObject *__pyx_v_sp_route = NULL;
@@ -9510,18 +9500,18 @@ static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_path", 0);
 
-  /* "queue_model.pyx":241
+  /* "sim_package/queue_model.pyx":242
  * 
  *     def get_path(self, g=None):
  *         sp = g.dijkstra(self.cle, self.destin_nid)             # <<<<<<<<<<<<<<
  *         sp_dist = sp.distance(self.destin_nid)
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_dijkstra); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 241, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_g, __pyx_n_s_dijkstra); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 242, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_cle); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 241, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_cle); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 242, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_destin_nid); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 241, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_destin_nid); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 242, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_5 = NULL;
   __pyx_t_6 = 0;
@@ -9538,7 +9528,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject 
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_3, __pyx_t_4};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 241, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 242, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -9548,7 +9538,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject 
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_2)) {
     PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_3, __pyx_t_4};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 241, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_2, __pyx_temp+1-__pyx_t_6, 2+__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 242, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -9556,7 +9546,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject 
   } else
   #endif
   {
-    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 241, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(2+__pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 242, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     if (__pyx_t_5) {
       __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -9567,7 +9557,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject 
     PyTuple_SET_ITEM(__pyx_t_7, 1+__pyx_t_6, __pyx_t_4);
     __pyx_t_3 = 0;
     __pyx_t_4 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 241, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_7, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 242, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   }
@@ -9575,16 +9565,16 @@ static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject 
   __pyx_v_sp = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":242
+  /* "sim_package/queue_model.pyx":243
  *     def get_path(self, g=None):
  *         sp = g.dijkstra(self.cle, self.destin_nid)
  *         sp_dist = sp.distance(self.destin_nid)             # <<<<<<<<<<<<<<
  * 
  *         if sp_dist > 10e7:
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_sp, __pyx_n_s_distance); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 242, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_sp, __pyx_n_s_distance); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 243, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_destin_nid); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 242, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_destin_nid); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 243, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -9599,32 +9589,32 @@ static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject 
   __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_4, __pyx_t_7) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_7);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 242, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 243, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_sp_dist = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":244
+  /* "sim_package/queue_model.pyx":245
  *         sp_dist = sp.distance(self.destin_nid)
  * 
  *         if sp_dist > 10e7:             # <<<<<<<<<<<<<<
  *             sp.clear()
  *             self.route_igraph = []
  */
-  __pyx_t_1 = PyObject_RichCompare(__pyx_v_sp_dist, __pyx_float_10e7, Py_GT); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 244, __pyx_L1_error)
-  __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 244, __pyx_L1_error)
+  __pyx_t_1 = PyObject_RichCompare(__pyx_v_sp_dist, __pyx_float_10e7, Py_GT); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 245, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 245, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (__pyx_t_8) {
 
-    /* "queue_model.pyx":245
+    /* "sim_package/queue_model.pyx":246
  * 
  *         if sp_dist > 10e7:
  *             sp.clear()             # <<<<<<<<<<<<<<
  *             self.route_igraph = []
  *             return 'no_path_found'
  */
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_sp, __pyx_n_s_clear); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 245, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_sp, __pyx_n_s_clear); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 246, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_t_7 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -9638,24 +9628,24 @@ static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject 
     }
     __pyx_t_1 = (__pyx_t_7) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_7) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 245, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 246, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "queue_model.pyx":246
+    /* "sim_package/queue_model.pyx":247
  *         if sp_dist > 10e7:
  *             sp.clear()
  *             self.route_igraph = []             # <<<<<<<<<<<<<<
  *             return 'no_path_found'
  *         else:
  */
-    __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 246, __pyx_L1_error)
+    __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 247, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_route_igraph, __pyx_t_1) < 0) __PYX_ERR(0, 246, __pyx_L1_error)
+    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_route_igraph, __pyx_t_1) < 0) __PYX_ERR(0, 247, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "queue_model.pyx":247
+    /* "sim_package/queue_model.pyx":248
  *             sp.clear()
  *             self.route_igraph = []
  *             return 'no_path_found'             # <<<<<<<<<<<<<<
@@ -9667,7 +9657,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject 
     __pyx_r = __pyx_n_u_no_path_found;
     goto __pyx_L0;
 
-    /* "queue_model.pyx":244
+    /* "sim_package/queue_model.pyx":245
  *         sp_dist = sp.distance(self.destin_nid)
  * 
  *         if sp_dist > 10e7:             # <<<<<<<<<<<<<<
@@ -9676,7 +9666,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject 
  */
   }
 
-  /* "queue_model.pyx":249
+  /* "sim_package/queue_model.pyx":250
  *             return 'no_path_found'
  *         else:
  *             sp_route = sp.route(self.destin_nid)             # <<<<<<<<<<<<<<
@@ -9684,9 +9674,9 @@ static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject 
  *             sp.clear()
  */
   /*else*/ {
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_sp, __pyx_n_s_route); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 249, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_sp, __pyx_n_s_route); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 250, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_destin_nid); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 249, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_destin_nid); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 250, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __pyx_t_4 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -9701,24 +9691,24 @@ static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject 
     __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_4, __pyx_t_7) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_7);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 249, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 250, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_v_sp_route = __pyx_t_1;
     __pyx_t_1 = 0;
 
-    /* "queue_model.pyx":250
+    /* "sim_package/queue_model.pyx":251
  *         else:
  *             sp_route = sp.route(self.destin_nid)
  *             self.route_igraph = [(self.cls, self.cle)] + [(start_nid, end_nid) for (start_nid, end_nid) in sp_route]             # <<<<<<<<<<<<<<
  *             sp.clear()
  *             return 'path_found'
  */
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_cls); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 250, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_cls); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 251, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_cle); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 250, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_cle); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 251, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 250, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 251, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_1);
@@ -9726,38 +9716,38 @@ static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject 
     PyTuple_SET_ITEM(__pyx_t_7, 1, __pyx_t_2);
     __pyx_t_1 = 0;
     __pyx_t_2 = 0;
-    __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 250, __pyx_L1_error)
+    __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 251, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_GIVEREF(__pyx_t_7);
     PyList_SET_ITEM(__pyx_t_2, 0, __pyx_t_7);
     __pyx_t_7 = 0;
     { /* enter inner scope */
-      __pyx_t_7 = PyList_New(0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 250, __pyx_L6_error)
+      __pyx_t_7 = PyList_New(0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 251, __pyx_L6_error)
       __Pyx_GOTREF(__pyx_t_7);
       if (likely(PyList_CheckExact(__pyx_v_sp_route)) || PyTuple_CheckExact(__pyx_v_sp_route)) {
         __pyx_t_1 = __pyx_v_sp_route; __Pyx_INCREF(__pyx_t_1); __pyx_t_9 = 0;
         __pyx_t_10 = NULL;
       } else {
-        __pyx_t_9 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_sp_route); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 250, __pyx_L6_error)
+        __pyx_t_9 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_sp_route); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 251, __pyx_L6_error)
         __Pyx_GOTREF(__pyx_t_1);
-        __pyx_t_10 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 250, __pyx_L6_error)
+        __pyx_t_10 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 251, __pyx_L6_error)
       }
       for (;;) {
         if (likely(!__pyx_t_10)) {
           if (likely(PyList_CheckExact(__pyx_t_1))) {
             if (__pyx_t_9 >= PyList_GET_SIZE(__pyx_t_1)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_9); __Pyx_INCREF(__pyx_t_4); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 250, __pyx_L6_error)
+            __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_9); __Pyx_INCREF(__pyx_t_4); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 251, __pyx_L6_error)
             #else
-            __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 250, __pyx_L6_error)
+            __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 251, __pyx_L6_error)
             __Pyx_GOTREF(__pyx_t_4);
             #endif
           } else {
             if (__pyx_t_9 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_9); __Pyx_INCREF(__pyx_t_4); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 250, __pyx_L6_error)
+            __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_9); __Pyx_INCREF(__pyx_t_4); __pyx_t_9++; if (unlikely(0 < 0)) __PYX_ERR(0, 251, __pyx_L6_error)
             #else
-            __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 250, __pyx_L6_error)
+            __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_9); __pyx_t_9++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 251, __pyx_L6_error)
             __Pyx_GOTREF(__pyx_t_4);
             #endif
           }
@@ -9767,7 +9757,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject 
             PyObject* exc_type = PyErr_Occurred();
             if (exc_type) {
               if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-              else __PYX_ERR(0, 250, __pyx_L6_error)
+              else __PYX_ERR(0, 251, __pyx_L6_error)
             }
             break;
           }
@@ -9779,7 +9769,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject 
           if (unlikely(size != 2)) {
             if (size > 2) __Pyx_RaiseTooManyValuesError(2);
             else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-            __PYX_ERR(0, 250, __pyx_L6_error)
+            __PYX_ERR(0, 251, __pyx_L6_error)
           }
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
           if (likely(PyTuple_CheckExact(sequence))) {
@@ -9792,15 +9782,15 @@ static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject 
           __Pyx_INCREF(__pyx_t_3);
           __Pyx_INCREF(__pyx_t_5);
           #else
-          __pyx_t_3 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 250, __pyx_L6_error)
+          __pyx_t_3 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 251, __pyx_L6_error)
           __Pyx_GOTREF(__pyx_t_3);
-          __pyx_t_5 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 250, __pyx_L6_error)
+          __pyx_t_5 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 251, __pyx_L6_error)
           __Pyx_GOTREF(__pyx_t_5);
           #endif
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         } else {
           Py_ssize_t index = -1;
-          __pyx_t_11 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 250, __pyx_L6_error)
+          __pyx_t_11 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 251, __pyx_L6_error)
           __Pyx_GOTREF(__pyx_t_11);
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
           __pyx_t_12 = Py_TYPE(__pyx_t_11)->tp_iternext;
@@ -9808,7 +9798,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject 
           __Pyx_GOTREF(__pyx_t_3);
           index = 1; __pyx_t_5 = __pyx_t_12(__pyx_t_11); if (unlikely(!__pyx_t_5)) goto __pyx_L9_unpacking_failed;
           __Pyx_GOTREF(__pyx_t_5);
-          if (__Pyx_IternextUnpackEndCheck(__pyx_t_12(__pyx_t_11), 2) < 0) __PYX_ERR(0, 250, __pyx_L6_error)
+          if (__Pyx_IternextUnpackEndCheck(__pyx_t_12(__pyx_t_11), 2) < 0) __PYX_ERR(0, 251, __pyx_L6_error)
           __pyx_t_12 = NULL;
           __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
           goto __pyx_L10_unpacking_done;
@@ -9816,14 +9806,14 @@ static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject 
           __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
           __pyx_t_12 = NULL;
           if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-          __PYX_ERR(0, 250, __pyx_L6_error)
+          __PYX_ERR(0, 251, __pyx_L6_error)
           __pyx_L10_unpacking_done:;
         }
         __Pyx_XDECREF_SET(__pyx_8genexpr9__pyx_v_start_nid, __pyx_t_3);
         __pyx_t_3 = 0;
         __Pyx_XDECREF_SET(__pyx_8genexpr9__pyx_v_end_nid, __pyx_t_5);
         __pyx_t_5 = 0;
-        __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 250, __pyx_L6_error)
+        __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 251, __pyx_L6_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_INCREF(__pyx_8genexpr9__pyx_v_start_nid);
         __Pyx_GIVEREF(__pyx_8genexpr9__pyx_v_start_nid);
@@ -9831,7 +9821,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject 
         __Pyx_INCREF(__pyx_8genexpr9__pyx_v_end_nid);
         __Pyx_GIVEREF(__pyx_8genexpr9__pyx_v_end_nid);
         PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_8genexpr9__pyx_v_end_nid);
-        if (unlikely(__Pyx_ListComp_Append(__pyx_t_7, (PyObject*)__pyx_t_4))) __PYX_ERR(0, 250, __pyx_L6_error)
+        if (unlikely(__Pyx_ListComp_Append(__pyx_t_7, (PyObject*)__pyx_t_4))) __PYX_ERR(0, 251, __pyx_L6_error)
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       }
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -9844,21 +9834,21 @@ static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject 
       goto __pyx_L1_error;
       __pyx_L11_exit_scope:;
     } /* exit inner scope */
-    __pyx_t_1 = PyNumber_Add(__pyx_t_2, __pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 250, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_Add(__pyx_t_2, __pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 251, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_route_igraph, __pyx_t_1) < 0) __PYX_ERR(0, 250, __pyx_L1_error)
+    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_route_igraph, __pyx_t_1) < 0) __PYX_ERR(0, 251, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "queue_model.pyx":251
+    /* "sim_package/queue_model.pyx":252
  *             sp_route = sp.route(self.destin_nid)
  *             self.route_igraph = [(self.cls, self.cle)] + [(start_nid, end_nid) for (start_nid, end_nid) in sp_route]
  *             sp.clear()             # <<<<<<<<<<<<<<
  *             return 'path_found'
  * 
  */
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_sp, __pyx_n_s_clear); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 251, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_sp, __pyx_n_s_clear); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 252, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __pyx_t_2 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_7))) {
@@ -9872,12 +9862,12 @@ static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject 
     }
     __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_7);
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 251, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 252, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "queue_model.pyx":252
+    /* "sim_package/queue_model.pyx":253
  *             self.route_igraph = [(self.cls, self.cle)] + [(start_nid, end_nid) for (start_nid, end_nid) in sp_route]
  *             sp.clear()
  *             return 'path_found'             # <<<<<<<<<<<<<<
@@ -9890,7 +9880,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject 
     goto __pyx_L0;
   }
 
-  /* "queue_model.pyx":240
+  /* "sim_package/queue_model.pyx":241
  *         self.cl_enter_time = t_now
  * 
  *     def get_path(self, g=None):             # <<<<<<<<<<<<<<
@@ -9907,7 +9897,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject 
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_11);
-  __Pyx_AddTraceback("queue_model.Agent.get_path", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Agent.get_path", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_sp);
@@ -9920,7 +9910,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject 
   return __pyx_r;
 }
 
-/* "queue_model.pyx":256
+/* "sim_package/queue_model.pyx":257
  * 
  * class Simulation:
  *     def __init__(self, NodeClass=Node, LinkClass=Link):             # <<<<<<<<<<<<<<
@@ -9928,7 +9918,7 @@ static PyObject *__pyx_pf_11queue_model_5Agent_8get_path(CYTHON_UNUSED PyObject 
  *         self.all_nodes = dict()
  */
 
-static PyObject *__pyx_pf_11queue_model_2__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
+static PyObject *__pyx_pf_11sim_package_11queue_model_2__defaults__(CYTHON_UNUSED PyObject *__pyx_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -9938,7 +9928,7 @@ static PyObject *__pyx_pf_11queue_model_2__defaults__(CYTHON_UNUSED PyObject *__
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__defaults__", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 256, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 257, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__Pyx_CyFunction_Defaults(__pyx_defaults, __pyx_self)->__pyx_arg_NodeClass);
   __Pyx_GIVEREF(__Pyx_CyFunction_Defaults(__pyx_defaults, __pyx_self)->__pyx_arg_NodeClass);
@@ -9946,7 +9936,7 @@ static PyObject *__pyx_pf_11queue_model_2__defaults__(CYTHON_UNUSED PyObject *__
   __Pyx_INCREF(__Pyx_CyFunction_Defaults(__pyx_defaults, __pyx_self)->__pyx_arg_LinkClass);
   __Pyx_GIVEREF(__Pyx_CyFunction_Defaults(__pyx_defaults, __pyx_self)->__pyx_arg_LinkClass);
   PyTuple_SET_ITEM(__pyx_t_1, 1, __Pyx_CyFunction_Defaults(__pyx_defaults, __pyx_self)->__pyx_arg_LinkClass);
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 256, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 257, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
@@ -9962,7 +9952,7 @@ static PyObject *__pyx_pf_11queue_model_2__defaults__(CYTHON_UNUSED PyObject *__
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("queue_model.__defaults__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.__defaults__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -9971,9 +9961,9 @@ static PyObject *__pyx_pf_11queue_model_2__defaults__(CYTHON_UNUSED PyObject *__
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_11queue_model_10Simulation_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_11queue_model_10Simulation_1__init__ = {"__init__", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11queue_model_10Simulation_1__init__, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_11queue_model_10Simulation_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_11sim_package_11queue_model_10Simulation_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_11sim_package_11queue_model_10Simulation_1__init__ = {"__init__", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11sim_package_11queue_model_10Simulation_1__init__, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_11sim_package_11queue_model_10Simulation_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_NodeClass = 0;
   PyObject *__pyx_v_LinkClass = 0;
@@ -10021,7 +10011,7 @@ static PyObject *__pyx_pw_11queue_model_10Simulation_1__init__(PyObject *__pyx_s
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(0, 256, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(0, 257, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -10040,20 +10030,20 @@ static PyObject *__pyx_pw_11queue_model_10Simulation_1__init__(PyObject *__pyx_s
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 0, 1, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 256, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 0, 1, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 257, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("queue_model.Simulation.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Simulation.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_11queue_model_10Simulation___init__(__pyx_self, __pyx_v_self, __pyx_v_NodeClass, __pyx_v_LinkClass);
+  __pyx_r = __pyx_pf_11sim_package_11queue_model_10Simulation___init__(__pyx_self, __pyx_v_self, __pyx_v_NodeClass, __pyx_v_LinkClass);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_11queue_model_10Simulation___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_NodeClass, PyObject *__pyx_v_LinkClass) {
+static PyObject *__pyx_pf_11sim_package_11queue_model_10Simulation___init__(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_NodeClass, PyObject *__pyx_v_LinkClass) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -10063,64 +10053,64 @@ static PyObject *__pyx_pf_11queue_model_10Simulation___init__(CYTHON_UNUSED PyOb
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "queue_model.pyx":257
+  /* "sim_package/queue_model.pyx":258
  * class Simulation:
  *     def __init__(self, NodeClass=Node, LinkClass=Link):
  *         self.g = None             # <<<<<<<<<<<<<<
  *         self.all_nodes = dict()
  *         self.all_links = dict()
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_g, Py_None) < 0) __PYX_ERR(0, 257, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_g, Py_None) < 0) __PYX_ERR(0, 258, __pyx_L1_error)
 
-  /* "queue_model.pyx":258
+  /* "sim_package/queue_model.pyx":259
  *     def __init__(self, NodeClass=Node, LinkClass=Link):
  *         self.g = None
  *         self.all_nodes = dict()             # <<<<<<<<<<<<<<
  *         self.all_links = dict()
  *         self.node_to_link_dict = dict()
  */
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 258, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 259, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_all_nodes, __pyx_t_1) < 0) __PYX_ERR(0, 258, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_all_nodes, __pyx_t_1) < 0) __PYX_ERR(0, 259, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":259
+  /* "sim_package/queue_model.pyx":260
  *         self.g = None
  *         self.all_nodes = dict()
  *         self.all_links = dict()             # <<<<<<<<<<<<<<
  *         self.node_to_link_dict = dict()
  *         self.all_agents = dict()
  */
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 259, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 260, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_all_links, __pyx_t_1) < 0) __PYX_ERR(0, 259, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_all_links, __pyx_t_1) < 0) __PYX_ERR(0, 260, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":260
+  /* "sim_package/queue_model.pyx":261
  *         self.all_nodes = dict()
  *         self.all_links = dict()
  *         self.node_to_link_dict = dict()             # <<<<<<<<<<<<<<
  *         self.all_agents = dict()
  *         assert issubclass(NodeClass, Node), 'arg: NodeClass, must submit Node class that is a Node'
  */
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 260, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 261, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_node_to_link_dict, __pyx_t_1) < 0) __PYX_ERR(0, 260, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_node_to_link_dict, __pyx_t_1) < 0) __PYX_ERR(0, 261, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":261
+  /* "sim_package/queue_model.pyx":262
  *         self.all_links = dict()
  *         self.node_to_link_dict = dict()
  *         self.all_agents = dict()             # <<<<<<<<<<<<<<
  *         assert issubclass(NodeClass, Node), 'arg: NodeClass, must submit Node class that is a Node'
  *         assert issubclass(LinkClass, Link), 'arg: LinkClass, must submit Link class that is a Link'
  */
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 261, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 262, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_all_agents, __pyx_t_1) < 0) __PYX_ERR(0, 261, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_all_agents, __pyx_t_1) < 0) __PYX_ERR(0, 262, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":262
+  /* "sim_package/queue_model.pyx":263
  *         self.node_to_link_dict = dict()
  *         self.all_agents = dict()
  *         assert issubclass(NodeClass, Node), 'arg: NodeClass, must submit Node class that is a Node'             # <<<<<<<<<<<<<<
@@ -10129,15 +10119,15 @@ static PyObject *__pyx_pf_11queue_model_10Simulation___init__(CYTHON_UNUSED PyOb
  */
   #ifndef CYTHON_WITHOUT_ASSERTIONS
   if (unlikely(!Py_OptimizeFlag)) {
-    __pyx_t_2 = PyObject_IsSubclass(__pyx_v_NodeClass, ((PyObject *)__pyx_ptype_11queue_model_Node)); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 262, __pyx_L1_error)
+    __pyx_t_2 = PyObject_IsSubclass(__pyx_v_NodeClass, ((PyObject *)__pyx_ptype_11sim_package_11queue_model_Node)); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 263, __pyx_L1_error)
     if (unlikely(!(__pyx_t_2 != 0))) {
       PyErr_SetObject(PyExc_AssertionError, __pyx_kp_u_arg_NodeClass_must_submit_Node_c);
-      __PYX_ERR(0, 262, __pyx_L1_error)
+      __PYX_ERR(0, 263, __pyx_L1_error)
     }
   }
   #endif
 
-  /* "queue_model.pyx":263
+  /* "sim_package/queue_model.pyx":264
  *         self.all_agents = dict()
  *         assert issubclass(NodeClass, Node), 'arg: NodeClass, must submit Node class that is a Node'
  *         assert issubclass(LinkClass, Link), 'arg: LinkClass, must submit Link class that is a Link'             # <<<<<<<<<<<<<<
@@ -10146,36 +10136,36 @@ static PyObject *__pyx_pf_11queue_model_10Simulation___init__(CYTHON_UNUSED PyOb
  */
   #ifndef CYTHON_WITHOUT_ASSERTIONS
   if (unlikely(!Py_OptimizeFlag)) {
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Link); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 263, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Link); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 264, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = PyObject_IsSubclass(__pyx_v_LinkClass, __pyx_t_1); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 263, __pyx_L1_error)
+    __pyx_t_2 = PyObject_IsSubclass(__pyx_v_LinkClass, __pyx_t_1); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 264, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     if (unlikely(!(__pyx_t_2 != 0))) {
       PyErr_SetObject(PyExc_AssertionError, __pyx_kp_u_arg_LinkClass_must_submit_Link_c);
-      __PYX_ERR(0, 263, __pyx_L1_error)
+      __PYX_ERR(0, 264, __pyx_L1_error)
     }
   }
   #endif
 
-  /* "queue_model.pyx":264
+  /* "sim_package/queue_model.pyx":265
  *         assert issubclass(NodeClass, Node), 'arg: NodeClass, must submit Node class that is a Node'
  *         assert issubclass(LinkClass, Link), 'arg: LinkClass, must submit Link class that is a Link'
  *         self.NodeClass = NodeClass             # <<<<<<<<<<<<<<
  *         self.LinkClass = LinkClass
  * 
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_NodeClass, __pyx_v_NodeClass) < 0) __PYX_ERR(0, 264, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_NodeClass, __pyx_v_NodeClass) < 0) __PYX_ERR(0, 265, __pyx_L1_error)
 
-  /* "queue_model.pyx":265
+  /* "sim_package/queue_model.pyx":266
  *         assert issubclass(LinkClass, Link), 'arg: LinkClass, must submit Link class that is a Link'
  *         self.NodeClass = NodeClass
  *         self.LinkClass = LinkClass             # <<<<<<<<<<<<<<
  * 
  *     def create_network(self, nodes_df, links_df):
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_LinkClass, __pyx_v_LinkClass) < 0) __PYX_ERR(0, 265, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_LinkClass, __pyx_v_LinkClass) < 0) __PYX_ERR(0, 266, __pyx_L1_error)
 
-  /* "queue_model.pyx":256
+  /* "sim_package/queue_model.pyx":257
  * 
  * class Simulation:
  *     def __init__(self, NodeClass=Node, LinkClass=Link):             # <<<<<<<<<<<<<<
@@ -10188,7 +10178,7 @@ static PyObject *__pyx_pf_11queue_model_10Simulation___init__(CYTHON_UNUSED PyOb
   goto __pyx_L0;
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("queue_model.Simulation.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Simulation.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -10196,7 +10186,7 @@ static PyObject *__pyx_pf_11queue_model_10Simulation___init__(CYTHON_UNUSED PyOb
   return __pyx_r;
 }
 
-/* "queue_model.pyx":267
+/* "sim_package/queue_model.pyx":268
  *         self.LinkClass = LinkClass
  * 
  *     def create_network(self, nodes_df, links_df):             # <<<<<<<<<<<<<<
@@ -10205,9 +10195,9 @@ static PyObject *__pyx_pf_11queue_model_10Simulation___init__(CYTHON_UNUSED PyOb
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_11queue_model_10Simulation_3create_network(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_11queue_model_10Simulation_3create_network = {"create_network", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11queue_model_10Simulation_3create_network, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_11queue_model_10Simulation_3create_network(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_11sim_package_11queue_model_10Simulation_3create_network(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_11sim_package_11queue_model_10Simulation_3create_network = {"create_network", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11sim_package_11queue_model_10Simulation_3create_network, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_11sim_package_11queue_model_10Simulation_3create_network(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_nodes_df = 0;
   PyObject *__pyx_v_links_df = 0;
@@ -10242,17 +10232,17 @@ static PyObject *__pyx_pw_11queue_model_10Simulation_3create_network(PyObject *_
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_nodes_df)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("create_network", 1, 3, 3, 1); __PYX_ERR(0, 267, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("create_network", 1, 3, 3, 1); __PYX_ERR(0, 268, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_links_df)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("create_network", 1, 3, 3, 2); __PYX_ERR(0, 267, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("create_network", 1, 3, 3, 2); __PYX_ERR(0, 268, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "create_network") < 0)) __PYX_ERR(0, 267, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "create_network") < 0)) __PYX_ERR(0, 268, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -10267,20 +10257,20 @@ static PyObject *__pyx_pw_11queue_model_10Simulation_3create_network(PyObject *_
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("create_network", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 267, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("create_network", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 268, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("queue_model.Simulation.create_network", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Simulation.create_network", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_11queue_model_10Simulation_2create_network(__pyx_self, __pyx_v_self, __pyx_v_nodes_df, __pyx_v_links_df);
+  __pyx_r = __pyx_pf_11sim_package_11queue_model_10Simulation_2create_network(__pyx_self, __pyx_v_self, __pyx_v_nodes_df, __pyx_v_links_df);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_nodes_df, PyObject *__pyx_v_links_df) {
+static PyObject *__pyx_pf_11sim_package_11queue_model_10Simulation_2create_network(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_nodes_df, PyObject *__pyx_v_links_df) {
   PyObject *__pyx_v_nodes = NULL;
   PyObject *__pyx_v_links = NULL;
   PyObject *__pyx_v_row = NULL;
@@ -10319,46 +10309,46 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("create_network", 0);
 
-  /* "queue_model.pyx":269
+  /* "sim_package/queue_model.pyx":270
  *     def create_network(self, nodes_df, links_df):
  *         ### create graph
  *         links_df['capacity'] = links_df['lanes'] * 1000             # <<<<<<<<<<<<<<
  *         links_df['fft'] = np.where(links_df['lanes']<=0, 1e8, links_df['length']/links_df['maxmph']*2.2369)
  *         self.g = interface.from_dataframe(links_df, 'start_node_id', 'end_node_id', 'fft')
  */
-  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_links_df, __pyx_n_u_lanes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 269, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_links_df, __pyx_n_u_lanes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyNumber_Multiply(__pyx_t_1, __pyx_int_1000); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 269, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_Multiply(__pyx_t_1, __pyx_int_1000); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 270, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (unlikely(PyObject_SetItem(__pyx_v_links_df, __pyx_n_u_capacity, __pyx_t_2) < 0)) __PYX_ERR(0, 269, __pyx_L1_error)
+  if (unlikely(PyObject_SetItem(__pyx_v_links_df, __pyx_n_u_capacity, __pyx_t_2) < 0)) __PYX_ERR(0, 270, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":270
+  /* "sim_package/queue_model.pyx":271
  *         ### create graph
  *         links_df['capacity'] = links_df['lanes'] * 1000
  *         links_df['fft'] = np.where(links_df['lanes']<=0, 1e8, links_df['length']/links_df['maxmph']*2.2369)             # <<<<<<<<<<<<<<
  *         self.g = interface.from_dataframe(links_df, 'start_node_id', 'end_node_id', 'fft')
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 271, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_where); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_where); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 271, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_links_df, __pyx_n_u_lanes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_links_df, __pyx_n_u_lanes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 271, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_4 = PyObject_RichCompare(__pyx_t_1, __pyx_int_0, Py_LE); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_t_4 = PyObject_RichCompare(__pyx_t_1, __pyx_int_0, Py_LE); __Pyx_XGOTREF(__pyx_t_4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 271, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_links_df, __pyx_n_u_length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Dict_GetItem(__pyx_v_links_df, __pyx_n_u_length); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 271, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_5 = __Pyx_PyObject_Dict_GetItem(__pyx_v_links_df, __pyx_n_u_maxmph); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Dict_GetItem(__pyx_v_links_df, __pyx_n_u_maxmph); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 271, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __Pyx_PyNumber_Divide(__pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyNumber_Divide(__pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 271, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PyNumber_Multiply(__pyx_t_6, __pyx_float_2_2369); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_t_5 = PyNumber_Multiply(__pyx_t_6, __pyx_float_2_2369); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 271, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_t_6 = NULL;
@@ -10376,7 +10366,7 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_3)) {
     PyObject *__pyx_temp[4] = {__pyx_t_6, __pyx_t_4, __pyx_float_1e8, __pyx_t_5};
-    __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 271, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -10386,7 +10376,7 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
     PyObject *__pyx_temp[4] = {__pyx_t_6, __pyx_t_4, __pyx_float_1e8, __pyx_t_5};
-    __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 271, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -10394,7 +10384,7 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
   } else
   #endif
   {
-    __pyx_t_1 = PyTuple_New(3+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __pyx_t_1 = PyTuple_New(3+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 271, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     if (__pyx_t_6) {
       __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_6); __pyx_t_6 = NULL;
@@ -10408,24 +10398,24 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
     PyTuple_SET_ITEM(__pyx_t_1, 2+__pyx_t_7, __pyx_t_5);
     __pyx_t_4 = 0;
     __pyx_t_5 = 0;
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 271, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(PyObject_SetItem(__pyx_v_links_df, __pyx_n_u_fft, __pyx_t_2) < 0)) __PYX_ERR(0, 270, __pyx_L1_error)
+  if (unlikely(PyObject_SetItem(__pyx_v_links_df, __pyx_n_u_fft, __pyx_t_2) < 0)) __PYX_ERR(0, 271, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":271
+  /* "sim_package/queue_model.pyx":272
  *         links_df['capacity'] = links_df['lanes'] * 1000
  *         links_df['fft'] = np.where(links_df['lanes']<=0, 1e8, links_df['length']/links_df['maxmph']*2.2369)
  *         self.g = interface.from_dataframe(links_df, 'start_node_id', 'end_node_id', 'fft')             # <<<<<<<<<<<<<<
  * 
  *         ### Create link and node objects
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_interface); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 271, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_interface); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 272, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_from_dataframe); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 271, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_from_dataframe); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 272, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -10443,7 +10433,7 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_1)) {
     PyObject *__pyx_temp[5] = {__pyx_t_3, __pyx_v_links_df, __pyx_n_u_start_node_id, __pyx_n_u_end_node_id, __pyx_n_u_fft};
-    __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_7, 4+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 271, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_7, 4+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 272, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_2);
   } else
@@ -10451,13 +10441,13 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_1)) {
     PyObject *__pyx_temp[5] = {__pyx_t_3, __pyx_v_links_df, __pyx_n_u_start_node_id, __pyx_n_u_end_node_id, __pyx_n_u_fft};
-    __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_7, 4+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 271, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_7, 4+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 272, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_2);
   } else
   #endif
   {
-    __pyx_t_5 = PyTuple_New(4+__pyx_t_7); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 271, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(4+__pyx_t_7); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 272, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     if (__pyx_t_3) {
       __Pyx_GIVEREF(__pyx_t_3); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_3); __pyx_t_3 = NULL;
@@ -10474,46 +10464,46 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
     __Pyx_INCREF(__pyx_n_u_fft);
     __Pyx_GIVEREF(__pyx_n_u_fft);
     PyTuple_SET_ITEM(__pyx_t_5, 3+__pyx_t_7, __pyx_n_u_fft);
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 271, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 272, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_g, __pyx_t_2) < 0) __PYX_ERR(0, 271, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_g, __pyx_t_2) < 0) __PYX_ERR(0, 272, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":274
+  /* "sim_package/queue_model.pyx":275
  * 
  *         ### Create link and node objects
  *         nodes = []             # <<<<<<<<<<<<<<
  *         links = []
  *         for row in nodes_df.itertuples():
  */
-  __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 274, __pyx_L1_error)
+  __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 275, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_v_nodes = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":275
+  /* "sim_package/queue_model.pyx":276
  *         ### Create link and node objects
  *         nodes = []
  *         links = []             # <<<<<<<<<<<<<<
  *         for row in nodes_df.itertuples():
  *             real_node = self.NodeClass(row.node_id, row.lon, row.lat, row.type, row.node_osmid)
  */
-  __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 275, __pyx_L1_error)
+  __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 276, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_v_links = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":276
+  /* "sim_package/queue_model.pyx":277
  *         nodes = []
  *         links = []
  *         for row in nodes_df.itertuples():             # <<<<<<<<<<<<<<
  *             real_node = self.NodeClass(row.node_id, row.lon, row.lat, row.type, row.node_osmid)
  *             virtual_node = real_node.create_virtual_node()
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_nodes_df, __pyx_n_s_itertuples); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 276, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_nodes_df, __pyx_n_s_itertuples); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 277, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_5 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -10527,16 +10517,16 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
   }
   __pyx_t_2 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 276, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 277, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (likely(PyList_CheckExact(__pyx_t_2)) || PyTuple_CheckExact(__pyx_t_2)) {
     __pyx_t_1 = __pyx_t_2; __Pyx_INCREF(__pyx_t_1); __pyx_t_8 = 0;
     __pyx_t_9 = NULL;
   } else {
-    __pyx_t_8 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 276, __pyx_L1_error)
+    __pyx_t_8 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 277, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_9 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 276, __pyx_L1_error)
+    __pyx_t_9 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 277, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   for (;;) {
@@ -10544,17 +10534,17 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_8 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_2 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_8); __Pyx_INCREF(__pyx_t_2); __pyx_t_8++; if (unlikely(0 < 0)) __PYX_ERR(0, 276, __pyx_L1_error)
+        __pyx_t_2 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_8); __Pyx_INCREF(__pyx_t_2); __pyx_t_8++; if (unlikely(0 < 0)) __PYX_ERR(0, 277, __pyx_L1_error)
         #else
-        __pyx_t_2 = PySequence_ITEM(__pyx_t_1, __pyx_t_8); __pyx_t_8++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 276, __pyx_L1_error)
+        __pyx_t_2 = PySequence_ITEM(__pyx_t_1, __pyx_t_8); __pyx_t_8++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 277, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         #endif
       } else {
         if (__pyx_t_8 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_8); __Pyx_INCREF(__pyx_t_2); __pyx_t_8++; if (unlikely(0 < 0)) __PYX_ERR(0, 276, __pyx_L1_error)
+        __pyx_t_2 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_8); __Pyx_INCREF(__pyx_t_2); __pyx_t_8++; if (unlikely(0 < 0)) __PYX_ERR(0, 277, __pyx_L1_error)
         #else
-        __pyx_t_2 = PySequence_ITEM(__pyx_t_1, __pyx_t_8); __pyx_t_8++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 276, __pyx_L1_error)
+        __pyx_t_2 = PySequence_ITEM(__pyx_t_1, __pyx_t_8); __pyx_t_8++; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 277, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         #endif
       }
@@ -10564,7 +10554,7 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 276, __pyx_L1_error)
+          else __PYX_ERR(0, 277, __pyx_L1_error)
         }
         break;
       }
@@ -10573,24 +10563,24 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
     __Pyx_XDECREF_SET(__pyx_v_row, __pyx_t_2);
     __pyx_t_2 = 0;
 
-    /* "queue_model.pyx":277
+    /* "sim_package/queue_model.pyx":278
  *         links = []
  *         for row in nodes_df.itertuples():
  *             real_node = self.NodeClass(row.node_id, row.lon, row.lat, row.type, row.node_osmid)             # <<<<<<<<<<<<<<
  *             virtual_node = real_node.create_virtual_node()
  *             virtual_link = real_node.create_virtual_link()
  */
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_NodeClass); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 277, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_NodeClass); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 278, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_node_id); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 277, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_node_id); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 278, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_lon); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 277, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_lon); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 278, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_lat); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 277, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_lat); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 278, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_type); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 277, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_type); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 278, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
-    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_node_osmid); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 277, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_node_osmid); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 278, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
     __pyx_t_12 = NULL;
     __pyx_t_7 = 0;
@@ -10607,7 +10597,7 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_5)) {
       PyObject *__pyx_temp[6] = {__pyx_t_12, __pyx_t_3, __pyx_t_4, __pyx_t_6, __pyx_t_10, __pyx_t_11};
-      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_7, 5+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 277, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_7, 5+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 278, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -10620,7 +10610,7 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
       PyObject *__pyx_temp[6] = {__pyx_t_12, __pyx_t_3, __pyx_t_4, __pyx_t_6, __pyx_t_10, __pyx_t_11};
-      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_7, 5+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 277, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_7, 5+__pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 278, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -10631,7 +10621,7 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
     } else
     #endif
     {
-      __pyx_t_13 = PyTuple_New(5+__pyx_t_7); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 277, __pyx_L1_error)
+      __pyx_t_13 = PyTuple_New(5+__pyx_t_7); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 278, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_13);
       if (__pyx_t_12) {
         __Pyx_GIVEREF(__pyx_t_12); PyTuple_SET_ITEM(__pyx_t_13, 0, __pyx_t_12); __pyx_t_12 = NULL;
@@ -10651,7 +10641,7 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
       __pyx_t_6 = 0;
       __pyx_t_10 = 0;
       __pyx_t_11 = 0;
-      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_13, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 277, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_13, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 278, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
     }
@@ -10659,41 +10649,14 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
     __Pyx_XDECREF_SET(__pyx_v_real_node, __pyx_t_2);
     __pyx_t_2 = 0;
 
-    /* "queue_model.pyx":278
+    /* "sim_package/queue_model.pyx":279
  *         for row in nodes_df.itertuples():
  *             real_node = self.NodeClass(row.node_id, row.lon, row.lat, row.type, row.node_osmid)
  *             virtual_node = real_node.create_virtual_node()             # <<<<<<<<<<<<<<
  *             virtual_link = real_node.create_virtual_link()
  *             nodes.append(real_node)
  */
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_real_node, __pyx_n_s_create_virtual_node); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 278, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_13 = NULL;
-    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
-      __pyx_t_13 = PyMethod_GET_SELF(__pyx_t_5);
-      if (likely(__pyx_t_13)) {
-        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
-        __Pyx_INCREF(__pyx_t_13);
-        __Pyx_INCREF(function);
-        __Pyx_DECREF_SET(__pyx_t_5, function);
-      }
-    }
-    __pyx_t_2 = (__pyx_t_13) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_13) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
-    __Pyx_XDECREF(__pyx_t_13); __pyx_t_13 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 278, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __Pyx_XDECREF_SET(__pyx_v_virtual_node, __pyx_t_2);
-    __pyx_t_2 = 0;
-
-    /* "queue_model.pyx":279
- *             real_node = self.NodeClass(row.node_id, row.lon, row.lat, row.type, row.node_osmid)
- *             virtual_node = real_node.create_virtual_node()
- *             virtual_link = real_node.create_virtual_link()             # <<<<<<<<<<<<<<
- *             nodes.append(real_node)
- *             nodes.append(virtual_node)
- */
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_real_node, __pyx_n_s_create_virtual_link); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 279, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_real_node, __pyx_n_s_create_virtual_node); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 279, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __pyx_t_13 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
@@ -10710,37 +10673,64 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
     if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 279, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __Pyx_XDECREF_SET(__pyx_v_virtual_node, __pyx_t_2);
+    __pyx_t_2 = 0;
+
+    /* "sim_package/queue_model.pyx":280
+ *             real_node = self.NodeClass(row.node_id, row.lon, row.lat, row.type, row.node_osmid)
+ *             virtual_node = real_node.create_virtual_node()
+ *             virtual_link = real_node.create_virtual_link()             # <<<<<<<<<<<<<<
+ *             nodes.append(real_node)
+ *             nodes.append(virtual_node)
+ */
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_real_node, __pyx_n_s_create_virtual_link); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 280, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __pyx_t_13 = NULL;
+    if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
+      __pyx_t_13 = PyMethod_GET_SELF(__pyx_t_5);
+      if (likely(__pyx_t_13)) {
+        PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_5);
+        __Pyx_INCREF(__pyx_t_13);
+        __Pyx_INCREF(function);
+        __Pyx_DECREF_SET(__pyx_t_5, function);
+      }
+    }
+    __pyx_t_2 = (__pyx_t_13) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_13) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
+    __Pyx_XDECREF(__pyx_t_13); __pyx_t_13 = 0;
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 280, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_XDECREF_SET(__pyx_v_virtual_link, __pyx_t_2);
     __pyx_t_2 = 0;
 
-    /* "queue_model.pyx":280
+    /* "sim_package/queue_model.pyx":281
  *             virtual_node = real_node.create_virtual_node()
  *             virtual_link = real_node.create_virtual_link()
  *             nodes.append(real_node)             # <<<<<<<<<<<<<<
  *             nodes.append(virtual_node)
  *             links.append(virtual_link)
  */
-    __pyx_t_14 = __Pyx_PyList_Append(__pyx_v_nodes, __pyx_v_real_node); if (unlikely(__pyx_t_14 == ((int)-1))) __PYX_ERR(0, 280, __pyx_L1_error)
+    __pyx_t_14 = __Pyx_PyList_Append(__pyx_v_nodes, __pyx_v_real_node); if (unlikely(__pyx_t_14 == ((int)-1))) __PYX_ERR(0, 281, __pyx_L1_error)
 
-    /* "queue_model.pyx":281
+    /* "sim_package/queue_model.pyx":282
  *             virtual_link = real_node.create_virtual_link()
  *             nodes.append(real_node)
  *             nodes.append(virtual_node)             # <<<<<<<<<<<<<<
  *             links.append(virtual_link)
  *         for row in links_df.itertuples():
  */
-    __pyx_t_14 = __Pyx_PyList_Append(__pyx_v_nodes, __pyx_v_virtual_node); if (unlikely(__pyx_t_14 == ((int)-1))) __PYX_ERR(0, 281, __pyx_L1_error)
+    __pyx_t_14 = __Pyx_PyList_Append(__pyx_v_nodes, __pyx_v_virtual_node); if (unlikely(__pyx_t_14 == ((int)-1))) __PYX_ERR(0, 282, __pyx_L1_error)
 
-    /* "queue_model.pyx":282
+    /* "sim_package/queue_model.pyx":283
  *             nodes.append(real_node)
  *             nodes.append(virtual_node)
  *             links.append(virtual_link)             # <<<<<<<<<<<<<<
  *         for row in links_df.itertuples():
  *             real_link = self.LinkClass(row.link_id, row.lanes, row.length, row.fft, row.capacity, row.type, row.start_node_id, row.end_node_id, row.geometry, simulation=self)
  */
-    __pyx_t_14 = __Pyx_PyList_Append(__pyx_v_links, __pyx_v_virtual_link); if (unlikely(__pyx_t_14 == ((int)-1))) __PYX_ERR(0, 282, __pyx_L1_error)
+    __pyx_t_14 = __Pyx_PyList_Append(__pyx_v_links, __pyx_v_virtual_link); if (unlikely(__pyx_t_14 == ((int)-1))) __PYX_ERR(0, 283, __pyx_L1_error)
 
-    /* "queue_model.pyx":276
+    /* "sim_package/queue_model.pyx":277
  *         nodes = []
  *         links = []
  *         for row in nodes_df.itertuples():             # <<<<<<<<<<<<<<
@@ -10750,14 +10740,14 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":283
+  /* "sim_package/queue_model.pyx":284
  *             nodes.append(virtual_node)
  *             links.append(virtual_link)
  *         for row in links_df.itertuples():             # <<<<<<<<<<<<<<
  *             real_link = self.LinkClass(row.link_id, row.lanes, row.length, row.fft, row.capacity, row.type, row.start_node_id, row.end_node_id, row.geometry, simulation=self)
  *             links.append(real_link)
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_links_df, __pyx_n_s_itertuples); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 283, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_links_df, __pyx_n_s_itertuples); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 284, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_5 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -10771,16 +10761,16 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
   }
   __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 283, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 284, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if (likely(PyList_CheckExact(__pyx_t_1)) || PyTuple_CheckExact(__pyx_t_1)) {
     __pyx_t_2 = __pyx_t_1; __Pyx_INCREF(__pyx_t_2); __pyx_t_8 = 0;
     __pyx_t_9 = NULL;
   } else {
-    __pyx_t_8 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 283, __pyx_L1_error)
+    __pyx_t_8 = -1; __pyx_t_2 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 284, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_9 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 283, __pyx_L1_error)
+    __pyx_t_9 = Py_TYPE(__pyx_t_2)->tp_iternext; if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 284, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   for (;;) {
@@ -10788,17 +10778,17 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
       if (likely(PyList_CheckExact(__pyx_t_2))) {
         if (__pyx_t_8 >= PyList_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_8); __Pyx_INCREF(__pyx_t_1); __pyx_t_8++; if (unlikely(0 < 0)) __PYX_ERR(0, 283, __pyx_L1_error)
+        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_2, __pyx_t_8); __Pyx_INCREF(__pyx_t_1); __pyx_t_8++; if (unlikely(0 < 0)) __PYX_ERR(0, 284, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_8); __pyx_t_8++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 283, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_8); __pyx_t_8++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 284, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       } else {
         if (__pyx_t_8 >= PyTuple_GET_SIZE(__pyx_t_2)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_8); __Pyx_INCREF(__pyx_t_1); __pyx_t_8++; if (unlikely(0 < 0)) __PYX_ERR(0, 283, __pyx_L1_error)
+        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_8); __Pyx_INCREF(__pyx_t_1); __pyx_t_8++; if (unlikely(0 < 0)) __PYX_ERR(0, 284, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_8); __pyx_t_8++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 283, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_8); __pyx_t_8++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 284, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       }
@@ -10808,7 +10798,7 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 283, __pyx_L1_error)
+          else __PYX_ERR(0, 284, __pyx_L1_error)
         }
         break;
       }
@@ -10817,34 +10807,34 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
     __Pyx_XDECREF_SET(__pyx_v_row, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "queue_model.pyx":284
+    /* "sim_package/queue_model.pyx":285
  *             links.append(virtual_link)
  *         for row in links_df.itertuples():
  *             real_link = self.LinkClass(row.link_id, row.lanes, row.length, row.fft, row.capacity, row.type, row.start_node_id, row.end_node_id, row.geometry, simulation=self)             # <<<<<<<<<<<<<<
  *             links.append(real_link)
  * 
  */
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_LinkClass); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 284, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_LinkClass); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 285, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_link_id); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 284, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_link_id); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 285, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_13 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_lanes); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 284, __pyx_L1_error)
+    __pyx_t_13 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_lanes); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 285, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_13);
-    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_length); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 284, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_length); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 285, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_fft); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 284, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_fft); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 285, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_capacity); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 284, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_capacity); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 285, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_type); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 284, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_type); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 285, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_start_node_id); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 284, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_start_node_id); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 285, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_end_node_id); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 284, __pyx_L1_error)
+    __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_end_node_id); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 285, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_12);
-    __pyx_t_15 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_geometry); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 284, __pyx_L1_error)
+    __pyx_t_15 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_geometry); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 285, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_15);
-    __pyx_t_16 = PyTuple_New(9); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 284, __pyx_L1_error)
+    __pyx_t_16 = PyTuple_New(9); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 285, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_16);
     __Pyx_GIVEREF(__pyx_t_5);
     PyTuple_SET_ITEM(__pyx_t_16, 0, __pyx_t_5);
@@ -10873,10 +10863,10 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
     __pyx_t_3 = 0;
     __pyx_t_12 = 0;
     __pyx_t_15 = 0;
-    __pyx_t_15 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 284, __pyx_L1_error)
+    __pyx_t_15 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 285, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_15);
-    if (PyDict_SetItem(__pyx_t_15, __pyx_n_s_simulation, __pyx_v_self) < 0) __PYX_ERR(0, 284, __pyx_L1_error)
-    __pyx_t_12 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_16, __pyx_t_15); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 284, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_15, __pyx_n_s_simulation, __pyx_v_self) < 0) __PYX_ERR(0, 285, __pyx_L1_error)
+    __pyx_t_12 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_16, __pyx_t_15); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 285, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_12);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
@@ -10884,16 +10874,16 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
     __Pyx_XDECREF_SET(__pyx_v_real_link, __pyx_t_12);
     __pyx_t_12 = 0;
 
-    /* "queue_model.pyx":285
+    /* "sim_package/queue_model.pyx":286
  *         for row in links_df.itertuples():
  *             real_link = self.LinkClass(row.link_id, row.lanes, row.length, row.fft, row.capacity, row.type, row.start_node_id, row.end_node_id, row.geometry, simulation=self)
  *             links.append(real_link)             # <<<<<<<<<<<<<<
  * 
  *         ### dictionaries for quick look-up
  */
-    __pyx_t_14 = __Pyx_PyList_Append(__pyx_v_links, __pyx_v_real_link); if (unlikely(__pyx_t_14 == ((int)-1))) __PYX_ERR(0, 285, __pyx_L1_error)
+    __pyx_t_14 = __Pyx_PyList_Append(__pyx_v_links, __pyx_v_real_link); if (unlikely(__pyx_t_14 == ((int)-1))) __PYX_ERR(0, 286, __pyx_L1_error)
 
-    /* "queue_model.pyx":283
+    /* "sim_package/queue_model.pyx":284
  *             nodes.append(virtual_node)
  *             links.append(virtual_link)
  *         for row in links_df.itertuples():             # <<<<<<<<<<<<<<
@@ -10903,7 +10893,7 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":288
+  /* "sim_package/queue_model.pyx":289
  * 
  *         ### dictionaries for quick look-up
  *         self.node2link_dict = {(link.start_nid, link.end_nid): link.lid for link in links}             # <<<<<<<<<<<<<<
@@ -10911,24 +10901,24 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
  *         self.all_nodes = {node.nid: node for node in nodes}
  */
   { /* enter inner scope */
-    __pyx_t_2 = PyDict_New(); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 288, __pyx_L9_error)
+    __pyx_t_2 = PyDict_New(); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 289, __pyx_L9_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_t_12 = __pyx_v_links; __Pyx_INCREF(__pyx_t_12); __pyx_t_8 = 0;
     for (;;) {
       if (__pyx_t_8 >= PyList_GET_SIZE(__pyx_t_12)) break;
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-      __pyx_t_15 = PyList_GET_ITEM(__pyx_t_12, __pyx_t_8); __Pyx_INCREF(__pyx_t_15); __pyx_t_8++; if (unlikely(0 < 0)) __PYX_ERR(0, 288, __pyx_L9_error)
+      __pyx_t_15 = PyList_GET_ITEM(__pyx_t_12, __pyx_t_8); __Pyx_INCREF(__pyx_t_15); __pyx_t_8++; if (unlikely(0 < 0)) __PYX_ERR(0, 289, __pyx_L9_error)
       #else
-      __pyx_t_15 = PySequence_ITEM(__pyx_t_12, __pyx_t_8); __pyx_t_8++; if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 288, __pyx_L9_error)
+      __pyx_t_15 = PySequence_ITEM(__pyx_t_12, __pyx_t_8); __pyx_t_8++; if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 289, __pyx_L9_error)
       __Pyx_GOTREF(__pyx_t_15);
       #endif
       __Pyx_XDECREF_SET(__pyx_9genexpr10__pyx_v_link, __pyx_t_15);
       __pyx_t_15 = 0;
-      __pyx_t_15 = __Pyx_PyObject_GetAttrStr(__pyx_9genexpr10__pyx_v_link, __pyx_n_s_start_nid); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 288, __pyx_L9_error)
+      __pyx_t_15 = __Pyx_PyObject_GetAttrStr(__pyx_9genexpr10__pyx_v_link, __pyx_n_s_start_nid); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 289, __pyx_L9_error)
       __Pyx_GOTREF(__pyx_t_15);
-      __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_9genexpr10__pyx_v_link, __pyx_n_s_end_nid); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 288, __pyx_L9_error)
+      __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_9genexpr10__pyx_v_link, __pyx_n_s_end_nid); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 289, __pyx_L9_error)
       __Pyx_GOTREF(__pyx_t_16);
-      __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 288, __pyx_L9_error)
+      __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 289, __pyx_L9_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_GIVEREF(__pyx_t_15);
       PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_15);
@@ -10936,9 +10926,9 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
       PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_t_16);
       __pyx_t_15 = 0;
       __pyx_t_16 = 0;
-      __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_9genexpr10__pyx_v_link, __pyx_n_s_lid); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 288, __pyx_L9_error)
+      __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_9genexpr10__pyx_v_link, __pyx_n_s_lid); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 289, __pyx_L9_error)
       __Pyx_GOTREF(__pyx_t_16);
-      if (unlikely(PyDict_SetItem(__pyx_t_2, (PyObject*)__pyx_t_1, (PyObject*)__pyx_t_16))) __PYX_ERR(0, 288, __pyx_L9_error)
+      if (unlikely(PyDict_SetItem(__pyx_t_2, (PyObject*)__pyx_t_1, (PyObject*)__pyx_t_16))) __PYX_ERR(0, 289, __pyx_L9_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
     }
@@ -10950,10 +10940,10 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
     goto __pyx_L1_error;
     __pyx_L12_exit_scope:;
   } /* exit inner scope */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_node2link_dict, __pyx_t_2) < 0) __PYX_ERR(0, 288, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_node2link_dict, __pyx_t_2) < 0) __PYX_ERR(0, 289, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":289
+  /* "sim_package/queue_model.pyx":290
  *         ### dictionaries for quick look-up
  *         self.node2link_dict = {(link.start_nid, link.end_nid): link.lid for link in links}
  *         self.all_links = {link.lid: link for link in links}             # <<<<<<<<<<<<<<
@@ -10961,22 +10951,22 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
  *         for link_id, link in self.all_links.items():
  */
   { /* enter inner scope */
-    __pyx_t_2 = PyDict_New(); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 289, __pyx_L15_error)
+    __pyx_t_2 = PyDict_New(); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 290, __pyx_L15_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_t_12 = __pyx_v_links; __Pyx_INCREF(__pyx_t_12); __pyx_t_8 = 0;
     for (;;) {
       if (__pyx_t_8 >= PyList_GET_SIZE(__pyx_t_12)) break;
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-      __pyx_t_16 = PyList_GET_ITEM(__pyx_t_12, __pyx_t_8); __Pyx_INCREF(__pyx_t_16); __pyx_t_8++; if (unlikely(0 < 0)) __PYX_ERR(0, 289, __pyx_L15_error)
+      __pyx_t_16 = PyList_GET_ITEM(__pyx_t_12, __pyx_t_8); __Pyx_INCREF(__pyx_t_16); __pyx_t_8++; if (unlikely(0 < 0)) __PYX_ERR(0, 290, __pyx_L15_error)
       #else
-      __pyx_t_16 = PySequence_ITEM(__pyx_t_12, __pyx_t_8); __pyx_t_8++; if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 289, __pyx_L15_error)
+      __pyx_t_16 = PySequence_ITEM(__pyx_t_12, __pyx_t_8); __pyx_t_8++; if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 290, __pyx_L15_error)
       __Pyx_GOTREF(__pyx_t_16);
       #endif
       __Pyx_XDECREF_SET(__pyx_9genexpr11__pyx_v_link, __pyx_t_16);
       __pyx_t_16 = 0;
-      __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_9genexpr11__pyx_v_link, __pyx_n_s_lid); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 289, __pyx_L15_error)
+      __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_9genexpr11__pyx_v_link, __pyx_n_s_lid); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 290, __pyx_L15_error)
       __Pyx_GOTREF(__pyx_t_16);
-      if (unlikely(PyDict_SetItem(__pyx_t_2, (PyObject*)__pyx_t_16, (PyObject*)__pyx_9genexpr11__pyx_v_link))) __PYX_ERR(0, 289, __pyx_L15_error)
+      if (unlikely(PyDict_SetItem(__pyx_t_2, (PyObject*)__pyx_t_16, (PyObject*)__pyx_9genexpr11__pyx_v_link))) __PYX_ERR(0, 290, __pyx_L15_error)
       __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
     }
     __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
@@ -10987,10 +10977,10 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
     goto __pyx_L1_error;
     __pyx_L18_exit_scope:;
   } /* exit inner scope */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_all_links, __pyx_t_2) < 0) __PYX_ERR(0, 289, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_all_links, __pyx_t_2) < 0) __PYX_ERR(0, 290, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":290
+  /* "sim_package/queue_model.pyx":291
  *         self.node2link_dict = {(link.start_nid, link.end_nid): link.lid for link in links}
  *         self.all_links = {link.lid: link for link in links}
  *         self.all_nodes = {node.nid: node for node in nodes}             # <<<<<<<<<<<<<<
@@ -10998,22 +10988,22 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
  *             self.all_nodes[link.start_nid].out_links.append(link_id)
  */
   { /* enter inner scope */
-    __pyx_t_2 = PyDict_New(); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 290, __pyx_L21_error)
+    __pyx_t_2 = PyDict_New(); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 291, __pyx_L21_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_t_12 = __pyx_v_nodes; __Pyx_INCREF(__pyx_t_12); __pyx_t_8 = 0;
     for (;;) {
       if (__pyx_t_8 >= PyList_GET_SIZE(__pyx_t_12)) break;
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-      __pyx_t_16 = PyList_GET_ITEM(__pyx_t_12, __pyx_t_8); __Pyx_INCREF(__pyx_t_16); __pyx_t_8++; if (unlikely(0 < 0)) __PYX_ERR(0, 290, __pyx_L21_error)
+      __pyx_t_16 = PyList_GET_ITEM(__pyx_t_12, __pyx_t_8); __Pyx_INCREF(__pyx_t_16); __pyx_t_8++; if (unlikely(0 < 0)) __PYX_ERR(0, 291, __pyx_L21_error)
       #else
-      __pyx_t_16 = PySequence_ITEM(__pyx_t_12, __pyx_t_8); __pyx_t_8++; if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 290, __pyx_L21_error)
+      __pyx_t_16 = PySequence_ITEM(__pyx_t_12, __pyx_t_8); __pyx_t_8++; if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 291, __pyx_L21_error)
       __Pyx_GOTREF(__pyx_t_16);
       #endif
       __Pyx_XDECREF_SET(__pyx_9genexpr12__pyx_v_node, __pyx_t_16);
       __pyx_t_16 = 0;
-      __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_9genexpr12__pyx_v_node, __pyx_n_s_nid); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 290, __pyx_L21_error)
+      __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_9genexpr12__pyx_v_node, __pyx_n_s_nid); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 291, __pyx_L21_error)
       __Pyx_GOTREF(__pyx_t_16);
-      if (unlikely(PyDict_SetItem(__pyx_t_2, (PyObject*)__pyx_t_16, (PyObject*)__pyx_9genexpr12__pyx_v_node))) __PYX_ERR(0, 290, __pyx_L21_error)
+      if (unlikely(PyDict_SetItem(__pyx_t_2, (PyObject*)__pyx_t_16, (PyObject*)__pyx_9genexpr12__pyx_v_node))) __PYX_ERR(0, 291, __pyx_L21_error)
       __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
     }
     __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
@@ -11024,10 +11014,10 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
     goto __pyx_L1_error;
     __pyx_L24_exit_scope:;
   } /* exit inner scope */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_all_nodes, __pyx_t_2) < 0) __PYX_ERR(0, 290, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_all_nodes, __pyx_t_2) < 0) __PYX_ERR(0, 291, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":291
+  /* "sim_package/queue_model.pyx":292
  *         self.all_links = {link.lid: link for link in links}
  *         self.all_nodes = {node.nid: node for node in nodes}
  *         for link_id, link in self.all_links.items():             # <<<<<<<<<<<<<<
@@ -11035,13 +11025,13 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
  *             self.all_nodes[link.end_nid].in_links[link_id] = None
  */
   __pyx_t_8 = 0;
-  __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_all_links); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 291, __pyx_L1_error)
+  __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_all_links); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
   if (unlikely(__pyx_t_12 == Py_None)) {
     PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "items");
-    __PYX_ERR(0, 291, __pyx_L1_error)
+    __PYX_ERR(0, 292, __pyx_L1_error)
   }
-  __pyx_t_16 = __Pyx_dict_iterator(__pyx_t_12, 0, __pyx_n_s_items, (&__pyx_t_17), (&__pyx_t_7)); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 291, __pyx_L1_error)
+  __pyx_t_16 = __Pyx_dict_iterator(__pyx_t_12, 0, __pyx_n_s_items, (&__pyx_t_17), (&__pyx_t_7)); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 292, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_16);
   __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
   __Pyx_XDECREF(__pyx_t_2);
@@ -11050,7 +11040,7 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
   while (1) {
     __pyx_t_18 = __Pyx_dict_iter_next(__pyx_t_2, __pyx_t_17, &__pyx_t_8, &__pyx_t_16, &__pyx_t_12, NULL, __pyx_t_7);
     if (unlikely(__pyx_t_18 == 0)) break;
-    if (unlikely(__pyx_t_18 == -1)) __PYX_ERR(0, 291, __pyx_L1_error)
+    if (unlikely(__pyx_t_18 == -1)) __PYX_ERR(0, 292, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_16);
     __Pyx_GOTREF(__pyx_t_12);
     __Pyx_XDECREF_SET(__pyx_v_link_id, __pyx_t_16);
@@ -11058,51 +11048,51 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
     __Pyx_XDECREF_SET(__pyx_v_link, __pyx_t_12);
     __pyx_t_12 = 0;
 
-    /* "queue_model.pyx":292
+    /* "sim_package/queue_model.pyx":293
  *         self.all_nodes = {node.nid: node for node in nodes}
  *         for link_id, link in self.all_links.items():
  *             self.all_nodes[link.start_nid].out_links.append(link_id)             # <<<<<<<<<<<<<<
  *             self.all_nodes[link.end_nid].in_links[link_id] = None
  *         for node in self.all_nodes.values():
  */
-    __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_all_nodes); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 292, __pyx_L1_error)
+    __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_all_nodes); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 293, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_12);
-    __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_v_link, __pyx_n_s_start_nid); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 292, __pyx_L1_error)
+    __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_v_link, __pyx_n_s_start_nid); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 293, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_16);
-    __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_12, __pyx_t_16); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 292, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_12, __pyx_t_16); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 293, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
     __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
-    __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_out_links); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 292, __pyx_L1_error)
+    __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_out_links); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 293, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_16);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_14 = __Pyx_PyObject_Append(__pyx_t_16, __pyx_v_link_id); if (unlikely(__pyx_t_14 == ((int)-1))) __PYX_ERR(0, 292, __pyx_L1_error)
+    __pyx_t_14 = __Pyx_PyObject_Append(__pyx_t_16, __pyx_v_link_id); if (unlikely(__pyx_t_14 == ((int)-1))) __PYX_ERR(0, 293, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
 
-    /* "queue_model.pyx":293
+    /* "sim_package/queue_model.pyx":294
  *         for link_id, link in self.all_links.items():
  *             self.all_nodes[link.start_nid].out_links.append(link_id)
  *             self.all_nodes[link.end_nid].in_links[link_id] = None             # <<<<<<<<<<<<<<
  *         for node in self.all_nodes.values():
  *             node.calculate_straight_ahead_links(node_id_dict=self.all_nodes, link_id_dict=self.all_links)
  */
-    __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_all_nodes); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 293, __pyx_L1_error)
+    __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_all_nodes); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 294, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_16);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_link, __pyx_n_s_end_nid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 293, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_link, __pyx_n_s_end_nid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 294, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_12 = __Pyx_PyObject_GetItem(__pyx_t_16, __pyx_t_1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 293, __pyx_L1_error)
+    __pyx_t_12 = __Pyx_PyObject_GetItem(__pyx_t_16, __pyx_t_1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 294, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_12);
     __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_12, __pyx_n_s_in_links); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 293, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_12, __pyx_n_s_in_links); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 294, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-    if (unlikely(PyObject_SetItem(__pyx_t_1, __pyx_v_link_id, Py_None) < 0)) __PYX_ERR(0, 293, __pyx_L1_error)
+    if (unlikely(PyObject_SetItem(__pyx_t_1, __pyx_v_link_id, Py_None) < 0)) __PYX_ERR(0, 294, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":294
+  /* "sim_package/queue_model.pyx":295
  *             self.all_nodes[link.start_nid].out_links.append(link_id)
  *             self.all_nodes[link.end_nid].in_links[link_id] = None
  *         for node in self.all_nodes.values():             # <<<<<<<<<<<<<<
@@ -11110,13 +11100,13 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
  * 
  */
   __pyx_t_17 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_all_nodes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 294, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_all_nodes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 295, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (unlikely(__pyx_t_1 == Py_None)) {
     PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "values");
-    __PYX_ERR(0, 294, __pyx_L1_error)
+    __PYX_ERR(0, 295, __pyx_L1_error)
   }
-  __pyx_t_12 = __Pyx_dict_iterator(__pyx_t_1, 0, __pyx_n_s_values, (&__pyx_t_8), (&__pyx_t_7)); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 294, __pyx_L1_error)
+  __pyx_t_12 = __Pyx_dict_iterator(__pyx_t_1, 0, __pyx_n_s_values, (&__pyx_t_8), (&__pyx_t_7)); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 295, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_XDECREF(__pyx_t_2);
@@ -11125,31 +11115,31 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
   while (1) {
     __pyx_t_18 = __Pyx_dict_iter_next(__pyx_t_2, __pyx_t_8, &__pyx_t_17, NULL, &__pyx_t_12, NULL, __pyx_t_7);
     if (unlikely(__pyx_t_18 == 0)) break;
-    if (unlikely(__pyx_t_18 == -1)) __PYX_ERR(0, 294, __pyx_L1_error)
+    if (unlikely(__pyx_t_18 == -1)) __PYX_ERR(0, 295, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_12);
     __Pyx_XDECREF_SET(__pyx_v_node, __pyx_t_12);
     __pyx_t_12 = 0;
 
-    /* "queue_model.pyx":295
+    /* "sim_package/queue_model.pyx":296
  *             self.all_nodes[link.end_nid].in_links[link_id] = None
  *         for node in self.all_nodes.values():
  *             node.calculate_straight_ahead_links(node_id_dict=self.all_nodes, link_id_dict=self.all_links)             # <<<<<<<<<<<<<<
  * 
  *     def create_demand(self, od_df):
  */
-    __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_node, __pyx_n_s_calculate_straight_ahead_links); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 295, __pyx_L1_error)
+    __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_node, __pyx_n_s_calculate_straight_ahead_links); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 296, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_12);
-    __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 295, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 296, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_all_nodes); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 295, __pyx_L1_error)
+    __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_all_nodes); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 296, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_16);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_node_id_dict, __pyx_t_16) < 0) __PYX_ERR(0, 295, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_node_id_dict, __pyx_t_16) < 0) __PYX_ERR(0, 296, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
-    __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_all_links); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 295, __pyx_L1_error)
+    __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_all_links); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 296, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_16);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_link_id_dict, __pyx_t_16) < 0) __PYX_ERR(0, 295, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_link_id_dict, __pyx_t_16) < 0) __PYX_ERR(0, 296, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
-    __pyx_t_16 = __Pyx_PyObject_Call(__pyx_t_12, __pyx_empty_tuple, __pyx_t_1); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 295, __pyx_L1_error)
+    __pyx_t_16 = __Pyx_PyObject_Call(__pyx_t_12, __pyx_empty_tuple, __pyx_t_1); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 296, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_16);
     __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -11157,7 +11147,7 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":267
+  /* "sim_package/queue_model.pyx":268
  *         self.LinkClass = LinkClass
  * 
  *     def create_network(self, nodes_df, links_df):             # <<<<<<<<<<<<<<
@@ -11181,7 +11171,7 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
   __Pyx_XDECREF(__pyx_t_13);
   __Pyx_XDECREF(__pyx_t_15);
   __Pyx_XDECREF(__pyx_t_16);
-  __Pyx_AddTraceback("queue_model.Simulation.create_network", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Simulation.create_network", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_nodes);
@@ -11202,7 +11192,7 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
   return __pyx_r;
 }
 
-/* "queue_model.pyx":297
+/* "sim_package/queue_model.pyx":298
  *             node.calculate_straight_ahead_links(node_id_dict=self.all_nodes, link_id_dict=self.all_links)
  * 
  *     def create_demand(self, od_df):             # <<<<<<<<<<<<<<
@@ -11211,9 +11201,9 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_2create_network(CYTHON_UNUS
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_11queue_model_10Simulation_5create_demand(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_11queue_model_10Simulation_5create_demand = {"create_demand", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11queue_model_10Simulation_5create_demand, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_11queue_model_10Simulation_5create_demand(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_11sim_package_11queue_model_10Simulation_5create_demand(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_11sim_package_11queue_model_10Simulation_5create_demand = {"create_demand", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11sim_package_11queue_model_10Simulation_5create_demand, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_11sim_package_11queue_model_10Simulation_5create_demand(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_od_df = 0;
   int __pyx_lineno = 0;
@@ -11245,11 +11235,11 @@ static PyObject *__pyx_pw_11queue_model_10Simulation_5create_demand(PyObject *__
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_od_df)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("create_demand", 1, 2, 2, 1); __PYX_ERR(0, 297, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("create_demand", 1, 2, 2, 1); __PYX_ERR(0, 298, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "create_demand") < 0)) __PYX_ERR(0, 297, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "create_demand") < 0)) __PYX_ERR(0, 298, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -11262,20 +11252,20 @@ static PyObject *__pyx_pw_11queue_model_10Simulation_5create_demand(PyObject *__
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("create_demand", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 297, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("create_demand", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 298, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("queue_model.Simulation.create_demand", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Simulation.create_demand", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_11queue_model_10Simulation_4create_demand(__pyx_self, __pyx_v_self, __pyx_v_od_df);
+  __pyx_r = __pyx_pf_11sim_package_11queue_model_10Simulation_4create_demand(__pyx_self, __pyx_v_self, __pyx_v_od_df);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_11queue_model_10Simulation_4create_demand(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_od_df) {
+static PyObject *__pyx_pf_11sim_package_11queue_model_10Simulation_4create_demand(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v_self, PyObject *__pyx_v_od_df) {
   PyObject *__pyx_v_row = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -11301,27 +11291,27 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_4create_demand(CYTHON_UNUSE
   __Pyx_RefNannySetupContext("create_demand", 0);
   __Pyx_INCREF(__pyx_v_od_df);
 
-  /* "queue_model.pyx":299
+  /* "sim_package/queue_model.pyx":300
  *     def create_demand(self, od_df):
  * 
  *         if 'agent_id' not in od_df.columns: od_df['agent_id'] = np.arange(od_df.shape[0])             # <<<<<<<<<<<<<<
  *         od_df['dept_time'] = 0
  *         od_df['veh_len'] = 8
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_od_df, __pyx_n_s_columns); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 299, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_od_df, __pyx_n_s_columns); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_n_u_agent_id, __pyx_t_1, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 299, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PySequence_ContainsTF(__pyx_n_u_agent_id, __pyx_t_1, Py_NE)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 300, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 299, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 300, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_arange); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 299, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_arange); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 300, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_od_df, __pyx_n_s_shape); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 299, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_od_df, __pyx_n_s_shape); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 300, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_6 = __Pyx_GetItemInt(__pyx_t_4, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 299, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_GetItemInt(__pyx_t_4, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 300, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_t_4 = NULL;
@@ -11337,77 +11327,77 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_4create_demand(CYTHON_UNUSE
     __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_4, __pyx_t_6) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_6);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 299, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(PyObject_SetItem(__pyx_v_od_df, __pyx_n_u_agent_id, __pyx_t_1) < 0)) __PYX_ERR(0, 299, __pyx_L1_error)
+    if (unlikely(PyObject_SetItem(__pyx_v_od_df, __pyx_n_u_agent_id, __pyx_t_1) < 0)) __PYX_ERR(0, 300, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "queue_model.pyx":300
+  /* "sim_package/queue_model.pyx":301
  * 
  *         if 'agent_id' not in od_df.columns: od_df['agent_id'] = np.arange(od_df.shape[0])
  *         od_df['dept_time'] = 0             # <<<<<<<<<<<<<<
  *         od_df['veh_len'] = 8
  *         od_df['gps_reroute'] = 0
  */
-  if (unlikely(PyObject_SetItem(__pyx_v_od_df, __pyx_n_u_dept_time, __pyx_int_0) < 0)) __PYX_ERR(0, 300, __pyx_L1_error)
+  if (unlikely(PyObject_SetItem(__pyx_v_od_df, __pyx_n_u_dept_time, __pyx_int_0) < 0)) __PYX_ERR(0, 301, __pyx_L1_error)
 
-  /* "queue_model.pyx":301
+  /* "sim_package/queue_model.pyx":302
  *         if 'agent_id' not in od_df.columns: od_df['agent_id'] = np.arange(od_df.shape[0])
  *         od_df['dept_time'] = 0
  *         od_df['veh_len'] = 8             # <<<<<<<<<<<<<<
  *         od_df['gps_reroute'] = 0
  *         od_df = od_df.sample(frac=1).reset_index(drop=True) ### randomly shuffle rows
  */
-  if (unlikely(PyObject_SetItem(__pyx_v_od_df, __pyx_n_u_veh_len, __pyx_int_8) < 0)) __PYX_ERR(0, 301, __pyx_L1_error)
+  if (unlikely(PyObject_SetItem(__pyx_v_od_df, __pyx_n_u_veh_len, __pyx_int_8) < 0)) __PYX_ERR(0, 302, __pyx_L1_error)
 
-  /* "queue_model.pyx":302
+  /* "sim_package/queue_model.pyx":303
  *         od_df['dept_time'] = 0
  *         od_df['veh_len'] = 8
  *         od_df['gps_reroute'] = 0             # <<<<<<<<<<<<<<
  *         od_df = od_df.sample(frac=1).reset_index(drop=True) ### randomly shuffle rows
  *         # print('# trips {}'.format(od_df.shape[0]))
  */
-  if (unlikely(PyObject_SetItem(__pyx_v_od_df, __pyx_n_u_gps_reroute, __pyx_int_0) < 0)) __PYX_ERR(0, 302, __pyx_L1_error)
+  if (unlikely(PyObject_SetItem(__pyx_v_od_df, __pyx_n_u_gps_reroute, __pyx_int_0) < 0)) __PYX_ERR(0, 303, __pyx_L1_error)
 
-  /* "queue_model.pyx":303
+  /* "sim_package/queue_model.pyx":304
  *         od_df['veh_len'] = 8
  *         od_df['gps_reroute'] = 0
  *         od_df = od_df.sample(frac=1).reset_index(drop=True) ### randomly shuffle rows             # <<<<<<<<<<<<<<
  *         # print('# trips {}'.format(od_df.shape[0]))
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_od_df, __pyx_n_s_sample); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 303, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_od_df, __pyx_n_s_sample); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 304, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 303, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 304, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_frac, __pyx_int_1) < 0) __PYX_ERR(0, 303, __pyx_L1_error)
-  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 303, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_frac, __pyx_int_1) < 0) __PYX_ERR(0, 304, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 304, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_reset_index); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 303, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_reset_index); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 304, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 303, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 304, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_drop, Py_True) < 0) __PYX_ERR(0, 303, __pyx_L1_error)
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_empty_tuple, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 303, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_drop, Py_True) < 0) __PYX_ERR(0, 304, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_empty_tuple, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 304, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF_SET(__pyx_v_od_df, __pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":306
+  /* "sim_package/queue_model.pyx":307
  *         # print('# trips {}'.format(od_df.shape[0]))
  * 
  *         for row in od_df.itertuples():             # <<<<<<<<<<<<<<
  *             self.all_agents[row.agent_id] = Agent(row.agent_id, row.origin_node_id, row.destin_node_id, row.dept_time, row.veh_len, row.gps_reroute)
  * 
  */
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_od_df, __pyx_n_s_itertuples); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 306, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_od_df, __pyx_n_s_itertuples); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 307, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_5 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_6))) {
@@ -11421,16 +11411,16 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_4create_demand(CYTHON_UNUSE
   }
   __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 306, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 307, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   if (likely(PyList_CheckExact(__pyx_t_1)) || PyTuple_CheckExact(__pyx_t_1)) {
     __pyx_t_6 = __pyx_t_1; __Pyx_INCREF(__pyx_t_6); __pyx_t_7 = 0;
     __pyx_t_8 = NULL;
   } else {
-    __pyx_t_7 = -1; __pyx_t_6 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 306, __pyx_L1_error)
+    __pyx_t_7 = -1; __pyx_t_6 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 307, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_8 = Py_TYPE(__pyx_t_6)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 306, __pyx_L1_error)
+    __pyx_t_8 = Py_TYPE(__pyx_t_6)->tp_iternext; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 307, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   for (;;) {
@@ -11438,17 +11428,17 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_4create_demand(CYTHON_UNUSE
       if (likely(PyList_CheckExact(__pyx_t_6))) {
         if (__pyx_t_7 >= PyList_GET_SIZE(__pyx_t_6)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_6, __pyx_t_7); __Pyx_INCREF(__pyx_t_1); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 306, __pyx_L1_error)
+        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_6, __pyx_t_7); __Pyx_INCREF(__pyx_t_1); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 307, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_6, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 306, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_6, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 307, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       } else {
         if (__pyx_t_7 >= PyTuple_GET_SIZE(__pyx_t_6)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_6, __pyx_t_7); __Pyx_INCREF(__pyx_t_1); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 306, __pyx_L1_error)
+        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_6, __pyx_t_7); __Pyx_INCREF(__pyx_t_1); __pyx_t_7++; if (unlikely(0 < 0)) __PYX_ERR(0, 307, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_6, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 306, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_6, __pyx_t_7); __pyx_t_7++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 307, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       }
@@ -11458,7 +11448,7 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_4create_demand(CYTHON_UNUSE
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 306, __pyx_L1_error)
+          else __PYX_ERR(0, 307, __pyx_L1_error)
         }
         break;
       }
@@ -11467,26 +11457,26 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_4create_demand(CYTHON_UNUSE
     __Pyx_XDECREF_SET(__pyx_v_row, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "queue_model.pyx":307
+    /* "sim_package/queue_model.pyx":308
  * 
  *         for row in od_df.itertuples():
  *             self.all_agents[row.agent_id] = Agent(row.agent_id, row.origin_node_id, row.destin_node_id, row.dept_time, row.veh_len, row.gps_reroute)             # <<<<<<<<<<<<<<
  * 
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_Agent); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 307, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_Agent); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 308, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_agent_id); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 307, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_agent_id); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 308, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_origin_node_id); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 307, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_origin_node_id); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 308, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_destin_node_id); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 307, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_destin_node_id); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 308, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
-    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_dept_time); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 307, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_dept_time); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 308, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
-    __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_veh_len); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 307, __pyx_L1_error)
+    __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_veh_len); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 308, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_12);
-    __pyx_t_13 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_gps_reroute); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 307, __pyx_L1_error)
+    __pyx_t_13 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_gps_reroute); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 308, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_13);
     __pyx_t_14 = NULL;
     __pyx_t_15 = 0;
@@ -11503,7 +11493,7 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_4create_demand(CYTHON_UNUSE
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_5)) {
       PyObject *__pyx_temp[7] = {__pyx_t_14, __pyx_t_4, __pyx_t_9, __pyx_t_10, __pyx_t_11, __pyx_t_12, __pyx_t_13};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_15, 6+__pyx_t_15); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 307, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_15, 6+__pyx_t_15); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 308, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -11517,7 +11507,7 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_4create_demand(CYTHON_UNUSE
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
       PyObject *__pyx_temp[7] = {__pyx_t_14, __pyx_t_4, __pyx_t_9, __pyx_t_10, __pyx_t_11, __pyx_t_12, __pyx_t_13};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_15, 6+__pyx_t_15); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 307, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_15, 6+__pyx_t_15); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 308, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -11529,7 +11519,7 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_4create_demand(CYTHON_UNUSE
     } else
     #endif
     {
-      __pyx_t_16 = PyTuple_New(6+__pyx_t_15); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 307, __pyx_L1_error)
+      __pyx_t_16 = PyTuple_New(6+__pyx_t_15); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 308, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_16);
       if (__pyx_t_14) {
         __Pyx_GIVEREF(__pyx_t_14); PyTuple_SET_ITEM(__pyx_t_16, 0, __pyx_t_14); __pyx_t_14 = NULL;
@@ -11552,21 +11542,21 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_4create_demand(CYTHON_UNUSE
       __pyx_t_11 = 0;
       __pyx_t_12 = 0;
       __pyx_t_13 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_16, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 307, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_16, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 308, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
     }
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_all_agents); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 307, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_all_agents); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 308, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_agent_id); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 307, __pyx_L1_error)
+    __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_v_row, __pyx_n_s_agent_id); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 308, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_16);
-    if (unlikely(PyObject_SetItem(__pyx_t_5, __pyx_t_16, __pyx_t_1) < 0)) __PYX_ERR(0, 307, __pyx_L1_error)
+    if (unlikely(PyObject_SetItem(__pyx_t_5, __pyx_t_16, __pyx_t_1) < 0)) __PYX_ERR(0, 308, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "queue_model.pyx":306
+    /* "sim_package/queue_model.pyx":307
  *         # print('# trips {}'.format(od_df.shape[0]))
  * 
  *         for row in od_df.itertuples():             # <<<<<<<<<<<<<<
@@ -11576,7 +11566,7 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_4create_demand(CYTHON_UNUSE
   }
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "queue_model.pyx":297
+  /* "sim_package/queue_model.pyx":298
  *             node.calculate_straight_ahead_links(node_id_dict=self.all_nodes, link_id_dict=self.all_links)
  * 
  *     def create_demand(self, od_df):             # <<<<<<<<<<<<<<
@@ -11599,7 +11589,7 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_4create_demand(CYTHON_UNUSE
   __Pyx_XDECREF(__pyx_t_13);
   __Pyx_XDECREF(__pyx_t_14);
   __Pyx_XDECREF(__pyx_t_16);
-  __Pyx_AddTraceback("queue_model.Simulation.create_demand", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.Simulation.create_demand", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_row);
@@ -11616,9 +11606,9 @@ static PyObject *__pyx_pf_11queue_model_10Simulation_4create_demand(CYTHON_UNUSE
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_11queue_model_1__pyx_unpickle_Node(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_11queue_model_1__pyx_unpickle_Node = {"__pyx_unpickle_Node", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11queue_model_1__pyx_unpickle_Node, METH_VARARGS|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_11queue_model_1__pyx_unpickle_Node(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static PyObject *__pyx_pw_11sim_package_11queue_model_1__pyx_unpickle_Node(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static PyMethodDef __pyx_mdef_11sim_package_11queue_model_1__pyx_unpickle_Node = {"__pyx_unpickle_Node", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11sim_package_11queue_model_1__pyx_unpickle_Node, METH_VARARGS|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_11sim_package_11queue_model_1__pyx_unpickle_Node(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v___pyx_type = 0;
   long __pyx_v___pyx_checksum;
   PyObject *__pyx_v___pyx_state = 0;
@@ -11680,18 +11670,18 @@ static PyObject *__pyx_pw_11queue_model_1__pyx_unpickle_Node(PyObject *__pyx_sel
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__pyx_unpickle_Node", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 1, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("queue_model.__pyx_unpickle_Node", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.__pyx_unpickle_Node", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_11queue_model___pyx_unpickle_Node(__pyx_self, __pyx_v___pyx_type, __pyx_v___pyx_checksum, __pyx_v___pyx_state);
+  __pyx_r = __pyx_pf_11sim_package_11queue_model___pyx_unpickle_Node(__pyx_self, __pyx_v___pyx_type, __pyx_v___pyx_checksum, __pyx_v___pyx_state);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_11queue_model___pyx_unpickle_Node(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_11sim_package_11queue_model___pyx_unpickle_Node(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_v___pyx_PickleError = 0;
   PyObject *__pyx_v___pyx_result = 0;
   PyObject *__pyx_r = NULL;
@@ -11788,7 +11778,7 @@ static PyObject *__pyx_pf_11queue_model___pyx_unpickle_Node(CYTHON_UNUSED PyObje
  *     if __pyx_state is not None:
  *         __pyx_unpickle_Node__set_state(<Node> __pyx_result, __pyx_state)
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_ptype_11queue_model_Node), __pyx_n_s_new); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 7, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_ptype_11sim_package_11queue_model_Node), __pyx_n_s_new); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -11827,7 +11817,7 @@ static PyObject *__pyx_pf_11queue_model___pyx_unpickle_Node(CYTHON_UNUSED PyObje
  * cdef __pyx_unpickle_Node__set_state(Node __pyx_result, tuple __pyx_state):
  */
     if (!(likely(PyTuple_CheckExact(__pyx_v___pyx_state))||((__pyx_v___pyx_state) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "tuple", Py_TYPE(__pyx_v___pyx_state)->tp_name), 0))) __PYX_ERR(1, 9, __pyx_L1_error)
-    __pyx_t_3 = __pyx_f_11queue_model___pyx_unpickle_Node__set_state(((struct __pyx_obj_11queue_model_Node *)__pyx_v___pyx_result), ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 9, __pyx_L1_error)
+    __pyx_t_3 = __pyx_f_11sim_package_11queue_model___pyx_unpickle_Node__set_state(((struct __pyx_obj_11sim_package_11queue_model_Node *)__pyx_v___pyx_result), ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 9, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
@@ -11864,7 +11854,7 @@ static PyObject *__pyx_pf_11queue_model___pyx_unpickle_Node(CYTHON_UNUSED PyObje
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("queue_model.__pyx_unpickle_Node", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.__pyx_unpickle_Node", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v___pyx_PickleError);
@@ -11882,7 +11872,7 @@ static PyObject *__pyx_pf_11queue_model___pyx_unpickle_Node(CYTHON_UNUSED PyObje
  *     if len(__pyx_state) > 3 and hasattr(__pyx_result, '__dict__'):
  */
 
-static PyObject *__pyx_f_11queue_model___pyx_unpickle_Node__set_state(struct __pyx_obj_11queue_model_Node *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_f_11sim_package_11queue_model___pyx_unpickle_Node__set_state(struct __pyx_obj_11sim_package_11queue_model_Node *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -12015,7 +12005,7 @@ static PyObject *__pyx_f_11queue_model___pyx_unpickle_Node__set_state(struct __p
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_8);
   __Pyx_XDECREF(__pyx_t_9);
-  __Pyx_AddTraceback("queue_model.__pyx_unpickle_Node__set_state", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("sim_package.queue_model.__pyx_unpickle_Node__set_state", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -12023,7 +12013,7 @@ static PyObject *__pyx_f_11queue_model___pyx_unpickle_Node__set_state(struct __p
   return __pyx_r;
 }
 
-static PyObject *__pyx_tp_new_11queue_model_Node(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_11sim_package_11queue_model_Node(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
   if (likely((t->tp_flags & Py_TPFLAGS_IS_ABSTRACT) == 0)) {
     o = (*t->tp_alloc)(t, 0);
@@ -12034,7 +12024,7 @@ static PyObject *__pyx_tp_new_11queue_model_Node(PyTypeObject *t, CYTHON_UNUSED 
   return o;
 }
 
-static void __pyx_tp_dealloc_11queue_model_Node(PyObject *o) {
+static void __pyx_tp_dealloc_11sim_package_11queue_model_Node(PyObject *o) {
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely(PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE) && Py_TYPE(o)->tp_finalize) && (!PyType_IS_GC(Py_TYPE(o)) || !_PyGC_FINALIZED(o))) {
     if (PyObject_CallFinalizerFromDealloc(o)) return;
@@ -12043,24 +12033,24 @@ static void __pyx_tp_dealloc_11queue_model_Node(PyObject *o) {
   (*Py_TYPE(o)->tp_free)(o);
 }
 
-static PyMethodDef __pyx_methods_11queue_model_Node[] = {
-  {"create_virtual_node", (PyCFunction)__pyx_pw_11queue_model_4Node_3create_virtual_node, METH_NOARGS, 0},
-  {"create_virtual_link", (PyCFunction)__pyx_pw_11queue_model_4Node_5create_virtual_link, METH_NOARGS, 0},
-  {"calculate_straight_ahead_links", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11queue_model_4Node_7calculate_straight_ahead_links, METH_VARARGS|METH_KEYWORDS, 0},
-  {"find_go_vehs", (PyCFunction)__pyx_pw_11queue_model_4Node_9find_go_vehs, METH_O, 0},
-  {"non_conflict_vehs", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11queue_model_4Node_11non_conflict_vehs, METH_VARARGS|METH_KEYWORDS, 0},
-  {"run_node_model", (PyCFunction)__pyx_pw_11queue_model_4Node_13run_node_model, METH_O, 0},
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_11queue_model_4Node_15__reduce_cython__, METH_NOARGS, 0},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_11queue_model_4Node_17__setstate_cython__, METH_O, 0},
+static PyMethodDef __pyx_methods_11sim_package_11queue_model_Node[] = {
+  {"create_virtual_node", (PyCFunction)__pyx_pw_11sim_package_11queue_model_4Node_3create_virtual_node, METH_NOARGS, 0},
+  {"create_virtual_link", (PyCFunction)__pyx_pw_11sim_package_11queue_model_4Node_5create_virtual_link, METH_NOARGS, 0},
+  {"calculate_straight_ahead_links", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11sim_package_11queue_model_4Node_7calculate_straight_ahead_links, METH_VARARGS|METH_KEYWORDS, 0},
+  {"find_go_vehs", (PyCFunction)__pyx_pw_11sim_package_11queue_model_4Node_9find_go_vehs, METH_O, 0},
+  {"non_conflict_vehs", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_11sim_package_11queue_model_4Node_11non_conflict_vehs, METH_VARARGS|METH_KEYWORDS, 0},
+  {"run_node_model", (PyCFunction)__pyx_pw_11sim_package_11queue_model_4Node_13run_node_model, METH_O, 0},
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_11sim_package_11queue_model_4Node_15__reduce_cython__, METH_NOARGS, 0},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_11sim_package_11queue_model_4Node_17__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_11queue_model_Node = {
+static PyTypeObject __pyx_type_11sim_package_11queue_model_Node = {
   PyVarObject_HEAD_INIT(0, 0)
-  "queue_model.Node", /*tp_name*/
-  sizeof(struct __pyx_obj_11queue_model_Node), /*tp_basicsize*/
+  "sim_package.queue_model.Node", /*tp_name*/
+  sizeof(struct __pyx_obj_11sim_package_11queue_model_Node), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_11queue_model_Node, /*tp_dealloc*/
+  __pyx_tp_dealloc_11sim_package_11queue_model_Node, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -12093,7 +12083,7 @@ static PyTypeObject __pyx_type_11queue_model_Node = {
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_11queue_model_Node, /*tp_methods*/
+  __pyx_methods_11sim_package_11queue_model_Node, /*tp_methods*/
   0, /*tp_members*/
   0, /*tp_getset*/
   0, /*tp_base*/
@@ -12101,9 +12091,9 @@ static PyTypeObject __pyx_type_11queue_model_Node = {
   0, /*tp_descr_get*/
   0, /*tp_descr_set*/
   0, /*tp_dictoffset*/
-  __pyx_pw_11queue_model_4Node_1__init__, /*tp_init*/
+  __pyx_pw_11sim_package_11queue_model_4Node_1__init__, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_11queue_model_Node, /*tp_new*/
+  __pyx_tp_new_11sim_package_11queue_model_Node, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -12173,6 +12163,7 @@ static struct PyModuleDef __pyx_moduledef = {
 #endif
 
 static __Pyx_StringTabEntry __pyx_string_tab[] = {
+  {&__pyx_n_s_, __pyx_k_, sizeof(__pyx_k_), 0, 0, 1, 1},
   {&__pyx_kp_u_, __pyx_k_, sizeof(__pyx_k_), 0, 1, 0, 0},
   {&__pyx_n_s_Agent, __pyx_k_Agent, sizeof(__pyx_k_Agent), 0, 0, 1, 1},
   {&__pyx_n_s_Agent___init, __pyx_k_Agent___init, sizeof(__pyx_k_Agent___init), 0, 0, 1, 1},
@@ -12341,7 +12332,6 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_pyx_type, __pyx_k_pyx_type, sizeof(__pyx_k_pyx_type), 0, 0, 1, 1},
   {&__pyx_n_s_pyx_unpickle_Node, __pyx_k_pyx_unpickle_Node, sizeof(__pyx_k_pyx_unpickle_Node), 0, 0, 1, 1},
   {&__pyx_n_s_qualname, __pyx_k_qualname, sizeof(__pyx_k_qualname), 0, 0, 1, 1},
-  {&__pyx_n_s_queue_model, __pyx_k_queue_model, sizeof(__pyx_k_queue_model), 0, 0, 1, 1},
   {&__pyx_n_s_queue_veh, __pyx_k_queue_veh, sizeof(__pyx_k_queue_veh), 0, 0, 1, 1},
   {&__pyx_n_s_random, __pyx_k_random, sizeof(__pyx_k_random), 0, 0, 1, 1},
   {&__pyx_n_s_range, __pyx_k_range, sizeof(__pyx_k_range), 0, 0, 1, 1},
@@ -12364,11 +12354,12 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_setstate_cython, __pyx_k_setstate_cython, sizeof(__pyx_k_setstate_cython), 0, 0, 1, 1},
   {&__pyx_n_s_shape, __pyx_k_shape, sizeof(__pyx_k_shape), 0, 0, 1, 1},
   {&__pyx_n_s_shapely_wkt, __pyx_k_shapely_wkt, sizeof(__pyx_k_shapely_wkt), 0, 0, 1, 1},
+  {&__pyx_n_s_sim_package_queue_model, __pyx_k_sim_package_queue_model, sizeof(__pyx_k_sim_package_queue_model), 0, 0, 1, 1},
   {&__pyx_n_s_simulation, __pyx_k_simulation, sizeof(__pyx_k_simulation), 0, 0, 1, 1},
   {&__pyx_n_s_sp, __pyx_k_sp, sizeof(__pyx_k_sp), 0, 0, 1, 1},
   {&__pyx_n_s_sp_dist, __pyx_k_sp_dist, sizeof(__pyx_k_sp_dist), 0, 0, 1, 1},
   {&__pyx_n_s_sp_route, __pyx_k_sp_route, sizeof(__pyx_k_sp_route), 0, 0, 1, 1},
-  {&__pyx_kp_s_src_queue_model_pyx, __pyx_k_src_queue_model_pyx, sizeof(__pyx_k_src_queue_model_pyx), 0, 0, 1, 0},
+  {&__pyx_kp_s_src_sim_package_queue_model_pyx, __pyx_k_src_sim_package_queue_model_pyx, sizeof(__pyx_k_src_sim_package_queue_model_pyx), 0, 0, 1, 0},
   {&__pyx_n_s_st_c, __pyx_k_st_c, sizeof(__pyx_k_st_c), 0, 0, 1, 1},
   {&__pyx_n_s_start, __pyx_k_start, sizeof(__pyx_k_start), 0, 0, 1, 1},
   {&__pyx_n_s_start_nid, __pyx_k_start_nid, sizeof(__pyx_k_start_nid), 0, 0, 1, 1},
@@ -12411,8 +12402,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 59, __pyx_L1_error)
-  __pyx_builtin_AssertionError = __Pyx_GetBuiltinName(__pyx_n_s_AssertionError); if (!__pyx_builtin_AssertionError) __PYX_ERR(0, 63, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_builtin_AssertionError = __Pyx_GetBuiltinName(__pyx_n_s_AssertionError); if (!__pyx_builtin_AssertionError) __PYX_ERR(0, 64, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -12422,212 +12413,212 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "queue_model.pyx":52
+  /* "sim_package/queue_model.pyx":53
  *                     sa_ol = ol
  *                     ol_dir = new_ol_dir
  *             if (abs(ol_dir)<=45) and link_id_dict[il].ltype[0:2]!='vl':             # <<<<<<<<<<<<<<
  *                 self.in_links[il] = sa_ol
  * 
  */
-  __pyx_slice__2 = PySlice_New(__pyx_int_0, __pyx_int_2, Py_None); if (unlikely(!__pyx_slice__2)) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_slice__2 = PySlice_New(__pyx_int_0, __pyx_int_2, Py_None); if (unlikely(!__pyx_slice__2)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice__2);
   __Pyx_GIVEREF(__pyx_slice__2);
 
-  /* "queue_model.pyx":159
+  /* "sim_package/queue_model.pyx":160
  *         self.ou_c = self.capacity/3600.0
  *         self.st_c = self.store_cap # remaining storage capacity
  *         self.midpoint = list(self.geometry.interpolate(0.5, normalized=True).coords)[0]             # <<<<<<<<<<<<<<
  *         ### empty
  *         self.queue_veh = [] # [(agent, t_enter), (agent, t_enter), ...]
  */
-  __pyx_tuple__3 = PyTuple_Pack(1, __pyx_float_0_5); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 159, __pyx_L1_error)
+  __pyx_tuple__3 = PyTuple_Pack(1, __pyx_float_0_5); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
 
-  /* "queue_model.pyx":223
+  /* "sim_package/queue_model.pyx":224
  *         assert self.cle == node_id, "agent next node {} is not the transferring node {}, route {}".format(self.cle, node_id, self.route_igraph)
  *         if self.destin_nid == node_id: ### current node is agent destination
  *             return None, None, 0 ### id, next_node, dir             # <<<<<<<<<<<<<<
  *         agent_next_node = [end for (start, end) in self.route_igraph if start == node_id][0]
  *         ol = node2link_dict[(node_id, agent_next_node)]
  */
-  __pyx_tuple__4 = PyTuple_Pack(3, Py_None, Py_None, __pyx_int_0); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 223, __pyx_L1_error)
+  __pyx_tuple__4 = PyTuple_Pack(3, Py_None, Py_None, __pyx_int_0); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 224, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
 
-  /* "queue_model.pyx":142
+  /* "sim_package/queue_model.pyx":143
  * 
  * class Link:
  *     def __init__(self, link_id, lanes, length, fft, capacity, ltype, start_nid, end_nid, geometry, simulation=None):             # <<<<<<<<<<<<<<
  *         ### input
  *         self.lid = link_id
  */
-  __pyx_tuple__5 = PyTuple_Pack(11, __pyx_n_s_self, __pyx_n_s_link_id, __pyx_n_s_lanes, __pyx_n_s_length, __pyx_n_s_fft, __pyx_n_s_capacity, __pyx_n_s_ltype, __pyx_n_s_start_nid, __pyx_n_s_end_nid, __pyx_n_s_geometry, __pyx_n_s_simulation); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 142, __pyx_L1_error)
+  __pyx_tuple__5 = PyTuple_Pack(11, __pyx_n_s_self, __pyx_n_s_link_id, __pyx_n_s_lanes, __pyx_n_s_length, __pyx_n_s_fft, __pyx_n_s_capacity, __pyx_n_s_ltype, __pyx_n_s_start_nid, __pyx_n_s_end_nid, __pyx_n_s_geometry, __pyx_n_s_simulation); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 143, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
   __Pyx_GIVEREF(__pyx_tuple__5);
-  __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(11, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_queue_model_pyx, __pyx_n_s_init, 142, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 142, __pyx_L1_error)
-  __pyx_tuple__7 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 142, __pyx_L1_error)
+  __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(11, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sim_package_queue_model_pyx, __pyx_n_s_init, 143, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 143, __pyx_L1_error)
+  __pyx_tuple__7 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 143, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
 
-  /* "queue_model.pyx":168
+  /* "sim_package/queue_model.pyx":169
  *         self.end_node = None
  * 
  *     def send_veh(self, t_now, agent_id, agent_id_dict=None):             # <<<<<<<<<<<<<<
  *         ### remove the agent from queue
  *         self.queue_veh = [v for v in self.queue_veh if v!=agent_id]
  */
-  __pyx_tuple__8 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_t_now, __pyx_n_s_agent_id, __pyx_n_s_agent_id_dict, __pyx_n_s_v); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_tuple__8 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_t_now, __pyx_n_s_agent_id, __pyx_n_s_agent_id_dict, __pyx_n_s_v); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
-  __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(4, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__8, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_queue_model_pyx, __pyx_n_s_send_veh, 168, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 168, __pyx_L1_error)
-  __pyx_tuple__10 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 168, __pyx_L1_error)
+  __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(4, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__8, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sim_package_queue_model_pyx, __pyx_n_s_send_veh, 169, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 169, __pyx_L1_error)
+  __pyx_tuple__10 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 169, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
 
-  /* "queue_model.pyx":174
- *         if self.ltype[0:2]!='vl': self.travel_time_list.append((t_now, t_now - agent_id_dict[agent_id].cl_enter_time))
+  /* "sim_package/queue_model.pyx":175
+ *         if self.ltype[0:2] != 'vl': self.travel_time_list.append((t_now, t_now - agent_id_dict[agent_id].cl_enter_time))
  * 
  *     def receive_veh(self, agent_id):             # <<<<<<<<<<<<<<
  *         self.run_veh.append(agent_id)
  *         self.in_c = max(0, self.in_c-1)
  */
-  __pyx_tuple__11 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_agent_id); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 174, __pyx_L1_error)
+  __pyx_tuple__11 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_agent_id); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 175, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__11);
   __Pyx_GIVEREF(__pyx_tuple__11);
-  __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_queue_model_pyx, __pyx_n_s_receive_veh, 174, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 174, __pyx_L1_error)
+  __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sim_package_queue_model_pyx, __pyx_n_s_receive_veh, 175, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 175, __pyx_L1_error)
 
-  /* "queue_model.pyx":178
+  /* "sim_package/queue_model.pyx":179
  *         self.in_c = max(0, self.in_c-1)
  * 
  *     def run_link_model(self, t_now):             # <<<<<<<<<<<<<<
  *         if t_now%60 == 0: self.update_travel_time(t_now, link_time_lookback_freq=60, g=self.simulation.g)
  *         for agent_id in self.run_veh:
  */
-  __pyx_tuple__13 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_t_now, __pyx_n_s_agent_id, __pyx_n_s_v, __pyx_n_s_agent_id); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 178, __pyx_L1_error)
+  __pyx_tuple__13 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_t_now, __pyx_n_s_agent_id, __pyx_n_s_v, __pyx_n_s_agent_id); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 179, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__13);
   __Pyx_GIVEREF(__pyx_tuple__13);
-  __pyx_codeobj__14 = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__13, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_queue_model_pyx, __pyx_n_s_run_link_model, 178, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__14)) __PYX_ERR(0, 178, __pyx_L1_error)
+  __pyx_codeobj__14 = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__13, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sim_package_queue_model_pyx, __pyx_n_s_run_link_model, 179, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__14)) __PYX_ERR(0, 179, __pyx_L1_error)
 
-  /* "queue_model.pyx":188
+  /* "sim_package/queue_model.pyx":189
  *         self.in_c, self.ou_c = self.capacity/3600, self.capacity/3600
  * 
  *     def update_travel_time(self, t_now, link_time_lookback_freq=None, g=None):             # <<<<<<<<<<<<<<
  *         self.travel_time_list = [(t_rec, dur) for (t_rec, dur) in self.travel_time_list if (t_now-t_rec < link_time_lookback_freq)]
  *         if len(self.travel_time_list) > 0:
  */
-  __pyx_tuple__16 = PyTuple_Pack(8, __pyx_n_s_self, __pyx_n_s_t_now, __pyx_n_s_link_time_lookback_freq, __pyx_n_s_g, __pyx_n_s_t_rec, __pyx_n_s_dur, __pyx_n_s__15, __pyx_n_s_dur); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 188, __pyx_L1_error)
+  __pyx_tuple__16 = PyTuple_Pack(8, __pyx_n_s_self, __pyx_n_s_t_now, __pyx_n_s_link_time_lookback_freq, __pyx_n_s_g, __pyx_n_s_t_rec, __pyx_n_s_dur, __pyx_n_s__15, __pyx_n_s_dur); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__16);
   __Pyx_GIVEREF(__pyx_tuple__16);
-  __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(4, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_queue_model_pyx, __pyx_n_s_update_travel_time, 188, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) __PYX_ERR(0, 188, __pyx_L1_error)
-  __pyx_tuple__18 = PyTuple_Pack(2, ((PyObject *)Py_None), ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 188, __pyx_L1_error)
+  __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(4, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__16, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sim_package_queue_model_pyx, __pyx_n_s_update_travel_time, 189, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) __PYX_ERR(0, 189, __pyx_L1_error)
+  __pyx_tuple__18 = PyTuple_Pack(2, ((PyObject *)Py_None), ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__18);
   __Pyx_GIVEREF(__pyx_tuple__18);
 
-  /* "queue_model.pyx":195
+  /* "sim_package/queue_model.pyx":196
  * 
  * class Agent:
  *     def __init__(self, id, origin_nid, destin_nid, dept_time, veh_len, gps_reroute, simulation=None):             # <<<<<<<<<<<<<<
  *         #input
  *         self.aid = id
  */
-  __pyx_tuple__19 = PyTuple_Pack(8, __pyx_n_s_self, __pyx_n_s_id, __pyx_n_s_origin_nid, __pyx_n_s_destin_nid, __pyx_n_s_dept_time, __pyx_n_s_veh_len, __pyx_n_s_gps_reroute, __pyx_n_s_simulation); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 195, __pyx_L1_error)
+  __pyx_tuple__19 = PyTuple_Pack(8, __pyx_n_s_self, __pyx_n_s_id, __pyx_n_s_origin_nid, __pyx_n_s_destin_nid, __pyx_n_s_dept_time, __pyx_n_s_veh_len, __pyx_n_s_gps_reroute, __pyx_n_s_simulation); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 196, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__19);
   __Pyx_GIVEREF(__pyx_tuple__19);
-  __pyx_codeobj__20 = (PyObject*)__Pyx_PyCode_New(8, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__19, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_queue_model_pyx, __pyx_n_s_init, 195, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__20)) __PYX_ERR(0, 195, __pyx_L1_error)
-  __pyx_tuple__21 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 195, __pyx_L1_error)
+  __pyx_codeobj__20 = (PyObject*)__Pyx_PyCode_New(8, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__19, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sim_package_queue_model_pyx, __pyx_n_s_init, 196, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__20)) __PYX_ERR(0, 196, __pyx_L1_error)
+  __pyx_tuple__21 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 196, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__21);
   __Pyx_GIVEREF(__pyx_tuple__21);
 
-  /* "queue_model.pyx":213
+  /* "sim_package/queue_model.pyx":214
  *         self.cl_enter_time = None
  * 
  *     def load_trips(self, t_now):             # <<<<<<<<<<<<<<
  *         if (self.dept_time == t_now):
  *             initial_edge = self.simulation.node2link_dict[self.route_igraph[0]]
  */
-  __pyx_tuple__22 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_t_now, __pyx_n_s_initial_edge); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 213, __pyx_L1_error)
+  __pyx_tuple__22 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_t_now, __pyx_n_s_initial_edge); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 214, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__22);
   __Pyx_GIVEREF(__pyx_tuple__22);
-  __pyx_codeobj__23 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__22, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_queue_model_pyx, __pyx_n_s_load_trips, 213, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__23)) __PYX_ERR(0, 213, __pyx_L1_error)
+  __pyx_codeobj__23 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__22, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sim_package_queue_model_pyx, __pyx_n_s_load_trips, 214, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__23)) __PYX_ERR(0, 214, __pyx_L1_error)
 
-  /* "queue_model.pyx":220
+  /* "sim_package/queue_model.pyx":221
  *             self.cl_enter_time = t_now
  * 
  *     def prepare_agent(self, node_id, node2link_dict=None, node_id_dict=None):             # <<<<<<<<<<<<<<
  *         assert self.cle == node_id, "agent next node {} is not the transferring node {}, route {}".format(self.cle, node_id, self.route_igraph)
  *         if self.destin_nid == node_id: ### current node is agent destination
  */
-  __pyx_tuple__24 = PyTuple_Pack(19, __pyx_n_s_self, __pyx_n_s_node_id, __pyx_n_s_node2link_dict, __pyx_n_s_node_id_dict, __pyx_n_s_agent_next_node, __pyx_n_s_ol, __pyx_n_s_x_start, __pyx_n_s_y_start, __pyx_n_s_x_mid, __pyx_n_s_y_mid, __pyx_n_s_x_end, __pyx_n_s_y_end, __pyx_n_s_in_vec, __pyx_n_s_out_vec, __pyx_n_s_dot, __pyx_n_s_det, __pyx_n_s_agent_dir, __pyx_n_s_start, __pyx_n_s_end); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 220, __pyx_L1_error)
+  __pyx_tuple__24 = PyTuple_Pack(19, __pyx_n_s_self, __pyx_n_s_node_id, __pyx_n_s_node2link_dict, __pyx_n_s_node_id_dict, __pyx_n_s_agent_next_node, __pyx_n_s_ol, __pyx_n_s_x_start, __pyx_n_s_y_start, __pyx_n_s_x_mid, __pyx_n_s_y_mid, __pyx_n_s_x_end, __pyx_n_s_y_end, __pyx_n_s_in_vec, __pyx_n_s_out_vec, __pyx_n_s_dot, __pyx_n_s_det, __pyx_n_s_agent_dir, __pyx_n_s_start, __pyx_n_s_end); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 221, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__24);
   __Pyx_GIVEREF(__pyx_tuple__24);
-  __pyx_codeobj__25 = (PyObject*)__Pyx_PyCode_New(4, 0, 19, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__24, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_queue_model_pyx, __pyx_n_s_prepare_agent, 220, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__25)) __PYX_ERR(0, 220, __pyx_L1_error)
-  __pyx_tuple__26 = PyTuple_Pack(2, ((PyObject *)Py_None), ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 220, __pyx_L1_error)
+  __pyx_codeobj__25 = (PyObject*)__Pyx_PyCode_New(4, 0, 19, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__24, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sim_package_queue_model_pyx, __pyx_n_s_prepare_agent, 221, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__25)) __PYX_ERR(0, 221, __pyx_L1_error)
+  __pyx_tuple__26 = PyTuple_Pack(2, ((PyObject *)Py_None), ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 221, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__26);
   __Pyx_GIVEREF(__pyx_tuple__26);
 
-  /* "queue_model.pyx":234
+  /* "sim_package/queue_model.pyx":235
  *         return agent_next_node, ol, agent_dir
  * 
  *     def move_agent(self, t_now, new_cls, new_cle, new_status):             # <<<<<<<<<<<<<<
  *         self.cls = new_cls
  *         self.cle = new_cle
  */
-  __pyx_tuple__27 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_t_now, __pyx_n_s_new_cls, __pyx_n_s_new_cle, __pyx_n_s_new_status); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 234, __pyx_L1_error)
+  __pyx_tuple__27 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_t_now, __pyx_n_s_new_cls, __pyx_n_s_new_cle, __pyx_n_s_new_status); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 235, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__27);
   __Pyx_GIVEREF(__pyx_tuple__27);
-  __pyx_codeobj__28 = (PyObject*)__Pyx_PyCode_New(5, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__27, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_queue_model_pyx, __pyx_n_s_move_agent, 234, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__28)) __PYX_ERR(0, 234, __pyx_L1_error)
+  __pyx_codeobj__28 = (PyObject*)__Pyx_PyCode_New(5, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__27, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sim_package_queue_model_pyx, __pyx_n_s_move_agent, 235, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__28)) __PYX_ERR(0, 235, __pyx_L1_error)
 
-  /* "queue_model.pyx":240
+  /* "sim_package/queue_model.pyx":241
  *         self.cl_enter_time = t_now
  * 
  *     def get_path(self, g=None):             # <<<<<<<<<<<<<<
  *         sp = g.dijkstra(self.cle, self.destin_nid)
  *         sp_dist = sp.distance(self.destin_nid)
  */
-  __pyx_tuple__29 = PyTuple_Pack(7, __pyx_n_s_self, __pyx_n_s_g, __pyx_n_s_sp, __pyx_n_s_sp_dist, __pyx_n_s_sp_route, __pyx_n_s_start_nid, __pyx_n_s_end_nid); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 240, __pyx_L1_error)
+  __pyx_tuple__29 = PyTuple_Pack(7, __pyx_n_s_self, __pyx_n_s_g, __pyx_n_s_sp, __pyx_n_s_sp_dist, __pyx_n_s_sp_route, __pyx_n_s_start_nid, __pyx_n_s_end_nid); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__29);
   __Pyx_GIVEREF(__pyx_tuple__29);
-  __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(2, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_queue_model_pyx, __pyx_n_s_get_path, 240, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) __PYX_ERR(0, 240, __pyx_L1_error)
-  __pyx_tuple__31 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 240, __pyx_L1_error)
+  __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(2, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sim_package_queue_model_pyx, __pyx_n_s_get_path, 241, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) __PYX_ERR(0, 241, __pyx_L1_error)
+  __pyx_tuple__31 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 241, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__31);
   __Pyx_GIVEREF(__pyx_tuple__31);
 
-  /* "queue_model.pyx":256
+  /* "sim_package/queue_model.pyx":257
  * 
  * class Simulation:
  *     def __init__(self, NodeClass=Node, LinkClass=Link):             # <<<<<<<<<<<<<<
  *         self.g = None
  *         self.all_nodes = dict()
  */
-  __pyx_tuple__32 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_NodeClass, __pyx_n_s_LinkClass); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 256, __pyx_L1_error)
+  __pyx_tuple__32 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_NodeClass, __pyx_n_s_LinkClass); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 257, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__32);
   __Pyx_GIVEREF(__pyx_tuple__32);
-  __pyx_codeobj__33 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__32, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_queue_model_pyx, __pyx_n_s_init, 256, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__33)) __PYX_ERR(0, 256, __pyx_L1_error)
+  __pyx_codeobj__33 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__32, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sim_package_queue_model_pyx, __pyx_n_s_init, 257, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__33)) __PYX_ERR(0, 257, __pyx_L1_error)
 
-  /* "queue_model.pyx":267
+  /* "sim_package/queue_model.pyx":268
  *         self.LinkClass = LinkClass
  * 
  *     def create_network(self, nodes_df, links_df):             # <<<<<<<<<<<<<<
  *         ### create graph
  *         links_df['capacity'] = links_df['lanes'] * 1000
  */
-  __pyx_tuple__34 = PyTuple_Pack(16, __pyx_n_s_self, __pyx_n_s_nodes_df, __pyx_n_s_links_df, __pyx_n_s_nodes, __pyx_n_s_links, __pyx_n_s_row, __pyx_n_s_real_node, __pyx_n_s_virtual_node, __pyx_n_s_virtual_link, __pyx_n_s_real_link, __pyx_n_s_link_id, __pyx_n_s_link, __pyx_n_s_node, __pyx_n_s_link, __pyx_n_s_link, __pyx_n_s_node); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(0, 267, __pyx_L1_error)
+  __pyx_tuple__34 = PyTuple_Pack(16, __pyx_n_s_self, __pyx_n_s_nodes_df, __pyx_n_s_links_df, __pyx_n_s_nodes, __pyx_n_s_links, __pyx_n_s_row, __pyx_n_s_real_node, __pyx_n_s_virtual_node, __pyx_n_s_virtual_link, __pyx_n_s_real_link, __pyx_n_s_link_id, __pyx_n_s_link, __pyx_n_s_node, __pyx_n_s_link, __pyx_n_s_link, __pyx_n_s_node); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(0, 268, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__34);
   __Pyx_GIVEREF(__pyx_tuple__34);
-  __pyx_codeobj__35 = (PyObject*)__Pyx_PyCode_New(3, 0, 16, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__34, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_queue_model_pyx, __pyx_n_s_create_network, 267, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__35)) __PYX_ERR(0, 267, __pyx_L1_error)
+  __pyx_codeobj__35 = (PyObject*)__Pyx_PyCode_New(3, 0, 16, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__34, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sim_package_queue_model_pyx, __pyx_n_s_create_network, 268, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__35)) __PYX_ERR(0, 268, __pyx_L1_error)
 
-  /* "queue_model.pyx":297
+  /* "sim_package/queue_model.pyx":298
  *             node.calculate_straight_ahead_links(node_id_dict=self.all_nodes, link_id_dict=self.all_links)
  * 
  *     def create_demand(self, od_df):             # <<<<<<<<<<<<<<
  * 
  *         if 'agent_id' not in od_df.columns: od_df['agent_id'] = np.arange(od_df.shape[0])
  */
-  __pyx_tuple__36 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_od_df, __pyx_n_s_row); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(0, 297, __pyx_L1_error)
+  __pyx_tuple__36 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_od_df, __pyx_n_s_row); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(0, 298, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__36);
   __Pyx_GIVEREF(__pyx_tuple__36);
-  __pyx_codeobj__37 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__36, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_queue_model_pyx, __pyx_n_s_create_demand, 297, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__37)) __PYX_ERR(0, 297, __pyx_L1_error)
+  __pyx_codeobj__37 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__36, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_sim_package_queue_model_pyx, __pyx_n_s_create_demand, 298, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__37)) __PYX_ERR(0, 298, __pyx_L1_error)
 
   /* "(tree fragment)":1
  * def __pyx_unpickle_Node(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
@@ -12709,16 +12700,16 @@ static int __Pyx_modinit_type_init_code(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__Pyx_modinit_type_init_code", 0);
   /*--- Type init code ---*/
-  if (PyType_Ready(&__pyx_type_11queue_model_Node) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_11sim_package_11queue_model_Node) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_11queue_model_Node.tp_print = 0;
+  __pyx_type_11sim_package_11queue_model_Node.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_11queue_model_Node.tp_dictoffset && __pyx_type_11queue_model_Node.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_11queue_model_Node.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_11sim_package_11queue_model_Node.tp_dictoffset && __pyx_type_11sim_package_11queue_model_Node.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_11sim_package_11queue_model_Node.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_Node, (PyObject *)&__pyx_type_11queue_model_Node) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_11queue_model_Node) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
-  __pyx_ptype_11queue_model_Node = &__pyx_type_11queue_model_Node;
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_Node, (PyObject *)&__pyx_type_11sim_package_11queue_model_Node) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_11sim_package_11queue_model_Node) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
+  __pyx_ptype_11sim_package_11queue_model_Node = &__pyx_type_11sim_package_11queue_model_Node;
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -12924,14 +12915,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_queue_model) {
+  if (__pyx_module_is_main_sim_package__queue_model) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "queue_model")) {
-      if (unlikely(PyDict_SetItemString(modules, "queue_model", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "sim_package.queue_model")) {
+      if (unlikely(PyDict_SetItemString(modules, "sim_package.queue_model", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -12952,23 +12943,23 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "queue_model.pyx":3
+  /* "sim_package/queue_model.pyx":3
  * #distutils: language=c++
  * 
  * import time             # <<<<<<<<<<<<<<
  * import random
- * import interface
+ * from . import interface
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_time, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_time, __pyx_t_1) < 0) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":4
+  /* "sim_package/queue_model.pyx":4
  * 
  * import time
  * import random             # <<<<<<<<<<<<<<
- * import interface
+ * from . import interface
  * from shapely.wkt import loads
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_random, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
@@ -12976,311 +12967,320 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_random, __pyx_t_1) < 0) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":5
+  /* "sim_package/queue_model.pyx":5
  * import time
  * import random
- * import interface             # <<<<<<<<<<<<<<
+ * from . import interface             # <<<<<<<<<<<<<<
  * from shapely.wkt import loads
  * import numpy as np
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_interface, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_INCREF(__pyx_n_s_interface);
+  __Pyx_GIVEREF(__pyx_n_s_interface);
+  PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_interface);
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_, __pyx_t_1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 5, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_interface); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_interface, __pyx_t_1) < 0) __PYX_ERR(0, 5, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":6
+  /* "sim_package/queue_model.pyx":6
  * import random
- * import interface
+ * from . import interface
  * from shapely.wkt import loads             # <<<<<<<<<<<<<<
  * import numpy as np
  * 
  */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_n_s_loads);
   __Pyx_GIVEREF(__pyx_n_s_loads);
-  PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_loads);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_shapely_wkt, __pyx_t_1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_loads); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
+  PyList_SET_ITEM(__pyx_t_2, 0, __pyx_n_s_loads);
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_shapely_wkt, __pyx_t_2, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 6, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_loads, __pyx_t_1) < 0) __PYX_ERR(0, 6, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_1, __pyx_n_s_loads); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 6, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_loads, __pyx_t_2) < 0) __PYX_ERR(0, 6, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":7
- * import interface
+  /* "sim_package/queue_model.pyx":7
+ * from . import interface
  * from shapely.wkt import loads
  * import numpy as np             # <<<<<<<<<<<<<<
  * 
  * from libcpp.map cimport map as cpp_map
  */
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_numpy, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 7, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_2) < 0) __PYX_ERR(0, 7, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 7, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":141
+  /* "sim_package/queue_model.pyx":142
  * 
  * 
  * class Link:             # <<<<<<<<<<<<<<
  *     def __init__(self, link_id, lanes, length, fft, capacity, ltype, start_nid, end_nid, geometry, simulation=None):
  *         ### input
  */
-  __pyx_t_2 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_Link, __pyx_n_s_Link, (PyObject *) NULL, __pyx_n_s_queue_model, (PyObject *) NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 141, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_Link, __pyx_n_s_Link, (PyObject *) NULL, __pyx_n_s_sim_package_queue_model, (PyObject *) NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
 
-  /* "queue_model.pyx":142
+  /* "sim_package/queue_model.pyx":143
  * 
  * class Link:
  *     def __init__(self, link_id, lanes, length, fft, capacity, ltype, start_nid, end_nid, geometry, simulation=None):             # <<<<<<<<<<<<<<
  *         ### input
  *         self.lid = link_id
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_11queue_model_4Link_1__init__, 0, __pyx_n_s_Link___init, NULL, __pyx_n_s_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__6)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_1, __pyx_tuple__7);
-  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_init, __pyx_t_1) < 0) __PYX_ERR(0, 142, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_11sim_package_11queue_model_4Link_1__init__, 0, __pyx_n_s_Link___init, NULL, __pyx_n_s_sim_package_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__6)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 143, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__7);
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_init, __pyx_t_2) < 0) __PYX_ERR(0, 143, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":168
+  /* "sim_package/queue_model.pyx":169
  *         self.end_node = None
  * 
  *     def send_veh(self, t_now, agent_id, agent_id_dict=None):             # <<<<<<<<<<<<<<
  *         ### remove the agent from queue
  *         self.queue_veh = [v for v in self.queue_veh if v!=agent_id]
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_11queue_model_4Link_3send_veh, 0, __pyx_n_s_Link_send_veh, NULL, __pyx_n_s_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__9)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 168, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_1, __pyx_tuple__10);
-  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_send_veh, __pyx_t_1) < 0) __PYX_ERR(0, 168, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_11sim_package_11queue_model_4Link_3send_veh, 0, __pyx_n_s_Link_send_veh, NULL, __pyx_n_s_sim_package_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__9)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 169, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__10);
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_send_veh, __pyx_t_2) < 0) __PYX_ERR(0, 169, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":174
- *         if self.ltype[0:2]!='vl': self.travel_time_list.append((t_now, t_now - agent_id_dict[agent_id].cl_enter_time))
+  /* "sim_package/queue_model.pyx":175
+ *         if self.ltype[0:2] != 'vl': self.travel_time_list.append((t_now, t_now - agent_id_dict[agent_id].cl_enter_time))
  * 
  *     def receive_veh(self, agent_id):             # <<<<<<<<<<<<<<
  *         self.run_veh.append(agent_id)
  *         self.in_c = max(0, self.in_c-1)
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_11queue_model_4Link_5receive_veh, 0, __pyx_n_s_Link_receive_veh, NULL, __pyx_n_s_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__12)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 174, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_receive_veh, __pyx_t_1) < 0) __PYX_ERR(0, 174, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_11sim_package_11queue_model_4Link_5receive_veh, 0, __pyx_n_s_Link_receive_veh, NULL, __pyx_n_s_sim_package_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__12)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 175, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_receive_veh, __pyx_t_2) < 0) __PYX_ERR(0, 175, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":178
+  /* "sim_package/queue_model.pyx":179
  *         self.in_c = max(0, self.in_c-1)
  * 
  *     def run_link_model(self, t_now):             # <<<<<<<<<<<<<<
  *         if t_now%60 == 0: self.update_travel_time(t_now, link_time_lookback_freq=60, g=self.simulation.g)
  *         for agent_id in self.run_veh:
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_11queue_model_4Link_7run_link_model, 0, __pyx_n_s_Link_run_link_model, NULL, __pyx_n_s_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__14)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 178, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_run_link_model, __pyx_t_1) < 0) __PYX_ERR(0, 178, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_11sim_package_11queue_model_4Link_7run_link_model, 0, __pyx_n_s_Link_run_link_model, NULL, __pyx_n_s_sim_package_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__14)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 179, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_run_link_model, __pyx_t_2) < 0) __PYX_ERR(0, 179, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":188
+  /* "sim_package/queue_model.pyx":189
  *         self.in_c, self.ou_c = self.capacity/3600, self.capacity/3600
  * 
  *     def update_travel_time(self, t_now, link_time_lookback_freq=None, g=None):             # <<<<<<<<<<<<<<
  *         self.travel_time_list = [(t_rec, dur) for (t_rec, dur) in self.travel_time_list if (t_now-t_rec < link_time_lookback_freq)]
  *         if len(self.travel_time_list) > 0:
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_11queue_model_4Link_9update_travel_time, 0, __pyx_n_s_Link_update_travel_time, NULL, __pyx_n_s_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__17)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 188, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_1, __pyx_tuple__18);
-  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_update_travel_time, __pyx_t_1) < 0) __PYX_ERR(0, 188, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_11sim_package_11queue_model_4Link_9update_travel_time, 0, __pyx_n_s_Link_update_travel_time, NULL, __pyx_n_s_sim_package_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__17)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 189, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__18);
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_update_travel_time, __pyx_t_2) < 0) __PYX_ERR(0, 189, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":141
+  /* "sim_package/queue_model.pyx":142
  * 
  * 
  * class Link:             # <<<<<<<<<<<<<<
  *     def __init__(self, link_id, lanes, length, fft, capacity, ltype, start_nid, end_nid, geometry, simulation=None):
  *         ### input
  */
-  __pyx_t_1 = __Pyx_Py3ClassCreate(((PyObject*)&__Pyx_DefaultClassType), __pyx_n_s_Link, __pyx_empty_tuple, __pyx_t_2, NULL, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 141, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_Link, __pyx_t_1) < 0) __PYX_ERR(0, 141, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_Py3ClassCreate(((PyObject*)&__Pyx_DefaultClassType), __pyx_n_s_Link, __pyx_empty_tuple, __pyx_t_1, NULL, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 142, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_Link, __pyx_t_2) < 0) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":194
+  /* "sim_package/queue_model.pyx":195
  *             g.update_edge(self.start_nid, self.end_nid, <double> self.travel_time)
  * 
  * class Agent:             # <<<<<<<<<<<<<<
  *     def __init__(self, id, origin_nid, destin_nid, dept_time, veh_len, gps_reroute, simulation=None):
  *         #input
  */
-  __pyx_t_2 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_Agent, __pyx_n_s_Agent, (PyObject *) NULL, __pyx_n_s_queue_model, (PyObject *) NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 194, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_Agent, __pyx_n_s_Agent, (PyObject *) NULL, __pyx_n_s_sim_package_queue_model, (PyObject *) NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 195, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
 
-  /* "queue_model.pyx":195
+  /* "sim_package/queue_model.pyx":196
  * 
  * class Agent:
  *     def __init__(self, id, origin_nid, destin_nid, dept_time, veh_len, gps_reroute, simulation=None):             # <<<<<<<<<<<<<<
  *         #input
  *         self.aid = id
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_11queue_model_5Agent_1__init__, 0, __pyx_n_s_Agent___init, NULL, __pyx_n_s_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__20)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 195, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_1, __pyx_tuple__21);
-  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_init, __pyx_t_1) < 0) __PYX_ERR(0, 195, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_11sim_package_11queue_model_5Agent_1__init__, 0, __pyx_n_s_Agent___init, NULL, __pyx_n_s_sim_package_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__20)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 196, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__21);
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_init, __pyx_t_2) < 0) __PYX_ERR(0, 196, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":213
+  /* "sim_package/queue_model.pyx":214
  *         self.cl_enter_time = None
  * 
  *     def load_trips(self, t_now):             # <<<<<<<<<<<<<<
  *         if (self.dept_time == t_now):
  *             initial_edge = self.simulation.node2link_dict[self.route_igraph[0]]
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_11queue_model_5Agent_3load_trips, 0, __pyx_n_s_Agent_load_trips, NULL, __pyx_n_s_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__23)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 213, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_load_trips, __pyx_t_1) < 0) __PYX_ERR(0, 213, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_11sim_package_11queue_model_5Agent_3load_trips, 0, __pyx_n_s_Agent_load_trips, NULL, __pyx_n_s_sim_package_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__23)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 214, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_load_trips, __pyx_t_2) < 0) __PYX_ERR(0, 214, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":220
+  /* "sim_package/queue_model.pyx":221
  *             self.cl_enter_time = t_now
  * 
  *     def prepare_agent(self, node_id, node2link_dict=None, node_id_dict=None):             # <<<<<<<<<<<<<<
  *         assert self.cle == node_id, "agent next node {} is not the transferring node {}, route {}".format(self.cle, node_id, self.route_igraph)
  *         if self.destin_nid == node_id: ### current node is agent destination
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_11queue_model_5Agent_5prepare_agent, 0, __pyx_n_s_Agent_prepare_agent, NULL, __pyx_n_s_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__25)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 220, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_1, __pyx_tuple__26);
-  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_prepare_agent, __pyx_t_1) < 0) __PYX_ERR(0, 220, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_11sim_package_11queue_model_5Agent_5prepare_agent, 0, __pyx_n_s_Agent_prepare_agent, NULL, __pyx_n_s_sim_package_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__25)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 221, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__26);
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_prepare_agent, __pyx_t_2) < 0) __PYX_ERR(0, 221, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":234
+  /* "sim_package/queue_model.pyx":235
  *         return agent_next_node, ol, agent_dir
  * 
  *     def move_agent(self, t_now, new_cls, new_cle, new_status):             # <<<<<<<<<<<<<<
  *         self.cls = new_cls
  *         self.cle = new_cle
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_11queue_model_5Agent_7move_agent, 0, __pyx_n_s_Agent_move_agent, NULL, __pyx_n_s_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__28)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 234, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_move_agent, __pyx_t_1) < 0) __PYX_ERR(0, 234, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_11sim_package_11queue_model_5Agent_7move_agent, 0, __pyx_n_s_Agent_move_agent, NULL, __pyx_n_s_sim_package_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__28)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 235, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_move_agent, __pyx_t_2) < 0) __PYX_ERR(0, 235, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":240
+  /* "sim_package/queue_model.pyx":241
  *         self.cl_enter_time = t_now
  * 
  *     def get_path(self, g=None):             # <<<<<<<<<<<<<<
  *         sp = g.dijkstra(self.cle, self.destin_nid)
  *         sp_dist = sp.distance(self.destin_nid)
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_11queue_model_5Agent_9get_path, 0, __pyx_n_s_Agent_get_path, NULL, __pyx_n_s_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__30)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 240, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_1, __pyx_tuple__31);
-  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_get_path, __pyx_t_1) < 0) __PYX_ERR(0, 240, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_11sim_package_11queue_model_5Agent_9get_path, 0, __pyx_n_s_Agent_get_path, NULL, __pyx_n_s_sim_package_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__30)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 241, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__31);
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_get_path, __pyx_t_2) < 0) __PYX_ERR(0, 241, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":194
+  /* "sim_package/queue_model.pyx":195
  *             g.update_edge(self.start_nid, self.end_nid, <double> self.travel_time)
  * 
  * class Agent:             # <<<<<<<<<<<<<<
  *     def __init__(self, id, origin_nid, destin_nid, dept_time, veh_len, gps_reroute, simulation=None):
  *         #input
  */
-  __pyx_t_1 = __Pyx_Py3ClassCreate(((PyObject*)&__Pyx_DefaultClassType), __pyx_n_s_Agent, __pyx_empty_tuple, __pyx_t_2, NULL, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 194, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_Agent, __pyx_t_1) < 0) __PYX_ERR(0, 194, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_Py3ClassCreate(((PyObject*)&__Pyx_DefaultClassType), __pyx_n_s_Agent, __pyx_empty_tuple, __pyx_t_1, NULL, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 195, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_Agent, __pyx_t_2) < 0) __PYX_ERR(0, 195, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":255
+  /* "sim_package/queue_model.pyx":256
  * 
  * 
  * class Simulation:             # <<<<<<<<<<<<<<
  *     def __init__(self, NodeClass=Node, LinkClass=Link):
  *         self.g = None
  */
-  __pyx_t_2 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_Simulation, __pyx_n_s_Simulation, (PyObject *) NULL, __pyx_n_s_queue_model, (PyObject *) NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 255, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
+  __pyx_t_1 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_Simulation, __pyx_n_s_Simulation, (PyObject *) NULL, __pyx_n_s_sim_package_queue_model, (PyObject *) NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 256, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
 
-  /* "queue_model.pyx":256
+  /* "sim_package/queue_model.pyx":257
  * 
  * class Simulation:
  *     def __init__(self, NodeClass=Node, LinkClass=Link):             # <<<<<<<<<<<<<<
  *         self.g = None
  *         self.all_nodes = dict()
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_11queue_model_10Simulation_1__init__, 0, __pyx_n_s_Simulation___init, NULL, __pyx_n_s_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__33)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 256, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  if (!__Pyx_CyFunction_InitDefaults(__pyx_t_1, sizeof(__pyx_defaults), 2)) __PYX_ERR(0, 256, __pyx_L1_error)
-  __Pyx_INCREF(((PyObject *)__pyx_ptype_11queue_model_Node));
-  __Pyx_CyFunction_Defaults(__pyx_defaults, __pyx_t_1)->__pyx_arg_NodeClass = ((PyObject *)__pyx_ptype_11queue_model_Node);
-  __Pyx_GIVEREF(__pyx_ptype_11queue_model_Node);
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_Link); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 256, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_11sim_package_11queue_model_10Simulation_1__init__, 0, __pyx_n_s_Simulation___init, NULL, __pyx_n_s_sim_package_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__33)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 257, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (!__Pyx_CyFunction_InitDefaults(__pyx_t_2, sizeof(__pyx_defaults), 2)) __PYX_ERR(0, 257, __pyx_L1_error)
+  __Pyx_INCREF(((PyObject *)__pyx_ptype_11sim_package_11queue_model_Node));
+  __Pyx_CyFunction_Defaults(__pyx_defaults, __pyx_t_2)->__pyx_arg_NodeClass = ((PyObject *)__pyx_ptype_11sim_package_11queue_model_Node);
+  __Pyx_GIVEREF(__pyx_ptype_11sim_package_11queue_model_Node);
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_Link); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 257, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_CyFunction_Defaults(__pyx_defaults, __pyx_t_1)->__pyx_arg_LinkClass = __pyx_t_3;
+  __Pyx_CyFunction_Defaults(__pyx_defaults, __pyx_t_2)->__pyx_arg_LinkClass = __pyx_t_3;
   __Pyx_GIVEREF(__pyx_t_3);
   __pyx_t_3 = 0;
-  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_1, __pyx_pf_11queue_model_2__defaults__);
-  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_init, __pyx_t_1) < 0) __PYX_ERR(0, 256, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_2, __pyx_pf_11sim_package_11queue_model_2__defaults__);
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_init, __pyx_t_2) < 0) __PYX_ERR(0, 257, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":267
+  /* "sim_package/queue_model.pyx":268
  *         self.LinkClass = LinkClass
  * 
  *     def create_network(self, nodes_df, links_df):             # <<<<<<<<<<<<<<
  *         ### create graph
  *         links_df['capacity'] = links_df['lanes'] * 1000
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_11queue_model_10Simulation_3create_network, 0, __pyx_n_s_Simulation_create_network, NULL, __pyx_n_s_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__35)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 267, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_create_network, __pyx_t_1) < 0) __PYX_ERR(0, 267, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_11sim_package_11queue_model_10Simulation_3create_network, 0, __pyx_n_s_Simulation_create_network, NULL, __pyx_n_s_sim_package_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__35)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 268, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_create_network, __pyx_t_2) < 0) __PYX_ERR(0, 268, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":297
+  /* "sim_package/queue_model.pyx":298
  *             node.calculate_straight_ahead_links(node_id_dict=self.all_nodes, link_id_dict=self.all_links)
  * 
  *     def create_demand(self, od_df):             # <<<<<<<<<<<<<<
  * 
  *         if 'agent_id' not in od_df.columns: od_df['agent_id'] = np.arange(od_df.shape[0])
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_11queue_model_10Simulation_5create_demand, 0, __pyx_n_s_Simulation_create_demand, NULL, __pyx_n_s_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__37)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 297, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_create_demand, __pyx_t_1) < 0) __PYX_ERR(0, 297, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_11sim_package_11queue_model_10Simulation_5create_demand, 0, __pyx_n_s_Simulation_create_demand, NULL, __pyx_n_s_sim_package_queue_model, __pyx_d, ((PyObject *)__pyx_codeobj__37)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 298, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_create_demand, __pyx_t_2) < 0) __PYX_ERR(0, 298, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "queue_model.pyx":255
+  /* "sim_package/queue_model.pyx":256
  * 
  * 
  * class Simulation:             # <<<<<<<<<<<<<<
  *     def __init__(self, NodeClass=Node, LinkClass=Link):
  *         self.g = None
  */
-  __pyx_t_1 = __Pyx_Py3ClassCreate(((PyObject*)&__Pyx_DefaultClassType), __pyx_n_s_Simulation, __pyx_empty_tuple, __pyx_t_2, NULL, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 255, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_Simulation, __pyx_t_1) < 0) __PYX_ERR(0, 255, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_2 = __Pyx_Py3ClassCreate(((PyObject*)&__Pyx_DefaultClassType), __pyx_n_s_Simulation, __pyx_empty_tuple, __pyx_t_1, NULL, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 256, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_Simulation, __pyx_t_2) < 0) __PYX_ERR(0, 256, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "(tree fragment)":1
  * def __pyx_unpickle_Node(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
-  __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_11queue_model_1__pyx_unpickle_Node, NULL, __pyx_n_s_queue_model); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_pyx_unpickle_Node, __pyx_t_2) < 0) __PYX_ERR(1, 1, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_11sim_package_11queue_model_1__pyx_unpickle_Node, NULL, __pyx_n_s_sim_package_queue_model); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_pyx_unpickle_Node, __pyx_t_1) < 0) __PYX_ERR(1, 1, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "queue_model.pyx":1
+  /* "sim_package/queue_model.pyx":1
  * #distutils: language=c++             # <<<<<<<<<<<<<<
  * 
  * import time
  */
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_2) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_1) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /*--- Wrapped vars code ---*/
 
@@ -13291,11 +13291,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_3);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init queue_model", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init sim_package.queue_model", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init queue_model");
+    PyErr_SetString(PyExc_ImportError, "init sim_package.queue_model");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();

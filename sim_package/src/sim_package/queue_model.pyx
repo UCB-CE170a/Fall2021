@@ -33,6 +33,7 @@ cdef class Node:
         return Link('vl_in_{}'.format(self.nid), 100, 0, 0, 100000, 'vl_in', 'vn_source_{}'.format(self.nid), self.nid, 'LINESTRING({} {}, {} {})'.format(self.lon+0.001, self.lat+0.001, self.lon, self.lat), simulation=self.simulation)
 
     def calculate_straight_ahead_links(self, node_id_dict=None, link_id_dict=None):
+        cdef double x_start, y_start, x_end, y_end
         for il in self.in_links.keys():
             x_start = node_id_dict[link_id_dict[il].start_nid].lon
             y_start = node_id_dict[link_id_dict[il].start_nid].lat
@@ -95,8 +96,8 @@ cdef class Node:
           return self.go_vehs
         op_go_link = link_id_dict[link_id]
         op_go_vehs_list = self.find_go_vehs(op_go_link)
-        # self.go_vehs += [veh for veh in op_go_vehs_list if veh[-1]>-45] ### only straight ahead or right turns allowed for vehicles from the opposite side
-        self.go_vehs += [veh for veh in op_go_vehs_list if veh[-1]>-45]
+        
+        self.go_vehs += [veh for veh in op_go_vehs_list if veh[-1] > -45]
 
 
     def run_node_model(self, t_now):
@@ -138,8 +139,10 @@ cdef class Node:
                         self.link_id_dict[ol].in_c -= 1
 
 
-class Link:
-    def __init__(self, link_id, lanes, length, fft, capacity, ltype, start_nid, end_nid, geometry, simulation=None):
+cdef class Link:
+    cdef int lanes 
+    cdef double lanes, fft, capacity
+    def __init__(self, link_id, lanes, length, fft, capacity, ltype, start_nid, end_nid, geometry, g):
         ### input
         self.lid = link_id
         self.lanes = lanes
@@ -150,7 +153,7 @@ class Link:
         self.start_nid = start_nid
         self.end_nid = end_nid
         self.geometry = loads(geometry)
-        self.simulation = simulation
+        self.g = g
         ### derived
         self.store_cap = max(18, length*lanes) ### at least allow any vehicle to pass. i.e., the road won't block any vehicle because of the road length
         self.in_c = self.capacity/3600.0 # capacity in veh/s
@@ -169,27 +172,28 @@ class Link:
         ### remove the agent from queue
         self.queue_veh = [v for v in self.queue_veh if v!=agent_id]
         self.ou_c = max(0, self.ou_c-1)
-        if self.ltype[0:2]!='vl': self.travel_time_list.append((t_now, t_now - agent_id_dict[agent_id].cl_enter_time))
+        if self.ltype[0:2] != 'vl': self.travel_time_list.append((t_now, t_now - agent_id_dict[agent_id].cl_enter_time))
 
     def receive_veh(self, agent_id):
         self.run_veh.append(agent_id)
         self.in_c = max(0, self.in_c-1)
 
     def run_link_model(self, t_now):
-        if t_now%60 == 0: self.update_travel_time(t_now, link_time_lookback_freq=60, g=self.simulation.g)
+        if t_now%60 == 0: 
+            self.update_travel_time(t_now, link_time_lookback_freq=60)
         for agent_id in self.run_veh:
             if self.simulation.all_agents[agent_id].cl_enter_time < t_now - self.fft:
                 self.queue_veh.append(agent_id)
         self.run_veh = [v for v in self.run_veh if v not in self.queue_veh]
         ### remaining spaces on link for the node model to move vehicles to this link
-        self.st_c = self.store_cap - np.sum([self.simulation.all_agents[agent_id].veh_len for agent_id in self.run_veh+self.queue_veh])
+        self.st_c = self.store_cap - np.sum([self.simulation.all_agents[agent_id].veh_len for agent_id in self.run_veh + self.queue_veh])
         self.in_c, self.ou_c = self.capacity/3600, self.capacity/3600
 
-    def update_travel_time(self, t_now, link_time_lookback_freq=None, g=None):
+    def update_travel_time(self, t_now, link_time_lookback_freq=None):
         self.travel_time_list = [(t_rec, dur) for (t_rec, dur) in self.travel_time_list if (t_now-t_rec < link_time_lookback_freq)]
         if len(self.travel_time_list) > 0:
             self.travel_time = np.mean([dur for (_, dur) in self.travel_time_list])
-            g.update_edge(self.start_nid, self.end_nid, <double> self.travel_time)
+            self.g.update_edge(self.start_nid, self.end_nid, <double> self.travel_time)
 
 class Agent:
     def __init__(self, id, origin_nid, destin_nid, dept_time, veh_len, gps_reroute, simulation=None):

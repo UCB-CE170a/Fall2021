@@ -1,6 +1,7 @@
 from queue_model import Simulation, Node, Link
 import pandas as pd
 import numpy as np
+from concurrent.futures import ProcessPoolExecutor
 
 
 class Runner:
@@ -41,9 +42,12 @@ class Runner:
         ### run node model
         node_ids_to_run = {link.end_nid for link in self.sim.all_links.values() if len(link.queue_veh) > 0}
 
-        for nid in node_ids_to_run:
+        def non_conflict(nid):
             node = self.sim.all_nodes[nid]
             node.non_conflict_vehs(self.sim.all_nodes, self.sim.all_links, self.sim.all_agents, self.sim.node2link_dict)
+
+        with ProcessPoolExecutor() as ex:
+            ex.map(non_conflict, node_ids_to_run)
         
         for nid in node_ids_to_run:
             node = self.sim.all_nodes[nid]

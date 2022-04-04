@@ -52,5 +52,5 @@ setup(
         'Programming Language :: Python :: 3.9',
     ],
     cmdclass={'install': CustomSPTInstall},
-    ext_modules=cythonize("src/queue_model.pyx", language_level='3')
+    ext_modules=cythonize("src/sim_package/queue_model.pyx", language_level='3')
 )
