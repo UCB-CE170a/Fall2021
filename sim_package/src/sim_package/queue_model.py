@@ -2,7 +2,7 @@ import time
 import random
 from ctypes import c_double
 from turtle import clear
-import interface
+from . import interface
 import numpy as np
 
 class Node:

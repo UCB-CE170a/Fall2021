@@ -5,16 +5,18 @@ from ctypes import *
 from numpy.ctypeslib import ndpointer
 import pandas as pd
 import numpy as np
-from os import path
+from os import path, walk
 import platform
+from glob import glob
 
 
-
-
+ext = 'so'
 if platform.machine() == 'arm64':
-    libsp = cdll.LoadLibrary(f"{path.dirname(path.abspath(__file__))}/dlls/liblsp.dylib")
-else:
-    libsp = cdll.LoadLibrary(f"{path.dirname(path.abspath(__file__))}/dlls/liblsp.so")
+    ext = 'dylb'
+
+# walk to find dlls
+pt = [trup for trup in walk('.', topdown=True, onerror=None, followlinks=False) if 'dlls' in trup[0]][0]
+libsp = cdll.LoadLibrary(pt[0] + pt[2][0])
 
 
 
