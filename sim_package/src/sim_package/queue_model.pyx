@@ -11,9 +11,6 @@ from libcpp.vector cimport vector as cpp_vector
 
 
 cdef class Node:
-
-    cdef double nid, lon, lat
-
     def __init__(self, node_id, lon, lat, ntype, osmid=None):
         self.nid = node_id
         self.lon = lon
@@ -140,8 +137,7 @@ cdef class Node:
 
 
 cdef class Link:
-    cdef int lanes 
-    cdef double lanes, fft, capacity
+
     def __init__(self, link_id, lanes, length, fft, capacity, ltype, start_nid, end_nid, geometry, g):
         ### input
         self.lid = link_id
@@ -156,8 +152,8 @@ cdef class Link:
         self.g = g
         ### derived
         self.store_cap = max(18, length*lanes) ### at least allow any vehicle to pass. i.e., the road won't block any vehicle because of the road length
-        self.in_c = self.capacity/3600.0 # capacity in veh/s
-        self.ou_c = self.capacity/3600.0
+        self.in_c = self.capacity / 3600.0 # capacity in veh/s
+        self.ou_c = self.capacity / 3600.0
         self.st_c = self.store_cap # remaining storage capacity
         self.midpoint = list(self.geometry.interpolate(0.5, normalized=True).coords)[0]
         ### empty
@@ -172,7 +168,8 @@ cdef class Link:
         ### remove the agent from queue
         self.queue_veh = [v for v in self.queue_veh if v!=agent_id]
         self.ou_c = max(0, self.ou_c-1)
-        if self.ltype[0:2] != 'vl': self.travel_time_list.append((t_now, t_now - agent_id_dict[agent_id].cl_enter_time))
+        if self.ltype[0:2] != 'vl': 
+            self.travel_time_list.append((t_now, t_now - agent_id_dict[agent_id].cl_enter_time))
 
     def receive_veh(self, agent_id):
         self.run_veh.append(agent_id)

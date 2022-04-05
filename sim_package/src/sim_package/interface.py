@@ -7,16 +7,11 @@ import pandas as pd
 import numpy as np
 from os import path, walk
 import platform
-from glob import glob
 
 
-ext = 'so'
-if platform.machine() == 'arm64':
-    ext = 'dylb'
-
-# walk to find dlls
-pt = [trup for trup in walk('.', topdown=True, onerror=None, followlinks=False) if 'dlls' in trup[0]][0]
-libsp = cdll.LoadLibrary(pt[0] + pt[2][0])
+# discover dll files from call directory
+dll_dir, file = [(root, files[0]) for root, _, files in walk('.', topdown=True, onerror=None, followlinks=False) if 'dlls' in root][0]
+libsp = cdll.LoadLibrary(f'{dll_dir}/{file}')
 
 
 

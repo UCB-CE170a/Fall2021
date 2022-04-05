@@ -17,8 +17,8 @@ class CustomSPTInstall(install):
 
         print('init cmake...')
         sp.run(f'cmake -DCMAKE_BUILD_TYPE=Release ./CMakeLists.txt', shell=True, cwd=f'src/sim_package/{repo_name}')
-        print('compiling shortest paths library...')
 
+        print('compiling shortest paths library...')
         sp.run(f'make clean && make -j{max(os.cpu_count() // 2, 1)}', shell=True, cwd=f'src/sim_package/{repo_name}')
 
         print('clean up...')
@@ -42,7 +42,7 @@ setup(
                       ],
     package_dir={"": "src"},
     #packages=find_packages(where='src'),
-    package_data={'': ['sim_package/dlls/liblsp.*']},
+    package_data={'sim_package': ['sim_package/dlls/liblsp.*']},
     include_package_data=True,
     classifiers=[
         'Development Status :: 1 - Planning',
@@ -52,5 +52,5 @@ setup(
         'Programming Language :: Python :: 3.9',
     ],
     cmdclass={'install': CustomSPTInstall},
-    ext_modules=cythonize("src/sim_package/queue_model.pyx", language_level='3')
+    #ext_modules=cythonize("src/sim_package/queue_model.pyx", language_level='3')
 )
