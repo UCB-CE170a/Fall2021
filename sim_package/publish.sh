@@ -20,8 +20,12 @@ while getopts ":h" option; do
    esac
 done
 
+rm -rf build
+
+conda env list
+
 # install build package if not preinstalled, install twine for upload of package
-python3 -m pip install build twine
+python3 -m pip install build twine cython
 # create distribution files
 python3 -m build
 

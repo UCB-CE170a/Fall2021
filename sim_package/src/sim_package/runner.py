@@ -1,8 +1,8 @@
-import interface
-from queue_model import Simulation, Node, Link
+from .queue_model import Simulation, Node, Link
 import pandas as pd
 import numpy as np
 from concurrent.futures import ProcessPoolExecutor
+
 
 class Runner:
     def __init__(self, 
@@ -41,16 +41,22 @@ class Runner:
             link.run_link_model(t)
         ### run node model
         node_ids_to_run = {link.end_nid for link in self.sim.all_links.values() if len(link.queue_veh) > 0}
-        for node_id in node_ids_to_run:
-            node = self.sim.all_nodes[node_id] 
-            node.run_node_model(t)
+
+        def non_conflict(nid):
+            node = self.sim.all_nodes[nid]
+            node.non_conflict_vehs(self.sim.all_nodes, self.sim.all_links, self.sim.all_agents, self.sim.node2link_dict)
 
         with ProcessPoolExecutor() as ex:
-            ex.map(lambda node_id: self.sim.all_nodes[node_id].run_node_model(t), node_ids_to_run)
+            ex.map(non_conflict, node_ids_to_run)
+        
+        for nid in node_ids_to_run:
+            node = self.sim.all_nodes[nid]
+            node.run_node_model(t)
+
 
     # count the number of evacuees that have successfully reach their destination
-    def arrival_counts(self, t,save_path):
-        arrival_cnts = np.sum([1 for a in self.sim.all_agents.values() if a.status=='arr'])
+    def arrival_counts(self, t, save_path):
+        arrival_cnts = np.sum([1 for a in self.sim.all_agents.values() if a.status == 'arr'])
         print(f'At {t} seconds, {arrival_cnts} evacuees successfully reached the destination')
         if arrival_cnts == len(self.sim.all_agents):
             print(f"all agents arrive at destinations at time {t} seconds.")
@@ -60,8 +66,8 @@ class Runner:
         return True
 
     def write_link_outputs(self, save_path):
-        link_output = pd.DataFrame([(link.lid, len(link.queue_veh), len(link.run_veh), np.round((len(link.queue_veh)+len(link.run_veh))/(link.length * link.lanes+0.00001)*100, 2), link.geometry) for link in self.sim.all_links.values() if link.ltype[0:2] != 'vl'], columns=['link_id', 'queue_vehicle_count', 'run_vehicle_count', 'vehicle_per_100m', 'geometry'])
-        link_output = link_output[(link_output['queue_vehicle_count']>0) | (link_output['run_vehicle_count']>0)].reset_index(drop=True)
+        link_output = pd.DataFrame([(link.lid, len(link.queue_veh), len(link.run_veh), np.round((len(link.queue_veh)+ len(link.run_veh)) / (link.length * link.lanes+0.00001) * 100, 2), link.geometry) for link in self.sim.all_links.values() if link.ltype[0:2] != 'vl'], columns=['link_id', 'queue_vehicle_count', 'run_vehicle_count', 'vehicle_per_100m', 'geometry'])
+        link_output = link_output[(link_output['queue_vehicle_count'] > 0) | (link_output['run_vehicle_count'] > 0)].reset_index(drop=True)
         link_output.to_csv(save_path, index=False)
 
     def spatial_queue_simulation(self, scenario_name, t_end=10801, output_dir='traffic_outputs'):

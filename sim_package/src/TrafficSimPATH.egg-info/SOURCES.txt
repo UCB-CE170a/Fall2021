@@ -7,7 +7,10 @@ src/TrafficSimPATH.egg-info/requires.txt
 src/TrafficSimPATH.egg-info/top_level.txt
 src/sim_package/__init__.py
 src/sim_package/interface.py
+src/sim_package/queue_model.cpp
 src/sim_package/queue_model.py
 src/sim_package/runner.py
-src/sim_package/dlls/liblsp.dylib
-src/sim_package/dlls/liblsp.so
+src/sim_package/sp/bencmark-dijkstra.py
+src/sim_package/sp/interface.py
+src/sim_package/sp/clang-tools/run-clang-format.py
+src/sim_package/sp/clang-tools/run-clang-tidy.py
