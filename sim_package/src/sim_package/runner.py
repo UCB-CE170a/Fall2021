@@ -1,4 +1,4 @@
-from queue_model import Simulation, Node, Link
+from .queue_model import Simulation, Node, Link
 import pandas as pd
 import numpy as np
 from concurrent.futures import ProcessPoolExecutor
@@ -56,7 +56,7 @@ class Runner:
 
     # count the number of evacuees that have successfully reach their destination
     def arrival_counts(self, t, save_path):
-        arrival_cnts = np.sum([1 for a in self.sim.all_agents.values() if a.status=='arr'])
+        arrival_cnts = np.sum([1 for a in self.sim.all_agents.values() if a.status == 'arr'])
         print(f'At {t} seconds, {arrival_cnts} evacuees successfully reached the destination')
         if arrival_cnts == len(self.sim.all_agents):
             print(f"all agents arrive at destinations at time {t} seconds.")
