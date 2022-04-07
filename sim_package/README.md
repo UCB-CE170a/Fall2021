@@ -5,3 +5,9 @@ This package is intended to create an extensible package for creating custom tra
 
 ### Dev Note
 for arm64 machines (apple silicon), to install scipy this worked `pip install --pre -i https://pypi.anaconda.org/scipy-wheels-nightly/simple scipy`
+
+
+# Using the library locally
+```
+git clone 
+```
