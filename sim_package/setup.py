@@ -22,7 +22,7 @@ class CustomSPTInstall(install):
         sp.run(f'make clean && make -j{max(os.cpu_count() // 2, 1)}', shell=True, cwd=f'src/sim_package/{repo_name}')
 
         print('clean up...')
-        sp.run(f'rm -rf dlls && mkdir dlls && mv liblsp.* ../.. && cd .. && rm -rf {repo_name}', shell=True, cwd=f'src/sim_package/{repo_name}')
+        sp.run(f'rm -rf ../dlls && mkdir ../dlls && mv liblsp.* ../dlls && cd .. && rm -rf {repo_name}', shell=True, cwd=f'src/sim_package/{repo_name}')
         sp.run('tree')
         super().run()
 
