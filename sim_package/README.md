@@ -2,7 +2,7 @@
 
 This package is intended to create an extensible package for creating custom traffic simulations and emergency analysis metrics.
 
-This package is still in development. As such, PyPi might not have the most up-to-date benefits. Simply pull this repo and run `pip install .`
+This package is still in development. As such, PyPi might not have the most up-to-date benefits. Simply pull this repo and run `pip install cython .`
 
 
 ### Dev Note

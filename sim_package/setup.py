@@ -28,7 +28,7 @@ class CustomSPTInstall(install):
 
 setup(
     name=PACKAGE_NAME,
-    version='0.0.4',    
+    version='0.0.4',
     description='A traffic simulation package made by berkeley PATH',
     url='https://github.com/ucbtrans/Fall2021/traffic_sim',
     author='Abhinav Dhulipala',
@@ -40,14 +40,14 @@ setup(
                       'cython'
                       ],
     package_dir={"": "src"},
-    #packages=find_packages(where='src'),
+    packages=find_packages(where='src'),
     package_data={'sim_package': ['sim_package/dlls/liblsp.*']},
     include_package_data=True,
     classifiers=[
         'Development Status :: 1 - Planning',
         'Intended Audience :: Science/Research',
-        'License :: OSI Approved :: MIT License',  
-        'Operating System :: POSIX :: Linux', 
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: POSIX :: Linux',
         'Programming Language :: Python :: 3.9',
     ],
     cmdclass={'install': CustomSPTInstall},
