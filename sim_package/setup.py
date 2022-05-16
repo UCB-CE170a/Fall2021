@@ -28,7 +28,7 @@ class CustomSPTInstall(install):
 
 setup(
     name=PACKAGE_NAME,
-    version='0.0.4',
+    version='0.0.5',
     description='A traffic simulation package made by berkeley PATH',
     url='https://github.com/ucbtrans/Fall2021/traffic_sim',
     author='Abhinav Dhulipala',
