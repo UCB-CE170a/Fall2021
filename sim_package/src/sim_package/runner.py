@@ -8,12 +8,18 @@ import argparse
 class Runner:
     def __init__(self, 
       links_csv: str, nodes_csv: str, od_csv: str,
+      contraflow_csv='',
       NodeClass=Node, LinkClass=Link, reroute_freq=10800):
         self.nodes_df = pd.read_csv(nodes_csv)
         self.links_df = pd.read_csv(links_csv)
         self.od_df = pd.read_csv(od_csv)
         self.sim = Simulation(NodeClass, LinkClass)
         self.reroute_freq = reroute_freq
+        
+        if contraflow_csv:
+            contraflow_df = pd.read_csv(contraflow_csv)
+            self.links_df = self.links_df.merge(contraflow_df[['link_id', 'new_lanes']], how='left', on='link_id')
+
 
     def init_sq_simulation(self):
         self.sim.create_network(self.nodes_df, self.links_df)
@@ -43,7 +49,7 @@ class Runner:
             link.run_link_model(t)
         ### run node model
         node_ids_to_run = {link.end_nid for link in self.sim.all_links.values() if len(link.queue_veh) > 0}
-                
+
         for nid in node_ids_to_run:
             node = self.sim.all_nodes[nid]
             node.run_node_model(t)
@@ -94,9 +100,10 @@ def cli():
     parser.add_argument('--nodes', required=True, help='path to nodes csv that represents all the intersections of your model')
     parser.add_argument('--links', required=True, help='path to link csv')
     parser.add_argument('--ods', required=True, help='path to travel demand csv')
+    parser.add_argument('--cf', help='path to contraflow links csv', default='')
     parser.add_argument('--name', default='berkeley-evac', help='path to travel demand csv')
     args = parser.parse_args()
 
-    runner = Runner(args.links, args.nodes, args.ods)
+    runner = Runner(args.links, args.nodes, args.ods, args.cf)
     runner.init_sq_simulation()
     runner.spatial_queue_simulation(args.name)

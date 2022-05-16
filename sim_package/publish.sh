@@ -25,9 +25,9 @@ rm -rf build
 conda env list
 
 # install build package if not preinstalled, install twine for upload of package
-python3 -m pip install build twine cython
+python3 -m pip install build twine cython wheel
 # create distribution files
-python3 -m build
+python3 -m build --no-isolation
 
 if [ "$1" == "prod" ]; then 
   python3 -m twine upload dist/*

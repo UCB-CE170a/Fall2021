@@ -6,4 +6,5 @@ dist/
 **/venv/
 traffic_outputs/
 venv/
+.vscode/
 
