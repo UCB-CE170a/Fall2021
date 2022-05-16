@@ -2,16 +2,18 @@ from .queue_model import Simulation, Node, Link
 import pandas as pd
 import numpy as np
 from concurrent.futures import ProcessPoolExecutor
+import argparse
 
 
 class Runner:
     def __init__(self, 
       links_csv: str, nodes_csv: str, od_csv: str,
-      NodeClass=Node, LinkClass=Link):
+      NodeClass=Node, LinkClass=Link, reroute_freq=10800):
         self.nodes_df = pd.read_csv(nodes_csv)
         self.links_df = pd.read_csv(links_csv)
         self.od_df = pd.read_csv(od_csv)
         self.sim = Simulation(NodeClass, LinkClass)
+        self.reroute_freq = reroute_freq
 
     def init_sq_simulation(self):
         self.sim.create_network(self.nodes_df, self.links_df)
@@ -41,14 +43,7 @@ class Runner:
             link.run_link_model(t)
         ### run node model
         node_ids_to_run = {link.end_nid for link in self.sim.all_links.values() if len(link.queue_veh) > 0}
-
-        def non_conflict(nid):
-            node = self.sim.all_nodes[nid]
-            node.non_conflict_vehs(self.sim.all_nodes, self.sim.all_links, self.sim.all_agents, self.sim.node2link_dict)
-
-        with ProcessPoolExecutor() as ex:
-            ex.map(non_conflict, node_ids_to_run)
-        
+                
         for nid in node_ids_to_run:
             node = self.sim.all_nodes[nid]
             node.run_node_model(t)
@@ -70,6 +65,12 @@ class Runner:
         link_output = link_output[(link_output['queue_vehicle_count'] > 0) | (link_output['run_vehicle_count'] > 0)].reset_index(drop=True)
         link_output.to_csv(save_path, index=False)
 
+    def write_node_outputs(self, save_path):
+        node_predepart = pd.DataFrame([(agent.cle, 1) for agent in self.sim.all_agents.values() if (agent.status in [None, 'loaded'])], columns=['node_id', 'predepart_cnt']).groupby('node_id').agg({'predepart_cnt': np.sum}).reset_index()
+        if node_predepart.shape[0]>0:
+            node_predepart = node_predepart.merge(self.nodes_df[['node_id', 'lat', 'lon']], how='left', on='node_id')
+            node_predepart.to_csv(save_path, index=False)
+
     def spatial_queue_simulation(self, scenario_name, t_end=10801, output_dir='traffic_outputs'):
         arrival_output_path = f'{output_dir}/t_stats/arrivals_{scenario_name}.csv'
         with open(arrival_output_path, 'w') as t_stats_outfile:
@@ -81,8 +82,21 @@ class Runner:
             self.single_step_sq_sim(t)
 
             # output time-step results every 100 seconds
-            if t % 100 == 0 and self.arrival_counts(t, self.sim, arrival_output_path):                    
+            if t % 100 == 0 and self.arrival_counts(t, arrival_output_path):                    
                 link_output_path = f'{output_dir}/link_stats/l{scenario_name}_at_{t}.csv'
                 node_output_path = f'{output_dir}/node_stats/n{scenario_name}_at_{t}.csv'
-                self.write_link_outputs(self.sim, link_output_path)
-                self.write_node_outputs(self.sim, node_output_path)
+                self.write_link_outputs(link_output_path)
+                self.write_node_outputs(node_output_path)
+
+
+def cli():
+    parser = argparse.ArgumentParser(description='command line tool for running spatial queue model')
+    parser.add_argument('--nodes', required=True, help='path to nodes csv that represents all the intersections of your model')
+    parser.add_argument('--links', required=True, help='path to link csv')
+    parser.add_argument('--ods', required=True, help='path to travel demand csv')
+    parser.add_argument('--name', default='berkeley-evac', help='path to travel demand csv')
+    args = parser.parse_args()
+
+    runner = Runner(args.links, args.nodes, args.ods)
+    runner.init_sq_simulation()
+    runner.spatial_queue_simulation(args.name)

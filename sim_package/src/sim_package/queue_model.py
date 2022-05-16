@@ -1,4 +1,4 @@
-import time
+from shapely.wkt import loads
 import random
 from ctypes import c_double
 from turtle import clear
@@ -73,7 +73,7 @@ class Node:
         if (np.min([veh[-1] for veh in go_vehs_list])< -45) or (go_link.ltype=='vl_in'): return go_vehs ### no opposite veh allows to move if there is left turn veh in the primary direction; or if the primary incoming link is a virtual link
         if self.in_links[go_link.lid] is None: return go_vehs ### no straight ahead opposite links
         op_go_link = link_id_dict[self.in_links[go_link.lid]]
-        link_id = node2link_dict[(op_go_link.end_nid, op_go_link.start_nid)]
+        link_id = node2link_dict.get((op_go_link.end_nid, op_go_link.start_nid), None)
         if link_id not in link_id_dict:
           # straight ahead link is one way
           return go_vehs
@@ -103,7 +103,7 @@ class Node:
             elif link_id_dict[ol].st_c < veh_len:
                 pass ### no blocking, as # veh = # lanes
             ### inlink-sending, outlink-receiving both permits
-            elif link_id_dict[il].ou_c >= 1 & link_id_dict[ol].in_c >= 1:
+            elif link_id_dict[il].ou_c >= 1 and link_id_dict[ol].in_c >= 1:
                 ### before move agent as it uses the old agent.cl_enter_time
                 link_id_dict[il].send_veh(t_now, agent_id, agent_id_dict)
                 agent_id_dict[agent_id].move_agent(t_now, self.nid, next_node, 'flow')
@@ -247,7 +247,6 @@ class Simulation:
         self.g = None
         self.all_nodes = dict()
         self.all_links = dict()
-        self.node_to_link_dict = dict()
         self.all_agents = dict()
         assert issubclass(NodeClass, Node), 'arg: NodeClass, must submit Node class that is a Node'
         assert issubclass(LinkClass, Link), 'arg: LinkClass, must submit Link class that is a Link'
