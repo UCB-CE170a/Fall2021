@@ -3,6 +3,7 @@ setup.py
 src/TrafficSimPATH.egg-info/PKG-INFO
 src/TrafficSimPATH.egg-info/SOURCES.txt
 src/TrafficSimPATH.egg-info/dependency_links.txt
+src/TrafficSimPATH.egg-info/entry_points.txt
 src/TrafficSimPATH.egg-info/requires.txt
 src/TrafficSimPATH.egg-info/top_level.txt
 src/sim_package/__init__.py
@@ -10,7 +11,3 @@ src/sim_package/interface.py
 src/sim_package/queue_model.cpp
 src/sim_package/queue_model.py
 src/sim_package/runner.py
-src/sim_package/sp/bencmark-dijkstra.py
-src/sim_package/sp/interface.py
-src/sim_package/sp/clang-tools/run-clang-format.py
-src/sim_package/sp/clang-tools/run-clang-tidy.py

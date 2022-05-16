@@ -34,6 +34,7 @@ setup(
     author='Abhinav Dhulipala',
     author_email='abhinav.dhulipala@berkeley.edu',
     license='MIT',
+    entry_points={'console_scripts': ['gen=sim_package.runner:cli']},
     install_requires=['numpy',
                       'shapely',
                       'pandas',

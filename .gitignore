@@ -4,3 +4,6 @@ env/
 build/
 dist/
 **/venv/
+traffic_outputs/
+venv/
+
