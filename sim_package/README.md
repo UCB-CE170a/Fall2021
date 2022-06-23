@@ -5,7 +5,7 @@ This package is intended to create an extensible package for creating custom tra
 This package is still in development. As such, PyPi might not have the most up-to-date benefits. Simply pull this repo and run `pip install cython && pip install .` 
 
 Once installed a command-line tool called `gen` should become available. If `gen` works then the package is installed properly. Please install this package 
-in a vitrual environment. Common errors during installation will be on installing `scipy` and `pandas`. If installation fails, try installing these
+in a vitrual environment. You can find information about how to create a virtual environment [here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html). Common errors during installation will be on installing `scipy` and `pandas`. If installation fails, try installing these
 packages on your own in the virtual environment. 
 
 This package is built as a tool for evaluating contraflow scenarios using a spatial queue based dynamic traffic assignment.
@@ -74,4 +74,7 @@ For further usage details please type, `gen -h`.
 For any further suggestions or bugs, please.
 
 ### Dev Note
-for arm64 machines (apple silicon), to install scipy this worked `pip install --pre -i https://pypi.anaconda.org/scipy-wheels-nightly/simple scipy`
+For arm64 machines (apple silicon), to install scipy this worked `pip install --pre -i https://pypi.anaconda.org/scipy-wheels-nightly/simple scipy`
+
+### Feedback
+The module is still in development. As developers, we are trying to make the module accessible to every user. If you encounter any bug, please let us know by emailing to: INSERT_EMAIL_HERE. We are also conducting further research to make this as accurate and realistic as it can be. Further plans include increasing the accesibiltiy and speed.
