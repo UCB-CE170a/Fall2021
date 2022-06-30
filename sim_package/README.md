@@ -77,4 +77,4 @@ For any further suggestions or bugs, please.
 For arm64 machines (apple silicon), to install scipy this worked `pip install --pre -i https://pypi.anaconda.org/scipy-wheels-nightly/simple scipy`
 
 ### Feedback
-The module is still in development. As developers, we are trying to make the module accessible to every user. If you encounter any bug, please let us know by emailing to: INSERT_EMAIL_HERE. We are also conducting further research to make this as accurate and realistic as it can be. Further plans include increasing the accesibiltiy and speed.
+The module is still in development. As developers, we are trying to make the module accessible to every user. If you encounter any bug, please let us know by emailing to: bz247@berkeley.edu. We are also conducting further research to make this as accurate and realistic as it can be. Further plans include increasing the accesibiltiy and speed.
