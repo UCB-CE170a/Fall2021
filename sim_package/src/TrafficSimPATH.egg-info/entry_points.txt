@@ -1,0 +1,2 @@
+[console_scripts]
+gen = sim_package.runner:cli

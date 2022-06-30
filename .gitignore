@@ -1,2 +1,10 @@
 .ipynb_checkpoints
 .DS_Store
+env/
+build/
+dist/
+**/venv/
+traffic_outputs/
+venv/
+.vscode/
+
